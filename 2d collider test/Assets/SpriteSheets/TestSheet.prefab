@@ -57,21 +57,21 @@ MonoBehaviour:
   forcedTextureWidth: 1024
   forcedTextureHeight: 1024
   textureCompression: 0
-  atlasWidth: 256
-  atlasHeight: 512
+  atlasWidth: 64
+  atlasHeight: 64
   forceSquareAtlas: 0
-  atlasWastage: 95.7519531
+  atlasWastage: 6.25
   allowMultipleAtlases: 0
   textureParams:
-  - name: ground
+  - name: 1x4
     disableTrimming: 0
     additive: 0
     scale: {x: 1, y: 1, z: 1}
-    texture: {fileID: 2800000, guid: 5e60c7f04e68d3643a597c99ffc305c4, type: 3}
+    texture: {fileID: 2800000, guid: 23de54c17acb2dc45aabd7875c598325, type: 3}
     materialId: 0
     anchor: 4
-    anchorX: 150
-    anchorY: 8
+    anchorX: 8
+    anchorY: 32
     overrideMesh: {fileID: 0}
     doubleSidedSprite: 0
     customSpriteGeometry: 0
@@ -109,7 +109,121 @@ MonoBehaviour:
     materialId: 0
     anchor: 4
     anchorX: 8
-    anchorY: 24
+    anchorY: 16
+    overrideMesh: {fileID: 0}
+    doubleSidedSprite: 0
+    customSpriteGeometry: 0
+    geometryIslands: []
+    dice: 0
+    diceUnitX: 64
+    diceUnitY: 0
+    pad: 0
+    extraPadding: 0
+    source: 0
+    fromSpriteSheet: 0
+    hasSpriteSheetId: 0
+    spriteSheetId: 0
+    spriteSheetX: 0
+    spriteSheetY: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    regionId: 0
+    colliderType: 2
+    boxColliderMin: {x: 0, y: 0}
+    boxColliderMax: {x: 0, y: 0}
+    polyColliderIslands: []
+    polyColliderCap: 0
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    colliderColor: 0
+  - name: 4x1
+    disableTrimming: 0
+    additive: 0
+    scale: {x: 1, y: 1, z: 1}
+    texture: {fileID: 2800000, guid: 8fbdccf5718a64b48983390d22b832ee, type: 3}
+    materialId: 0
+    anchor: 4
+    anchorX: 32
+    anchorY: 8
+    overrideMesh: {fileID: 0}
+    doubleSidedSprite: 0
+    customSpriteGeometry: 0
+    geometryIslands: []
+    dice: 0
+    diceUnitX: 64
+    diceUnitY: 0
+    pad: 0
+    extraPadding: 0
+    source: 0
+    fromSpriteSheet: 0
+    hasSpriteSheetId: 0
+    spriteSheetId: 0
+    spriteSheetX: 0
+    spriteSheetY: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    regionId: 0
+    colliderType: 2
+    boxColliderMin: {x: 0, y: 0}
+    boxColliderMax: {x: 0, y: 0}
+    polyColliderIslands: []
+    polyColliderCap: 0
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    colliderColor: 0
+  - name: 2x2
+    disableTrimming: 0
+    additive: 0
+    scale: {x: 1, y: 1, z: 1}
+    texture: {fileID: 2800000, guid: e1050a416c891e34eae34aefd936d1a7, type: 3}
+    materialId: 0
+    anchor: 4
+    anchorX: 16
+    anchorY: 16
+    overrideMesh: {fileID: 0}
+    doubleSidedSprite: 0
+    customSpriteGeometry: 0
+    geometryIslands: []
+    dice: 0
+    diceUnitX: 64
+    diceUnitY: 0
+    pad: 0
+    extraPadding: 0
+    source: 0
+    fromSpriteSheet: 0
+    hasSpriteSheetId: 0
+    spriteSheetId: 0
+    spriteSheetX: 0
+    spriteSheetY: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    regionId: 0
+    colliderType: 2
+    boxColliderMin: {x: 0, y: 0}
+    boxColliderMax: {x: 0, y: 0}
+    polyColliderIslands: []
+    polyColliderCap: 0
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    colliderColor: 0
+  - name: spr_throwable
+    disableTrimming: 0
+    additive: 0
+    scale: {x: 1, y: 1, z: 1}
+    texture: {fileID: 2800000, guid: 13ab89c5b9fe58043971546eabdc7b04, type: 3}
+    materialId: 0
+    anchor: 4
+    anchorX: 8
+    anchorY: 8
     overrideMesh: {fileID: 0}
     doubleSidedSprite: 0
     customSpriteGeometry: 0
@@ -148,7 +262,7 @@ MonoBehaviour:
   atlasTextures:
   - {fileID: 2800000, guid: c014e6e0e6169aa479eedc15b45e63c5, type: 3}
   useTk2dCamera: 0
-  targetHeight: 768
+  targetHeight: 288
   targetOrthoSize: 9
   globalScale: 1
   pixelPerfectPointSampled: 0

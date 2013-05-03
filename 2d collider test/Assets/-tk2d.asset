@@ -18,14 +18,23 @@ MonoBehaviour:
     spriteCollectionGUID: de2993fbfbfc74348b1db5b97765b802
     spriteCollectionDataGUID: 08177ab29bff9894484539aa3c234579
     spriteNames:
-    - ground
+    - 1x4
     - char
+    - 4x1
+    - 2x2
+    - spr_throwable
     spriteTextureGUIDs:
-    - 5e60c7f04e68d3643a597c99ffc305c4
+    - 23de54c17acb2dc45aabd7875c598325
     - 3c04bc5508621be46b484c076cbf3e64
+    - 8fbdccf5718a64b48983390d22b832ee
+    - e1050a416c891e34eae34aefd936d1a7
+    - 13ab89c5b9fe58043971546eabdc7b04
     spriteTextureTimeStamps:
-    - 1367580966.28288
-    - 1367580966.28088
+    - 1367589059.60138
+    - 1367589059.60439
+    - 1367589059.60339
+    - 1367589059.60239
+    - 1367591257.79811
     managedSpriteCollection: 0
     loadable: 0
     assetName: 
