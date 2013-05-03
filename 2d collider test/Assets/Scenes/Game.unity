@@ -612,6 +612,17 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  minJumpHeight: 10
+  maxJumpHeight: 60
+  termFallVelHeight: 30
+  maxJumpTime: .5
+  terminalFallVel: -250
+  walkSpeed: 100
+  maxRunSpeed: 150
+  timeToMaxWalkSpeed: 0
+  timeToMaxRunSpeed: 0
+  timeToDecelerateToWalk: 0
+  timeToDecelerateToStop: 0
 --- !u!114 &959502700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1105,6 +1116,17 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 55cda5cdcb709264c8a790850974d6e4, type: 3}
   m_Name: 
+  minJumpHeight: 10
+  maxJumpHeight: 60
+  termFallVelHeight: 30
+  maxJumpTime: .5
+  terminalFallVel: -250
+  walkSpeed: 100
+  maxRunSpeed: 150
+  timeToMaxWalkSpeed: 0
+  timeToMaxRunSpeed: 0
+  timeToDecelerateToWalk: 0
+  timeToDecelerateToStop: 0
   minJumpHeight: 10
   maxJumpHeight: 60
   termFallVelHeight: 30
