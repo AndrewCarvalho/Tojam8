@@ -23,18 +23,21 @@ MonoBehaviour:
     - 4x1
     - 2x2
     - spr_throwable
+    - 1x1
     spriteTextureGUIDs:
     - 23de54c17acb2dc45aabd7875c598325
     - 3c04bc5508621be46b484c076cbf3e64
     - 8fbdccf5718a64b48983390d22b832ee
     - e1050a416c891e34eae34aefd936d1a7
     - 13ab89c5b9fe58043971546eabdc7b04
+    - 82dd6278699acc3498eab58c56af5804
     spriteTextureTimeStamps:
     - 1367589059.60138
     - 1367589059.60439
     - 1367589059.60339
     - 1367589059.60239
     - 1367591257.79811
+    - 1367599245.29097
     managedSpriteCollection: 0
     loadable: 0
     assetName: 
