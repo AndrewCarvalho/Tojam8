@@ -9,26 +9,26 @@ public class PlayerOneControls : PlayerControls2
 
     protected override float LeftPressed()
     {
-        return Input.GetKey(KeyCode.LeftArrow) ? 1.0f : 0.0f;
+        return Input.GetKey(KeyCode.LeftArrow) || Input.GetAxis("Horizontal1") < 0 ? 1.0f : 0.0f;
     }
 
     protected override float RightPressed()
     {
-        return Input.GetKey(KeyCode.RightArrow) ? 1.0f : 0.0f;
+        return Input.GetKey(KeyCode.RightArrow) || Input.GetAxis("Horizontal1") > 0 ? 1.0f : 0.0f;
     }
 
     protected override bool JumpButtonDown()
     {
-        return Input.GetKey(KeyCode.UpArrow);
+        return Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Joystick1Button0);
     }
 
     protected override bool JumpButtonUp()
     {
-        return Input.GetKeyUp(KeyCode.UpArrow); 
+        return Input.GetKeyUp(KeyCode.UpArrow) || Input.GetKeyUp(KeyCode.Joystick1Button0);
     }
 
     protected override bool JumpButton()
     {
-        return Input.GetKeyDown(KeyCode.UpArrow);
+        return Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.Joystick1Button0);
     }
 }
