@@ -1,12 +1,8 @@
 using UnityEngine;
 using System.Collections;
 
-public class PlayerControls2 : MonoBehaviour
+public abstract class PlayerControls2 : MonoBehaviour
 {
-
-    protected KeyCode leftButton;
-    protected KeyCode rightButton;
-    protected KeyCode jumpButton;
 
     //public float minJumpClimb = 25f;
     //public float maxJumpClimb = 75f;
@@ -73,6 +69,12 @@ public class PlayerControls2 : MonoBehaviour
         this.body = GetComponent<Rigidbody>();
     }
 
+    protected abstract float LeftPressed();
+    protected abstract float RightPressed();
+    protected abstract bool JumpButtonDown();
+    protected abstract bool JumpButtonUp();
+    protected abstract bool JumpButton();
+
     // Update is called once per frame
     void Update()
     {
@@ -81,7 +83,7 @@ public class PlayerControls2 : MonoBehaviour
         //float stepMoveDistance = this.moveDistancePerSecond * Time.deltaTime;
         if (this.jumpState == JUMP_STATE.ON_GROUND)
         {
-            if (Input.GetKeyDown(this.jumpButton))
+            if (JumpButtonDown())
             {
                 this.jumpState = JUMP_STATE.JUMPING_START;
                 this.jumpTime = 0f;
@@ -94,30 +96,30 @@ public class PlayerControls2 : MonoBehaviour
             //    Debug.Log("fhdsjkfhlsda");
             //    this.breakJump = true;
             //}
-            this.breakJump = !Input.GetKey(this.jumpButton);
+            this.breakJump = !JumpButton();
         }
 
-        if (Input.GetKeyDown(this.jumpButton) && this.jumpState == JUMP_STATE.ON_GROUND)
+        if (JumpButton() && this.jumpState == JUMP_STATE.ON_GROUND)
         {
             //float initialVelocity = this.maxJumpHeight / this.maxJumpTime + this.jumpAccelUp * Mathf.Pow(this.maxJumpTime, 2) / 2f;
             this.jumpState = JUMP_STATE.JUMPING_START;
             this.jumpTime = 0f;
         }
-        if (Input.GetKeyDown(KeyCode.DownArrow))
+        /*if (Input.GetKeyDown(KeyCode.DownArrow))
         {
             if (this.jumpState == JUMP_STATE.ON_GROUND)
             {
                 // duck.  I guess I'll need to see how animating works with mesh colliders
             }
-        }
-        if (Input.GetKeyUp(this.jumpButton) && this.jumpState != JUMP_STATE.ON_GROUND && this.jumpState != JUMP_STATE.FALLING_DOWN_ACCEL)
+        }*/
+        if (JumpButtonUp() && this.jumpState != JUMP_STATE.ON_GROUND && this.jumpState != JUMP_STATE.FALLING_DOWN_ACCEL)
         {
             //this.jumpState = JUMP_STATE.FALLING_DOWN_ACCEL;
             //this.lastVel /= this.jumpSpeedFactorOnJumpRelease;
         }
 
-        bool left = Input.GetKey(this.leftButton);
-        bool right = Input.GetKey(this.rightButton);
+        bool left = LeftPressed() != 0.0f;
+        bool right = RightPressed() != 0.0f;
 
         if (left)
         {
