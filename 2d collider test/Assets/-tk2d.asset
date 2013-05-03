@@ -42,3 +42,67 @@ MonoBehaviour:
     loadable: 0
     assetName: 
     version: 3
+  - name: RealAssets
+    spriteCollectionGUID: f01bb2d1d86c9d441be430e60704b2b4
+    spriteCollectionDataGUID: 06c9c51c7d312e84eb48d3e992356757
+    spriteNames:
+    - rockTile2
+    - hud_heartEmpty
+    - hud_progressBar
+    - grassTile1
+    - rockTile1
+    - grassTile6
+    - rockTile3
+    - grassTile2
+    - block
+    - hud_heartFull
+    - dirtTile3
+    - grassTile4
+    - dirtTile2
+    - hud_knightIcon
+    - dirtTile1
+    - grassTile3
+    - grassTile7
+    - hud_PrincessIcon
+    spriteTextureGUIDs:
+    - 05196ce9878c1484892b05adc63692e5
+    - 149f455fc814fef4a9de4deb11555d5a
+    - 206f84e2fc506e041bc254e8b5986a22
+    - 2d2b676fb45f9124da294f2e5be634d7
+    - 2d926efc06b94e546ba7dd2bbc74f20b
+    - 304a01301bfbdc54e91f953408d74679
+    - 37d1834ea7f65cf43b4ae5e5f29c551e
+    - 4053ebd13ef4a754d9384d2b4626b5ef
+    - 41e9487a4e7d3b1469fc0e0242c98cc3
+    - 7c8d7dfbbc234e741ac4c044570d61aa
+    - 9a2f068d432c0da40859ab55865ce694
+    - afb29f6103591ae4b9030c3833ca905c
+    - b4ad4b453e3645241ba68420a3cd4d32
+    - b50449b464a6bb845aadca8f21f069ab
+    - bd51515f28602de408d74c91ae023377
+    - eb82bc53c6bb02442912d8902f8abeb3
+    - ec4293012a7e7114b9841d3fe6557d60
+    - fd5c2e0f954b8e448a88d1d236b90616
+    spriteTextureTimeStamps:
+    - 1367603810
+    - 1367603692
+    - 1367604104
+    - 1367603576
+    - 1367603796
+    - 1367603610
+    - 1367603824
+    - 1367603584
+    - 1367603646
+    - 1367603674
+    - 1367604020
+    - 1367603600
+    - 1367604012
+    - 1367603728
+    - 1367604004
+    - 1367603592
+    - 1367603620
+    - 1367603770
+    managedSpriteCollection: 0
+    loadable: 0
+    assetName: 
+    version: 3
