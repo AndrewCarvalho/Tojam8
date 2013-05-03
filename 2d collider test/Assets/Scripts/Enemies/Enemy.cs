@@ -1,15 +1,15 @@
 using UnityEngine;
 using System.Collections;
 
-public class Enemy : MonoBehaviour {
+public class Enemy : Actor {
 
 	// Use this for initialization
-	void Start () {
-	    
+	new protected void Start () {
+        //base.Start();
 	}
 	
 	// Update is called once per frame
-	void Update () {
-	    
+	new protected void Update () {
+        //base.Update();
 	}
 }

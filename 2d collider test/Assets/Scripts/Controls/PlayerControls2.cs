@@ -17,7 +17,7 @@ public abstract class PlayerControls2 : Actor
     protected abstract bool JumpButton();
 
     // Update is called once per frame
-    new void Update()
+    void Update()
     {
         if (this.jumpState == JUMP_STATE.ON_GROUND)
         {
@@ -37,8 +37,8 @@ public abstract class PlayerControls2 : Actor
            base.JumpStart();
         }
 
-        bool left = LeftPressed() != 0.0f;
-        bool right = RightPressed() != 0.0f;
+        bool left = (LeftPressed() != 0.0f);
+        bool right = (RightPressed() != 0.0f);
 
         if (left)
         {
@@ -59,11 +59,5 @@ public abstract class PlayerControls2 : Actor
         {
             base.Run(0.0f);
         }
-
-    }
-
-    new protected void FixedUpdate()
-    {
-        base.FixedUpdate();
     }
 }
