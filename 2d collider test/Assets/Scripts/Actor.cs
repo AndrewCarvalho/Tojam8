@@ -78,12 +78,6 @@ public class Actor : MonoBehaviour {
         }
     }
 
-    // Update is called once per frame
-    protected void Update()
-    {
-        
-    }
-
     protected void FixedUpdate()
     {
         if (this.jumpState != JUMP_STATE.ON_GROUND)
@@ -108,23 +102,22 @@ public class Actor : MonoBehaviour {
                 break;
             case JUMP_STATE.JUMPING_START:
                 accelUp = -2f * this.maxJumpHeight / this.maxJumpTime / this.maxJumpTime;
-                Debug.Log("intial up accel " + accelUp.ToString());
+                //Debug.Log("intial up accel " + accelUp.ToString());
                 newVelocity = (this.maxJumpHeight / this.maxJumpTime) - accelUp * this.maxJumpTime / 2f;
-                //newVelocity = this.initialJumpVel;
-                Debug.Log("my initial velocity is " + newVelocity.ToString());
+                //Debug.Log("my initial velocity is " + newVelocity.ToString());
                 deltaUp = newVelocity * Time.deltaTime;
                 this.jumpState = JUMP_STATE.JUMPING_UP;
                 break;
             case JUMP_STATE.JUMPING_UP:
                 accelUp = -2f * this.maxJumpHeight / this.maxJumpTime / this.maxJumpTime;
-                Debug.Log("accel up " + accelUp.ToString());
+                //Debug.Log("accel up " + accelUp.ToString());
                 newVelocity = this.lastVel + accelUp * Time.deltaTime;
                 deltaUp = newVelocity * Time.deltaTime;
                 if (newVelocity < 0 || this.breakJump)
                 {
                     this.jumpState = JUMP_STATE.FALLING_DOWN_ACCEL;
                     this.breakJump = false;
-                    Debug.Log("The jump took climb " + this.jumpTime + " seconds");
+                    //Debug.Log("The jump took climb " + this.jumpTime + " seconds");
                 }
                 break;
             case JUMP_STATE.FALLING_DOWN_ACCEL:
@@ -169,16 +162,20 @@ public class Actor : MonoBehaviour {
 
             // need to sweep the remainder of vertcal and horizonal movement
             Vector3 remainingVector = movementVectorNormalized * (movementVectorMagnitude - rayHit.distance);
-            if (this.body.SweepTest(new Vector3(1, 0, 0), out rayHit, remainingVector.x))
+            if (this.body.SweepTest(new Vector3(remainingVector.x > 0 ? 1.0f : -1.0f, 0, 0), out rayHit, Mathf.Abs(remainingVector.x)))
             {
                 // don't bother moving, just make the sideways accel (none right now) 0 and handle vertical
+                if (remainingVector.x < 0)
+                    onHitLeft(rayHit.collider);
+                else
+                    onHitRight(rayHit.collider);
             }
             else
             {
                 this.transform.Translate(new Vector3(remainingVector.x, 0, 0));
             }
 
-            if (this.body.SweepTest(new Vector3(0, 1, 0), out rayHit, remainingVector.y))
+            if (this.body.SweepTest(new Vector3(0, remainingVector.y > 0 ? 1.0f : -1.0f, 0), out rayHit, Mathf.Abs(remainingVector.y)))
             {
                 if (deltaUp >= 0)
                 {
@@ -198,12 +195,26 @@ public class Actor : MonoBehaviour {
         }
         else
         {
-            if (this.jumpState == JUMP_STATE.ON_GROUND && this.body.SweepTest(new Vector3(0, -1, 0), out rayHit, 0.1f))
+            if (this.jumpState == JUMP_STATE.ON_GROUND && !this.body.SweepTest(new Vector3(0, -1, 0), out rayHit, 0.1f))
             {
                 this.jumpState = JUMP_STATE.FALLING_DOWN_ACCEL;
                 this.lastVel = 0f;
             }
             this.transform.Translate(movementVector);
         }
+    }
+
+    public virtual void onWalkedOffEdge(string side)
+    {
+    }
+
+    public virtual void onHitLeft(Collider other)
+    {
+
+    }
+
+    public virtual void onHitRight(Collider other)
+    {
+
     }
 }

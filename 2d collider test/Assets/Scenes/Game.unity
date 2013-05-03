@@ -310,7 +310,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 05858175e5847e140939e132c426ac7e, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 3
+      value: 5.27139187
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 05858175e5847e140939e132c426ac7e, type: 2}
       propertyPath: m_LocalPosition.z
@@ -609,17 +609,6 @@ MonoBehaviour:
   terminalFallVel: -25
   walkSpeed: 5
   maxRunSpeed: 10
-  timeToMaxWalkSpeed: 0
-  timeToMaxRunSpeed: 0
-  timeToDecelerateToWalk: 0
-  timeToDecelerateToStop: 0
-  minJumpHeight: 10
-  maxJumpHeight: 60
-  termFallVelHeight: 30
-  maxJumpTime: .5
-  terminalFallVel: -250
-  walkSpeed: 100
-  maxRunSpeed: 150
   timeToMaxWalkSpeed: 0
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
@@ -1168,17 +1157,6 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
-  minJumpHeight: 10
-  maxJumpHeight: 60
-  termFallVelHeight: 30
-  maxJumpTime: .5
-  terminalFallVel: -250
-  walkSpeed: 100
-  maxRunSpeed: 150
-  timeToMaxWalkSpeed: 0
-  timeToMaxRunSpeed: 0
-  timeToDecelerateToWalk: 0
-  timeToDecelerateToStop: 0
 --- !u!114 &1476739368
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1230,7 +1208,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1476739364}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2, y: 2.5, z: 0}
+  m_LocalPosition: {x: 2, y: 2.1957922, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1542,7 +1520,7 @@ Transform:
   m_PrefabInternal: {fileID: 385964833}
   m_GameObject: {fileID: 1845629206}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .5, y: 3, z: 0}
+  m_LocalPosition: {x: .5, y: 5.27139187, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
