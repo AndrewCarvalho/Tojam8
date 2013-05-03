@@ -602,13 +602,13 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 314facc9c6bff3944835b55a9a69df46, type: 3}
   m_Name: 
-  minJumpHeight: 10
-  maxJumpHeight: 60
-  termFallVelHeight: 30
+  minJumpHeight: 1
+  maxJumpHeight: 3
+  termFallVelHeight: 5
   maxJumpTime: .5
-  terminalFallVel: -250
-  walkSpeed: 100
-  maxRunSpeed: 150
+  terminalFallVel: -25
+  walkSpeed: 5
+  maxRunSpeed: 10
   timeToMaxWalkSpeed: 0
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
@@ -1146,13 +1146,13 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 55cda5cdcb709264c8a790850974d6e4, type: 3}
   m_Name: 
-  minJumpHeight: 10
-  maxJumpHeight: 60
-  termFallVelHeight: 30
+  minJumpHeight: 1
+  maxJumpHeight: 3
+  termFallVelHeight: 5
   maxJumpTime: .5
-  terminalFallVel: -250
-  walkSpeed: 100
-  maxRunSpeed: 150
+  terminalFallVel: -25
+  walkSpeed: 5
+  maxRunSpeed: 10
   timeToMaxWalkSpeed: 0
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
