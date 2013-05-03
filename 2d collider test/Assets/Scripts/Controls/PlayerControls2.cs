@@ -270,7 +270,7 @@ public class PlayerControls2 : MonoBehaviour
                 }
                 else
                 {
-                    Debug.Log("There was a hit and I am moving: " + rayHit.distance);
+                    Debug.Log("There was a hit and I am moving: " + rayHit.distance, gameObject);
                     this.jumpState = JUMP_STATE.ON_GROUND;
                 }
             }
@@ -282,6 +282,11 @@ public class PlayerControls2 : MonoBehaviour
         }
         else
         {
+            if (this.jumpState == JUMP_STATE.ON_GROUND && this.body.SweepTest(new Vector3(0, -1, 0), out rayHit, 0.1f))
+            {
+                this.jumpState = JUMP_STATE.FALLING_DOWN_ACCEL;
+                this.lastVel = 0f;
+            }
             this.transform.Translate(movementVector);
         }
     }
