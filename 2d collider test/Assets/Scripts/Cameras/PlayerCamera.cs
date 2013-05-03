@@ -19,11 +19,11 @@ public class PlayerCamera : MonoBehaviour
 	
 	void Update () 
 	{
-        Vector2 diffVector = new Vector2(this.transform.position.x - this.player.transform.position.x, this.transform.position.y - this.player.transform.position.y);
+        Vector2 diffVector = new Vector2(this.player.transform.position.x - this.transform.position.x, this.player.transform.position.y - this.transform.position.y);
         float xDiff = Vector2.Dot(diffVector, this.direction);
-        if (xDiff > 0 && diffVector.x > this.cameraMoveThreshold)
+        if (xDiff > 0 && Mathf.Abs(diffVector.x) > this.cameraMoveThreshold)
         {
-            this.transform.Translate(new Vector3());
+            this.transform.Translate(new Vector3(this.direction.x * xDiff, 0, 0));
         }
 	}
 
