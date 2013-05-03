@@ -158,7 +158,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4, y: 1, z: 0}
+  m_Size: {x: 4, y: 1, z: .200000003}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &106074988
 MonoBehaviour:
@@ -351,6 +351,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 638251965}
   - 20: {fileID: 638251964}
+  - 114: {fileID: 638251961}
   m_Layer: 0
   m_Name: CameraTop
   m_TagString: MainCamera
@@ -358,6 +359,17 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &638251961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 638251960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53970ae33c51d0a46b6962401627325a, type: 3}
+  m_Name: 
+  cameraMoveThreshold: 0
 --- !u!20 &638251964
 Camera:
   m_ObjectHideFlags: 0
@@ -709,6 +721,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1008819457}
   - 20: {fileID: 1008819456}
+  - 114: {fileID: 1008819453}
   m_Layer: 0
   m_Name: CameraBottom
   m_TagString: MainCamera
@@ -716,6 +729,17 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1008819453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1008819452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50023a1fc7641fb44851e571d71be6c7, type: 3}
+  m_Name: 
+  cameraMoveThreshold: 0
 --- !u!20 &1008819456
 Camera:
   m_ObjectHideFlags: 0
