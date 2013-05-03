@@ -4,6 +4,10 @@ using System.Collections;
 public class PlayerControls2 : MonoBehaviour
 {
 
+    protected KeyCode leftButton;
+    protected KeyCode rightButton;
+    protected KeyCode jumpButton;
+
     //public float minJumpClimb = 25f;
     //public float maxJumpClimb = 75f;
 
@@ -59,7 +63,7 @@ public class PlayerControls2 : MonoBehaviour
     private JUMP_STATE jumpState = JUMP_STATE.FALLING_DOWN_ACCEL;
 
     // Use this for initialization
-    void Start()
+    void Awake()
     {
         //this.characterObject = GameObject.Find("Character").gameObject;
         //if (this.characterObject == null)
@@ -77,7 +81,7 @@ public class PlayerControls2 : MonoBehaviour
         //float stepMoveDistance = this.moveDistancePerSecond * Time.deltaTime;
         if (this.jumpState == JUMP_STATE.ON_GROUND)
         {
-            if (Input.GetKeyDown(KeyCode.X))
+            if (Input.GetKeyDown(this.jumpButton))
             {
                 this.jumpState = JUMP_STATE.JUMPING_START;
                 this.jumpTime = 0f;
@@ -85,15 +89,15 @@ public class PlayerControls2 : MonoBehaviour
         }
         else
         {
-            //if (!Input.GetKey(KeyCode.X))
+            //if (!Input.GetKey(this.jumpButton))
             //{
             //    Debug.Log("fhdsjkfhlsda");
             //    this.breakJump = true;
             //}
-            this.breakJump = !Input.GetKey(KeyCode.X);
+            this.breakJump = !Input.GetKey(this.jumpButton);
         }
 
-        if (Input.GetKeyDown(KeyCode.X) && this.jumpState == JUMP_STATE.ON_GROUND)
+        if (Input.GetKeyDown(this.jumpButton) && this.jumpState == JUMP_STATE.ON_GROUND)
         {
             //float initialVelocity = this.maxJumpHeight / this.maxJumpTime + this.jumpAccelUp * Mathf.Pow(this.maxJumpTime, 2) / 2f;
             this.jumpState = JUMP_STATE.JUMPING_START;
@@ -106,14 +110,14 @@ public class PlayerControls2 : MonoBehaviour
                 // duck.  I guess I'll need to see how animating works with mesh colliders
             }
         }
-        if (Input.GetKeyUp(KeyCode.X) && this.jumpState != JUMP_STATE.ON_GROUND && this.jumpState != JUMP_STATE.FALLING_DOWN_ACCEL)
+        if (Input.GetKeyUp(this.jumpButton) && this.jumpState != JUMP_STATE.ON_GROUND && this.jumpState != JUMP_STATE.FALLING_DOWN_ACCEL)
         {
             //this.jumpState = JUMP_STATE.FALLING_DOWN_ACCEL;
             //this.lastVel /= this.jumpSpeedFactorOnJumpRelease;
         }
 
-        bool left = Input.GetKey(KeyCode.LeftArrow);
-        bool right = Input.GetKey(KeyCode.RightArrow);
+        bool left = Input.GetKey(this.leftButton);
+        bool right = Input.GetKey(this.rightButton);
 
         if (left)
         {
