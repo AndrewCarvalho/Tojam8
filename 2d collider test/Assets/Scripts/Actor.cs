@@ -10,19 +10,19 @@ public class Actor : MonoBehaviour {
     [SerializeField]
     private float minJumpHeight;
     [SerializeField]
-    private float maxJumpHeight;
+    private float maxJumpHeight = 0;
     [SerializeField]
-    private float termFallVelHeight;
+    private float termFallVelHeight = 0;
     [SerializeField]
-    private float maxJumpTime;
+    private float maxJumpTime = 0;
     [SerializeField]
-    private float terminalFallVel;
+    private float terminalFallVel = 0;
 
     private float jumpTime;
     private bool breakJump = false;
 
     [SerializeField]
-    private float walkSpeed;
+    private float walkSpeed = 0;
     [SerializeField]
     private float maxRunSpeed;
 
@@ -210,11 +210,9 @@ public class Actor : MonoBehaviour {
 
     public virtual void onHitLeft(Collider other)
     {
-
     }
 
     public virtual void onHitRight(Collider other)
     {
-
     }
 }
