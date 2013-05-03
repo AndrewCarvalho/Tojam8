@@ -6,7 +6,7 @@ public class Goomba : Enemy {
     float direction = -1.0f;
 
 	// Use this for initialization
-	void Start () {
+	new void Start () {
         Run(this.direction);
 
         /*var left = GameObject.Find("LeftCollider");
@@ -17,7 +17,7 @@ public class Goomba : Enemy {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	new void Update () {
         base.Update();
 	}
 

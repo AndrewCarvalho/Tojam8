@@ -10,19 +10,19 @@ public class Actor : MonoBehaviour {
     [SerializeField]
     private float minJumpHeight;
     [SerializeField]
-    private float maxJumpHeight;
+    private float maxJumpHeight = 0;
     [SerializeField]
-    private float termFallVelHeight;
+    private float termFallVelHeight = 0;
     [SerializeField]
-    private float maxJumpTime;
+    private float maxJumpTime = 0;
     [SerializeField]
-    private float terminalFallVel;
+    private float terminalFallVel = 0;
 
     private float jumpTime;
     private bool breakJump = false;
 
     [SerializeField]
-    private float walkSpeed;
+    private float walkSpeed = 0;
     [SerializeField]
     private float maxRunSpeed;
 
@@ -80,6 +80,11 @@ public class Actor : MonoBehaviour {
 
     protected void FixedUpdate()
     {
+        // DEBUG STUFF
+        string objectName = this.name;
+        //Debug.Log();
+
+
         if (this.jumpState != JUMP_STATE.ON_GROUND)
         {
             this.jumpTime += Time.deltaTime;
@@ -102,22 +107,18 @@ public class Actor : MonoBehaviour {
                 break;
             case JUMP_STATE.JUMPING_START:
                 accelUp = -2f * this.maxJumpHeight / this.maxJumpTime / this.maxJumpTime;
-                //Debug.Log("intial up accel " + accelUp.ToString());
                 newVelocity = (this.maxJumpHeight / this.maxJumpTime) - accelUp * this.maxJumpTime / 2f;
-                //Debug.Log("my initial velocity is " + newVelocity.ToString());
                 deltaUp = newVelocity * Time.deltaTime;
                 this.jumpState = JUMP_STATE.JUMPING_UP;
                 break;
             case JUMP_STATE.JUMPING_UP:
                 accelUp = -2f * this.maxJumpHeight / this.maxJumpTime / this.maxJumpTime;
-                //Debug.Log("accel up " + accelUp.ToString());
                 newVelocity = this.lastVel + accelUp * Time.deltaTime;
                 deltaUp = newVelocity * Time.deltaTime;
                 if (newVelocity < 0 || this.breakJump)
                 {
                     this.jumpState = JUMP_STATE.FALLING_DOWN_ACCEL;
                     this.breakJump = false;
-                    //Debug.Log("The jump took climb " + this.jumpTime + " seconds");
                 }
                 break;
             case JUMP_STATE.FALLING_DOWN_ACCEL:
@@ -210,11 +211,9 @@ public class Actor : MonoBehaviour {
 
     public virtual void onHitLeft(Collider other)
     {
-
     }
 
     public virtual void onHitRight(Collider other)
     {
-
     }
 }
