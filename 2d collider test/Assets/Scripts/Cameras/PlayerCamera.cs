@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PlayerCamera : MonoBehaviour 
 {
-    private Camera camera;
+    new private Camera camera;
     protected GameObject player;
     protected Vector2 direction;
 

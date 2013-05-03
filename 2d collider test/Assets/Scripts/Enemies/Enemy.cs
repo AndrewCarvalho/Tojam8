@@ -4,12 +4,12 @@ using System.Collections;
 public class Enemy : Actor {
 
 	// Use this for initialization
-	new protected void Start () {
+	protected void Start () {
         //base.Start();
 	}
 	
 	// Update is called once per frame
-	new protected void Update () {
+	protected void Update () {
         //base.Update();
 	}
 }
