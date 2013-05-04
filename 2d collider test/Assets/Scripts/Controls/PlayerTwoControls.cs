@@ -31,4 +31,19 @@ public class PlayerTwoControls : PlayerControls2
     {
         return Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.Joystick3Button0);
     }
+
+    protected override bool ActionButtonDown()
+    {
+        return Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Joystick3Button1);
+    }
+
+    protected override Vector3 BlockThrowDirection()
+    {
+        return new Vector3(0.0f, 1.0f, 0.0f);
+    }
+
+    protected override Camera CameraFollowingMe()
+    {
+        return FindObjectOfType(typeof(PlayerTwoCamera)) as Camera;
+    }
 }

@@ -31,4 +31,19 @@ public class PlayerOneControls : PlayerControls2
     {
         return Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.Joystick1Button0);
     }
+
+    protected override bool ActionButtonDown()
+    {
+        return Input.GetKeyDown(KeyCode.Keypad0) || Input.GetKeyDown(KeyCode.Joystick1Button1);
+    }
+
+    protected override Vector3 BlockThrowDirection()
+    {
+        return new Vector3(0.0f, -1.0f, 0.0f);
+    }
+
+    protected override Camera CameraFollowingMe()
+    {
+        return FindObjectOfType(typeof(PlayerOneCamera)) as Camera;
+    }
 }

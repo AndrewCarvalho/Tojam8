@@ -3,6 +3,11 @@ using System.Collections;
 
 public abstract class PlayerControls2 : Actor
 {
+    [SerializeField]
+    float actionableDistance = 5.0f;
+
+    protected float facingDirection = 1.0f;
+
     // Use this for initialization
     new protected void Awake()
     {
@@ -15,6 +20,9 @@ public abstract class PlayerControls2 : Actor
     protected abstract bool JumpButtonDown();
     protected abstract bool JumpButtonUp();
     protected abstract bool JumpButton();
+    protected abstract bool ActionButtonDown();
+    protected abstract Vector3 BlockThrowDirection();
+    protected abstract Camera CameraFollowingMe();
 
     // Update is called once per frame
     void Update()
@@ -42,7 +50,8 @@ public abstract class PlayerControls2 : Actor
 
         if (left)
         {
-            Run(-1.0f);
+            facingDirection = -1.0f;
+            Run(facingDirection);
         }
         if (right)
         {
@@ -52,12 +61,27 @@ public abstract class PlayerControls2 : Actor
             }
             else
             {
-                base.Run(1.0f);
+                facingDirection = 1.0f;
+                base.Run(facingDirection);
             }
         }
         if (!left && !right)
         {
             base.Run(0.0f);
+        }
+
+        if (ActionButtonDown())
+        {
+            RaycastHit[] hits = castForward(new Vector3(facingDirection, 0.0f, 0.0f), actionableDistance);
+            foreach(RaycastHit hit in hits)
+            {
+                ThrowBlock block = hit.collider.GetComponent<ThrowBlock>();
+                if (block)
+                {
+                    block.Throw(BlockThrowDirection(), CameraFollowingMe());
+                    break;
+                }
+            }
         }
     }
 }
