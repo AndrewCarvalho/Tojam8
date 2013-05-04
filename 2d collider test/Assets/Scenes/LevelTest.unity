@@ -20382,6 +20382,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1104825300}
   - 114: {fileID: 1104825301}
+  - 114: {fileID: 1104825302}
   m_Layer: 0
   m_Name: Cameras
   m_TagString: Untagged
@@ -20413,6 +20414,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fc0c6c15ec1d014b892de8393e0ddfa, type: 3}
   m_Name: 
   distanceForAlertMode: 0
+--- !u!114 &1104825302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1104825299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a924d55010c617f428e904cbd2276fe2, type: 3}
+  m_Name: 
+  knightHeadTexture: {fileID: 2800000, guid: b50449b464a6bb845aadca8f21f069ab, type: 3}
+  princessHeadTexture: {fileID: 2800000, guid: fd5c2e0f954b8e448a88d1d236b90616, type: 3}
+  progressBarEnd: {fileID: 2800000, guid: 7d03d8a9eaf113f48986ca3710209933, type: 3}
+  progressBarKnight: {fileID: 2800000, guid: 186a26c45e356c74fb33ce47b12918f1, type: 3}
+  progressBarMiddle: {fileID: 2800000, guid: 8730e13de1f061c448121e330b77be79, type: 3}
+  progressBarPrincess: {fileID: 2800000, guid: 0d8a57990ac47364ca29cb646d671b1e, type: 3}
 --- !u!1001 &1108813542
 Prefab:
   m_ObjectHideFlags: 0

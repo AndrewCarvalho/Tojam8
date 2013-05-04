@@ -51,7 +51,7 @@ public class CameraController : MonoBehaviour
                 // either make a new camera or hijack the one that is calling clear.... latter is easier
                 // camera bottom is the one clearing
                 ProgressBar progBar = GameObject.Find("Cameras").GetComponent<ProgressBar>();
-                progBar.enabled = false;
+                progBar.ChangeToSingleScreenPosition();
 
                 float playerDistanceX = this.playerOne.transform.position.x + (this.playerTwo.transform.position.x - this.playerOne.transform.position.x) / 2f;
                 this.cameraOne.gameObject.SetActive(false);

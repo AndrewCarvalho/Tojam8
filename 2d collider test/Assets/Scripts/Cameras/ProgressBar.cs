@@ -11,6 +11,7 @@ public class ProgressBar : MonoBehaviour
     public Texture2D princessHeadTexture;
     private float knightStartX;
     private float princessStartX;
+    private float verticalOffset = 0f;
     public Texture2D progressBarEnd;
     public Texture2D progressBarKnight;
     public Texture2D progressBarMiddle;
@@ -50,41 +51,39 @@ public class ProgressBar : MonoBehaviour
         if (princessDistance < 0) { princessDistance = 0; }
         float princessHeadDist = Screen.width * princessDistance / this.levelWidth;
 
-        //GUI.DrawTexture(
-        //    );
         GUI.DrawTexture(
             new Rect(
                 0,
-                (Screen.height - this.progressBarEnd.height * 2.0f) / 2.0f,
-                this.progressBarEnd.width * 2.0f,
-                this.progressBarEnd.height * 2.0f),
+                (Screen.height - this.progressBarEnd.height * Utils.VIC2PIX) / 2.0f + this.verticalOffset,
+                this.progressBarEnd.width * Utils.VIC2PIX,
+                this.progressBarEnd.height * Utils.VIC2PIX),
             this.progressBarEnd);
 
         GUI.DrawTexture(
             new Rect(
-                Screen.width - this.progressBarEnd.width * 2.0f,
-                (Screen.height - this.progressBarEnd.height * 2.0f) / 2.0f,
-                this.progressBarEnd.width * 2.0f,
-                this.progressBarEnd.height * 2.0f),
+                Screen.width - this.progressBarEnd.width * Utils.VIC2PIX,
+                (Screen.height - this.progressBarEnd.height * Utils.VIC2PIX) / 2.0f + this.verticalOffset,
+                this.progressBarEnd.width * Utils.VIC2PIX,
+                this.progressBarEnd.height * Utils.VIC2PIX),
             this.progressBarEnd);
 
         GUI.DrawTexture(
             new Rect(
-                this.progressBarEnd.width * 2.0f,
-                (Screen.height - this.progressBarEnd.height * 2.0f) / 2.0f,
+                this.progressBarEnd.width * Utils.VIC2PIX,
+                (Screen.height - this.progressBarEnd.height * Utils.VIC2PIX) / 2.0f + this.verticalOffset,
                 this.knightHeadTexture.width + knightHeadDist,
-                this.progressBarKnight.height * 2.0f),
+                this.progressBarKnight.height * Utils.VIC2PIX),
             this.progressBarKnight);
 
-        float middleBarStart = this.progressBarEnd.width * 2.0f + this.knightHeadTexture.width + knightHeadDist;
-        float middleBarWidth = Screen.width - knightHeadDist - princessHeadDist - this.progressBarEnd.width * 2.0f - this.princessHeadTexture.width * 2.0f;
+        float middleBarStart = this.progressBarEnd.width * Utils.VIC2PIX + this.knightHeadTexture.width + knightHeadDist;
+        float middleBarWidth = Screen.width - knightHeadDist - princessHeadDist - this.progressBarEnd.width * Utils.VIC2PIX - this.princessHeadTexture.width * Utils.VIC2PIX;
 
         GUI.DrawTexture(
             new Rect(
                 middleBarStart,
-                (Screen.height - this.progressBarEnd.height * 2.0f) / 2.0f,
+                (Screen.height - this.progressBarEnd.height * Utils.VIC2PIX) / 2.0f + this.verticalOffset,
                 middleBarWidth,
-                this.progressBarMiddle.height * 2.0f),
+                this.progressBarMiddle.height * Utils.VIC2PIX),
             this.progressBarMiddle);
 
         float princessBarStart = middleBarStart + middleBarWidth;
@@ -92,25 +91,43 @@ public class ProgressBar : MonoBehaviour
         GUI.DrawTexture(
             new Rect(
                 princessBarStart,
-                (Screen.height - this.progressBarEnd.height * 2.0f) / 2.0f,
+                (Screen.height - this.progressBarEnd.height * Utils.VIC2PIX) / 2.0f + this.verticalOffset,
                 princessHeadDist + this.princessHeadTexture.width,
-                this.progressBarMiddle.height * 2.0f),
+                this.progressBarMiddle.height * Utils.VIC2PIX),
             this.progressBarPrincess);
 
         GUI.DrawTexture(
             new Rect(
-                knightHeadDist, 
-                (Screen.height - this.knightHeadTexture.height * 2.0f) / 2.0f, 
-                this.knightHeadTexture.width * 2.0f, 
-                this.knightHeadTexture.height * 2.0f), 
+                Screen.width - this.progressBarEnd.width * Utils.VIC2PIX,
+                (Screen.height - this.progressBarEnd.height * Utils.VIC2PIX) / 2.0f + this.verticalOffset,
+                this.progressBarEnd.width * Utils.VIC2PIX,
+                this.progressBarMiddle.height * Utils.VIC2PIX),
+            this.progressBarEnd);
+
+        GUI.DrawTexture(
+            new Rect(
+                knightHeadDist,
+                (Screen.height - this.knightHeadTexture.height * Utils.VIC2PIX) / 2.0f + this.verticalOffset,
+                this.knightHeadTexture.width * Utils.VIC2PIX,
+                this.knightHeadTexture.height * Utils.VIC2PIX), 
             this.knightHeadTexture);
 
         GUI.DrawTexture(
             new Rect(
-                Screen.width - this.princessHeadTexture.width * 2.0f - princessHeadDist,
-                (Screen.height - this.princessHeadTexture.height * 2.0f) / 2.0f,
-                this.princessHeadTexture.width * 2.0f,
-                this.princessHeadTexture.height * 2.0f),
+                Screen.width - this.princessHeadTexture.width * Utils.VIC2PIX - princessHeadDist,
+                (Screen.height - this.princessHeadTexture.height * Utils.VIC2PIX) / 2.0f + this.verticalOffset,
+                this.princessHeadTexture.width * Utils.VIC2PIX,
+                this.princessHeadTexture.height * Utils.VIC2PIX),
             this.princessHeadTexture);
+    }
+
+    public void ChangeToSingleScreenPosition()
+    {
+        this.verticalOffset = (float)Screen.height / 4.0f;
+    }
+
+    public void ChangeToSplitScreenPosition()
+    {
+        this.verticalOffset = 0f;
     }
 }
