@@ -203,7 +203,7 @@ Prefab:
       value: 
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
   m_RootGameObject: {fileID: 2008311637}
   m_IsPrefabParent: 0
@@ -2769,6 +2769,7 @@ GameObject:
   - 33: {fileID: 2008311642}
   - 23: {fileID: 2008311641}
   - 114: {fileID: 2008311640}
+  - 65: {fileID: 2008311643}
   - 65: {fileID: 2008311639}
   m_Layer: 0
   m_Name: BlockThrow
@@ -2816,7 +2817,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 4
   pixelPerfect: 0
-  boxCollider: {fileID: 2008311639}
+  boxCollider: {fileID: 2008311643}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -2847,6 +2848,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 64723186}
   m_GameObject: {fileID: 2008311637}
   m_Mesh: {fileID: 0}
+--- !u!65 &2008311643
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372,
+    type: 2}
+  m_PrefabInternal: {fileID: 64723186}
+  m_GameObject: {fileID: 2008311637}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: .200000003}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2060368540
 GameObject:
   m_ObjectHideFlags: 0
