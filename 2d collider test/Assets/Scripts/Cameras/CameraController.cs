@@ -11,7 +11,7 @@ public class CameraController : MonoBehaviour
     private GameObject playerOne;
     private GameObject playerTwo;
 
-    public float distanceForAlertMode;
+    public float distanceForAlertMode = 50;
 
     private CAMERACONTROL_STATE state;
 
@@ -50,6 +50,9 @@ public class CameraController : MonoBehaviour
             case CAMERACONTROL_STATE.TRANSITION_TO_SINGLESCREEN:
                 // either make a new camera or hijack the one that is calling clear.... latter is easier
                 // camera bottom is the one clearing
+                ProgressBar progBar = GameObject.Find("Cameras").GetComponent<ProgressBar>();
+                progBar.enabled = false;
+
                 float playerDistanceX = this.playerOne.transform.position.x + (this.playerTwo.transform.position.x - this.playerOne.transform.position.x) / 2f;
                 this.cameraOne.gameObject.SetActive(false);
                 this.cameraTwo.transform.position = new Vector3(playerDistanceX, this.cameraTwo.transform.position.y - 4.5f, -10);
@@ -59,6 +62,5 @@ public class CameraController : MonoBehaviour
             case CAMERACONTROL_STATE.SINGLESCREEN:
                 break;
         }
-        
 	}
 }
