@@ -55,6 +55,7 @@ public class Actor : MonoBehaviour {
     {
         this.jumpState = JUMP_STATE.JUMPING_START;
         this.jumpTime = 0f;
+        this.breakJump = false;
     }
 
     protected void BreakJump()
