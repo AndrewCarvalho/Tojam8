@@ -84,7 +84,6 @@ public class Actor : MonoBehaviour {
         string objectName = this.name;
         //Debug.Log();
 
-
         if (this.jumpState != JUMP_STATE.ON_GROUND)
         {
             this.jumpTime += Time.deltaTime;
@@ -163,20 +162,35 @@ public class Actor : MonoBehaviour {
 
             // need to sweep the remainder of vertcal and horizonal movement
             Vector3 remainingVector = movementVectorNormalized * (movementVectorMagnitude - rayHit.distance);
-            if (this.body.SweepTest(new Vector3(remainingVector.x > 0 ? 1.0f : -1.0f, 0, 0), out rayHit, Mathf.Abs(remainingVector.x)))
+            //if (this.body.SweepTest(new Vector3(remainingVector.x > 0 ? 1.0f : -1.0f, 0, 0), out rayHit, Mathf.Abs(remainingVector.x)))
+            if (this.body.SweepTest(new Vector3(1, 0, 0), out rayHit, deltaSide))
             {
                 // don't bother moving, just make the sideways accel (none right now) 0 and handle vertical
-                if (remainingVector.x < 0)
+                //if (remainingVector.x < 0)
+                if (deltaSide < 0)
                     onHitLeft(rayHit.collider);
                 else
                     onHitRight(rayHit.collider);
             }
             else
             {
-                this.transform.Translate(new Vector3(remainingVector.x, 0, 0));
+                //this.transform.Translate(new Vector3(remainingVector.x, 0, 0));
+                this.transform.Translate(new Vector3(deltaSide, 0, 0));
+
+                // yes no maybe?
+                Object[] colliders = FindObjectsOfType(typeof(Collider));
+                foreach (Object colliderObject in colliders)
+                {
+                    Collider collider = colliderObject as Collider;
+                    if (collider != this.collider && this.collider.bounds.Intersects(collider.bounds))
+                    {
+                        this.transform.Translate(new Vector3(-remainingVector.x, 0, 0));
+                    }
+                }
             }
 
-            if (this.body.SweepTest(new Vector3(0, remainingVector.y > 0 ? 1.0f : -1.0f, 0), out rayHit, Mathf.Abs(remainingVector.y)))
+            //if (this.body.SweepTest(new Vector3(0, remainingVector.y > 0 ? 1.0f : -1.0f, 0), out rayHit, Mathf.Abs(remainingVector.y)))
+            if (this.body.SweepTest(new Vector3(0, 1, 0), out rayHit, deltaUp))
             {
                 if (deltaUp >= 0)
                 {
@@ -190,8 +204,26 @@ public class Actor : MonoBehaviour {
             }
             else
             {
-                this.transform.Translate(new Vector3(0, remainingVector.y, 0));
-                this.cumulativeCurrentJumpHeight += remainingVector.y;
+                //this.transform.Translate(new Vector3(0, remainingVector.y, 0));
+                this.transform.Translate(new Vector3(0, deltaUp, 0));
+                //this.cumulativeCurrentJumpHeight += remainingVector.y;
+                this.cumulativeCurrentJumpHeight += deltaUp;
+
+
+                // yes no maybe?
+                Object[] colliders = FindObjectsOfType(typeof(Collider));
+                foreach (Object colliderObject in colliders)
+                {
+                    Collider collider = colliderObject as Collider;
+                    if (collider != this.collider && this.collider.bounds.Intersects(collider.bounds))
+                    {
+                        this.transform.Translate(new Vector3(0, -remainingVector.y, 0));
+                        this.cumulativeCurrentJumpHeight -= remainingVector.y;
+                    }
+                }
+
+
+
             }
         }
         else
@@ -202,6 +234,24 @@ public class Actor : MonoBehaviour {
                 this.lastVel = 0f;
             }
             this.transform.Translate(movementVector);
+
+
+            Debug.Log("x is: " + movementVector.x + " y is: " + movementVector.y);
+
+
+
+            // yes no maybe?
+            Object[] colliders = FindObjectsOfType(typeof(Collider));
+            foreach (Object colliderObject in colliders)
+            {
+                Collider collider = colliderObject as Collider;
+                if (collider != this.collider && this.collider.bounds.Intersects(collider.bounds))
+                {
+                    this.transform.Translate(-movementVector);
+                }
+            }
+
+
         }
     }
 
