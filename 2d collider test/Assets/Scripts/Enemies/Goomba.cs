@@ -8,12 +8,6 @@ public class Goomba : Enemy {
 	// Use this for initialization
 	new void Start () {
         Run(this.direction);
-
-        /*var left = GameObject.Find("LeftCollider");
-        left.GetComponent(BoxCollider).DoSomething();
-
-        var right = GameObject.Find("RightCollider");
-        right.GetComponent(BoxCollider).DoSomething();*/
 	}
 	
 	// Update is called once per frame
