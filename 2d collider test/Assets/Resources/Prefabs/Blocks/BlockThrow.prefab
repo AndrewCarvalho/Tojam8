@@ -42,7 +42,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: eae71b8c1eef76a4eb6a8696a12fe383, type: 2}
+  - {fileID: 2100000, guid: 407a59009d0112142b975810d8ed6885, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -66,7 +66,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: .200000003}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: -.5, y: .5, z: 0}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -77,10 +77,10 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3fac570381f34f647b768dc5a5aa1364, type: 3}
   m_Name: 
-  collection: {fileID: 11400000, guid: 08177ab29bff9894484539aa3c234579, type: 2}
+  collection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757, type: 2}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
-  _spriteId: 4
+  _spriteId: 8
   pixelPerfect: 0
   boxCollider: {fileID: 6500000}
   meshCollider: {fileID: 0}
