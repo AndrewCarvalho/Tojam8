@@ -8,15 +8,15 @@ public class Actor : MonoBehaviour {
 
     // new jump tweakable variables
     [SerializeField]
-    private float minJumpHeight;
+    private float minJumpHeight = 1.0f;
     [SerializeField]
-    private float maxJumpHeight = 0;
+    private float maxJumpHeight = 3;
     [SerializeField]
-    private float termFallVelHeight = 0;
+    private float termFallVelHeight = 5;
     [SerializeField]
-    private float maxJumpTime = 0;
+    private float maxJumpTime = 0.5f;
     [SerializeField]
-    private float terminalFallVel = 0;
+    private float terminalFallVel = -25;
 
     private float jumpTime;
     private bool breakJump = false;
@@ -31,7 +31,7 @@ public class Actor : MonoBehaviour {
     public float timeToDecelerateToWalk;
     public float timeToDecelerateToStop;
 
-    protected enum JUMP_STATE { ON_GROUND, JUMPING_START, JUMPING_UP, FALLING_DOWN_ACCEL, FALLING_DOWN_TERMINAL };
+    protected enum JUMP_STATE { ON_GROUND, JUMPING_START, JUMPING_UP, FALLING_DOWN_ACCEL, FALLING_DOWN_TERMINAL, DISABLED };
     // stationary - not moving
     // accel walk - could be speed up from stopped or slowing down from running
     // max walk - not running, moving at max walk speed
@@ -63,6 +63,19 @@ public class Actor : MonoBehaviour {
         this.breakJump = true;
     }
 
+    protected void DisableActor()
+    {
+        this.jumpState = JUMP_STATE.DISABLED;
+    }
+
+    protected RaycastHit[] castForward(Vector3 direction, float distance = Mathf.Infinity, int mask = Physics.kDefaultRaycastLayers)
+    {
+        BoxCollider box = GetComponent<BoxCollider>();
+        Vector3 origin = transform.position;
+        origin.y -= box.size.y / 4.0f;
+        return Physics.RaycastAll(origin, direction, distance, mask);
+    }
+
     protected void Run(float right)
     {
         if (right == 0.0f)
@@ -84,6 +97,9 @@ public class Actor : MonoBehaviour {
         // DEBUG STUFF
         string objectName = this.name;
         //Debug.Log();
+
+        if (jumpState == JUMP_STATE.DISABLED)
+            return;
 
         if (this.jumpState != JUMP_STATE.ON_GROUND)
         {
