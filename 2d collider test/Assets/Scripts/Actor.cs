@@ -161,24 +161,32 @@ public class Actor : MonoBehaviour {
             // move as far as we can along this vector and then figure out which direction we're blocked in
             this.transform.Translate(movementVectorNormalized * (rayHit.distance - Utils.MOVE_PADDING));
 
-            Debug.Log("1");
-
             // need to sweep the remainder of vertcal and horizonal movement
             Vector3 remainingVector = movementVectorNormalized * (movementVectorMagnitude - rayHit.distance);
             //if (this.body.SweepTest(new Vector3(remainingVector.x > 0 ? 1.0f : -1.0f, 0, 0), out rayHit, Mathf.Abs(remainingVector.x)))
             if (this.body.SweepTest(new Vector3(1, 0, 0), out rayHit, deltaSide))
             {
-                Debug.Log("2");
-                // don't bother moving, just make the sideways accel (none right now) 0 and handle vertical
+                //this.transform.Translate(new Vector3(rayHit.distance - Utils.MOVE_PADDING * deltaSide > 0 ? 1 : -1, 0, 0));
+                float partialMoveXDist = rayHit.distance - Utils.MOVE_PADDING * Mathf.Sign(rayHit.distance);
+                this.transform.Translate(new Vector3(partialMoveXDist, 0, 0));
                 //if (remainingVector.x < 0)
                 if (deltaSide < 0)
                     onHitLeft(rayHit.collider);
                 else
                     onHitRight(rayHit.collider);
+
+                Object[] colliders = FindObjectsOfType(typeof(Collider));
+                foreach (Object colliderObject in colliders)
+                {
+                    Collider collider = colliderObject as Collider;
+                    if (collider != this.collider && !collider.isTrigger && this.collider.bounds.Intersects(collider.bounds))
+                    {
+                        this.transform.Translate(new Vector3(-partialMoveXDist, 0, 0));
+                    }
+                }
             }
             else
             {
-                Debug.Log("3");
                 //this.transform.Translate(new Vector3(remainingVector.x, 0, 0));
                 this.transform.Translate(new Vector3(deltaSide, 0, 0));
 
@@ -189,7 +197,8 @@ public class Actor : MonoBehaviour {
                     Collider collider = colliderObject as Collider;
                     if (collider != this.collider && !collider.isTrigger && this.collider.bounds.Intersects(collider.bounds))
                     {
-                        this.transform.Translate(new Vector3(-remainingVector.x, 0, 0));
+                        //this.transform.Translate(new Vector3(-remainingVector.x, 0, 0));
+                        this.transform.Translate(new Vector3(-deltaSide, 0, 0));
                     }
                 }
             }
@@ -197,6 +206,8 @@ public class Actor : MonoBehaviour {
             //if (this.body.SweepTest(new Vector3(0, remainingVector.y > 0 ? 1.0f : -1.0f, 0), out rayHit, Mathf.Abs(remainingVector.y)))
             if (this.body.SweepTest(new Vector3(0, 1, 0), out rayHit, deltaUp))
             {
+                float partialMoveYDist = rayHit.distance - Utils.MOVE_PADDING * Mathf.Sign(rayHit.distance);
+                this.transform.Translate(new Vector3(0, partialMoveYDist, 0));
                 if (deltaUp >= 0)
                 {
                     this.jumpState = JUMP_STATE.FALLING_DOWN_ACCEL;
@@ -206,6 +217,18 @@ public class Actor : MonoBehaviour {
                 {
                     this.jumpState = JUMP_STATE.ON_GROUND;
                 }
+
+                // yes no maybe?
+                Object[] colliders = FindObjectsOfType(typeof(Collider));
+                foreach (Object colliderObject in colliders)
+                {
+                    Collider collider = colliderObject as Collider;
+                    if (collider != this.collider && !collider.isTrigger && this.collider.bounds.Intersects(collider.bounds))
+                    {
+                        this.transform.Translate(new Vector3(0, -partialMoveYDist, 0));
+                        this.cumulativeCurrentJumpHeight -= partialMoveYDist;
+                    }
+                }
             }
             else
             {
@@ -213,7 +236,6 @@ public class Actor : MonoBehaviour {
                 this.transform.Translate(new Vector3(0, deltaUp, 0));
                 //this.cumulativeCurrentJumpHeight += remainingVector.y;
                 this.cumulativeCurrentJumpHeight += deltaUp;
-
 
                 // yes no maybe?
                 Object[] colliders = FindObjectsOfType(typeof(Collider));
@@ -226,9 +248,6 @@ public class Actor : MonoBehaviour {
                         this.cumulativeCurrentJumpHeight -= remainingVector.y;
                     }
                 }
-
-
-
             }
         }
         else
@@ -239,11 +258,6 @@ public class Actor : MonoBehaviour {
                 this.lastVel = 0f;
             }
             this.transform.Translate(movementVector);
-
-
-            Debug.Log("x is: " + movementVector.x + " y is: " + movementVector.y);
-
-
 
             // yes no maybe?
             Object[] colliders = FindObjectsOfType(typeof(Collider));

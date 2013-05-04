@@ -1,0 +1,29 @@
+vic pix
+416 x 312
+
+tiles
+26 x 19.5
+
+camera is
+tiles
+26 x 9.75
+
+so ortho size is 
+4.875
+
+
+
+
+
+
+new shit1
+vic pix
+384x288
+
+tiles
+24 x 18
+
+
+0.5416667
+
+0.5416667
