@@ -28,7 +28,7 @@ public abstract class PlayerControls2 : Actor
         }
         else
         {
-            if (JumpButton())
+            if (JumpButtonUp())
                 BreakJump();
         }
 
