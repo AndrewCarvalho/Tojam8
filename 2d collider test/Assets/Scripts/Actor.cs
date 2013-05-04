@@ -182,7 +182,7 @@ public class Actor : MonoBehaviour {
                 foreach (Object colliderObject in colliders)
                 {
                     Collider collider = colliderObject as Collider;
-                    if (collider != this.collider && this.collider.bounds.Intersects(collider.bounds))
+                    if (collider != this.collider && !collider.isTrigger && this.collider.bounds.Intersects(collider.bounds))
                     {
                         this.transform.Translate(new Vector3(-remainingVector.x, 0, 0));
                     }
@@ -215,7 +215,7 @@ public class Actor : MonoBehaviour {
                 foreach (Object colliderObject in colliders)
                 {
                     Collider collider = colliderObject as Collider;
-                    if (collider != this.collider && this.collider.bounds.Intersects(collider.bounds))
+                    if (collider != this.collider && !collider.isTrigger && this.collider.bounds.Intersects(collider.bounds))
                     {
                         this.transform.Translate(new Vector3(0, -remainingVector.y, 0));
                         this.cumulativeCurrentJumpHeight -= remainingVector.y;
@@ -245,7 +245,7 @@ public class Actor : MonoBehaviour {
             foreach (Object colliderObject in colliders)
             {
                 Collider collider = colliderObject as Collider;
-                if (collider != this.collider && this.collider.bounds.Intersects(collider.bounds))
+                if (collider != this.collider && !collider.isTrigger && this.collider.bounds.Intersects(collider.bounds))
                 {
                     this.transform.Translate(-movementVector);
                 }
