@@ -72,8 +72,10 @@ MonoBehaviour:
     regionH: 0
     flipped: 1
     complexGeometry: 0
-    colliderType: 0
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: -.5, y: .5, z: 0}
+    - {x: .5, y: .5, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
@@ -222,8 +224,10 @@ MonoBehaviour:
     regionH: 0
     flipped: 1
     complexGeometry: 0
-    colliderType: 0
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: -.5, y: .5, z: 0}
+    - {x: .5, y: .5, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
@@ -261,8 +265,8 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -.59375, y: .53125, z: 0}
-    - {x: .59375, y: .53125, z: .100000001}
+    - {x: -.5, y: .5, z: 0}
+    - {x: .5, y: .5, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
@@ -300,8 +304,8 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -.59375, y: .53125, z: 0}
-    - {x: .59375, y: .53125, z: .100000001}
+    - {x: -.5, y: .5, z: 0}
+    - {x: .5, y: .5, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
@@ -339,8 +343,8 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -.59375, y: .5625, z: 0}
-    - {x: .59375, y: .5625, z: .100000001}
+    - {x: -.5, y: .5, z: 0}
+    - {x: .5, y: .5, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
@@ -454,8 +458,8 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -.59375, y: .5, z: 0}
-    - {x: .59375, y: .5, z: .100000001}
+    - {x: -.5, y: .5, z: 0}
+    - {x: .5, y: .5, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
@@ -493,8 +497,8 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -.59375, y: .53125, z: 0}
-    - {x: .59375, y: .53125, z: .100000001}
+    - {x: -.5, y: .5, z: 0}
+    - {x: .5, y: .5, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
@@ -532,8 +536,8 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -.59375, y: .5, z: 0}
-    - {x: .59375, y: .5, z: .100000001}
+    - {x: -.5, y: .5, z: 0}
+    - {x: .5, y: .5, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
@@ -608,8 +612,8 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -.59375, y: .5, z: 0}
-    - {x: .59375, y: .5, z: .100000001}
+    - {x: -.5, y: .5, z: 0}
+    - {x: .5, y: .5, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
@@ -647,8 +651,8 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -.59375, y: .5625, z: 0}
-    - {x: .59375, y: .5625, z: .100000001}
+    - {x: -.5, y: .5, z: 0}
+    - {x: .5, y: .5, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
@@ -686,8 +690,8 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -.59375, y: .5625, z: 0}
-    - {x: .59375, y: .5625, z: .100000001}
+    - {x: -.5, y: .5, z: 0}
+    - {x: .5, y: .5, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
@@ -742,7 +746,7 @@ MonoBehaviour:
   loadable: 0
   invOrthoSize: .111111112
   halfTargetHeight: 144
-  buildKey: 1866124449
+  buildKey: 189230292
   dataGuid: 06c9c51c7d312e84eb48d3e992356757
   managedSpriteCollection: 0
   hasPlatformData: 0
