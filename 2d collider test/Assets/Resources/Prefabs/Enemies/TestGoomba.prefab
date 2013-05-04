@@ -49,7 +49,7 @@ GameObject:
   - 54: {fileID: 5400000}
   - 65: {fileID: 6500004}
   m_Layer: 0
-  m_Name: TestGoomba 1
+  m_Name: TestGoomba
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

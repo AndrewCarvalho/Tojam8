@@ -134,6 +134,7 @@ public class Actor : MonoBehaviour {
                 deltaUp = this.terminalFallVel * Time.deltaTime;
                 break;
         }
+        
 
         this.lastVel = newVelocity;
 
@@ -161,14 +162,14 @@ public class Actor : MonoBehaviour {
             // move as far as we can along this vector and then figure out which direction we're blocked in
             this.transform.Translate(movementVectorNormalized * (rayHit.distance - Utils.MOVE_PADDING));
 
-            Debug.Log("1");
+            //Debug.Log("1");
 
             // need to sweep the remainder of vertcal and horizonal movement
             Vector3 remainingVector = movementVectorNormalized * (movementVectorMagnitude - rayHit.distance);
             //if (this.body.SweepTest(new Vector3(remainingVector.x > 0 ? 1.0f : -1.0f, 0, 0), out rayHit, Mathf.Abs(remainingVector.x)))
             if (this.body.SweepTest(new Vector3(1, 0, 0), out rayHit, deltaSide))
             {
-                Debug.Log("2");
+                //Debug.Log("2");
                 // don't bother moving, just make the sideways accel (none right now) 0 and handle vertical
                 //if (remainingVector.x < 0)
                 if (deltaSide < 0)
@@ -178,7 +179,7 @@ public class Actor : MonoBehaviour {
             }
             else
             {
-                Debug.Log("3");
+                //Debug.Log("3");
                 //this.transform.Translate(new Vector3(remainingVector.x, 0, 0));
                 this.transform.Translate(new Vector3(deltaSide, 0, 0));
 
@@ -240,10 +241,7 @@ public class Actor : MonoBehaviour {
             }
             this.transform.Translate(movementVector);
 
-
-            Debug.Log("x is: " + movementVector.x + " y is: " + movementVector.y);
-
-
+            //Debug.Log("x is: " + movementVector.x + " y is: " + movementVector.y);
 
             // yes no maybe?
             Object[] colliders = FindObjectsOfType(typeof(Collider));
