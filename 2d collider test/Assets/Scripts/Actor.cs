@@ -80,6 +80,11 @@ public class Actor : MonoBehaviour {
 
     protected void FixedUpdate()
     {
+        // DEBUG STUFF
+        string objectName = this.name;
+        //Debug.Log();
+
+
         if (this.jumpState != JUMP_STATE.ON_GROUND)
         {
             this.jumpTime += Time.deltaTime;
@@ -102,22 +107,18 @@ public class Actor : MonoBehaviour {
                 break;
             case JUMP_STATE.JUMPING_START:
                 accelUp = -2f * this.maxJumpHeight / this.maxJumpTime / this.maxJumpTime;
-                //Debug.Log("intial up accel " + accelUp.ToString());
                 newVelocity = (this.maxJumpHeight / this.maxJumpTime) - accelUp * this.maxJumpTime / 2f;
-                //Debug.Log("my initial velocity is " + newVelocity.ToString());
                 deltaUp = newVelocity * Time.deltaTime;
                 this.jumpState = JUMP_STATE.JUMPING_UP;
                 break;
             case JUMP_STATE.JUMPING_UP:
                 accelUp = -2f * this.maxJumpHeight / this.maxJumpTime / this.maxJumpTime;
-                //Debug.Log("accel up " + accelUp.ToString());
                 newVelocity = this.lastVel + accelUp * Time.deltaTime;
                 deltaUp = newVelocity * Time.deltaTime;
                 if (newVelocity < 0 || this.breakJump)
                 {
                     this.jumpState = JUMP_STATE.FALLING_DOWN_ACCEL;
                     this.breakJump = false;
-                    //Debug.Log("The jump took climb " + this.jumpTime + " seconds");
                 }
                 break;
             case JUMP_STATE.FALLING_DOWN_ACCEL:
