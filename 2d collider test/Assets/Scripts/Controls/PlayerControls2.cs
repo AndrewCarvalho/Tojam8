@@ -135,7 +135,7 @@ public abstract class PlayerControls2 : Actor
             Run(0.0f, DownPressed(), !dodging);
         }
 
-        if (ActionButtonDown())
+        if (Application.loadedLevelName != "WinScene" && ActionButtonDown())
         {
             string animationName = actionAnimationName;
             bool hitBlock = false;
@@ -173,7 +173,8 @@ public abstract class PlayerControls2 : Actor
                         PlayerControls2 otherPlayer = hit.collider.GetComponent<PlayerControls2>();
                         if (otherPlayer && otherPlayer.dodging == false)
                         {
-                            gameManager.notifyPlayerWin(this);
+                            //gameManager.notifyPlayerWin(this);
+                            GameManager.KnightWinGame();
                             break;
                         }
                     }
