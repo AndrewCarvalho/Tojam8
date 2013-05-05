@@ -41,17 +41,33 @@ public abstract class PlayerControls2 : Actor
 
     public void Hurt()
     {
+        Run(0.0f);
         PlayAnimation("Hit");
         hurtCountdown = getAnimationDuration("Hit");
+    }
+
+    override public void onHitCollider(Collider collider)
+    {
+        if (collider.GetComponent<SpikeBlock>())
+        {
+            knockBackByBlock(true);
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
         doingActionCountDown -= Time.deltaTime;
+
+        if (hurtCountdown > 0.0f && hurtCountdown - Time.deltaTime < 0)
+        {
+            Run(0.0f);
+        }
         hurtCountdown -= Time.deltaTime;
+
         if (doingActionCountDown > 0 || hurtCountdown > 0)
         {
+            Debug.Log("Doing action");
             return; // in the middle of an animation. Do nothing
         }
 

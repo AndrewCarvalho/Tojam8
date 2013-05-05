@@ -1221,9 +1221,9 @@ GameObject:
   - 33: {fileID: 36211380}
   - 23: {fileID: 36211379}
   - 114: {fileID: 36211378}
-  - 65: {fileID: 36211377}
   - 114: {fileID: 36211376}
   - 54: {fileID: 36211375}
+  - 65: {fileID: 36211377}
   m_Layer: 0
   m_Name: SpikeBlock
   m_TagString: Untagged
@@ -1305,9 +1305,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fac570381f34f647b768dc5a5aa1364, type: 3}
   m_Name: 
   collection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757, type: 2}
-  _color: {r: 0, g: .33754316, b: .626865685, a: 1}
+  _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
-  _spriteId: 8
+  _spriteId: 89
   pixelPerfect: 0
   boxCollider: {fileID: 36211377}
   meshCollider: {fileID: 0}
@@ -5146,9 +5146,9 @@ GameObject:
   - 33: {fileID: 161907126}
   - 23: {fileID: 161907125}
   - 114: {fileID: 161907124}
-  - 65: {fileID: 161907123}
   - 114: {fileID: 161907122}
   - 54: {fileID: 161907121}
+  - 65: {fileID: 161907123}
   m_Layer: 0
   m_Name: SpikeBlock
   m_TagString: Untagged
@@ -5230,9 +5230,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fac570381f34f647b768dc5a5aa1364, type: 3}
   m_Name: 
   collection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757, type: 2}
-  _color: {r: 0, g: .33754316, b: .626865685, a: 1}
+  _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
-  _spriteId: 8
+  _spriteId: 89
   pixelPerfect: 0
   boxCollider: {fileID: 161907123}
   meshCollider: {fileID: 0}
@@ -6666,10 +6666,10 @@ GameObject:
   - 4: {fileID: 208178208}
   - 33: {fileID: 208178207}
   - 23: {fileID: 208178206}
-  - 114: {fileID: 208178205}
-  - 65: {fileID: 208178204}
   - 114: {fileID: 208178203}
   - 54: {fileID: 208178202}
+  - 114: {fileID: 208178205}
+  - 65: {fileID: 208178204}
   m_Layer: 0
   m_Name: BombBlock
   m_TagString: Untagged
@@ -6702,7 +6702,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 208178201}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1b0e2995df2bc64a946f3c8f5216298, type: 3}
+  m_Script: {fileID: 11500000, guid: 9cb76567089abee48967d50f221b51de, type: 3}
   m_Name: 
   minJumpHeight: 1
   maxJumpHeight: 3
@@ -6726,19 +6726,19 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  blockThrowSpeed: 20
 --- !u!65 &208178204
 BoxCollider:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6500000, guid: d3327e2fa69b79949ab4d6ff2761b153,
-    type: 2}
-  m_PrefabInternal: {fileID: 779512549}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 208178201}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: .200000003}
-  m_Center: {x: -.5, y: .5, z: 0}
+  m_Size: {x: .9375, y: .8125, z: .200000003}
+  m_Center: {x: -.46875, y: .40625, z: 0}
 --- !u!114 &208178205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6748,17 +6748,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 208178201}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fac570381f34f647b768dc5a5aa1364, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e0e0c37ef9d7b34292486e754b48bd5, type: 3}
   m_Name: 
   collection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757, type: 2}
-  _color: {r: .798507452, g: .297950536, b: .297950536, a: 1}
+  _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
-  _spriteId: 8
+  _spriteId: 83
   pixelPerfect: 0
   boxCollider: {fileID: 208178204}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
+  anim: {fileID: 11400000, guid: 4a7b6010836a68649bda97022064f82b, type: 2}
+  clipId: 0
+  playAutomatically: 1
+  createCollider: 0
 --- !u!23 &208178206
 Renderer:
   m_ObjectHideFlags: 0
@@ -8291,9 +8295,9 @@ GameObject:
   - 33: {fileID: 290778681}
   - 23: {fileID: 290778680}
   - 114: {fileID: 290778679}
-  - 65: {fileID: 290778678}
   - 114: {fileID: 290778677}
   - 54: {fileID: 290778676}
+  - 65: {fileID: 290778678}
   m_Layer: 0
   m_Name: SpikeBlock
   m_TagString: Untagged
@@ -8375,9 +8379,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fac570381f34f647b768dc5a5aa1364, type: 3}
   m_Name: 
   collection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757, type: 2}
-  _color: {r: 0, g: .33754316, b: .626865685, a: 1}
+  _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
-  _spriteId: 8
+  _spriteId: 89
   pixelPerfect: 0
   boxCollider: {fileID: 290778678}
   meshCollider: {fileID: 0}
@@ -20127,9 +20131,9 @@ GameObject:
   - 33: {fileID: 671158613}
   - 23: {fileID: 671158612}
   - 114: {fileID: 671158611}
-  - 65: {fileID: 671158610}
   - 114: {fileID: 671158609}
   - 54: {fileID: 671158608}
+  - 65: {fileID: 671158610}
   m_Layer: 0
   m_Name: SpikeBlock
   m_TagString: Untagged
@@ -20211,9 +20215,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fac570381f34f647b768dc5a5aa1364, type: 3}
   m_Name: 
   collection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757, type: 2}
-  _color: {r: 0, g: .33754316, b: .626865685, a: 1}
+  _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
-  _spriteId: 8
+  _spriteId: 89
   pixelPerfect: 0
   boxCollider: {fileID: 671158610}
   meshCollider: {fileID: 0}
@@ -22973,7 +22977,8 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6500000, guid: d3327e2fa69b79949ab4d6ff2761b153, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: d3327e2fa69b79949ab4d6ff2761b153, type: 2}
   m_RootGameObject: {fileID: 208178201}
   m_IsPrefabParent: 0
@@ -45327,9 +45332,9 @@ GameObject:
   - 33: {fileID: 1432803450}
   - 23: {fileID: 1432803449}
   - 114: {fileID: 1432803448}
-  - 65: {fileID: 1432803447}
   - 114: {fileID: 1432803446}
   - 54: {fileID: 1432803445}
+  - 65: {fileID: 1432803447}
   m_Layer: 0
   m_Name: SpikeBlock
   m_TagString: Untagged
@@ -45411,9 +45416,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fac570381f34f647b768dc5a5aa1364, type: 3}
   m_Name: 
   collection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757, type: 2}
-  _color: {r: 0, g: .33754316, b: .626865685, a: 1}
+  _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
-  _spriteId: 8
+  _spriteId: 89
   pixelPerfect: 0
   boxCollider: {fileID: 1432803447}
   meshCollider: {fileID: 0}
@@ -65675,9 +65680,9 @@ GameObject:
   - 33: {fileID: 2098988375}
   - 23: {fileID: 2098988374}
   - 114: {fileID: 2098988373}
-  - 65: {fileID: 2098988372}
   - 114: {fileID: 2098988371}
   - 54: {fileID: 2098988370}
+  - 65: {fileID: 2098988372}
   m_Layer: 0
   m_Name: SpikeBlock
   m_TagString: Untagged
@@ -65770,9 +65775,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fac570381f34f647b768dc5a5aa1364, type: 3}
   m_Name: 
   collection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757, type: 2}
-  _color: {r: 0, g: .33754316, b: .626865685, a: 1}
+  _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
-  _spriteId: 8
+  _spriteId: 89
   pixelPerfect: 0
   boxCollider: {fileID: 2098988372}
   meshCollider: {fileID: 0}
@@ -66112,9 +66117,9 @@ GameObject:
   - 33: {fileID: 2126433434}
   - 23: {fileID: 2126433433}
   - 114: {fileID: 2126433432}
-  - 65: {fileID: 2126433431}
   - 114: {fileID: 2126433430}
   - 54: {fileID: 2126433429}
+  - 65: {fileID: 2126433431}
   m_Layer: 0
   m_Name: SpikeBlock
   m_TagString: Untagged
@@ -66196,9 +66201,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fac570381f34f647b768dc5a5aa1364, type: 3}
   m_Name: 
   collection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757, type: 2}
-  _color: {r: 0, g: .33754316, b: .626865685, a: 1}
+  _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
-  _spriteId: 8
+  _spriteId: 89
   pixelPerfect: 0
   boxCollider: {fileID: 2126433431}
   meshCollider: {fileID: 0}
