@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class PlayerOneDetector : MonoBehaviour 
+public class PlayerTwoDetector : MonoBehaviour 
 {
 	void Awake () 
 	{
@@ -13,12 +13,11 @@ public class PlayerOneDetector : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("name is: " + other.name);
-        if (other.name == "Player1")
+        if (other.name == "Player2")
         {
-            // end the game!!
+            // fuck modulatiry, end the game!!
+            // factor is out later
             GameManager.PrincessWinGame();
-            Debug.Log("WON STATE!!!!");
         }
     }
 }
