@@ -26,9 +26,10 @@ public class ThrowBlock : Actor {
     {
         base.FixedUpdate();
 
-        Vector3 moveDelta = new Vector3(floatDirection.Value.x * Time.deltaTime, floatDirection.Value.y * Time.deltaTime, floatDirection.Value.z * Time.deltaTime);
         if (floatDirection != null)
         {
+            Vector3 moveDelta = new Vector3(floatDirection.Value.x * Time.deltaTime, floatDirection.Value.y * Time.deltaTime, floatDirection.Value.z * Time.deltaTime);
+
             transform.Translate(moveDelta.x, moveDelta.y, moveDelta.z);
             if (originCamera != null)
             {
@@ -117,7 +118,6 @@ public class ThrowBlock : Actor {
 
     bool collidedWithSomething()
     {
-        bool collidedWithSomething = false;
         Object[] colliders = FindObjectsOfType(typeof(Collider));
         foreach (Object colliderObject in colliders)
         {

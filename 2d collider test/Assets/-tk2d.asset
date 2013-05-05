@@ -11,7 +11,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41cb500cf0f58e74f9a52a8af931edde, type: 3}
   m_Name: -tk2d
   version: 3
-  spriteAnimationIndex: []
+  spriteAnimationIndex:
+  - assetGUID: 2ac3073a2a3af6a4b980a252d2a82c6a
+    dataGUID: 
+    managed: 0
+    loadable: 0
   fontIndex: []
   spriteCollectionIndex:
   - name: TestSheet
@@ -64,6 +68,37 @@ MonoBehaviour:
     - grassTile3
     - grassTile7
     - hud_PrincessIcon
+    - knight_grab6
+    - knight_attack4
+    - knight_crouch7
+    - knight_run7
+    - knight_run8
+    - knight_crouch2
+    - knight_run3
+    - knight_run4
+    - knight_grab3
+    - knight_idle1
+    - knight_attack7
+    - knight_run5
+    - knight_run6
+    - knight_grab5
+    - knight_idle2
+    - knight_attack3
+    - knight_run1
+    - knight_crouch5
+    - knight_attack5
+    - knight_crouch1
+    - knight_grab1
+    - knight_grab2
+    - knight_attack6
+    - knight_crouch6
+    - knight_run2
+    - knight_attack2
+    - knight_crouch8
+    - knight_crouch4
+    - knight_attack1
+    - knight_crouch3
+    - knight_grab4
     spriteTextureGUIDs:
     - 05196ce9878c1484892b05adc63692e5
     - 149f455fc814fef4a9de4deb11555d5a
@@ -83,25 +118,109 @@ MonoBehaviour:
     - eb82bc53c6bb02442912d8902f8abeb3
     - ec4293012a7e7114b9841d3fe6557d60
     - fd5c2e0f954b8e448a88d1d236b90616
+    - 1568f72e54a82d74f880b13cd8cc45e7
+    - 1d28e194a75ebae42964cf5c5a6c19cb
+    - 2e355b1cd2ae116448589732a2d22239
+    - 3a8e44ae3fcdb9f47bbf887c15bf7000
+    - 3bc7921eb0f70c64bb8414938f9ff933
+    - 3d268ac0ab26fc74581f3412a6efb693
+    - 40e190bb5a861d84f9f01b08b20b7dca
+    - 4d557836e4e150749bb0795bb6d5f00e
+    - 542c40f17858b884f91869734da58abc
+    - 5f2b564863cadc04c9936f5ecf634d1a
+    - 70af42c6c2b1f4c4bb32c4e7a0941f23
+    - 72004b12d33dc7b42ac2036ce0d78a7f
+    - 88f203657326f4b4aa4db6c5afe645e2
+    - 8a29c3b562b6e1f47bd6ed01590a5969
+    - 91ea949f8b3012e4ca9b0fd68b2bf002
+    - 9b45cf04a51e34f4293ab92cb0384cc5
+    - 9ced03dbe96541b43b995ee6c665ac98
+    - a9b5ad1ec21cb3d4f94b61d0a28b210e
+    - b75c5261c572cbd40af3518bd7b90778
+    - bc1e71befc10f69409ced4742bff4ff3
+    - bef0bc0b936730f47a6684d22def7fdf
+    - c31ec33a11fb66843bcf13f47db0f286
+    - d0baf6d41fa1a0542b937de18ca09904
+    - d409238febe36694799e119a444f39e9
+    - db06cb5fa64652f40be3a1bb490220d8
+    - e9374c3d383612d4a88050491d4360fb
+    - ecf14ddba6518264d83ba3133a1218ed
+    - ede4f93ebdd7504459f380b2ce13f0ac
+    - fb1c3afc2f5ec3f4e8034da7ca322f77
+    - fd6f011770cf1f04cb7bd22c9faaf18d
+    - ffdf71b93cae90c4e9efb4d6532de03d
     spriteTextureTimeStamps:
-    - 1367605892.27102
-    - 1367605892.26102
-    - 1367605892.27102
-    - 1367605892.25102
-    - 1367605892.27102
-    - 1367605892.26102
-    - 1367605892.28102
-    - 1367605892.25102
-    - 1367605892.24102
-    - 1367605892.27102
-    - 1367605892.25102
-    - 1367605892.26102
-    - 1367605892.25102
-    - 1367605892.27102
-    - 1367605892.24102
-    - 1367605892.25102
-    - 1367605892.26102
-    - 1367605892.26102
+    - 1367682715.06051
+    - 1367682715.06851
+    - 1367682715.07451
+    - 1367682715.04251
+    - 1367682715.05851
+    - 1367682715.05351
+    - 1367682715.06251
+    - 1367682715.04551
+    - 1367682715.03451
+    - 1367682715.07051
+    - 1367682715.03951
+    - 1367682715.05151
+    - 1367682715.03751
+    - 1367682715.07251
+    - 1367682715.03651
+    - 1367682715.04851
+    - 1367682715.05651
+    - 1367682715.06651
+    - 1367682715.15652
+    - 1367682715.09151
+    - 1367682715.11551
+    - 1367682715.18452
+    - 1367682715.18752
+    - 1367682715.10351
+    - 1367682715.17352
+    - 1367682715.17652
+    - 1367682715.14552
+    - 1367682715.16052
+    - 1367682715.09851
+    - 1367682715.17952
+    - 1367682715.18252
+    - 1367682715.15352
+    - 1367682715.16352
+    - 1367682715.08951
+    - 1367682715.16652
+    - 1367682715.11051
+    - 1367682715.09451
+    - 1367682715.10051
+    - 1367682715.11951
+    - 1367682715.12151
+    - 1367682715.09651
+    - 1367682715.11251
+    - 1367682715.17052
+    - 1367682715.08751
+    - 1367682715.11751
+    - 1367682715.10851
+    - 1367682715.08451
+    - 1367682715.10551
+    - 1367682715.15052
+    managedSpriteCollection: 0
+    loadable: 0
+    assetName: 
+    version: 3
+  - name: BackgroundsSheet
+    spriteCollectionGUID: a372b2ef329dcbb4cb3a2be7261250ce
+    spriteCollectionDataGUID: 64d810f0bc3aaa74e8d98f3f1f3b1ca7
+    spriteNames:
+    - bg_layer1
+    - bg_layer3
+    - bg_layer4
+    - bg_layer2
+    spriteTextureGUIDs:
+    - 5228732d7ef524344a1787452d2fec9a
+    - 9294b5fd0e00fa3438968fffaabcdad4
+    - dd74d279406777d4b87492f3d3001234
+    - e2373d1994ea3704b807bf32cea7d6a1
+    spriteTextureTimeStamps:
+    - 1367681184
+    - 1367681208
+    - 1367681228
+    - 1367681198
     managedSpriteCollection: 0
     loadable: 0
     assetName: 
