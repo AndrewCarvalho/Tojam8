@@ -5,8 +5,8 @@ public class GameManager : MonoBehaviour
 {
     public enum GAME_STATE { SPLITSCREEN, TRANSITIONING, SINGLESCREEN, FREEZEFRAME, WINSCREEN };
 
-    private GAME_STATE state = GAME_STATE.SPLITSCREEN;
-    private float timer = 0;
+    private GAME_STATE state;
+    private float timeStamp;
     private float songTime;
 
     private static float princessScore;
@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     private AudioSource fantasyFrenzy;
     private AudioSource aJobWellDone;
     private AudioSource allHopeLost;
+    private AudioSource outtatime;
 
     public static float PrincessScore 
     {
@@ -42,21 +43,21 @@ public class GameManager : MonoBehaviour
     }
 
     private BoxCollider bottomGameBoundary;
-    private GameManager instance;
-    public GameManager Instance
+    private static GameManager instance;
+    public static GameManager Instance
     {
         get
         {
-            if (this.instance == null)
+            if (instance == null)
             {
-                this.instance = (GameManager)FindObjectOfType(typeof(GameManager));
+                instance = (GameManager)FindObjectOfType(typeof(GameManager));
 
-                if (this.instance == null)
+                if (instance == null)
                 {
-                    this.instance = ((GameObject)Instantiate(Resources.Load("Prefabs/Managers/GameManager"))).GetComponent<GameManager>();
+                    instance = ((GameObject)Instantiate(Resources.Load("Prefabs/Managers/GameManager"))).GetComponent<GameManager>();
                 }
             }
-            return this.instance;
+            return instance;
         }
     }
 
@@ -72,12 +73,11 @@ public class GameManager : MonoBehaviour
         this.fantasyFrenzy = this.transform.FindChild("FantasyFrenzy").GetComponent<AudioSource>();
         this.aJobWellDone = this.transform.FindChild("AJobWellDone").GetComponent<AudioSource>();
         this.allHopeLost = this.transform.FindChild("AllHopeLost").GetComponent<AudioSource>();
+        this.outtatime = this.transform.FindChild("Outtatime").GetComponent<AudioSource>();
 
+        //this.SetGameState(GAME_STATE.SPLITSCREEN);
+        this.StopAllAudio();
         this.fantasyFrolick.Play();
-
-        this.fantasyFrenzy.Stop();
-        this.aJobWellDone.Stop();
-        this.allHopeLost.Stop();
     }
 
     void Update()
@@ -85,16 +85,19 @@ public class GameManager : MonoBehaviour
         switch (this.state)
         {
             case GAME_STATE.SPLITSCREEN:
-
+                break;
             case GAME_STATE.TRANSITIONING:
-            case GAME_STATE.SINGLESCREEN:
-            case GAME_STATE.FREEZEFRAME:
-                this.timer += Time.deltaTime;
-                if (this.timer > this.songTime)
+                if (Time.realtimeSinceStartup - this.timeStamp > this.songTime)
                 {
-                    Time.timeScale = 1;
-
-                    //Application.LoadLevel("WinScreen");
+                    GameManager.SetGameState(GAME_STATE.SINGLESCREEN);
+                }
+                break;
+            case GAME_STATE.SINGLESCREEN:
+                break;
+            case GAME_STATE.FREEZEFRAME:
+                if (Time.realtimeSinceStartup - this.timeStamp > this.songTime)
+                {
+                    GameManager.SetGameState(GAME_STATE.WINSCREEN);
                 }
                 break;
             case GAME_STATE.WINSCREEN:
@@ -133,5 +136,56 @@ public class GameManager : MonoBehaviour
     public static void KnightWinGame()
     {
 
+    }
+
+    public static void SetGameState(GAME_STATE state)
+    {
+        if (GameManager.Instance.state != state)
+        {
+            GameManager.Instance.state = state;
+            GameManager.Instance.OnStateChange(state);
+        }
+    }
+
+    private void OnStateChange(GAME_STATE newState)
+    {
+        switch (state)
+        {
+            case GAME_STATE.SPLITSCREEN:
+                this.StopAllAudio();
+                this.fantasyFrolick.Play();
+                break;
+            case GAME_STATE.TRANSITIONING:
+                this.StopAllAudio();
+                this.songTime = this.outtatime.clip.length;
+                this.outtatime.Play();
+                this.timeStamp = Time.realtimeSinceStartup;
+                Time.timeScale = 0;
+                break;
+            case GAME_STATE.SINGLESCREEN:
+                GameObject.Find("Cameras").GetComponent<CameraController>().ExitTransitionState();
+                this.StopAllAudio();
+                this.fantasyFrenzy.Play();
+                break;
+            case GAME_STATE.FREEZEFRAME:
+                this.timeStamp = Time.realtimeSinceStartup;
+                this.songTime = this.allHopeLost.clip.length;
+                this.StopAllAudio();
+                this.allHopeLost.Play();
+                break;
+            case GAME_STATE.WINSCREEN:
+                this.StopAllAudio();
+                
+                break;
+        }
+    }
+
+    private void StopAllAudio()
+    {
+        this.fantasyFrenzy.Stop();
+        this.fantasyFrolick.Stop();
+        this.outtatime.Stop();
+        this.allHopeLost.Stop();
+        this.aJobWellDone.Stop();
     }
 }

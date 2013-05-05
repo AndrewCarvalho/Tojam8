@@ -66,37 +66,64 @@ public class CameraController : MonoBehaviour
                     this.cameraTwo.GetComponent<Camera>().enabled = false;
                     this.state = CAMERACONTROL_STATE.TRANSITION_TO_SINGLESCREEN;
 
-                    this.transitionTimer = Time.realtimeSinceStartup;
+                    GameManager.SetGameState(GameManager.GAME_STATE.TRANSITIONING);
 
-                    Time.timeScale = 0;
+                    //this.transitionTimer = Time.realtimeSinceStartup;
+
+                    //Time.timeScale = 0;
                 }
                 break;
             case CAMERACONTROL_STATE.TRANSITION_TO_SINGLESCREEN:
                 // either make a new camera or hijack the one that is calling clear.... latter is easier
                 // camera bottom is the one clearing
-                if (Time.realtimeSinceStartup - this.transitionTimer > this.transitionTime)
-                {
-                    //this.princessParallaxCamera = this.cameraTwo.transform.FindChild("ParallaxLayersPrincess").GetComponentInChildren<Camera>();
-                    this.princessParallaxCamera.transform.position = this.savedBottomParallaxCameraPosition;
-                    this.cameraTwo.enabled = true;
-                    this.cameraTwo.GetComponent<Camera>().enabled = true;
-                    this.progBar.enabled = true;
-                    this.progBar.ChangeToSingleScreenPosition();
-                    float playerDistanceX = this.playerOne.transform.position.x + (this.playerTwo.transform.position.x - this.playerOne.transform.position.x) / 2f;
-                    this.cameraTwo.transform.position = new Vector3(playerDistanceX, this.cameraTwo.transform.position.y - 4.5f, -10);
-                    this.cameraTwo.transform.FindChild("PlayerTwoBarrier").Translate(new Vector3(0, 4.5f, 0));
-                    this.princessParallaxCamera.transform.Translate(0, -4.5f, 0);
+                //if (Time.realtimeSinceStartup - this.transitionTimer > this.transitionTime)
+                //{
+                //    //this.princessParallaxCamera = this.cameraTwo.transform.FindChild("ParallaxLayersPrincess").GetComponentInChildren<Camera>();
+                //    this.princessParallaxCamera.transform.position = this.savedBottomParallaxCameraPosition;
+                //    this.cameraTwo.enabled = true;
+                //    this.cameraTwo.GetComponent<Camera>().enabled = true;
+                //    this.progBar.enabled = true;
+                //    this.progBar.ChangeToSingleScreenPosition();
+                //    float playerDistanceX = this.playerOne.transform.position.x + (this.playerTwo.transform.position.x - this.playerOne.transform.position.x) / 2f;
+                //    this.cameraTwo.transform.position = new Vector3(playerDistanceX, this.cameraTwo.transform.position.y - 4.5f, -10);
+                //    this.cameraTwo.transform.FindChild("PlayerTwoBarrier").Translate(new Vector3(0, 4.5f, 0));
+                //    this.princessParallaxCamera.transform.Translate(0, -4.5f, 0);
 
-                    Time.timeScale = 1;
+                //    Time.timeScale = 1;
 
-                    this.state = CAMERACONTROL_STATE.SINGLESCREEN;
-                    GameManager manager = FindObjectOfType(typeof(GameManager)) as GameManager;
-                    if(manager)
-                        manager.notifySingleScreen();
-                }
+                //    this.state = CAMERACONTROL_STATE.SINGLESCREEN;
+
+                //    GameManager.SetGameState(GameManager.GAME_STATE.SINGLESCREEN);
+                //    GameManager manager = FindObjectOfType(typeof(GameManager)) as GameManager;
+                //    if(manager)
+                //        manager.notifySingleScreen();
+                //}
                 break;
             case CAMERACONTROL_STATE.SINGLESCREEN:
                 break;
         }
 	}
+
+    public void ExitTransitionState()
+    {
+        //this.princessParallaxCamera = this.cameraTwo.transform.FindChild("ParallaxLayersPrincess").GetComponentInChildren<Camera>();
+        this.princessParallaxCamera.transform.position = this.savedBottomParallaxCameraPosition;
+        this.cameraTwo.enabled = true;
+        this.cameraTwo.GetComponent<Camera>().enabled = true;
+        this.progBar.enabled = true;
+        this.progBar.ChangeToSingleScreenPosition();
+        float playerDistanceX = this.playerOne.transform.position.x + (this.playerTwo.transform.position.x - this.playerOne.transform.position.x) / 2f;
+        this.cameraTwo.transform.position = new Vector3(playerDistanceX, this.cameraTwo.transform.position.y - 4.5f, -10);
+        this.cameraTwo.transform.FindChild("PlayerTwoBarrier").Translate(new Vector3(0, 4.5f, 0));
+        this.princessParallaxCamera.transform.Translate(0, -4.5f, 0);
+
+        Time.timeScale = 1;
+
+        this.state = CAMERACONTROL_STATE.SINGLESCREEN;
+
+        GameManager.SetGameState(GameManager.GAME_STATE.SINGLESCREEN);
+        GameManager manager = FindObjectOfType(typeof(GameManager)) as GameManager;
+        if (manager)
+            manager.notifySingleScreen();
+    }
 }
