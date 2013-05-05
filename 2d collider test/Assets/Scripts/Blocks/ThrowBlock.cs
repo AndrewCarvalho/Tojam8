@@ -48,6 +48,14 @@ public class ThrowBlock : Actor {
                 {
                     //Debug.Log("cameraSpacePosition.x " + cameraSpacePosition.x);
                     Vector3 position = destinationCamera.ScreenToWorldPoint(new Vector3(cameraSpacePosition.x, goingUp ? pixelHeight : pixelHeight, 0.0f));
+
+                    // snap to closest tile
+                    float remainder = position.x % 2.0f;
+                    if (remainder >= 1)
+                        position.x += remainder;
+                    else
+                        position.x -= remainder;
+
                     position.z = 0.0f;
 
                     if (goingUp) transitionState = TransitionState.TRANSITIONING_FROM_BOTTOM;
@@ -83,8 +91,16 @@ public class ThrowBlock : Actor {
 
                     case TransitionState.LOOKING_FOR_FREE_SPACE_GOING_UP:
                         {
-                            if (!collidedWithSomething())
+                            Collider collidedWith = collidedWithSomething();
+                            if (collidedWith == null || collidedWith.GetComponent<PlayerControls2>())
                             {
+                                if (collidedWith != null)
+                                {
+                                    PlayerControls2 hitPlayer = collidedWith.GetComponent<PlayerControls2>();
+                                    if (hitPlayer != null)
+                                        hitPlayer.knockBackByBlock();
+                                }
+
                                 floatDirection = null;
                                 collider.isTrigger = false;
 
@@ -100,9 +116,24 @@ public class ThrowBlock : Actor {
                         {
                             transform.Translate(moveDelta.x, moveDelta.y, moveDelta.z);
 
-                            if (collidedWithSomething())
+                            /*RaycastHit[] hits = body.SweepTestAll(new Vector3(1.0f, 0.0f, 0.0f));
+                            Debug.DrawRay(transform.position, moveDelta * 50, Color.black, 0, false);
+                            RaycastHit? lowest = null;
+                            foreach (RaycastHit hit in hits)
                             {
-                                transform.Translate(-moveDelta.x + 0.05f, -moveDelta.y + 0.05f, -moveDelta.z + 0.05f);
+                                Gizmos.DrawSphere(hit.point, 1);
+                                if (lowest == null || hit.point.y < lowest.Value.point.y)
+                                    lowest = hit;
+                            }
+
+                            if(lowest != null)
+                                Debug.Log("lowest " + lowest.Value.collider.gameObject.name);*/
+
+                            //if (lowest != null && lowest.Value.collider.bounds.Intersects(collider.bounds))
+
+                            if (collidedWithSomething() != null)
+                            {
+                                transform.Translate(-moveDelta.x, -moveDelta.y, -moveDelta.z);
 
                                 floatDirection = null;
                                 collider.isTrigger = false;
@@ -128,7 +159,7 @@ public class ThrowBlock : Actor {
             screenPoint.y < (cameraPosition.y + halfPixelHeight);
     }
 
-    bool collidedWithSomething()
+    Collider collidedWithSomething()
     {
         Object[] colliders = FindObjectsOfType(typeof(Collider));
         foreach (Object colliderObject in colliders)
@@ -136,10 +167,10 @@ public class ThrowBlock : Actor {
             Collider current = colliderObject as Collider;
             if (current != this.collider && this.collider.bounds.Intersects(current.bounds))
             {
-                return true;
+                return current;
             }
         }
-        return false;
+        return null;
     }
 
     public void Throw(Vector3 direction, PlayerCamera camera, PlayerCamera otherCamera)
