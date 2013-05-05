@@ -49,7 +49,6 @@ public class ThrowBlock : Actor {
                     //Debug.Log("cameraSpacePosition.x " + cameraSpacePosition.x);
                     Vector3 position = destinationCamera.ScreenToWorldPoint(new Vector3(cameraSpacePosition.x, goingUp ? pixelHeight : pixelHeight, 0.0f));
                     position.x = Mathf.Round(position.x);
-
                     position.z = 0.0f;
 
                     if (goingUp) transitionState = TransitionState.TRANSITIONING_FROM_BOTTOM;

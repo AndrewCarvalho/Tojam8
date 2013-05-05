@@ -104,7 +104,7 @@ public class Actor : MonoBehaviour {
     {
         BoxCollider box = GetComponent<BoxCollider>();
         Vector3 origin = transform.position;
-        origin.y -= box.size.y / 4.0f;
+        origin.y += box.size.y / 4.0f;
         return Physics.RaycastAll(origin, direction, distance, mask);
     }
 
@@ -141,7 +141,6 @@ public class Actor : MonoBehaviour {
             }
             else
             {
-                int shit = 123;
                 switch (this.jumpState)
                 {
                     case JUMP_STATE.JUMPING_START:
@@ -173,8 +172,6 @@ public class Actor : MonoBehaviour {
 
     protected void PlayAnimation(string name)
     {
-
-        Debug.Log("actionAnimationName " + name);
         tk2dAnimatedSprite sprite = GetComponent<tk2dAnimatedSprite>();
         if(!sprite.IsPlaying(name))
             sprite.Play(name);
