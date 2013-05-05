@@ -11764,6 +11764,7 @@ Transform:
   m_Children:
   - {fileID: 1100281716}
   - {fileID: 1035263225}
+  - {fileID: 2009194058}
   m_Father: {fileID: 1104825300}
 --- !u!1 &644901707
 GameObject:
@@ -13094,7 +13095,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: .0500000007
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
@@ -13121,6 +13122,11 @@ MonoBehaviour:
   action2AnimationName: 
   crouchIdleAnimationName: 
   crouchMoveAnimationName: 
+  jumpAnimationName: 
+  jumpUpFrameNum: 0
+  jumpTopFrameNum: 0
+  jumpDownFrameNum: 0
+  topJumpVelocity: 0
   walkSpeed: 0
   maxRunSpeed: 0
   timeToMaxWalkSpeed: 0
@@ -15669,7 +15675,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: .0500000007
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
@@ -15696,6 +15702,11 @@ MonoBehaviour:
   action2AnimationName: 
   crouchIdleAnimationName: 
   crouchMoveAnimationName: 
+  jumpAnimationName: 
+  jumpUpFrameNum: 0
+  jumpTopFrameNum: 0
+  jumpDownFrameNum: 0
+  topJumpVelocity: 0
   walkSpeed: 0
   maxRunSpeed: 0
   timeToMaxWalkSpeed: 0
@@ -16555,7 +16566,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: .0500000007
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
@@ -16582,6 +16593,11 @@ MonoBehaviour:
   action2AnimationName: 
   crouchIdleAnimationName: 
   crouchMoveAnimationName: 
+  jumpAnimationName: 
+  jumpUpFrameNum: 0
+  jumpTopFrameNum: 0
+  jumpDownFrameNum: 0
+  topJumpVelocity: 0
   walkSpeed: 0
   maxRunSpeed: 0
   timeToMaxWalkSpeed: 0
@@ -18710,6 +18726,11 @@ MonoBehaviour:
   action2AnimationName: 
   crouchIdleAnimationName: 
   crouchMoveAnimationName: 
+  jumpAnimationName: 
+  jumpUpFrameNum: 0
+  jumpTopFrameNum: 0
+  jumpDownFrameNum: 0
+  topJumpVelocity: 0
   walkSpeed: 5
   maxRunSpeed: 10
   timeToMaxWalkSpeed: 0
@@ -18768,7 +18789,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 959502696}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 116.5, y: 2, z: 0}
+  m_LocalPosition: {x: 103, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -19402,7 +19423,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: .0500000007
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
@@ -19429,6 +19450,11 @@ MonoBehaviour:
   action2AnimationName: 
   crouchIdleAnimationName: 
   crouchMoveAnimationName: 
+  jumpAnimationName: 
+  jumpUpFrameNum: 0
+  jumpTopFrameNum: 0
+  jumpDownFrameNum: 0
+  topJumpVelocity: 0
   walkSpeed: 0
   maxRunSpeed: 0
   timeToMaxWalkSpeed: 0
@@ -29585,6 +29611,11 @@ MonoBehaviour:
   action2AnimationName: 
   crouchIdleAnimationName: 
   crouchMoveAnimationName: 
+  jumpAnimationName: 
+  jumpUpFrameNum: 0
+  jumpTopFrameNum: 0
+  jumpDownFrameNum: 0
+  topJumpVelocity: 0
   walkSpeed: 5
   maxRunSpeed: 10
   timeToMaxWalkSpeed: 0
@@ -32660,7 +32691,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: .0500000007
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
@@ -32687,6 +32718,11 @@ MonoBehaviour:
   action2AnimationName: 
   crouchIdleAnimationName: 
   crouchMoveAnimationName: 
+  jumpAnimationName: 
+  jumpUpFrameNum: 0
+  jumpTopFrameNum: 0
+  jumpDownFrameNum: 0
+  topJumpVelocity: 0
   walkSpeed: 0
   maxRunSpeed: 0
   timeToMaxWalkSpeed: 0
@@ -38406,7 +38442,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: .0500000007
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
@@ -38433,6 +38469,11 @@ MonoBehaviour:
   action2AnimationName: 
   crouchIdleAnimationName: 
   crouchMoveAnimationName: 
+  jumpAnimationName: 
+  jumpUpFrameNum: 0
+  jumpTopFrameNum: 0
+  jumpDownFrameNum: 0
+  topJumpVelocity: 0
   walkSpeed: 0
   maxRunSpeed: 0
   timeToMaxWalkSpeed: 0
@@ -39589,6 +39630,46 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2241f6c642a78de48b42a45ae0852f52, type: 3}
   m_Name: 
+--- !u!1 &2009194057
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100004, guid: 1bd188af8f6c6d44ea0dc5a25f223a75, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2009194058}
+  - 65: {fileID: 2009194059}
+  m_Layer: 0
+  m_Name: PlayerOneDetector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2009194058
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400004, guid: 1bd188af8f6c6d44ea0dc5a25f223a75, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2009194057}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 24.5, y: -4.5, z: 10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 638251965}
+--- !u!65 &2009194059
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6500000, guid: 1bd188af8f6c6d44ea0dc5a25f223a75,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2009194057}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 12, z: .100000001}
+  m_Center: {x: 0, y: 0, z: .5}
 --- !u!1001 &2009403403
 Prefab:
   m_ObjectHideFlags: 0
