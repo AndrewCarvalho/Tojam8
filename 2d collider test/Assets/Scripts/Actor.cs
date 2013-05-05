@@ -163,11 +163,28 @@ public class Actor : MonoBehaviour {
         }
     }
 
+    protected Collider collidedWithSomething()
+    {
+        Object[] colliders = FindObjectsOfType(typeof(Collider));
+        foreach (Object colliderObject in colliders)
+        {
+            Collider current = colliderObject as Collider;
+            if (current != this.collider && this.collider.bounds.Intersects(current.bounds))
+            {
+                return current;
+            }
+        }
+        return null;
+    }
+
     public void knockToNearestTile(float verticalDirection)
     {
         Vector3 position = transform.position;
-        position.x = Mathf.Round(position.x);
+        position.x = Mathf.Round(verticalDirection < 0 ? position.x -1.0f : position.x + 1.0f);
         transform.position = position;
+
+        if (collidedWithSomething())
+            knockToNearestTile(verticalDirection);
     }
 
     protected void PlayAnimation(string name)

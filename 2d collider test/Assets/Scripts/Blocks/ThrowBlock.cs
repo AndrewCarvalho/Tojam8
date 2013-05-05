@@ -15,18 +15,23 @@ public class ThrowBlock : Actor {
     TransitionState transitionState = TransitionState.NOT_TRANSITIONING;
 
 	// Use this for initialization
-	void Start () 
+	protected void Start () 
     {
 	
 	}
 	
 	// Update is called once per frame
-	void Update () 
+    protected void Update() 
     {
         
 	}
 
-    new void FixedUpdate()
+    protected virtual void onHitGround()
+    {
+
+    }
+
+    protected new void FixedUpdate()
     {
         base.FixedUpdate();
 
@@ -91,7 +96,7 @@ public class ThrowBlock : Actor {
                                 {
                                     PlayerControls2 hitPlayer = collidedWith.GetComponent<PlayerControls2>();
                                     if (hitPlayer != null)
-                                        hitPlayer.knockBackByBlock();
+                                        hitPlayer.knockBackByBlock(true);
                                 }
 
                                 floatDirection = null;
@@ -99,6 +104,8 @@ public class ThrowBlock : Actor {
 
                                 if(passedThroughSomething) // keep it suspected in air if it didn't pass through a floor
                                     jumpState = JUMP_STATE.ON_GROUND;
+
+                                onHitGround();
                             }
                             else
                                 passedThroughSomething = true;
@@ -139,6 +146,7 @@ public class ThrowBlock : Actor {
                                 Debug.Log("lastHit ", lastHit.collider.gameObject);
 
                             if (collidedWith == lastHit.collider)*/
+
                             if(collidedWithSomething() != null)
                             {
                                 transform.Translate(-moveDelta.x, -moveDelta.y, -moveDelta.z);
@@ -147,6 +155,7 @@ public class ThrowBlock : Actor {
                                 collider.isTrigger = false;
                                 passedThroughSomething = true;
                                 jumpState = JUMP_STATE.ON_GROUND;
+                                onHitGround();
                             }
                         }
                         break;
@@ -165,20 +174,6 @@ public class ThrowBlock : Actor {
             screenPoint.x > cameraPosition.x + halfPixelWidth ||
             screenPoint.y > (cameraPosition.y - halfPixelHeight) ||
             screenPoint.y < (cameraPosition.y + halfPixelHeight);
-    }
-
-    Collider collidedWithSomething()
-    {
-        Object[] colliders = FindObjectsOfType(typeof(Collider));
-        foreach (Object colliderObject in colliders)
-        {
-            Collider current = colliderObject as Collider;
-            if (current != this.collider && this.collider.bounds.Intersects(current.bounds))
-            {
-                return current;
-            }
-        }
-        return null;
     }
 
     public void Throw(Vector3 direction, PlayerCamera camera, PlayerCamera otherCamera)

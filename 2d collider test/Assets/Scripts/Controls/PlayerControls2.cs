@@ -7,6 +7,7 @@ public abstract class PlayerControls2 : Actor
     float actionableDistance = 5.0f;
 
     protected float facingDirection = 1.0f;
+    protected float hurtCountdown = 0.0f;
 
     float doingActionCountDown = 0.0f;
 
@@ -28,16 +29,28 @@ public abstract class PlayerControls2 : Actor
     protected abstract PlayerCamera CameraFollowingMe();
     protected abstract PlayerCamera OtherPlayerCamera();
 
-    public void knockBackByBlock()
+    public void knockBackByBlock(bool hurt)
     {
         base.knockToNearestTile(-facingDirection);
+
+        if (hurt)
+        {
+            Hurt();
+        }
+    }
+
+    public void Hurt()
+    {
+        PlayAnimation("Hit");
+        hurtCountdown = getAnimationDuration("Hit");
     }
 
     // Update is called once per frame
     void Update()
     {
         doingActionCountDown -= Time.deltaTime;
-        if (doingActionCountDown > 0)
+        hurtCountdown -= Time.deltaTime;
+        if (doingActionCountDown > 0 || hurtCountdown > 0)
         {
             return; // in the middle of an animation. Do nothing
         }
