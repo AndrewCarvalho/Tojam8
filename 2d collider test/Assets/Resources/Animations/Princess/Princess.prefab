@@ -37,7 +37,285 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ecaffc43a5d2b1d47858e3fb687e7271, type: 3}
   m_Name: 
-  clips: []
+  clips:
+  - name: Crouch
+    frames:
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 71
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 61
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 79
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 68
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 54
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 51
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 55
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 53
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    fps: 14
+    loopStart: 0
+    wrapMode: 0
+  - name: Dodge
+    frames:
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 66
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 60
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 70
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 69
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 76
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 77
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 57
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    fps: 14
+    loopStart: 0
+    wrapMode: 0
+  - name: Idle
+    frames:
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 49
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 80
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    fps: 3.5
+    loopStart: 0
+    wrapMode: 0
+  - name: Run
+    frames:
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 64
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 58
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 62
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 67
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 56
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    fps: 8
+    loopStart: 0
+    wrapMode: 0
+  - name: Throw
+    frames:
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 75
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 59
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 72
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 74
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 50
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 65
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 73
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    fps: 14
+    loopStart: 0
+    wrapMode: 0
+  - name: Knocked Out
+    frames:
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 61
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 79
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    fps: 3.5
+    loopStart: 0
+    wrapMode: 0
+  - name: Hit
+    frames:
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 73
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 65
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    fps: 3.5
+    loopStart: 0
+    wrapMode: 0
+  - name: New Clip
+    frames:
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 73
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    fps: 30
+    loopStart: 0
+    wrapMode: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
