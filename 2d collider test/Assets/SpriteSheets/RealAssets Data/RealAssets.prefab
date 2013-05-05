@@ -1944,17 +1944,17 @@ MonoBehaviour:
     colliderSmoothSphereCollisions: 0
   - name: princess_idle1
     boundsData:
-    - {x: -.03125, y: -.0937500298, z: 0}
+    - {x: -.03125, y: .96875, z: 0}
     - {x: .9375, y: 1.9375, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 1.0625, z: 0}
     - {x: 2, y: 2.125, z: 0}
     texelSize: {x: .0625, y: .0625}
     positions:
-    - {x: -.5, y: -1.0625, z: 0}
-    - {x: .4375, y: -1.0625, z: 0}
-    - {x: -.5, y: .87499994, z: 0}
-    - {x: .4375, y: .87499994, z: 0}
+    - {x: -.5, y: 0, z: 0}
+    - {x: .4375, y: 0, z: 0}
+    - {x: -.5, y: 1.9375, z: 0}
+    - {x: .4375, y: 1.9375, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -1975,7 +1975,7 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -.03125, y: -.1875, z: 0}
+    - {x: -.03125, y: .875, z: 0}
     - {x: .40625, y: .875, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
@@ -1983,17 +1983,17 @@ MonoBehaviour:
     colliderSmoothSphereCollisions: 0
   - name: princess_throw5
     boundsData:
-    - {x: -.15625, y: -.0312500298, z: 0}
+    - {x: -.15625, y: 1.03125, z: 0}
     - {x: 1.1875, y: 2.0625, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 1.0625, z: 0}
     - {x: 2, y: 2.125, z: 0}
     texelSize: {x: .0625, y: .0625}
     positions:
-    - {x: -.75, y: -1.0625, z: 0}
-    - {x: .4375, y: -1.0625, z: 0}
-    - {x: -.75, y: .99999994, z: 0}
-    - {x: .4375, y: .99999994, z: 0}
+    - {x: -.75, y: 0, z: 0}
+    - {x: .4375, y: 0, z: 0}
+    - {x: -.75, y: 2.0625, z: 0}
+    - {x: .4375, y: 2.0625, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -2014,7 +2014,7 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -.03125, y: -.1875, z: 0}
+    - {x: -.03125, y: .875, z: 0}
     - {x: .40625, y: .875, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
@@ -2022,17 +2022,17 @@ MonoBehaviour:
     colliderSmoothSphereCollisions: 0
   - name: princess_crouch6
     boundsData:
-    - {x: -.03125, y: -.43749997, z: 0}
+    - {x: -.03125, y: .625, z: 0}
     - {x: .9375, y: 1.25, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 1.0625, z: 0}
     - {x: 2, y: 2.125, z: 0}
     texelSize: {x: .0625, y: .0625}
     positions:
-    - {x: -.5, y: -1.0625, z: 0}
-    - {x: .4375, y: -1.0625, z: 0}
-    - {x: -.5, y: .18750006, z: 0}
-    - {x: .4375, y: .18750006, z: 0}
+    - {x: -.5, y: 0, z: 0}
+    - {x: .4375, y: 0, z: 0}
+    - {x: -.5, y: 1.25, z: 0}
+    - {x: .4375, y: 1.25, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -2053,7 +2053,7 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -.0625, y: -.53125, z: 0}
+    - {x: -.0625, y: .53125, z: 0}
     - {x: .4375, y: .53125, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
@@ -2061,17 +2061,17 @@ MonoBehaviour:
     colliderSmoothSphereCollisions: 0
   - name: princess_run2
     boundsData:
-    - {x: .0625, y: .0312499702, z: 0}
+    - {x: .0625, y: 1.09375, z: 0}
     - {x: 1.125, y: 1.9375, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 1.0625, z: 0}
     - {x: 2, y: 2.125, z: 0}
     texelSize: {x: .0625, y: .0625}
     positions:
-    - {x: -.5, y: -.9375, z: 0}
-    - {x: .625, y: -.9375, z: 0}
-    - {x: -.5, y: .99999994, z: 0}
-    - {x: .625, y: .99999994, z: 0}
+    - {x: -.5, y: .125, z: 0}
+    - {x: .625, y: .125, z: 0}
+    - {x: -.5, y: 2.0625, z: 0}
+    - {x: .625, y: 2.0625, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -2092,7 +2092,7 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -.03125, y: -.1875, z: 0}
+    - {x: -.03125, y: .875, z: 0}
     - {x: .40625, y: .875, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
@@ -2100,17 +2100,17 @@ MonoBehaviour:
     colliderSmoothSphereCollisions: 0
   - name: princess_crouch8
     boundsData:
-    - {x: -.03125, y: -.43749997, z: 0}
+    - {x: -.03125, y: .625, z: 0}
     - {x: .9375, y: 1.25, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 1.0625, z: 0}
     - {x: 2, y: 2.125, z: 0}
     texelSize: {x: .0625, y: .0625}
     positions:
-    - {x: -.5, y: -1.0625, z: 0}
-    - {x: .4375, y: -1.0625, z: 0}
-    - {x: -.5, y: .18750006, z: 0}
-    - {x: .4375, y: .18750006, z: 0}
+    - {x: -.5, y: 0, z: 0}
+    - {x: .4375, y: 0, z: 0}
+    - {x: -.5, y: 1.25, z: 0}
+    - {x: .4375, y: 1.25, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -2131,7 +2131,7 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -.0625, y: -.53125, z: 0}
+    - {x: -.0625, y: .53125, z: 0}
     - {x: .4375, y: .53125, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
@@ -2139,17 +2139,17 @@ MonoBehaviour:
     colliderSmoothSphereCollisions: 0
   - name: princess_crouch5
     boundsData:
-    - {x: -.03125, y: -.46875, z: 0}
+    - {x: -.03125, y: .59375, z: 0}
     - {x: .9375, y: 1.1875, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 1.0625, z: 0}
     - {x: 2, y: 2.125, z: 0}
     texelSize: {x: .0625, y: .0625}
     positions:
-    - {x: -.5, y: -1.0625, z: 0}
-    - {x: .4375, y: -1.0625, z: 0}
-    - {x: -.5, y: .124999993, z: 0}
-    - {x: .4375, y: .124999993, z: 0}
+    - {x: -.5, y: 0, z: 0}
+    - {x: .4375, y: 0, z: 0}
+    - {x: -.5, y: 1.1875, z: 0}
+    - {x: .4375, y: 1.1875, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -2170,7 +2170,7 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -.0625, y: -.53125, z: 0}
+    - {x: -.0625, y: .53125, z: 0}
     - {x: .4375, y: .53125, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
@@ -2178,17 +2178,17 @@ MonoBehaviour:
     colliderSmoothSphereCollisions: 0
   - name: princess_crouch7
     boundsData:
-    - {x: -.03125, y: -.40625, z: 0}
+    - {x: -.03125, y: .65625, z: 0}
     - {x: .9375, y: 1.3125, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 1.0625, z: 0}
     - {x: 2, y: 2.125, z: 0}
     texelSize: {x: .0625, y: .0625}
     positions:
-    - {x: -.5, y: -1.0625, z: 0}
-    - {x: .4375, y: -1.0625, z: 0}
-    - {x: -.5, y: .249999985, z: 0}
-    - {x: .4375, y: .249999985, z: 0}
+    - {x: -.5, y: 0, z: 0}
+    - {x: .4375, y: 0, z: 0}
+    - {x: -.5, y: 1.3125, z: 0}
+    - {x: .4375, y: 1.3125, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -2209,7 +2209,7 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -.0625, y: -.53125, z: 0}
+    - {x: -.0625, y: .53125, z: 0}
     - {x: .4375, y: .53125, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
@@ -2217,17 +2217,17 @@ MonoBehaviour:
     colliderSmoothSphereCollisions: 0
   - name: princess_run8
     boundsData:
-    - {x: -.0625, y: -.125, z: 0}
+    - {x: -.0625, y: .9375, z: 0}
     - {x: 1, y: 1.875, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 1.0625, z: 0}
     - {x: 2, y: 2.125, z: 0}
     texelSize: {x: .0625, y: .0625}
     positions:
-    - {x: -.5625, y: -1.0625, z: 0}
-    - {x: .4375, y: -1.0625, z: 0}
-    - {x: -.5625, y: .8125, z: 0}
-    - {x: .4375, y: .8125, z: 0}
+    - {x: -.5625, y: 0, z: 0}
+    - {x: .4375, y: 0, z: 0}
+    - {x: -.5625, y: 1.875, z: 0}
+    - {x: .4375, y: 1.875, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -2248,7 +2248,7 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -.03125, y: -.1875, z: 0}
+    - {x: -.03125, y: .875, z: 0}
     - {x: .40625, y: .875, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
@@ -2256,17 +2256,17 @@ MonoBehaviour:
     colliderSmoothSphereCollisions: 0
   - name: princess_dodge7
     boundsData:
-    - {x: -.125, y: -.0937500298, z: 0}
+    - {x: -.125, y: .96875, z: 0}
     - {x: 1.125, y: 1.9375, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 1.0625, z: 0}
     - {x: 2, y: 2.125, z: 0}
     texelSize: {x: .0625, y: .0625}
     positions:
-    - {x: -.6875, y: -1.0625, z: 0}
-    - {x: .4375, y: -1.0625, z: 0}
-    - {x: -.6875, y: .87499994, z: 0}
-    - {x: .4375, y: .87499994, z: 0}
+    - {x: -.6875, y: 0, z: 0}
+    - {x: .4375, y: 0, z: 0}
+    - {x: -.6875, y: 1.9375, z: 0}
+    - {x: .4375, y: 1.9375, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -2287,7 +2287,7 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -.03125, y: -.1875, z: 0}
+    - {x: -.03125, y: .875, z: 0}
     - {x: .40625, y: .875, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
@@ -2295,17 +2295,17 @@ MonoBehaviour:
     colliderSmoothSphereCollisions: 0
   - name: princess_run5
     boundsData:
-    - {x: -.03125, y: -.0625, z: 0}
+    - {x: -.03125, y: 1, z: 0}
     - {x: .9375, y: 2, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 1.0625, z: 0}
     - {x: 2, y: 2.125, z: 0}
     texelSize: {x: .0625, y: .0625}
     positions:
-    - {x: -.5, y: -1.0625, z: 0}
-    - {x: .4375, y: -1.0625, z: 0}
-    - {x: -.5, y: .9375, z: 0}
-    - {x: .4375, y: .9375, z: 0}
+    - {x: -.5, y: 0, z: 0}
+    - {x: .4375, y: 0, z: 0}
+    - {x: -.5, y: 2, z: 0}
+    - {x: .4375, y: 2, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -2326,7 +2326,7 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -.03125, y: -.1875, z: 0}
+    - {x: -.03125, y: .875, z: 0}
     - {x: .40625, y: .875, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
@@ -2334,17 +2334,17 @@ MonoBehaviour:
     colliderSmoothSphereCollisions: 0
   - name: princess_throw2
     boundsData:
-    - {x: -.09375, y: -.46875, z: 0}
+    - {x: -.09375, y: .59375, z: 0}
     - {x: 1.0625, y: 1.1875, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 1.0625, z: 0}
     - {x: 2, y: 2.125, z: 0}
     texelSize: {x: .0625, y: .0625}
     positions:
-    - {x: -.625, y: -1.0625, z: 0}
-    - {x: .4375, y: -1.0625, z: 0}
-    - {x: -.625, y: .124999993, z: 0}
-    - {x: .4375, y: .124999993, z: 0}
+    - {x: -.625, y: 0, z: 0}
+    - {x: .4375, y: 0, z: 0}
+    - {x: -.625, y: 1.1875, z: 0}
+    - {x: .4375, y: 1.1875, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -2365,7 +2365,7 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -.03125, y: -.1875, z: 0}
+    - {x: -.03125, y: .875, z: 0}
     - {x: .40625, y: .875, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
@@ -2373,17 +2373,17 @@ MonoBehaviour:
     colliderSmoothSphereCollisions: 0
   - name: princess_dodge2
     boundsData:
-    - {x: -.09375, y: -.1875, z: 0}
+    - {x: -.09375, y: .875, z: 0}
     - {x: 1.5625, y: 1.75, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 1.0625, z: 0}
     - {x: 2, y: 2.125, z: 0}
     texelSize: {x: .0625, y: .0625}
     positions:
-    - {x: -.875, y: -1.0625, z: 0}
-    - {x: .6875, y: -1.0625, z: 0}
-    - {x: -.875, y: .6875, z: 0}
-    - {x: .6875, y: .6875, z: 0}
+    - {x: -.875, y: 0, z: 0}
+    - {x: .6875, y: 0, z: 0}
+    - {x: -.875, y: 1.75, z: 0}
+    - {x: .6875, y: 1.75, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -2404,7 +2404,7 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -.03125, y: -.1875, z: 0}
+    - {x: -.03125, y: .875, z: 0}
     - {x: .40625, y: .875, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
@@ -2412,17 +2412,17 @@ MonoBehaviour:
     colliderSmoothSphereCollisions: 0
   - name: princess_crouch2
     boundsData:
-    - {x: -.03125, y: -.43749997, z: 0}
+    - {x: -.03125, y: .625, z: 0}
     - {x: .9375, y: 1.25, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 1.0625, z: 0}
     - {x: 2, y: 2.125, z: 0}
     texelSize: {x: .0625, y: .0625}
     positions:
-    - {x: -.5, y: -1.0625, z: 0}
-    - {x: .4375, y: -1.0625, z: 0}
-    - {x: -.5, y: .18750006, z: 0}
-    - {x: .4375, y: .18750006, z: 0}
+    - {x: -.5, y: 0, z: 0}
+    - {x: .4375, y: 0, z: 0}
+    - {x: -.5, y: 1.25, z: 0}
+    - {x: .4375, y: 1.25, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -2443,7 +2443,7 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -.0625, y: -.53125, z: 0}
+    - {x: -.0625, y: .53125, z: 0}
     - {x: .4375, y: .53125, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
@@ -2451,17 +2451,17 @@ MonoBehaviour:
     colliderSmoothSphereCollisions: 0
   - name: princess_run6
     boundsData:
-    - {x: 0, y: .0312499702, z: 0}
+    - {x: 0, y: 1.09375, z: 0}
     - {x: 1.125, y: 1.9375, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 1.0625, z: 0}
     - {x: 2, y: 2.125, z: 0}
     texelSize: {x: .0625, y: .0625}
     positions:
-    - {x: -.5625, y: -.9375, z: 0}
-    - {x: .5625, y: -.9375, z: 0}
-    - {x: -.5625, y: .99999994, z: 0}
-    - {x: .5625, y: .99999994, z: 0}
+    - {x: -.5625, y: .125, z: 0}
+    - {x: .5625, y: .125, z: 0}
+    - {x: -.5625, y: 2.0625, z: 0}
+    - {x: .5625, y: 2.0625, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -2482,7 +2482,7 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -.03125, y: -.1875, z: 0}
+    - {x: -.03125, y: .875, z: 0}
     - {x: .40625, y: .875, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
@@ -2490,17 +2490,17 @@ MonoBehaviour:
     colliderSmoothSphereCollisions: 0
   - name: princess_run1
     boundsData:
-    - {x: .03125, y: -.0625, z: 0}
+    - {x: .03125, y: 1, z: 0}
     - {x: .9375, y: 2, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 1.0625, z: 0}
     - {x: 2, y: 2.125, z: 0}
     texelSize: {x: .0625, y: .0625}
     positions:
-    - {x: -.4375, y: -1.0625, z: 0}
-    - {x: .5, y: -1.0625, z: 0}
-    - {x: -.4375, y: .9375, z: 0}
-    - {x: .5, y: .9375, z: 0}
+    - {x: -.4375, y: 0, z: 0}
+    - {x: .5, y: 0, z: 0}
+    - {x: -.4375, y: 2, z: 0}
+    - {x: .5, y: 2, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -2521,7 +2521,7 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -.03125, y: -.1875, z: 0}
+    - {x: -.03125, y: .875, z: 0}
     - {x: .40625, y: .875, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
@@ -2529,17 +2529,17 @@ MonoBehaviour:
     colliderSmoothSphereCollisions: 0
   - name: princess_run4
     boundsData:
-    - {x: .0625, y: -.125, z: 0}
+    - {x: .0625, y: .9375, z: 0}
     - {x: 1, y: 1.875, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 1.0625, z: 0}
     - {x: 2, y: 2.125, z: 0}
     texelSize: {x: .0625, y: .0625}
     positions:
-    - {x: -.4375, y: -1.0625, z: 0}
-    - {x: .5625, y: -1.0625, z: 0}
-    - {x: -.4375, y: .8125, z: 0}
-    - {x: .5625, y: .8125, z: 0}
+    - {x: -.4375, y: 0, z: 0}
+    - {x: .5625, y: 0, z: 0}
+    - {x: -.4375, y: 1.875, z: 0}
+    - {x: .5625, y: 1.875, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -2560,7 +2560,7 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -.03125, y: -.1875, z: 0}
+    - {x: -.03125, y: .875, z: 0}
     - {x: .40625, y: .875, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
@@ -2568,17 +2568,17 @@ MonoBehaviour:
     colliderSmoothSphereCollisions: 0
   - name: princess_throw6
     boundsData:
-    - {x: -.21875, y: -.0937500298, z: 0}
+    - {x: -.21875, y: .96875, z: 0}
     - {x: 1.3125, y: 1.9375, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 1.0625, z: 0}
     - {x: 2, y: 2.125, z: 0}
     texelSize: {x: .0625, y: .0625}
     positions:
-    - {x: -.875, y: -1.0625, z: 0}
-    - {x: .4375, y: -1.0625, z: 0}
-    - {x: -.875, y: .87499994, z: 0}
-    - {x: .4375, y: .87499994, z: 0}
+    - {x: -.875, y: 0, z: 0}
+    - {x: .4375, y: 0, z: 0}
+    - {x: -.875, y: 1.9375, z: 0}
+    - {x: .4375, y: 1.9375, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -2599,7 +2599,7 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -.03125, y: -.1875, z: 0}
+    - {x: -.03125, y: .875, z: 0}
     - {x: .40625, y: .875, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
@@ -2607,17 +2607,17 @@ MonoBehaviour:
     colliderSmoothSphereCollisions: 0
   - name: princess_dodge1
     boundsData:
-    - {x: -.09375, y: -.125, z: 0}
+    - {x: -.09375, y: .9375, z: 0}
     - {x: 1.6875, y: 1.875, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 1.0625, z: 0}
     - {x: 2, y: 2.125, z: 0}
     texelSize: {x: .0625, y: .0625}
     positions:
-    - {x: -.9375, y: -1.0625, z: 0}
-    - {x: .75, y: -1.0625, z: 0}
-    - {x: -.9375, y: .8125, z: 0}
-    - {x: .75, y: .8125, z: 0}
+    - {x: -.9375, y: 0, z: 0}
+    - {x: .75, y: 0, z: 0}
+    - {x: -.9375, y: 1.875, z: 0}
+    - {x: .75, y: 1.875, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -2638,7 +2638,7 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -.03125, y: -.1875, z: 0}
+    - {x: -.03125, y: .875, z: 0}
     - {x: .40625, y: .875, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
@@ -2646,17 +2646,17 @@ MonoBehaviour:
     colliderSmoothSphereCollisions: 0
   - name: princess_run7
     boundsData:
-    - {x: -.03125, y: -.03125, z: 0}
+    - {x: -.03125, y: 1.03125, z: 0}
     - {x: 1.0625, y: 1.9375, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 1.0625, z: 0}
     - {x: 2, y: 2.125, z: 0}
     texelSize: {x: .0625, y: .0625}
     positions:
-    - {x: -.5625, y: -1, z: 0}
-    - {x: .5, y: -1, z: 0}
-    - {x: -.5625, y: .9375, z: 0}
-    - {x: .5, y: .9375, z: 0}
+    - {x: -.5625, y: .0625, z: 0}
+    - {x: .5, y: .0625, z: 0}
+    - {x: -.5625, y: 2, z: 0}
+    - {x: .5, y: 2, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -2677,7 +2677,7 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -.03125, y: -.1875, z: 0}
+    - {x: -.03125, y: .875, z: 0}
     - {x: .40625, y: .875, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
@@ -2685,17 +2685,17 @@ MonoBehaviour:
     colliderSmoothSphereCollisions: 0
   - name: princess_crouch4
     boundsData:
-    - {x: -.03125, y: -.43749997, z: 0}
+    - {x: -.03125, y: .625, z: 0}
     - {x: .9375, y: 1.25, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 1.0625, z: 0}
     - {x: 2, y: 2.125, z: 0}
     texelSize: {x: .0625, y: .0625}
     positions:
-    - {x: -.5, y: -1.0625, z: 0}
-    - {x: .4375, y: -1.0625, z: 0}
-    - {x: -.5, y: .18750006, z: 0}
-    - {x: .4375, y: .18750006, z: 0}
+    - {x: -.5, y: 0, z: 0}
+    - {x: .4375, y: 0, z: 0}
+    - {x: -.5, y: 1.25, z: 0}
+    - {x: .4375, y: 1.25, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -2716,7 +2716,7 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -.0625, y: -.53125, z: 0}
+    - {x: -.0625, y: .53125, z: 0}
     - {x: .4375, y: .53125, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
@@ -2724,17 +2724,17 @@ MonoBehaviour:
     colliderSmoothSphereCollisions: 0
   - name: princess_dodge4
     boundsData:
-    - {x: -.09375, y: 0, z: 0}
+    - {x: -.09375, y: 1.0625, z: 0}
     - {x: 1.8125, y: 2.125, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 1.0625, z: 0}
     - {x: 2, y: 2.125, z: 0}
     texelSize: {x: .0625, y: .0625}
     positions:
-    - {x: -1, y: -1.0625, z: 0}
-    - {x: .8125, y: -1.0625, z: 0}
-    - {x: -1, y: 1.0625, z: 0}
-    - {x: .8125, y: 1.0625, z: 0}
+    - {x: -1, y: 0, z: 0}
+    - {x: .8125, y: 0, z: 0}
+    - {x: -1, y: 2.125, z: 0}
+    - {x: .8125, y: 2.125, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -2755,7 +2755,7 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -.03125, y: -.1875, z: 0}
+    - {x: -.03125, y: .875, z: 0}
     - {x: .40625, y: .875, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
@@ -2763,17 +2763,17 @@ MonoBehaviour:
     colliderSmoothSphereCollisions: 0
   - name: princess_dodge3
     boundsData:
-    - {x: .09375, y: 0, z: 0}
+    - {x: .09375, y: 1.0625, z: 0}
     - {x: 1.8125, y: 2.125, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 1.0625, z: 0}
     - {x: 2, y: 2.125, z: 0}
     texelSize: {x: .0625, y: .0625}
     positions:
-    - {x: -.8125, y: -1.0625, z: 0}
-    - {x: 1, y: -1.0625, z: 0}
-    - {x: -.8125, y: 1.0625, z: 0}
-    - {x: 1, y: 1.0625, z: 0}
+    - {x: -.8125, y: 0, z: 0}
+    - {x: 1, y: 0, z: 0}
+    - {x: -.8125, y: 2.125, z: 0}
+    - {x: 1, y: 2.125, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -2794,7 +2794,7 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -.03125, y: -.1875, z: 0}
+    - {x: -.03125, y: .875, z: 0}
     - {x: .40625, y: .875, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
@@ -2802,17 +2802,17 @@ MonoBehaviour:
     colliderSmoothSphereCollisions: 0
   - name: princess_crouch1
     boundsData:
-    - {x: -.03125, y: -.46875, z: 0}
+    - {x: -.03125, y: .59375, z: 0}
     - {x: 1.0625, y: 1.1875, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 1.0625, z: 0}
     - {x: 2, y: 2.125, z: 0}
     texelSize: {x: .0625, y: .0625}
     positions:
-    - {x: -.5625, y: -1.0625, z: 0}
-    - {x: .5, y: -1.0625, z: 0}
-    - {x: -.5625, y: .124999993, z: 0}
-    - {x: .5, y: .124999993, z: 0}
+    - {x: -.5625, y: 0, z: 0}
+    - {x: .5, y: 0, z: 0}
+    - {x: -.5625, y: 1.1875, z: 0}
+    - {x: .5, y: 1.1875, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -2833,7 +2833,7 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -.0625, y: -.53125, z: 0}
+    - {x: -.0625, y: .53125, z: 0}
     - {x: .4375, y: .53125, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
@@ -2841,17 +2841,17 @@ MonoBehaviour:
     colliderSmoothSphereCollisions: 0
   - name: princess_throw3
     boundsData:
-    - {x: -.0625, y: -.40625, z: 0}
+    - {x: -.0625, y: .65625, z: 0}
     - {x: 1, y: 1.3125, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 1.0625, z: 0}
     - {x: 2, y: 2.125, z: 0}
     texelSize: {x: .0625, y: .0625}
     positions:
-    - {x: -.5625, y: -1.0625, z: 0}
-    - {x: .4375, y: -1.0625, z: 0}
-    - {x: -.5625, y: .249999985, z: 0}
-    - {x: .4375, y: .249999985, z: 0}
+    - {x: -.5625, y: 0, z: 0}
+    - {x: .4375, y: 0, z: 0}
+    - {x: -.5625, y: 1.3125, z: 0}
+    - {x: .4375, y: 1.3125, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -2872,7 +2872,7 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -.03125, y: -.1875, z: 0}
+    - {x: -.03125, y: .875, z: 0}
     - {x: .40625, y: .875, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
@@ -2880,17 +2880,17 @@ MonoBehaviour:
     colliderSmoothSphereCollisions: 0
   - name: princess_throw7
     boundsData:
-    - {x: -.09375, y: -.0937500298, z: 0}
+    - {x: -.09375, y: .96875, z: 0}
     - {x: 1.0625, y: 1.9375, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 1.0625, z: 0}
     - {x: 2, y: 2.125, z: 0}
     texelSize: {x: .0625, y: .0625}
     positions:
-    - {x: -.625, y: -1.0625, z: 0}
-    - {x: .4375, y: -1.0625, z: 0}
-    - {x: -.625, y: .87499994, z: 0}
-    - {x: .4375, y: .87499994, z: 0}
+    - {x: -.625, y: 0, z: 0}
+    - {x: .4375, y: 0, z: 0}
+    - {x: -.625, y: 1.9375, z: 0}
+    - {x: .4375, y: 1.9375, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -2911,7 +2911,7 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -.03125, y: -.1875, z: 0}
+    - {x: -.03125, y: .875, z: 0}
     - {x: .40625, y: .875, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
@@ -2919,17 +2919,17 @@ MonoBehaviour:
     colliderSmoothSphereCollisions: 0
   - name: princess_throw4
     boundsData:
-    - {x: .09375, y: -.0312500298, z: 0}
+    - {x: .09375, y: 1.03125, z: 0}
     - {x: 1.1875, y: 2.0625, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 1.0625, z: 0}
     - {x: 2, y: 2.125, z: 0}
     texelSize: {x: .0625, y: .0625}
     positions:
-    - {x: -.5, y: -1.0625, z: 0}
-    - {x: .6875, y: -1.0625, z: 0}
-    - {x: -.5, y: .99999994, z: 0}
-    - {x: .6875, y: .99999994, z: 0}
+    - {x: -.5, y: 0, z: 0}
+    - {x: .6875, y: 0, z: 0}
+    - {x: -.5, y: 2.0625, z: 0}
+    - {x: .6875, y: 2.0625, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -2950,7 +2950,7 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -.03125, y: -.1875, z: 0}
+    - {x: -.03125, y: .875, z: 0}
     - {x: .40625, y: .875, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
@@ -2958,17 +2958,17 @@ MonoBehaviour:
     colliderSmoothSphereCollisions: 0
   - name: princess_throw1
     boundsData:
-    - {x: -.09375, y: -.37499997, z: 0}
+    - {x: -.09375, y: .6875, z: 0}
     - {x: 1.0625, y: 1.375, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 1.0625, z: 0}
     - {x: 2, y: 2.125, z: 0}
     texelSize: {x: .0625, y: .0625}
     positions:
-    - {x: -.625, y: -1.0625, z: 0}
-    - {x: .4375, y: -1.0625, z: 0}
-    - {x: -.625, y: .31250006, z: 0}
-    - {x: .4375, y: .31250006, z: 0}
+    - {x: -.625, y: 0, z: 0}
+    - {x: .4375, y: 0, z: 0}
+    - {x: -.625, y: 1.375, z: 0}
+    - {x: .4375, y: 1.375, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -2989,7 +2989,7 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -.03125, y: -.1875, z: 0}
+    - {x: -.03125, y: .875, z: 0}
     - {x: .40625, y: .875, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
@@ -2997,17 +2997,17 @@ MonoBehaviour:
     colliderSmoothSphereCollisions: 0
   - name: princess_dodge5
     boundsData:
-    - {x: -.15625, y: 0, z: 0}
+    - {x: -.15625, y: 1.0625, z: 0}
     - {x: 1.5625, y: 2.125, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 1.0625, z: 0}
     - {x: 2, y: 2.125, z: 0}
     texelSize: {x: .0625, y: .0625}
     positions:
-    - {x: -.9375, y: -1.0625, z: 0}
-    - {x: .625, y: -1.0625, z: 0}
-    - {x: -.9375, y: 1.0625, z: 0}
-    - {x: .625, y: 1.0625, z: 0}
+    - {x: -.9375, y: 0, z: 0}
+    - {x: .625, y: 0, z: 0}
+    - {x: -.9375, y: 2.125, z: 0}
+    - {x: .625, y: 2.125, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -3028,7 +3028,7 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -.03125, y: -.1875, z: 0}
+    - {x: -.03125, y: .875, z: 0}
     - {x: .40625, y: .875, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
@@ -3036,17 +3036,17 @@ MonoBehaviour:
     colliderSmoothSphereCollisions: 0
   - name: princess_dodge6
     boundsData:
-    - {x: -.0625, y: -.0937500298, z: 0}
+    - {x: -.0625, y: .96875, z: 0}
     - {x: 1.25, y: 1.9375, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 1.0625, z: 0}
     - {x: 2, y: 2.125, z: 0}
     texelSize: {x: .0625, y: .0625}
     positions:
-    - {x: -.6875, y: -1.0625, z: 0}
-    - {x: .5625, y: -1.0625, z: 0}
-    - {x: -.6875, y: .87499994, z: 0}
-    - {x: .5625, y: .87499994, z: 0}
+    - {x: -.6875, y: 0, z: 0}
+    - {x: .5625, y: 0, z: 0}
+    - {x: -.6875, y: 1.9375, z: 0}
+    - {x: .5625, y: 1.9375, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -3067,7 +3067,7 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -.03125, y: -.1875, z: 0}
+    - {x: -.03125, y: .875, z: 0}
     - {x: .40625, y: .875, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
@@ -3075,17 +3075,17 @@ MonoBehaviour:
     colliderSmoothSphereCollisions: 0
   - name: princess_run3
     boundsData:
-    - {x: .03125, y: -.03125, z: 0}
+    - {x: .03125, y: 1.03125, z: 0}
     - {x: 1.0625, y: 1.9375, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 1.0625, z: 0}
     - {x: 2, y: 2.125, z: 0}
     texelSize: {x: .0625, y: .0625}
     positions:
-    - {x: -.5, y: -1, z: 0}
-    - {x: .5625, y: -1, z: 0}
-    - {x: -.5, y: .9375, z: 0}
-    - {x: .5625, y: .9375, z: 0}
+    - {x: -.5, y: .0625, z: 0}
+    - {x: .5625, y: .0625, z: 0}
+    - {x: -.5, y: 2, z: 0}
+    - {x: .5625, y: 2, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -3106,7 +3106,7 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -.03125, y: -.1875, z: 0}
+    - {x: -.03125, y: .875, z: 0}
     - {x: .40625, y: .875, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
@@ -3114,17 +3114,17 @@ MonoBehaviour:
     colliderSmoothSphereCollisions: 0
   - name: princess_crouch3
     boundsData:
-    - {x: -.03125, y: -.40625, z: 0}
+    - {x: -.03125, y: .65625, z: 0}
     - {x: .9375, y: 1.3125, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 1.0625, z: 0}
     - {x: 2, y: 2.125, z: 0}
     texelSize: {x: .0625, y: .0625}
     positions:
-    - {x: -.5, y: -1.0625, z: 0}
-    - {x: .4375, y: -1.0625, z: 0}
-    - {x: -.5, y: .249999985, z: 0}
-    - {x: .4375, y: .249999985, z: 0}
+    - {x: -.5, y: 0, z: 0}
+    - {x: .4375, y: 0, z: 0}
+    - {x: -.5, y: 1.3125, z: 0}
+    - {x: .4375, y: 1.3125, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -3145,7 +3145,7 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -.0625, y: -.53125, z: 0}
+    - {x: -.0625, y: .53125, z: 0}
     - {x: .4375, y: .53125, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
@@ -3153,17 +3153,17 @@ MonoBehaviour:
     colliderSmoothSphereCollisions: 0
   - name: princess_idle2
     boundsData:
-    - {x: 0, y: -.125, z: 0}
+    - {x: 0, y: .9375, z: 0}
     - {x: 1, y: 1.875, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 1.0625, z: 0}
     - {x: 2, y: 2.125, z: 0}
     texelSize: {x: .0625, y: .0625}
     positions:
-    - {x: -.5, y: -1.0625, z: 0}
-    - {x: .5, y: -1.0625, z: 0}
-    - {x: -.5, y: .8125, z: 0}
-    - {x: .5, y: .8125, z: 0}
+    - {x: -.5, y: 0, z: 0}
+    - {x: .5, y: 0, z: 0}
+    - {x: -.5, y: 1.875, z: 0}
+    - {x: .5, y: 1.875, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -3184,7 +3184,7 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -.03125, y: -.1875, z: 0}
+    - {x: -.03125, y: .875, z: 0}
     - {x: .40625, y: .875, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
@@ -3203,7 +3203,7 @@ MonoBehaviour:
   loadable: 0
   invOrthoSize: .111111112
   halfTargetHeight: 144
-  buildKey: 1150897344
+  buildKey: 1287267893
   dataGuid: 06c9c51c7d312e84eb48d3e992356757
   managedSpriteCollection: 0
   hasPlatformData: 0
