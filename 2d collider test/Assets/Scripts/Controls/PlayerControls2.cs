@@ -38,6 +38,11 @@ public abstract class PlayerControls2 : Actor
     protected abstract PlayerCamera CameraFollowingMe();
     protected abstract PlayerCamera OtherPlayerCamera();
 
+    protected override bool isDodging()
+    {
+        return dodging;
+    }
+
     public void knockBackByBlock(bool hurt)
     {
         base.knockToNearestTile(-facingDirection);
