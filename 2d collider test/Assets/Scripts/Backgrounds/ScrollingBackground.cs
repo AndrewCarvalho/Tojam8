@@ -22,7 +22,7 @@ public class ScrollingBackground : MonoBehaviour
         this.sprite0 = this.transform.FindChild("Sprite0").GetComponent<tk2dSprite>();
         this.sprite1 = this.transform.FindChild("Sprite1").GetComponent<tk2dSprite>();
 
-        this.sprite0.transform.position = this.parallaxLayer.transform.position;
+        //this.sprite0.transform.position = this.parallaxLayer.transform.position;
         this.sprite1.transform.position = this.sprite0.transform.position + new Vector3(this.sprite0.GetBounds().extents.x + this.sprite0.GetBounds().center.x + this.sprite1.GetBounds().extents.x - this.sprite1.GetBounds().center.x, 0, 0);
 	}
 	
