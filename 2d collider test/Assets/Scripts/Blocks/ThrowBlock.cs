@@ -109,22 +109,37 @@ public class ThrowBlock : Actor {
                         {
                             transform.Translate(moveDelta.x, moveDelta.y, moveDelta.z);
 
-                            /*RaycastHit[] hits = body.SweepTestAll(new Vector3(1.0f, 0.0f, 0.0f));
-                            Debug.DrawRay(transform.position, moveDelta * 50, Color.black, 0, false);
-                            RaycastHit? lowest = null;
-                            foreach (RaycastHit hit in hits)
+                            /*int count = 0;
+                            Ray ray = new Ray(new Vector3(transform.position.x, 0.0f, 0.0f), new Vector3(0.0f, -1.0f, 0.0f));
+                            RaycastHit lastHit = new RaycastHit();
+                            while(count++ < 50)
                             {
-                                Gizmos.DrawSphere(hit.point, 1);
-                                if (lowest == null || hit.point.y < lowest.Value.point.y)
-                                    lowest = hit;
+                                RaycastHit hit;
+                                bool didHit = collider.Raycast(ray, out hit, Mathf.Infinity);
+                                Debug.DrawLine(ray.origin, ray.origin + ray.direction, Color.blue, 10);
+                                if (didHit && lastHit.collider != null && hit.collider == lastHit.collider)
+                                {
+                                    break;
+                                }
+
+                                lastHit = hit;
+
+                                ray.origin = new Vector3(ray.origin.x, ray.origin.y + 1.0f);
                             }
 
-                            if(lowest != null)
-                                Debug.Log("lowest " + lowest.Value.collider.gameObject.name);*/
+                            if (count >= 50.0f)
+                                Debug.Log("failed " + count);
 
-                            //if (lowest != null && lowest.Value.collider.bounds.Intersects(collider.bounds))
+                            Collider collidedWith = collidedWithSomething();
 
-                            if (collidedWithSomething() != null)
+                            if(collider.gameObject != null)
+                                Debug.Log("collidedWith", collider.gameObject);
+
+                            if(lastHit.collider.gameObject != null)
+                                Debug.Log("lastHit ", lastHit.collider.gameObject);
+
+                            if (collidedWith == lastHit.collider)*/
+                            if(collidedWithSomething() != null)
                             {
                                 transform.Translate(-moveDelta.x, -moveDelta.y, -moveDelta.z);
 
