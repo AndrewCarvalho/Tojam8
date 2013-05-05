@@ -13,6 +13,7 @@ public abstract class PlayerControls2 : Actor
 
     protected float facingDirection = 1.0f;
     protected float hurtCountdown = 0.0f;
+    protected float dodgeRecoverCountdown = 0.0f;
 
     public bool dodging = false;
 
@@ -72,6 +73,7 @@ public abstract class PlayerControls2 : Actor
     void Update()
     {
         doingActionCountDown -= Time.deltaTime;
+        dodgeRecoverCountdown -= Time.deltaTime;
 
         if (hurtCountdown > 0.0f && hurtCountdown - Time.deltaTime < 0)
         {
@@ -79,13 +81,18 @@ public abstract class PlayerControls2 : Actor
         }
         hurtCountdown -= Time.deltaTime;
 
-        if ((doingActionCountDown > 0 && dodging == false) || hurtCountdown > 0)
+        if ((doingActionCountDown > 0 && dodging == false) || hurtCountdown > 0 || dodgeRecoverCountdown > 0)
         {
             return; // in the middle of an animation. Do nothing
         }
         else if (dodging && doingActionCountDown < 0)
         {
             dodging = false;
+            Run(0.0f);
+
+            dodgeRecoverCountdown =  getAnimationDuration("Dizzy");
+            PlayAnimation("Dizzy");
+            return;
         }
 
         if (this.jumpState == JUMP_STATE.ON_GROUND)
