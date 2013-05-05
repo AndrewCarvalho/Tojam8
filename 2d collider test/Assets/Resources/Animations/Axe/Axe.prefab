@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 400000}
   - 114: {fileID: 11400000}
   m_Layer: 0
-  m_Name: Bomb
+  m_Name: Axe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42,66 +42,70 @@ MonoBehaviour:
     frames:
     - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
         type: 2}
-      spriteId: 83
+      spriteId: 103
       triggerEvent: 0
       eventInfo: 
       eventInt: 0
       eventFloat: 0
     - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
         type: 2}
-      spriteId: 86
-      triggerEvent: 0
-      eventInfo: 
-      eventInt: 0
-      eventFloat: 0
-    fps: 3.5
-    loopStart: 0
-    wrapMode: 0
-  - name: Ignite
-    frames:
-    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
-        type: 2}
-      spriteId: 82
+      spriteId: 96
       triggerEvent: 0
       eventInfo: 
       eventInt: 0
       eventFloat: 0
     - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
         type: 2}
-      spriteId: 85
-      triggerEvent: 0
-      eventInfo: 
-      eventInt: 0
-      eventFloat: 0
-    fps: 8
-    loopStart: 0
-    wrapMode: 0
-  - name: Explode
-    frames:
-    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
-        type: 2}
-      spriteId: 84
+      spriteId: 93
       triggerEvent: 0
       eventInfo: 
       eventInt: 0
       eventFloat: 0
     - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
         type: 2}
-      spriteId: 87
+      spriteId: 94
       triggerEvent: 0
       eventInfo: 
       eventInt: 0
       eventFloat: 0
     - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
         type: 2}
-      spriteId: 88
+      spriteId: 97
       triggerEvent: 0
       eventInfo: 
       eventInt: 0
       eventFloat: 0
     - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
         type: 2}
-      spriteId: 81
+      spriteId: 98
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 102
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 101
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 104
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 100
       triggerEvent: 0
       eventInfo: 
       eventInt: 0
@@ -113,12 +117,33 @@ MonoBehaviour:
     frames:
     - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
         type: 2}
-      spriteId: 83
+      spriteId: 95
       triggerEvent: 0
       eventInfo: 
       eventInt: 0
       eventFloat: 0
-    fps: 30
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 105
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 99
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 92
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    fps: 8
     loopStart: 0
     wrapMode: 0
 --- !u!1001 &100100000

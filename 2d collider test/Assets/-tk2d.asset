@@ -24,6 +24,14 @@ MonoBehaviour:
     dataGUID: 
     managed: 0
     loadable: 0
+  - assetGUID: df4626ac6f365644da74558885cfbe27
+    dataGUID: 
+    managed: 0
+    loadable: 0
+  - assetGUID: 03db5f5a26043234f885fc17e700a499
+    dataGUID: 
+    managed: 0
+    loadable: 0
   fontIndex: []
   spriteCollectionIndex:
   - name: TestSheet
@@ -150,6 +158,30 @@ MonoBehaviour:
     - spikes1
     - spikes3
     - spikes2
+    - axe_spin4
+    - axe_idle3
+    - axe_idle4
+    - axe_spin1
+    - axe_idle2
+    - axe_idle5
+    - axe_idle6
+    - axe_spin3
+    - axe_idle10
+    - axe_idle8
+    - axe_idle7
+    - axe_idle1
+    - axe_idle9
+    - axe_spin2
+    - spikeBlock4
+    - spikeBlock7
+    - spikeBlock1
+    - spikeBlock2
+    - spikeBlock8
+    - spikeBlock3
+    - spikeBlock5
+    - spikeBlock6
+    - spikeBlock9
+    - spikeBlock10
     spriteTextureGUIDs:
     - 05196ce9878c1484892b05adc63692e5
     - 149f455fc814fef4a9de4deb11555d5a
@@ -243,6 +275,30 @@ MonoBehaviour:
     - 1a3bbda6f5afeb545833fc4956d50e28
     - 455cbf56ba768b44198085cf2c999c28
     - aa350f91b91d2b7439f658fd18715ed0
+    - 03a46c6f3f7c4ee4786fb2e40e48b303
+    - 476a5c106fe3b3f418d241e88f361282
+    - 4d1455f8eb7c66048a2ea51a5e2aedd2
+    - 5577b484758611f4e9916ad934cfcd43
+    - 865e20807182da64eb278add97bc0ebf
+    - 8efa16b434238724a92556165f372649
+    - 9b9c61264c4ec8f49bcab1881f77f528
+    - a08904b4e0f81a149bf4eac71d6c8139
+    - a31f8e0f7d4d2c047a47fcf34c373ed6
+    - b2cf8bc6254389b46bed5eb86036ae3a
+    - c67c55c2efa9d2b4d94fd16f87b8eba0
+    - d69ea68311db6a748b42503c4b0f8ebd
+    - eb7bb3085a854cc4087ee1cabea01aed
+    - ee6ebb5734a9308439f06fd3065932b2
+    - 1a5246386b4b3e94b8b0ed708237ee33
+    - 2da07de2880119846bf6869a0c568a5e
+    - 4562dfa19c3b46841af9dac2c98570b4
+    - 672138c10f290c3449b7793408cde6e0
+    - 7ea36872fbe2e394ab86fe35eaa07316
+    - 9a70f31d910ded94da24099eab337f03
+    - be65ba09f3cff1c448ad786d8672fae2
+    - c805ea0a1e3382c4cac084d46fc7f18b
+    - dce6c99315161b043bc89d86d63547de
+    - ed7a47da4ca851149bd661dc910eb63e
     spriteTextureTimeStamps:
     - 1367682715.06051
     - 1367682715.06851
@@ -336,6 +392,30 @@ MonoBehaviour:
     - 1367759564.49605
     - 1367759564.50205
     - 1367759564.49905
+    - 1367765926
+    - 1367765792
+    - 1367765802
+    - 1367765904
+    - 1367765784
+    - 1367765810
+    - 1367765818
+    - 1367765918
+    - 1367765850
+    - 1367765836
+    - 1367765826
+    - 1367765774
+    - 1367765844
+    - 1367765912
+    - 1367767654
+    - 1367767674
+    - 1367767632
+    - 1367767640
+    - 1367767680
+    - 1367767648
+    - 1367767660
+    - 1367767668
+    - 1367767686
+    - 1367767692
     managedSpriteCollection: 0
     loadable: 0
     assetName: 
@@ -356,11 +436,11 @@ MonoBehaviour:
     - e2373d1994ea3704b807bf32cea7d6a1
     - 85e0c0240c3080545bcf4f7c02190dbf
     spriteTextureTimeStamps:
-    - 1367767564.57069
-    - 1367702558.27155
-    - 1367702558.27355
-    - 1367702558.26955
-    - 1367766345.06094
+    - 1367763326
+    - 1367701378.42899
+    - 1367701378.43099
+    - 1367701378.42699
+    - 1367706004.32058
     managedSpriteCollection: 0
     loadable: 0
     assetName: 
