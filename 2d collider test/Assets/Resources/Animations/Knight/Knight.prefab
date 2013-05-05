@@ -223,19 +223,47 @@ MonoBehaviour:
     frames:
     - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
         type: 2}
-      spriteId: 38
+      spriteId: 120
       triggerEvent: 0
       eventInfo: 
       eventInt: 0
       eventFloat: 0
     - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
         type: 2}
-      spriteId: 39
+      spriteId: 122
       triggerEvent: 0
       eventInfo: 
       eventInt: 0
       eventFloat: 0
-    fps: 3.5
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 123
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 119
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 124
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 121
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    fps: 8
     loopStart: 0
     wrapMode: 0
   - name: Knocked Out
@@ -334,21 +362,21 @@ MonoBehaviour:
     frames:
     - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
         type: 2}
-      spriteId: 34
+      spriteId: 118
       triggerEvent: 0
       eventInfo: 
       eventInt: 0
       eventFloat: 0
     - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
         type: 2}
-      spriteId: 42
+      spriteId: 117
       triggerEvent: 0
       eventInfo: 
       eventInt: 0
       eventFloat: 0
     - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
         type: 2}
-      spriteId: 24
+      spriteId: 116
       triggerEvent: 0
       eventInfo: 
       eventInt: 0
