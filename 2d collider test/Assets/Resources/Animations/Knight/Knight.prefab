@@ -197,6 +197,83 @@ MonoBehaviour:
       eventInfo: 
       eventInt: 0
       eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 18
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 135
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 142
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 139
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 140
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 136
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 143
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 144
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 141
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 137
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 138
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
     fps: 14
     loopStart: 0
     wrapMode: 0

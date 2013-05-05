@@ -32,6 +32,14 @@ MonoBehaviour:
     dataGUID: 
     managed: 0
     loadable: 0
+  - assetGUID: d383ebf59bec7364399feb1bb636e1b3
+    dataGUID: 
+    managed: 0
+    loadable: 0
+  - assetGUID: 75e9a2d93615b4d458ba8d0dd2eb0977
+    dataGUID: 
+    managed: 0
+    loadable: 0
   fontIndex: []
   spriteCollectionIndex:
   - name: TestSheet
@@ -201,6 +209,16 @@ MonoBehaviour:
     - princess_dizzy3
     - princess_dizzy1
     - princess_dizzy2
+    - knight_grab7
+    - knight_grab11
+    - knight_grab15
+    - knight_grab16
+    - knight_grab9
+    - knight_grab10
+    - knight_grab14
+    - knight_grab8
+    - knight_grab12
+    - knight_grab13
     spriteTextureGUIDs:
     - 05196ce9878c1484892b05adc63692e5
     - 149f455fc814fef4a9de4deb11555d5a
@@ -337,6 +355,16 @@ MonoBehaviour:
     - 7eed2d0811495354a9c22efd9acee5c1
     - a4a6214d99b217940b22f8df45842122
     - b9d7ed233f2b578428e885fc49bc98d9
+    - 17a62af815980674482d45d02be7095c
+    - 44cb982f3acc68f4086b0db178a80393
+    - 5097627bbaa0cb346bdc8974362a4be9
+    - 69b73208af42f4442b060d2490a097b1
+    - 6c9de1d816ecba34b88cdb048d7d6f15
+    - 71017fca0f6295f46ae4cab24923f738
+    - 9dc834add030ca44488ece9223ac5998
+    - d16ca045de4917f46831f2fdfa20a86d
+    - dd5dd4d339a5108498ab54c641f68a16
+    - fde09d0f0f437a34f8eccb225441388d
     spriteTextureTimeStamps:
     - 1367769997.56278
     - 1367682715.06851
@@ -473,6 +501,16 @@ MonoBehaviour:
     - 1367775100
     - 1367775080
     - 1367775092
+    - 1367776850
+    - 1367776894
+    - 1367776934
+    - 1367776950
+    - 1367776868
+    - 1367776884
+    - 1367776924
+    - 1367776858
+    - 1367776902
+    - 1367776910
     managedSpriteCollection: 0
     loadable: 0
     assetName: 
@@ -482,22 +520,43 @@ MonoBehaviour:
     spriteCollectionDataGUID: 64d810f0bc3aaa74e8d98f3f1f3b1ca7
     spriteNames:
     - bg_layer1
-    - bg_layer3
-    - bg_layer4
+    - bg_layer3_1
+    - bg_layer4_1
     - bg_layer2
     - bg_cameraTransitionCard
+    - bg_layer3_2
+    - bg_layer3_4
+    - bg_layer3_3
+    - bg_layer4_4
+    - bg_layer4_3
+    - bg_layer4_2
+    - bg_cloud
     spriteTextureGUIDs:
     - 5228732d7ef524344a1787452d2fec9a
-    - 9294b5fd0e00fa3438968fffaabcdad4
-    - dd74d279406777d4b87492f3d3001234
+    - 0b1b42335e8600d45b5d6f1f892b7b84
+    - 9eb7d1b3357dbf74ca5368fd947590bb
     - e2373d1994ea3704b807bf32cea7d6a1
     - 85e0c0240c3080545bcf4f7c02190dbf
+    - 53a154c2b65b7564d9662d5ef300b6bd
+    - 9b6ae4ceb00381a46963b016a694cc7b
+    - b20ab3fd1399d5740b63541c7a858795
+    - bb50a4d22c7a7c142bbc47d0879f9831
+    - db273733ae907fd4486a4334ead81fc1
+    - e05aa478ff6ce624da70d739fe828957
+    - 941a15a8a09081b4a81adfdb7b67bc7e
     spriteTextureTimeStamps:
-    - 1367770028.11453
-    - 1367681208
-    - 1367681228
-    - 1367681198
-    - 1367766095.02057
+    - 1367763326
+    - 1367763040
+    - 1367763124
+    - 1367701378.42699
+    - 1367706004.32058
+    - 1367763058
+    - 1367763098
+    - 1367763082
+    - 1367763226
+    - 1367763216
+    - 1367763144
+    - 1367763346
     managedSpriteCollection: 0
     loadable: 0
     assetName: 

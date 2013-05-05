@@ -70,6 +70,11 @@ public class Actor : MonoBehaviour {
     protected Rigidbody body;
     protected JUMP_STATE jumpState = JUMP_STATE.FALLING_DOWN_ACCEL;
 
+    protected virtual bool isDodging()
+    {
+        return false;
+    }
+
     // Use this for initialization
     protected void Awake()
     {
@@ -179,6 +184,11 @@ public class Actor : MonoBehaviour {
             }
         }
         return null;
+    }
+
+    protected bool isDodging(Collider collider)
+    {
+        return collider.gameObject != null && collider.gameObject.GetComponent<PlayerControls2>() != null && collider.gameObject.GetComponent<PlayerControls2>().dodging == true;
     }
 
     public void knockToNearestTile(float verticalDirection)
@@ -310,7 +320,7 @@ public class Actor : MonoBehaviour {
         float movementVectorMagnitude = movementVector.magnitude;
 
         Object[] colliders = FindObjectsOfType(typeof(Collider));
-        if (this.body.SweepTest(movementVectorNormalized, out rayHit, movementVectorMagnitude))
+        if (this.body.SweepTest(movementVectorNormalized, out rayHit, movementVectorMagnitude) && !isDodging())
         {
             onHitCollider(rayHit.collider);
 
@@ -321,7 +331,7 @@ public class Actor : MonoBehaviour {
             // need to sweep the remainder of vertcal and horizonal movement
             Vector3 remainingVector = movementVectorNormalized * (movementVectorMagnitude - rayHit.distance);
             //if (this.body.SweepTest(new Vector3(remainingVector.x > 0 ? 1.0f : -1.0f, 0, 0), out rayHit, Mathf.Abs(remainingVector.x)))
-            if (this.body.SweepTest(new Vector3(1, 0, 0), out rayHit, deltaSide))
+            if (this.body.SweepTest(new Vector3(1, 0, 0), out rayHit, deltaSide) && !isDodging())
             {
                 //this.transform.Translate(new Vector3(rayHit.distance - Utils.MOVE_PADDING * deltaSide > 0 ? 1 : -1, 0, 0));
                 float partialMoveXDist = rayHit.distance - Utils.MOVE_PADDING * Mathf.Sign(rayHit.distance);
@@ -359,7 +369,7 @@ public class Actor : MonoBehaviour {
             }
 
             //if (this.body.SweepTest(new Vector3(0, remainingVector.y > 0 ? 1.0f : -1.0f, 0), out rayHit, Mathf.Abs(remainingVector.y)))
-            if (this.body.SweepTest(new Vector3(0, 1, 0), out rayHit, deltaUp))
+            if (this.body.SweepTest(new Vector3(0, 1, 0), out rayHit, deltaUp) && !isDodging())
             {
                 float partialMoveYDist = rayHit.distance - Utils.MOVE_PADDING * Mathf.Sign(rayHit.distance);
                 this.transform.Translate(new Vector3(0, partialMoveYDist, 0));
