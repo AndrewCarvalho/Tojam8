@@ -159,8 +159,8 @@ public abstract class PlayerControls2 : Actor
 
             if (hitBlock)
             {
-                Run(0.0f, DownPressed(), !dodging);
                 animationName = actionAnimationName;
+                Run(0.0f, DownPressed(), !dodging);
             }
             else if (gameManager.isSingleScreen())
             {
@@ -184,6 +184,10 @@ public abstract class PlayerControls2 : Actor
                     Run(0.0f);
                 }
                 animationName = action2AnimationName;
+            }
+            else
+            {
+                Run(0.0f, DownPressed(), !dodging);
             }
 
             doingActionCountDown = getAnimationDuration(animationName) - 0.1f;

@@ -115,7 +115,6 @@ public class Actor : MonoBehaviour {
 
     protected void Run(float right, bool crouched = false, bool switchAnimations = true)
     {
-        Debug.Log("right " + right + " crouched " + crouched);
         if (right == 0.0f)
         {
             this.runState = RUN_STATE_TEMP.STATIONARY;
