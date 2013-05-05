@@ -3,6 +3,7 @@ using System.Collections;
 
 public class CannonBallBlock : ThrowBlock
 {
+    public PlayerControls2 ignorePlayer = null;
 
 	// Use this for initialization
     protected void Start()
@@ -16,6 +17,21 @@ public class CannonBallBlock : ThrowBlock
     {
         base.Update();
 	}
+
+    protected void FixedUpdate()
+    {
+        base.FixedUpdate();
+        Collider collidedWith = collidedWithSomething(true);
+        if (collidedWith)
+        {
+            Debug.Log("colliding with " + collidedWith.name);
+            PlayerControls2 player = collidedWith.GetComponent<PlayerControls2>();
+            if (player && ignorePlayer != player)
+            {
+                player.knockBackByBlock(true);
+            }
+        }
+    }
 
 
 }
