@@ -74,9 +74,6 @@ public abstract class PlayerControls2 : Actor
         }
         hurtCountdown -= Time.deltaTime;
 
-        if (doingActionCountDown > 0)
-            Debug.Log("doingActionCountDown = " + doingActionCountDown);
-
         if ((doingActionCountDown > 0 && dodging == false) || hurtCountdown > 0)
         {
             return; // in the middle of an animation. Do nothing

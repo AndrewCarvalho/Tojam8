@@ -7,7 +7,7 @@ public class BombBlock : ThrowBlock {
     bool exploded = false;
     float igniteCountdown = 0.0f;
     float explodeCountdown = 0.0f;
-    float igniteDuration = 1.5f;
+    float igniteDuration = 2.25f;
 
     float explosionRadius = 3;
 
@@ -37,6 +37,7 @@ public class BombBlock : ThrowBlock {
             foreach (PlayerControls2 player in players)
             {
                 Vector3 diff = player.transform.position - transform.position;
+                Debug.Log("mag " + diff.magnitude);
                 if (diff.magnitude < igniteDuration)
                     player.Hurt();
             }

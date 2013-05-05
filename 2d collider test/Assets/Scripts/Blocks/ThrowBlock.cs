@@ -131,7 +131,7 @@ public class ThrowBlock : Actor {
 
                     case TransitionState.LOOKING_FOR_FREE_SPACE_GOING_DOWN:
                         {
-                            transform.Translate(moveDelta.x, moveDelta.y, moveDelta.z);
+                            //transform.Translate(moveDelta.x, moveDelta.y, moveDelta.z);
 
                             /*int count = 0;
                             Ray ray = new Ray(new Vector3(transform.position.x, 0.0f, 0.0f), new Vector3(0.0f, -1.0f, 0.0f));
