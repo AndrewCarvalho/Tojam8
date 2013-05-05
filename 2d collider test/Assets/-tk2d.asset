@@ -197,6 +197,10 @@ MonoBehaviour:
     - princess_hurt2
     - princess_hurt5
     - princess_hurt1
+    - princess_dizzy4
+    - princess_dizzy3
+    - princess_dizzy1
+    - princess_dizzy2
     spriteTextureGUIDs:
     - 05196ce9878c1484892b05adc63692e5
     - 149f455fc814fef4a9de4deb11555d5a
@@ -329,6 +333,10 @@ MonoBehaviour:
     - c5c04d8177e13c542a10b6de4724b545
     - e331c41ce6151f746aac4a2424161691
     - ea9e1f9a692093d45a9a23770c7c06b3
+    - 643243fb3f430254b8d062b679be5d8a
+    - 7eed2d0811495354a9c22efd9acee5c1
+    - a4a6214d99b217940b22f8df45842122
+    - b9d7ed233f2b578428e885fc49bc98d9
     spriteTextureTimeStamps:
     - 1367769997.56278
     - 1367682715.06851
@@ -461,6 +469,10 @@ MonoBehaviour:
     - 1367773220
     - 1367773250
     - 1367773212
+    - 1367775110
+    - 1367775100
+    - 1367775080
+    - 1367775092
     managedSpriteCollection: 0
     loadable: 0
     assetName: 
