@@ -172,13 +172,13 @@ public class Actor : MonoBehaviour {
         }
     }
 
-    protected Collider collidedWithSomething()
+    protected Collider collidedWithSomething(bool playersOnly = false)
     {
         Object[] colliders = FindObjectsOfType(typeof(Collider));
         foreach (Object colliderObject in colliders)
         {
             Collider current = colliderObject as Collider;
-            if (current != this.collider && this.collider.bounds.Intersects(current.bounds))
+            if (current != this.collider && (playersOnly == false || current.collider.GetComponent<PlayerControls2>() != null) && this.collider.bounds.Intersects(current.bounds))
             {
                 return current;
             }
