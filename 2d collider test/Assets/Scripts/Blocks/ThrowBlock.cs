@@ -14,6 +14,11 @@ public class ThrowBlock : Actor {
     Camera destinationCamera = null;
     bool passedThroughSomething = false;
 
+    protected float throwDelayCountdown = 0.0f;
+    protected Vector3 delayedDirection;
+    protected PlayerCamera delayedCamera;
+    protected PlayerCamera delayedOtherCamera;
+
     protected bool shouldStopInFirstEmptySpace = true;
 
     enum TransitionState { NOT_TRANSITIONING, TRANSITIONING_FROM_BOTTOM, TRANSITIONING_FROM_TOP, LOOKING_FOR_FREE_SPACE_GOING_UP, LOOKING_FOR_FREE_SPACE_GOING_DOWN, FLOATING_AWAY };
@@ -126,7 +131,7 @@ public class ThrowBlock : Actor {
 
                     case TransitionState.LOOKING_FOR_FREE_SPACE_GOING_DOWN:
                         {
-                            transform.Translate(moveDelta.x, moveDelta.y, moveDelta.z);
+                            //transform.Translate(moveDelta.x, moveDelta.y, moveDelta.z);
 
                             /*int count = 0;
                             Ray ray = new Ray(new Vector3(transform.position.x, 0.0f, 0.0f), new Vector3(0.0f, -1.0f, 0.0f));
@@ -181,6 +186,12 @@ public class ThrowBlock : Actor {
                 }
             }
         }
+
+        if (throwDelayCountdown > 0.0f && throwDelayCountdown - Time.deltaTime < 0)
+        {
+            Throw(delayedDirection, delayedCamera, delayedOtherCamera, 0);
+        }
+        throwDelayCountdown -= Time.deltaTime;
     }
 
     bool pointIsInCamera(Vector3 point, Camera camera)
@@ -195,24 +206,34 @@ public class ThrowBlock : Actor {
             screenPoint.y < (cameraPosition.y + halfPixelHeight);
     }
 
-    public void Throw(Vector3 direction, PlayerCamera camera, PlayerCamera otherCamera)
+    public void Throw(Vector3 direction, PlayerCamera camera, PlayerCamera otherCamera, float delay)
     {
         if (direction != new Vector3(0.0f, 1.0f, 0.0f) && direction != new Vector3(0.0f, -1.0f, 0.0f))
             throw new System.Exception();
 
-        DisableActor();
-        floatDirection = direction * blockThrowSpeed;
+        if (delay > 0.0f)
+        {
+            delayedDirection = direction;
+            delayedCamera = camera;
+            delayedOtherCamera = otherCamera;
+            throwDelayCountdown = delay;
+        }
+        else
+        {
+            DisableActor();
+            floatDirection = direction * blockThrowSpeed;
 
-        if(camera != null)
-            originCamera = camera.camera;
+            if(camera != null)
+                originCamera = camera.camera;
 
-        if(otherCamera != null)
-            destinationCamera = otherCamera.camera;
+            if(otherCamera != null)
+                destinationCamera = otherCamera.camera;
 
-        if (throwAnimation.Length != 0)
-            PlayAnimation(throwAnimation);
+            if (throwAnimation.Length != 0)
+                PlayAnimation(throwAnimation);
 
-        collider.isTrigger = true;
-        passedThroughSomething = false;
+            collider.isTrigger = true;
+            passedThroughSomething = false;
+        }
     }
 }

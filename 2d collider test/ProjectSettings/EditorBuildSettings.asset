@@ -9,3 +9,5 @@ EditorBuildSettings:
     path: Assets/Scenes/LevelTest.unity
   - enabled: 1
     path: Assets/Scenes/WinScene.unity
+  - enabled: 1
+    path: Assets/Scenes/FINALLEVEL.unity
