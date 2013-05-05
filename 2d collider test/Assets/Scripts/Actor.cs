@@ -6,6 +6,8 @@ public class Actor : MonoBehaviour {
     private float lastVel = 0f;
     private float cumulativeCurrentJumpHeight = 0f;
 
+    private bool hasAnimations;
+
     // new jump tweakable variables
     [SerializeField]
     private float minJumpHeight = 1.0f;
@@ -17,6 +19,19 @@ public class Actor : MonoBehaviour {
     private float maxJumpTime = 0.5f;
     [SerializeField]
     private float terminalFallVel = -25;
+
+    [SerializeField]
+    protected string runAnimationName;
+    [SerializeField]
+    protected string idleAnimationName;
+    [SerializeField]
+    protected string actionAnimationName;
+    [SerializeField]
+    protected string action2AnimationName;
+    [SerializeField]
+    protected string crouchIdleAnimationName;
+    [SerializeField]
+    protected string crouchMoveAnimationName;
 
     private float jumpTime;
     private bool breakJump = false;
@@ -49,6 +64,12 @@ public class Actor : MonoBehaviour {
     protected void Awake()
     {
         this.body = GetComponent<Rigidbody>();
+        hasAnimations = runAnimationName.Length > 0 && 
+            idleAnimationName.Length > 0 && 
+            actionAnimationName.Length > 0 && 
+            action2AnimationName.Length > 0 && 
+            crouchIdleAnimationName.Length > 0 && 
+            crouchMoveAnimationName.Length > 0;
     }
 
     protected void JumpStart()
@@ -76,7 +97,7 @@ public class Actor : MonoBehaviour {
         return Physics.RaycastAll(origin, direction, distance, mask);
     }
 
-    protected void Run(float right)
+    protected void Run(float right, bool crouched = false)
     {
         if (right == 0.0f)
         {
@@ -90,22 +111,52 @@ public class Actor : MonoBehaviour {
         {
             this.runState = RUN_STATE_TEMP.RIGHT;
         }
+
+        if (hasAnimations)
+        {
+            switch (runState)
+            {
+                case RUN_STATE_TEMP.STATIONARY:
+                    PlayAnimation(crouched ? crouchIdleAnimationName : idleAnimationName);
+                    break;
+
+                case RUN_STATE_TEMP.LEFT:
+                case RUN_STATE_TEMP.RIGHT:
+                    PlayAnimation(crouched ? crouchMoveAnimationName : runAnimationName);
+                    break;
+            }
+        }
     }
 
     public void knockToNearestTile(float verticalDirection)
     {
         Vector3 position = transform.position;
-        float remainder = position.x % 2;
-        if (verticalDirection > 0.0f)
-        {
-            position.x -= remainder;
-        }
-        else
-        {
-            position.x += remainder;
-        }
-        Debug.Log("remainder " + remainder);
+        position.x = Mathf.Round(position.x);
         transform.position = position;
+    }
+
+    protected void PlayAnimation(string name)
+    {
+        tk2dAnimatedSprite sprite = GetComponent<tk2dAnimatedSprite>();
+        if(!sprite.IsPlaying(name))
+            sprite.Play(name);
+    }
+
+    protected void FlipAnimationX()
+    {
+        tk2dAnimatedSprite sprite = GetComponent<tk2dAnimatedSprite>();
+        if (sprite != null)
+            sprite.FlipX();
+    }
+
+    protected float getAnimationDuration(string name)
+    {
+        tk2dAnimatedSprite sprite = GetComponent<tk2dAnimatedSprite>();
+        if (!sprite)
+            return 0.0f;
+
+        tk2dSpriteAnimationClip clip = sprite.GetClipByName(name);
+        return clip == null ? 0.0f : clip.frames.Length / clip.fps;
     }
 
     protected void FixedUpdate()
