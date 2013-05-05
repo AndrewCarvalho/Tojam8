@@ -37,7 +37,7 @@ public class Actor : MonoBehaviour {
     private bool breakJump = false;
 
     [SerializeField]
-    private float walkSpeed = 0;
+    private float walkSpeed = 5;
     [SerializeField]
     private float maxRunSpeed;
 
@@ -242,9 +242,11 @@ public class Actor : MonoBehaviour {
         // vertical sweep
         Vector3 movementVector = new Vector3(deltaSide, deltaUp, 0);
         Vector3 movementVectorNormalized = movementVector.normalized;
+        Debug.Log(movementVector);
         float movementVectorMagnitude = movementVector.magnitude;
         if (this.body.SweepTest(movementVectorNormalized, out rayHit, movementVectorMagnitude))
         {
+            Debug.Log("HIT?");
             // there was a hit... okay, need to handle this!
             // move as far as we can along this vector and then figure out which direction we're blocked in
             this.transform.Translate(movementVectorNormalized * (rayHit.distance - Utils.MOVE_PADDING));
