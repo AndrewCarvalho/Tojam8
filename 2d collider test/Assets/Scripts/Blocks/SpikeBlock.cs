@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class SpikeBlock : Actor {
+public class SpikeBlock : ThrowBlock {
 
 	// Use this for initialization
 	void Start () {

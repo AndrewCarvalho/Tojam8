@@ -182,6 +182,25 @@ MonoBehaviour:
     - spikeBlock6
     - spikeBlock9
     - spikeBlock10
+    - knight_jump3
+    - knight_jump2
+    - knight_jump1
+    - knight_hurt4
+    - knight_hurt1
+    - knight_hurt6
+    - knight_hurt2
+    - knight_hurt3
+    - knight_hurt5
+    - princess_hurt3
+    - princess_hurt6
+    - princess_hurt4
+    - princess_hurt2
+    - princess_hurt5
+    - princess_hurt1
+    - princess_dizzy4
+    - princess_dizzy3
+    - princess_dizzy1
+    - princess_dizzy2
     spriteTextureGUIDs:
     - 05196ce9878c1484892b05adc63692e5
     - 149f455fc814fef4a9de4deb11555d5a
@@ -299,24 +318,43 @@ MonoBehaviour:
     - c805ea0a1e3382c4cac084d46fc7f18b
     - dce6c99315161b043bc89d86d63547de
     - ed7a47da4ca851149bd661dc910eb63e
+    - bc4d44991e2db724891abc6bf31a2c5a
+    - cc1e40c7cd37bca4eb06d93da2d16d76
+    - 6ec8d9c1e1b52ef45b8eb229dbf5e34f
+    - 0e26a25eb076df34ca22c414e2487644
+    - 8000b417ac1c88c4a9d7745fd174cd97
+    - a3dbfdd9be1b9004b99a39da5831eb3c
+    - e1b9a0764dca7fe44a00d3ad5936e42d
+    - edd801044f4f98446bad5052d7a3b229
+    - f2750cdbd553c1241906640965b2a575
+    - 25ceb0a0748414248bffc3c842b42344
+    - 3b1432920de2b9e438972930a4dcadbc
+    - b96085195e2d0814da187a23657ecf7d
+    - c5c04d8177e13c542a10b6de4724b545
+    - e331c41ce6151f746aac4a2424161691
+    - ea9e1f9a692093d45a9a23770c7c06b3
+    - 643243fb3f430254b8d062b679be5d8a
+    - 7eed2d0811495354a9c22efd9acee5c1
+    - a4a6214d99b217940b22f8df45842122
+    - b9d7ed233f2b578428e885fc49bc98d9
     spriteTextureTimeStamps:
-    - 1367682715.06051
+    - 1367769997.56278
     - 1367682715.06851
     - 1367682715.07451
-    - 1367682715.04251
-    - 1367682715.05851
-    - 1367682715.05351
-    - 1367682715.06251
-    - 1367682715.04551
-    - 1367682715.03451
+    - 1367769254
+    - 1367769957.77751
+    - 1367769318
+    - 1367770008.78543
+    - 1367769268
+    - 1367769232
     - 1367682715.07051
-    - 1367682715.03951
-    - 1367682715.05151
-    - 1367682715.03751
+    - 1367769428
+    - 1367769292
+    - 1367769418
     - 1367682715.07251
-    - 1367682715.03651
-    - 1367682715.04851
-    - 1367682715.05651
+    - 1367769404
+    - 1367769282
+    - 1367769302
     - 1367682715.06651
     - 1367757942
     - 1367757868
@@ -416,6 +454,25 @@ MonoBehaviour:
     - 1367767668
     - 1367767686
     - 1367767692
+    - 1367757614
+    - 1367757596
+    - 1367757588
+    - 1367773048
+    - 1367773014
+    - 1367773066
+    - 1367773026
+    - 1367773038
+    - 1367773058
+    - 1367773232
+    - 1367773260
+    - 1367773242
+    - 1367773220
+    - 1367773250
+    - 1367773212
+    - 1367775110
+    - 1367775100
+    - 1367775080
+    - 1367775092
     managedSpriteCollection: 0
     loadable: 0
     assetName: 
