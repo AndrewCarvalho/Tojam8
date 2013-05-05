@@ -13127,7 +13127,7 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
-  blockThrowSpeed: 20
+  blockThrowSpeed: 15
 --- !u!114 &737269068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15702,7 +15702,7 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
-  blockThrowSpeed: 20
+  blockThrowSpeed: 15
 --- !u!114 &819087491
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16588,7 +16588,7 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
-  blockThrowSpeed: 20
+  blockThrowSpeed: 15
 --- !u!114 &844184977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19435,7 +19435,7 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
-  blockThrowSpeed: 20
+  blockThrowSpeed: 15
 --- !u!114 &979371486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29548,7 +29548,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: .6875, y: 1.875, z: .200000003}
-  m_Center: {x: -1.40625, y: .9375, z: 0}
+  m_Center: {x: .15625, y: .9375, z: 0}
 --- !u!54 &1476739366
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -32693,7 +32693,7 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
-  blockThrowSpeed: 20
+  blockThrowSpeed: 15
 --- !u!114 &1617358122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37008,7 +37008,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1849836809}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 12, z: 1}
@@ -38439,7 +38439,7 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
-  blockThrowSpeed: 20
+  blockThrowSpeed: 15
 --- !u!114 &1950335866
 MonoBehaviour:
   m_ObjectHideFlags: 0
