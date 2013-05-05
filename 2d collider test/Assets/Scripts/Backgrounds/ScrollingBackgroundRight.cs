@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class ScrollingBackground : MonoBehaviour 
+public class ScrollingBackgroundRight : MonoBehaviour 
 {
     private ParallaxLayer parallaxLayer;
     private tk2dSprite sprite0;

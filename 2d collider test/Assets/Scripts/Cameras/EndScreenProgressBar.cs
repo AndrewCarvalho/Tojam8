@@ -31,6 +31,7 @@ public class EndScreenProgressBar : MonoBehaviour
     private AudioSource finalSong;
 
     private TextMesh finalText;
+    private TextMesh aToContinue;
 
     void Awake()
     {
@@ -68,6 +69,7 @@ public class EndScreenProgressBar : MonoBehaviour
 
         this.finalSong = this.transform.FindChild("FinalSong").GetComponent<AudioSource>();
         this.finalText = GameObject.Find("WinnerText").GetComponent<TextMesh>();
+        this.aToContinue = GameObject.Find("PressAToContinue").GetComponent<TextMesh>();
     }
 
     void Update()
@@ -90,6 +92,15 @@ public class EndScreenProgressBar : MonoBehaviour
             else
             {
                 this.finalText.text = "Knight Wins";
+            }
+            this.aToContinue.text = "Press A To Play Again";
+        }
+
+        if (this.doneLinearInterpolation)
+        {
+            if (Input.GetKey(KeyCode.Joystick1Button0) || Input.GetKey(KeyCode.Joystick2Button0) || Input.GetKey(KeyCode.A))
+            {
+                Application.LoadLevel("FINALLEVEL");
             }
         }
     }
