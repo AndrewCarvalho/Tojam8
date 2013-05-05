@@ -3,6 +3,9 @@ using System.Collections;
 
 public class ThrowBlock : Actor {
 
+    [SerializeField]
+    private float blockThrowSpeed = 20.0f;
+
     protected Vector3? floatDirection = null;
     Camera originCamera = null;
     Camera destinationCamera = null;
@@ -99,7 +102,7 @@ public class ThrowBlock : Actor {
 
                             if (collidedWithSomething())
                             {
-                                transform.Translate(-moveDelta.x, -moveDelta.y, -moveDelta.z);
+                                transform.Translate(-moveDelta.x + 0.05f, -moveDelta.y + 0.05f, -moveDelta.z + 0.05f);
 
                                 floatDirection = null;
                                 collider.isTrigger = false;
@@ -145,7 +148,7 @@ public class ThrowBlock : Actor {
             throw new System.Exception();
 
         DisableActor();
-        floatDirection = direction * 5.0f;
+        floatDirection = direction * blockThrowSpeed;
         originCamera = camera.camera;
         destinationCamera = otherCamera.camera;
         collider.isTrigger = true;

@@ -34,7 +34,7 @@ public class PlayerTwoControls : PlayerControls2
 
     protected override bool ActionButtonDown()
     {
-        return Input.GetKey(KeyCode.Keypad0) || Input.GetKeyDown(KeyCode.Joystick1Button1);
+        return Input.GetKeyDown(KeyCode.Keypad0) || Input.GetKeyDown(KeyCode.Joystick1Button1);
     }
 
     protected override Vector3 BlockThrowDirection()

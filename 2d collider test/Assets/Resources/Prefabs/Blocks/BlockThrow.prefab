@@ -135,6 +135,7 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  blockThrowSpeed: 15
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
