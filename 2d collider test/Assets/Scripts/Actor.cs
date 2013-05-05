@@ -122,7 +122,6 @@ public class Actor : MonoBehaviour {
         {
             this.runState = RUN_STATE_TEMP.RIGHT;
         }
-
         if (hasAnimations)
         {
             if (this.jumpState == JUMP_STATE.ON_GROUND)
@@ -192,6 +191,7 @@ public class Actor : MonoBehaviour {
         tk2dAnimatedSprite sprite = GetComponent<tk2dAnimatedSprite>();
         if(!sprite.IsPlaying(name))
             sprite.Play(name);
+
         if (sprite.Paused)
             sprite.Paused = false;
     }
@@ -305,6 +305,8 @@ public class Actor : MonoBehaviour {
         float movementVectorMagnitude = movementVector.magnitude;
         if (this.body.SweepTest(movementVectorNormalized, out rayHit, movementVectorMagnitude))
         {
+            onHitCollider(rayHit.collider);
+
             // there was a hit... okay, need to handle this!
             // move as far as we can along this vector and then figure out which direction we're blocked in
             this.transform.Translate(movementVectorNormalized * (rayHit.distance - Utils.MOVE_PADDING));
@@ -339,7 +341,7 @@ public class Actor : MonoBehaviour {
                 this.transform.Translate(new Vector3(deltaSide, 0, 0));
 
                 // yes no maybe?
-                Object[] colliders = FindObjectsOfType(typeof(Collider));
+                /*Object[] colliders = FindObjectsOfType(typeof(Collider));
                 foreach (Object colliderObject in colliders)
                 {
                     Collider collider = colliderObject as Collider;
@@ -348,7 +350,7 @@ public class Actor : MonoBehaviour {
                         //this.transform.Translate(new Vector3(-remainingVector.x, 0, 0));
                         this.transform.Translate(new Vector3(-deltaSide, 0, 0));
                     }
-                }
+                }*/
             }
 
             //if (this.body.SweepTest(new Vector3(0, remainingVector.y > 0 ? 1.0f : -1.0f, 0), out rayHit, Mathf.Abs(remainingVector.y)))
@@ -367,7 +369,7 @@ public class Actor : MonoBehaviour {
                 }
 
                 // yes no maybe?
-                Object[] colliders = FindObjectsOfType(typeof(Collider));
+                /*Object[] colliders = FindObjectsOfType(typeof(Collider));
                 foreach (Object colliderObject in colliders)
                 {
                     Collider collider = colliderObject as Collider;
@@ -377,7 +379,7 @@ public class Actor : MonoBehaviour {
                         this.transform.Translate(new Vector3(0, -partialMoveYDist, 0));
                         this.cumulativeCurrentJumpHeight -= partialMoveYDist;
                     }
-                }
+                }*/
             }
             else
             {
@@ -387,7 +389,7 @@ public class Actor : MonoBehaviour {
                 this.cumulativeCurrentJumpHeight += deltaUp;
 
                 // yes no maybe?
-                Object[] colliders = FindObjectsOfType(typeof(Collider));
+                /*Object[] colliders = FindObjectsOfType(typeof(Collider));
                 foreach (Object colliderObject in colliders)
                 {
                     Collider collider = colliderObject as Collider;
@@ -396,7 +398,7 @@ public class Actor : MonoBehaviour {
                         this.transform.Translate(new Vector3(0, -remainingVector.y, 0));
                         this.cumulativeCurrentJumpHeight -= remainingVector.y;
                     }
-                }
+                }*/
             }
         }
         else
@@ -409,7 +411,7 @@ public class Actor : MonoBehaviour {
             this.transform.Translate(movementVector);
 
             // yes no maybe?
-            Object[] colliders = FindObjectsOfType(typeof(Collider));
+            /*Object[] colliders = FindObjectsOfType(typeof(Collider));
             foreach (Object colliderObject in colliders)
             {
                 Collider collider = colliderObject as Collider;
@@ -417,7 +419,7 @@ public class Actor : MonoBehaviour {
                 {
                     this.transform.Translate(-movementVector);
                 }
-            }
+            }*/
         }
     }
 
@@ -430,6 +432,10 @@ public class Actor : MonoBehaviour {
     }
 
     public virtual void onHitRight(Collider other)
+    {
+    }
+
+    public virtual void onHitCollider(Collider other)
     {
     }
 }
