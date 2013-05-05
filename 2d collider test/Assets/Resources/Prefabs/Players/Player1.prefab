@@ -103,7 +103,7 @@ MonoBehaviour:
   idleAnimationName: Idle
   actionAnimationName: Attack
   action2AnimationName: Grab
-  crouchIdleAnimationName: Crouch
+  crouchIdleAnimationName: Crouch Idle
   crouchMoveAnimationName: Crouch
   jumpAnimationName: Jump
   jumpUpFrameNum: 0

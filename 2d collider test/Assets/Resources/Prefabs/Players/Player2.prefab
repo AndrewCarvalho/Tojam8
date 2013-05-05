@@ -103,7 +103,7 @@ MonoBehaviour:
   idleAnimationName: Idle
   actionAnimationName: Throw
   action2AnimationName: Dodge
-  crouchIdleAnimationName: CrouchIdle
+  crouchIdleAnimationName: Crouch Idle
   crouchMoveAnimationName: Crouch
   jumpAnimationName: Jump
   jumpUpFrameNum: 0
