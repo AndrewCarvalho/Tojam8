@@ -304,15 +304,8 @@ MonoBehaviour:
     fps: 3.5
     loopStart: 0
     wrapMode: 0
-  - name: New Clip
-    frames:
-    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
-        type: 2}
-      spriteId: 73
-      triggerEvent: 0
-      eventInfo: 
-      eventInt: 0
-      eventFloat: 0
+  - name: 
+    frames: []
     fps: 30
     loopStart: 0
     wrapMode: 0

@@ -19692,13 +19692,14 @@ MonoBehaviour:
   jumpUpFrameNum: 0
   jumpTopFrameNum: 0
   jumpDownFrameNum: 0
+  topJumpVelocity: 0
   walkSpeed: 0
   maxRunSpeed: 0
   timeToMaxWalkSpeed: 0
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
-  blockThrowSpeed: 20
+  blockThrowSpeed: 15
 --- !u!114 &737269068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23101,13 +23102,14 @@ MonoBehaviour:
   jumpUpFrameNum: 0
   jumpTopFrameNum: 0
   jumpDownFrameNum: 0
+  topJumpVelocity: 0
   walkSpeed: 0
   maxRunSpeed: 0
   timeToMaxWalkSpeed: 0
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
-  blockThrowSpeed: 20
+  blockThrowSpeed: 15
 --- !u!114 &819087491
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24388,13 +24390,14 @@ MonoBehaviour:
   jumpUpFrameNum: 0
   jumpTopFrameNum: 0
   jumpDownFrameNum: 0
+  topJumpVelocity: 0
   walkSpeed: 0
   maxRunSpeed: 0
   timeToMaxWalkSpeed: 0
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
-  blockThrowSpeed: 20
+  blockThrowSpeed: 15
 --- !u!114 &844184977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27545,10 +27548,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 959502703}
+  - 114: {fileID: 959502699}
+  - 114: {fileID: 959502700}
   - 33: {fileID: 959502702}
   - 23: {fileID: 959502701}
-  - 114: {fileID: 959502700}
-  - 114: {fileID: 959502699}
   - 54: {fileID: 959502697}
   - 65: {fileID: 959502698}
   m_Layer: 0
@@ -27583,8 +27586,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1.79999995, z: 1}
-  m_Center: {x: 0, y: -.100000001, z: 0}
+  m_Size: {x: .8125, y: 1.75, z: .200000003}
+  m_Center: {x: -.03125, y: .875, z: 0}
 --- !u!114 &959502699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27600,23 +27603,24 @@ MonoBehaviour:
   termFallVelHeight: 5
   maxJumpTime: .5
   terminalFallVel: -25
-  runAnimationName: 
-  idleAnimationName: 
-  actionAnimationName: 
-  action2AnimationName: 
-  crouchIdleAnimationName: 
-  crouchMoveAnimationName: 
-  jumpAnimationName: 
+  runAnimationName: Run
+  idleAnimationName: Idle
+  actionAnimationName: Throw
+  action2AnimationName: Dodge
+  crouchIdleAnimationName: CrouchIdle
+  crouchMoveAnimationName: Crouch
+  jumpAnimationName: Jump
   jumpUpFrameNum: 0
-  jumpTopFrameNum: 0
-  jumpDownFrameNum: 0
+  jumpTopFrameNum: 1
+  jumpDownFrameNum: 2
+  topJumpVelocity: 3
   walkSpeed: 5
   maxRunSpeed: 10
   timeToMaxWalkSpeed: 0
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
-  actionableDistance: 1
+  actionableDistance: 2
 --- !u!114 &959502700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27625,17 +27629,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 959502696}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fac570381f34f647b768dc5a5aa1364, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e0e0c37ef9d7b34292486e754b48bd5, type: 3}
   m_Name: 
-  collection: {fileID: 11400000, guid: 08177ab29bff9894484539aa3c234579, type: 2}
+  collection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757, type: 2}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
-  _spriteId: 1
+  _spriteId: 49
   pixelPerfect: 0
   boxCollider: {fileID: 959502698}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
+  anim: {fileID: 11400000, guid: 6999075fcfff871448970ebd7b735756, type: 2}
+  clipId: 2
+  playAutomatically: 1
+  createCollider: 0
 --- !u!23 &959502701
 Renderer:
   m_ObjectHideFlags: 0
@@ -27648,7 +27656,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: eae71b8c1eef76a4eb6a8696a12fe383, type: 2}
+  - {fileID: 2100000, guid: 407a59009d0112142b975810d8ed6885, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -27668,7 +27676,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 959502696}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 196.5, y: 2, z: 0}
+  m_LocalPosition: {x: 196.5, y: 1.00100005, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -28499,13 +28507,14 @@ MonoBehaviour:
   jumpUpFrameNum: 0
   jumpTopFrameNum: 0
   jumpDownFrameNum: 0
+  topJumpVelocity: 0
   walkSpeed: 0
   maxRunSpeed: 0
   timeToMaxWalkSpeed: 0
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
-  blockThrowSpeed: 20
+  blockThrowSpeed: 15
 --- !u!114 &979371486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42912,17 +42921,18 @@ MonoBehaviour:
   action2AnimationName: Grab
   crouchIdleAnimationName: Crouch
   crouchMoveAnimationName: Crouch
-  jumpAnimationName: Run
+  jumpAnimationName: Jump
   jumpUpFrameNum: 0
   jumpTopFrameNum: 1
   jumpDownFrameNum: 2
+  topJumpVelocity: 3
   walkSpeed: 5
   maxRunSpeed: 10
   timeToMaxWalkSpeed: 0
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
-  actionableDistance: 1
+  actionableDistance: 2
 --- !u!23 &1476739369
 Renderer:
   m_ObjectHideFlags: 0
@@ -47184,13 +47194,14 @@ MonoBehaviour:
   jumpUpFrameNum: 0
   jumpTopFrameNum: 0
   jumpDownFrameNum: 0
+  topJumpVelocity: 0
   walkSpeed: 0
   maxRunSpeed: 0
   timeToMaxWalkSpeed: 0
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
-  blockThrowSpeed: 20
+  blockThrowSpeed: 15
 --- !u!114 &1617358122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57019,13 +57030,14 @@ MonoBehaviour:
   jumpUpFrameNum: 0
   jumpTopFrameNum: 0
   jumpDownFrameNum: 0
+  topJumpVelocity: 0
   walkSpeed: 0
   maxRunSpeed: 0
   timeToMaxWalkSpeed: 0
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
-  blockThrowSpeed: 20
+  blockThrowSpeed: 15
 --- !u!114 &1950335866
 MonoBehaviour:
   m_ObjectHideFlags: 0
