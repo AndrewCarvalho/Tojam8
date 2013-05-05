@@ -37,7 +37,6 @@ public class BombBlock : ThrowBlock {
             foreach (PlayerControls2 player in players)
             {
                 Vector3 diff = player.transform.position - transform.position;
-                Debug.Log("diff.magnitude " + diff.magnitude);
                 if (diff.magnitude < igniteDuration)
                     player.Hurt();
             }
@@ -53,7 +52,6 @@ public class BombBlock : ThrowBlock {
 
     protected override void onHitGround()
     {
-        Debug.Log("onHitGround");
         if (!ignited)
         {
             PlayAnimation("Ignite");

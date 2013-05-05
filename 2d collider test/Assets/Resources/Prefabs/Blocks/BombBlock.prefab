@@ -10,10 +10,10 @@ GameObject:
   - 4: {fileID: 400000}
   - 33: {fileID: 3300000}
   - 23: {fileID: 2300000}
-  - 114: {fileID: 11400002}
   - 114: {fileID: 11400000}
   - 54: {fileID: 5400000}
   - 65: {fileID: 6500000}
+  - 114: {fileID: 11400002}
   m_Layer: 0
   m_Name: BombBlock
   m_TagString: Untagged
@@ -28,7 +28,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19, y: 1, z: 0}
+  m_LocalPosition: {x: 7.26601553, y: 4.01837397, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -125,7 +125,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fac570381f34f647b768dc5a5aa1364, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e0e0c37ef9d7b34292486e754b48bd5, type: 3}
   m_Name: 
   collection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757, type: 2}
   _color: {r: 1, g: 1, b: 1, a: 1}
@@ -136,6 +136,10 @@ MonoBehaviour:
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
+  anim: {fileID: 11400000, guid: 4a7b6010836a68649bda97022064f82b, type: 2}
+  clipId: 0
+  playAutomatically: 1
+  createCollider: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
