@@ -8,11 +8,14 @@ public class CannonBallBlock : ThrowBlock
     protected void Start()
     {
         base.Start();
+        shouldStopInFirstEmptySpace = false;
 	}
 	
 	// Update is called once per frame
     protected void Update()
     {
-	    
+        base.Update();
 	}
+
+
 }

@@ -1221,9 +1221,9 @@ GameObject:
   - 4: {fileID: 36211381}
   - 33: {fileID: 36211380}
   - 23: {fileID: 36211379}
-  - 114: {fileID: 36211378}
   - 114: {fileID: 36211376}
   - 54: {fileID: 36211375}
+  - 114: {fileID: 36211378}
   - 65: {fileID: 36211377}
   m_Layer: 0
   m_Name: SpikeBlock
@@ -1281,6 +1281,8 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  blockThrowSpeed: 20
+  throwAnimation: 
 --- !u!65 &36211377
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1302,17 +1304,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 36211374}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fac570381f34f647b768dc5a5aa1364, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e0e0c37ef9d7b34292486e754b48bd5, type: 3}
   m_Name: 
   collection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757, type: 2}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
-  _spriteId: 89
+  _spriteId: 108
   pixelPerfect: 0
-  boxCollider: {fileID: 36211377}
+  boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
+  anim: {fileID: 11400000, guid: 03db5f5a26043234f885fc17e700a499, type: 2}
+  clipId: 0
+  playAutomatically: 0
+  createCollider: 0
 --- !u!23 &36211379
 Renderer:
   m_ObjectHideFlags: 0
@@ -3759,6 +3765,7 @@ MonoBehaviour:
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
   blockThrowSpeed: 15
+  throwAnimation: 
 --- !u!114 &109083061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5228,9 +5235,9 @@ GameObject:
   - 4: {fileID: 161907127}
   - 33: {fileID: 161907126}
   - 23: {fileID: 161907125}
-  - 114: {fileID: 161907124}
   - 114: {fileID: 161907122}
   - 54: {fileID: 161907121}
+  - 114: {fileID: 161907124}
   - 65: {fileID: 161907123}
   m_Layer: 0
   m_Name: SpikeBlock
@@ -5288,6 +5295,8 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  blockThrowSpeed: 20
+  throwAnimation: 
 --- !u!65 &161907123
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5309,17 +5318,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 161907120}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fac570381f34f647b768dc5a5aa1364, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e0e0c37ef9d7b34292486e754b48bd5, type: 3}
   m_Name: 
   collection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757, type: 2}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
-  _spriteId: 89
+  _spriteId: 108
   pixelPerfect: 0
-  boxCollider: {fileID: 161907123}
+  boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
+  anim: {fileID: 11400000, guid: 03db5f5a26043234f885fc17e700a499, type: 2}
+  clipId: 0
+  playAutomatically: 0
+  createCollider: 0
 --- !u!23 &161907125
 Renderer:
   m_ObjectHideFlags: 0
@@ -6323,6 +6336,153 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2241f6c642a78de48b42a45ae0852f52, type: 3}
   m_Name: 
+--- !u!1 &193959013
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: ca0b602e5a33821468acdc55d5ec6859, type: 2}
+  m_PrefabInternal: {fileID: 214987785}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 193959020}
+  - 33: {fileID: 193959019}
+  - 23: {fileID: 193959018}
+  - 114: {fileID: 193959016}
+  - 54: {fileID: 193959015}
+  - 65: {fileID: 193959014}
+  - 114: {fileID: 193959017}
+  m_Layer: 0
+  m_Name: CannonBall
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &193959014
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6500000, guid: ca0b602e5a33821468acdc55d5ec6859,
+    type: 2}
+  m_PrefabInternal: {fileID: 214987785}
+  m_GameObject: {fileID: 193959013}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: .200000003}
+  m_Center: {x: -.5, y: .5, z: 0}
+--- !u!54 &193959015
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: ca0b602e5a33821468acdc55d5ec6859,
+    type: 2}
+  m_PrefabInternal: {fileID: 214987785}
+  m_GameObject: {fileID: 193959013}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &193959016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: ca0b602e5a33821468acdc55d5ec6859,
+    type: 2}
+  m_PrefabInternal: {fileID: 214987785}
+  m_GameObject: {fileID: 193959013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1b0e2995df2bc64a946f3c8f5216298, type: 3}
+  m_Name: 
+  minJumpHeight: 1
+  maxJumpHeight: 3
+  termFallVelHeight: 5
+  maxJumpTime: .5
+  terminalFallVel: -25
+  runAnimationName: 
+  idleAnimationName: 
+  actionAnimationName: 
+  action2AnimationName: 
+  crouchIdleAnimationName: 
+  crouchMoveAnimationName: 
+  jumpAnimationName: 
+  jumpUpFrameNum: 0
+  jumpTopFrameNum: 0
+  jumpDownFrameNum: 0
+  topJumpVelocity: 0
+  walkSpeed: 5
+  maxRunSpeed: 0
+  timeToMaxWalkSpeed: 0
+  timeToMaxRunSpeed: 0
+  timeToDecelerateToWalk: 0
+  timeToDecelerateToStop: 0
+  blockThrowSpeed: 20
+  throwAnimation: Thrown
+--- !u!114 &193959017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: ca0b602e5a33821468acdc55d5ec6859,
+    type: 2}
+  m_PrefabInternal: {fileID: 214987785}
+  m_GameObject: {fileID: 193959013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e0e0c37ef9d7b34292486e754b48bd5, type: 3}
+  m_Name: 
+  collection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757, type: 2}
+  _color: {r: 1, g: 1, b: 1, a: 1}
+  _scale: {x: 1, y: 1, z: 1}
+  _spriteId: 103
+  pixelPerfect: 0
+  boxCollider: {fileID: 0}
+  meshCollider: {fileID: 0}
+  meshColliderPositions: []
+  meshColliderMesh: {fileID: 0}
+  anim: {fileID: 11400000, guid: df4626ac6f365644da74558885cfbe27, type: 2}
+  clipId: 0
+  playAutomatically: 1
+  createCollider: 0
+--- !u!23 &193959018
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2300000, guid: ca0b602e5a33821468acdc55d5ec6859,
+    type: 2}
+  m_PrefabInternal: {fileID: 214987785}
+  m_GameObject: {fileID: 193959013}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 407a59009d0112142b975810d8ed6885, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+--- !u!33 &193959019
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 3300000, guid: ca0b602e5a33821468acdc55d5ec6859,
+    type: 2}
+  m_PrefabInternal: {fileID: 214987785}
+  m_GameObject: {fileID: 193959013}
+  m_Mesh: {fileID: 0}
+--- !u!4 &193959020
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: ca0b602e5a33821468acdc55d5ec6859, type: 2}
+  m_PrefabInternal: {fileID: 214987785}
+  m_GameObject: {fileID: 193959013}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 185.940063, y: 2.16243982, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1001 &195078882
 Prefab:
   m_ObjectHideFlags: 0
@@ -6824,6 +6984,7 @@ MonoBehaviour:
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
   blockThrowSpeed: 20
+  throwAnimation: 
 --- !u!65 &208178204
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7062,6 +7223,54 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d723c8740c7331d45b5eac5d670a50df, type: 2}
   m_RootGameObject: {fileID: 868091717}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
+--- !u!1001 &214987785
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: ca0b602e5a33821468acdc55d5ec6859, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 185.940063
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ca0b602e5a33821468acdc55d5ec6859, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 2.16243982
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ca0b602e5a33821468acdc55d5ec6859, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ca0b602e5a33821468acdc55d5ec6859, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ca0b602e5a33821468acdc55d5ec6859, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ca0b602e5a33821468acdc55d5ec6859, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ca0b602e5a33821468acdc55d5ec6859, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3300000, guid: ca0b602e5a33821468acdc55d5ec6859, type: 2}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: ca0b602e5a33821468acdc55d5ec6859, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 407a59009d0112142b975810d8ed6885, type: 2}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: ca0b602e5a33821468acdc55d5ec6859, type: 2}
+  m_RootGameObject: {fileID: 193959013}
   m_IsPrefabParent: 0
   m_IsExploded: 1
 --- !u!1 &216164205
@@ -8391,9 +8600,9 @@ GameObject:
   - 4: {fileID: 290778682}
   - 33: {fileID: 290778681}
   - 23: {fileID: 290778680}
-  - 114: {fileID: 290778679}
   - 114: {fileID: 290778677}
   - 54: {fileID: 290778676}
+  - 114: {fileID: 290778679}
   - 65: {fileID: 290778678}
   m_Layer: 0
   m_Name: SpikeBlock
@@ -8451,6 +8660,8 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  blockThrowSpeed: 20
+  throwAnimation: 
 --- !u!65 &290778678
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8472,17 +8683,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 290778675}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fac570381f34f647b768dc5a5aa1364, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e0e0c37ef9d7b34292486e754b48bd5, type: 3}
   m_Name: 
   collection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757, type: 2}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
-  _spriteId: 89
+  _spriteId: 108
   pixelPerfect: 0
-  boxCollider: {fileID: 290778678}
+  boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
+  anim: {fileID: 11400000, guid: 03db5f5a26043234f885fc17e700a499, type: 2}
+  clipId: 0
+  playAutomatically: 0
+  createCollider: 0
 --- !u!23 &290778680
 Renderer:
   m_ObjectHideFlags: 0
@@ -20313,9 +20528,9 @@ GameObject:
   - 4: {fileID: 671158614}
   - 33: {fileID: 671158613}
   - 23: {fileID: 671158612}
-  - 114: {fileID: 671158611}
   - 114: {fileID: 671158609}
   - 54: {fileID: 671158608}
+  - 114: {fileID: 671158611}
   - 65: {fileID: 671158610}
   m_Layer: 0
   m_Name: SpikeBlock
@@ -20373,6 +20588,8 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  blockThrowSpeed: 20
+  throwAnimation: 
 --- !u!65 &671158610
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20394,17 +20611,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 671158607}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fac570381f34f647b768dc5a5aa1364, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e0e0c37ef9d7b34292486e754b48bd5, type: 3}
   m_Name: 
   collection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757, type: 2}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
-  _spriteId: 89
+  _spriteId: 108
   pixelPerfect: 0
-  boxCollider: {fileID: 671158610}
+  boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
+  anim: {fileID: 11400000, guid: 03db5f5a26043234f885fc17e700a499, type: 2}
+  clipId: 0
+  playAutomatically: 0
+  createCollider: 0
 --- !u!23 &671158612
 Renderer:
   m_ObjectHideFlags: 0
@@ -21856,6 +22077,7 @@ MonoBehaviour:
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
   blockThrowSpeed: 15
+  throwAnimation: 
 --- !u!114 &737269068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25371,6 +25593,7 @@ MonoBehaviour:
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
   blockThrowSpeed: 15
+  throwAnimation: 
 --- !u!114 &819087491
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26658,6 +26881,7 @@ MonoBehaviour:
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
   blockThrowSpeed: 15
+  throwAnimation: 
 --- !u!114 &844184977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29729,7 +29953,7 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 11400002, guid: 4517a7a62613b294b9384ab1bc95b863, type: 2}
+    - target: {fileID: 0}
       propertyPath: boxCollider
       value: 
       objectReference: {fileID: 0}
@@ -30440,7 +30664,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 959502696}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 190.891006, y: .980499387, z: 0}
+  m_LocalPosition: {x: 190.891006, y: 1.26991856, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -31114,7 +31338,7 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 11400002, guid: 4517a7a62613b294b9384ab1bc95b863, type: 2}
+    - target: {fileID: 0}
       propertyPath: boxCollider
       value: 
       objectReference: {fileID: 0}
@@ -31331,6 +31555,7 @@ MonoBehaviour:
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
   blockThrowSpeed: 15
+  throwAnimation: 
 --- !u!114 &979371486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45712,9 +45937,9 @@ GameObject:
   - 4: {fileID: 1432803451}
   - 33: {fileID: 1432803450}
   - 23: {fileID: 1432803449}
-  - 114: {fileID: 1432803448}
   - 114: {fileID: 1432803446}
   - 54: {fileID: 1432803445}
+  - 114: {fileID: 1432803448}
   - 65: {fileID: 1432803447}
   m_Layer: 0
   m_Name: SpikeBlock
@@ -45772,6 +45997,8 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  blockThrowSpeed: 20
+  throwAnimation: 
 --- !u!65 &1432803447
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -45793,17 +46020,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 1432803444}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fac570381f34f647b768dc5a5aa1364, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e0e0c37ef9d7b34292486e754b48bd5, type: 3}
   m_Name: 
   collection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757, type: 2}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
-  _spriteId: 89
+  _spriteId: 108
   pixelPerfect: 0
-  boxCollider: {fileID: 1432803447}
+  boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
+  anim: {fileID: 11400000, guid: 03db5f5a26043234f885fc17e700a499, type: 2}
+  clipId: 0
+  playAutomatically: 0
+  createCollider: 0
 --- !u!23 &1432803449
 Renderer:
   m_ObjectHideFlags: 0
@@ -51862,6 +52093,7 @@ MonoBehaviour:
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
   blockThrowSpeed: 15
+  throwAnimation: 
 --- !u!114 &1617358122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55357,6 +55589,10 @@ Prefab:
     - target: {fileID: 3300000, guid: 4517a7a62613b294b9384ab1bc95b863, type: 2}
       propertyPath: m_Mesh
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 4517a7a62613b294b9384ab1bc95b863, type: 2}
+      propertyPath: throwAnimation
+      value: Thrown
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6500000, guid: 4517a7a62613b294b9384ab1bc95b863, type: 2}
@@ -62239,6 +62475,7 @@ MonoBehaviour:
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
   blockThrowSpeed: 15
+  throwAnimation: 
 --- !u!114 &1950335866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64609,7 +64846,7 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 11400002, guid: 4517a7a62613b294b9384ab1bc95b863, type: 2}
+    - target: {fileID: 0}
       propertyPath: boxCollider
       value: 
       objectReference: {fileID: 0}
@@ -66155,9 +66392,9 @@ GameObject:
   - 4: {fileID: 2098988369}
   - 33: {fileID: 2098988375}
   - 23: {fileID: 2098988374}
-  - 114: {fileID: 2098988373}
   - 114: {fileID: 2098988371}
   - 54: {fileID: 2098988370}
+  - 114: {fileID: 2098988373}
   - 65: {fileID: 2098988372}
   m_Layer: 0
   m_Name: SpikeBlock
@@ -66226,6 +66463,8 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  blockThrowSpeed: 20
+  throwAnimation: Thrown
 --- !u!65 &2098988372
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -66247,17 +66486,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 2098988368}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fac570381f34f647b768dc5a5aa1364, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e0e0c37ef9d7b34292486e754b48bd5, type: 3}
   m_Name: 
   collection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757, type: 2}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
-  _spriteId: 89
+  _spriteId: 108
   pixelPerfect: 0
-  boxCollider: {fileID: 2098988372}
+  boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
+  anim: {fileID: 11400000, guid: 03db5f5a26043234f885fc17e700a499, type: 2}
+  clipId: 0
+  playAutomatically: 0
+  createCollider: 0
 --- !u!23 &2098988374
 Renderer:
   m_ObjectHideFlags: 0
@@ -66631,9 +66874,9 @@ GameObject:
   - 4: {fileID: 2126433435}
   - 33: {fileID: 2126433434}
   - 23: {fileID: 2126433433}
-  - 114: {fileID: 2126433432}
   - 114: {fileID: 2126433430}
   - 54: {fileID: 2126433429}
+  - 114: {fileID: 2126433432}
   - 65: {fileID: 2126433431}
   m_Layer: 0
   m_Name: SpikeBlock
@@ -66691,6 +66934,8 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  blockThrowSpeed: 20
+  throwAnimation: 
 --- !u!65 &2126433431
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -66712,17 +66957,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 2126433428}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fac570381f34f647b768dc5a5aa1364, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e0e0c37ef9d7b34292486e754b48bd5, type: 3}
   m_Name: 
   collection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757, type: 2}
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
-  _spriteId: 89
+  _spriteId: 108
   pixelPerfect: 0
-  boxCollider: {fileID: 2126433431}
+  boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
+  anim: {fileID: 11400000, guid: 03db5f5a26043234f885fc17e700a499, type: 2}
+  clipId: 0
+  playAutomatically: 0
+  createCollider: 0
 --- !u!23 &2126433433
 Renderer:
   m_ObjectHideFlags: 0
