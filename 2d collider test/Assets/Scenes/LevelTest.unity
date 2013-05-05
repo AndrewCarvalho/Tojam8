@@ -12618,6 +12618,9 @@ GameObject:
   - 33: {fileID: 737269064}
   - 23: {fileID: 737269063}
   - 114: {fileID: 737269062}
+  - 114: {fileID: 737269068}
+  - 114: {fileID: 737269067}
+  - 54: {fileID: 737269066}
   - 65: {fileID: 737269061}
   m_Layer: 0
   m_Name: BlockThrow
@@ -12696,6 +12699,55 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1284876827}
+--- !u!54 &737269066
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: e795f02f20f15c949a3572e3a62fb372,
+    type: 2}
+  m_PrefabInternal: {fileID: 482583887}
+  m_GameObject: {fileID: 737269060}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &737269067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400004, guid: e795f02f20f15c949a3572e3a62fb372,
+    type: 2}
+  m_PrefabInternal: {fileID: 482583887}
+  m_GameObject: {fileID: 737269060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac314ee5aa451ea4181e3eefb388d653, type: 3}
+  m_Name: 
+  minJumpHeight: 1
+  maxJumpHeight: 3
+  termFallVelHeight: 5
+  maxJumpTime: .5
+  terminalFallVel: -25
+  walkSpeed: 0
+  maxRunSpeed: 0
+  timeToMaxWalkSpeed: 0
+  timeToMaxRunSpeed: 0
+  timeToDecelerateToWalk: 0
+  timeToDecelerateToStop: 0
+--- !u!114 &737269068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: e795f02f20f15c949a3572e3a62fb372,
+    type: 2}
+  m_PrefabInternal: {fileID: 482583887}
+  m_GameObject: {fileID: 737269060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2241f6c642a78de48b42a45ae0852f52, type: 3}
+  m_Name: 
 --- !u!1 &738300901
 GameObject:
   m_ObjectHideFlags: 0
@@ -14649,6 +14701,9 @@ GameObject:
   - 33: {fileID: 844184973}
   - 23: {fileID: 844184972}
   - 114: {fileID: 844184971}
+  - 114: {fileID: 844184977}
+  - 114: {fileID: 844184976}
+  - 54: {fileID: 844184975}
   - 65: {fileID: 844184970}
   m_Layer: 0
   m_Name: BlockThrow
@@ -14727,6 +14782,55 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1284876827}
+--- !u!54 &844184975
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: e795f02f20f15c949a3572e3a62fb372,
+    type: 2}
+  m_PrefabInternal: {fileID: 1151980060}
+  m_GameObject: {fileID: 844184969}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &844184976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400004, guid: e795f02f20f15c949a3572e3a62fb372,
+    type: 2}
+  m_PrefabInternal: {fileID: 1151980060}
+  m_GameObject: {fileID: 844184969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac314ee5aa451ea4181e3eefb388d653, type: 3}
+  m_Name: 
+  minJumpHeight: 1
+  maxJumpHeight: 3
+  termFallVelHeight: 5
+  maxJumpTime: .5
+  terminalFallVel: -25
+  walkSpeed: 0
+  maxRunSpeed: 0
+  timeToMaxWalkSpeed: 0
+  timeToMaxRunSpeed: 0
+  timeToDecelerateToWalk: 0
+  timeToDecelerateToStop: 0
+--- !u!114 &844184977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: e795f02f20f15c949a3572e3a62fb372,
+    type: 2}
+  m_PrefabInternal: {fileID: 1151980060}
+  m_GameObject: {fileID: 844184969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2241f6c642a78de48b42a45ae0852f52, type: 3}
+  m_Name: 
 --- !u!1 &851239606
 GameObject:
   m_ObjectHideFlags: 0
@@ -17034,6 +17138,7 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  actionableDistance: 5
 --- !u!114 &959502700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17525,6 +17630,9 @@ GameObject:
   - 33: {fileID: 979371482}
   - 23: {fileID: 979371481}
   - 114: {fileID: 979371480}
+  - 114: {fileID: 979371486}
+  - 114: {fileID: 979371485}
+  - 54: {fileID: 979371484}
   - 65: {fileID: 979371479}
   m_Layer: 0
   m_Name: BlockThrow
@@ -17603,6 +17711,55 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1284876827}
+--- !u!54 &979371484
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: e795f02f20f15c949a3572e3a62fb372,
+    type: 2}
+  m_PrefabInternal: {fileID: 377154374}
+  m_GameObject: {fileID: 979371478}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &979371485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400004, guid: e795f02f20f15c949a3572e3a62fb372,
+    type: 2}
+  m_PrefabInternal: {fileID: 377154374}
+  m_GameObject: {fileID: 979371478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac314ee5aa451ea4181e3eefb388d653, type: 3}
+  m_Name: 
+  minJumpHeight: 1
+  maxJumpHeight: 3
+  termFallVelHeight: 5
+  maxJumpTime: .5
+  terminalFallVel: -25
+  walkSpeed: 0
+  maxRunSpeed: 0
+  timeToMaxWalkSpeed: 0
+  timeToMaxRunSpeed: 0
+  timeToDecelerateToWalk: 0
+  timeToDecelerateToStop: 0
+--- !u!114 &979371486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: e795f02f20f15c949a3572e3a62fb372,
+    type: 2}
+  m_PrefabInternal: {fileID: 377154374}
+  m_GameObject: {fileID: 979371478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2241f6c642a78de48b42a45ae0852f52, type: 3}
+  m_Name: 
 --- !u!1001 &979727828
 Prefab:
   m_ObjectHideFlags: 0
@@ -20413,7 +20570,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4fc0c6c15ec1d014b892de8393e0ddfa, type: 3}
   m_Name: 
-  distanceForAlertMode: 0
+  distanceForAlertMode: 50
 --- !u!114 &1104825302
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27862,6 +28019,7 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  actionableDistance: 5
 --- !u!114 &1476739368
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30758,6 +30916,9 @@ GameObject:
   - 33: {fileID: 1617358118}
   - 23: {fileID: 1617358117}
   - 114: {fileID: 1617358116}
+  - 114: {fileID: 1617358122}
+  - 114: {fileID: 1617358121}
+  - 54: {fileID: 1617358120}
   - 65: {fileID: 1617358115}
   m_Layer: 0
   m_Name: BlockThrow
@@ -30836,6 +30997,55 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1284876827}
+--- !u!54 &1617358120
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: e795f02f20f15c949a3572e3a62fb372,
+    type: 2}
+  m_PrefabInternal: {fileID: 186267840}
+  m_GameObject: {fileID: 1617358114}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &1617358121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400004, guid: e795f02f20f15c949a3572e3a62fb372,
+    type: 2}
+  m_PrefabInternal: {fileID: 186267840}
+  m_GameObject: {fileID: 1617358114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac314ee5aa451ea4181e3eefb388d653, type: 3}
+  m_Name: 
+  minJumpHeight: 1
+  maxJumpHeight: 3
+  termFallVelHeight: 5
+  maxJumpTime: .5
+  terminalFallVel: -25
+  walkSpeed: 0
+  maxRunSpeed: 0
+  timeToMaxWalkSpeed: 0
+  timeToMaxRunSpeed: 0
+  timeToDecelerateToWalk: 0
+  timeToDecelerateToStop: 0
+--- !u!114 &1617358122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: e795f02f20f15c949a3572e3a62fb372,
+    type: 2}
+  m_PrefabInternal: {fileID: 186267840}
+  m_GameObject: {fileID: 1617358114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2241f6c642a78de48b42a45ae0852f52, type: 3}
+  m_Name: 
 --- !u!1 &1618995360
 GameObject:
   m_ObjectHideFlags: 0
@@ -36999,6 +37209,9 @@ GameObject:
   - 33: {fileID: 1950335862}
   - 23: {fileID: 1950335861}
   - 114: {fileID: 1950335860}
+  - 114: {fileID: 1950335866}
+  - 114: {fileID: 1950335865}
+  - 54: {fileID: 1950335864}
   - 65: {fileID: 1950335859}
   m_Layer: 0
   m_Name: BlockThrow
@@ -37077,6 +37290,55 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1284876827}
+--- !u!54 &1950335864
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: e795f02f20f15c949a3572e3a62fb372,
+    type: 2}
+  m_PrefabInternal: {fileID: 1712326636}
+  m_GameObject: {fileID: 1950335858}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &1950335865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400004, guid: e795f02f20f15c949a3572e3a62fb372,
+    type: 2}
+  m_PrefabInternal: {fileID: 1712326636}
+  m_GameObject: {fileID: 1950335858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac314ee5aa451ea4181e3eefb388d653, type: 3}
+  m_Name: 
+  minJumpHeight: 1
+  maxJumpHeight: 3
+  termFallVelHeight: 5
+  maxJumpTime: .5
+  terminalFallVel: -25
+  walkSpeed: 0
+  maxRunSpeed: 0
+  timeToMaxWalkSpeed: 0
+  timeToMaxRunSpeed: 0
+  timeToDecelerateToWalk: 0
+  timeToDecelerateToStop: 0
+--- !u!114 &1950335866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: e795f02f20f15c949a3572e3a62fb372,
+    type: 2}
+  m_PrefabInternal: {fileID: 1712326636}
+  m_GameObject: {fileID: 1950335858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2241f6c642a78de48b42a45ae0852f52, type: 3}
+  m_Name: 
 --- !u!1001 &1958261114
 Prefab:
   m_ObjectHideFlags: 0

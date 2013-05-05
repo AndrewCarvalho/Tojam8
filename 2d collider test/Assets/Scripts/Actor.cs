@@ -285,8 +285,6 @@ public class Actor : MonoBehaviour {
                     this.transform.Translate(-movementVector);
                 }
             }
-
-
         }
     }
 

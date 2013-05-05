@@ -22,7 +22,8 @@ public abstract class PlayerControls2 : Actor
     protected abstract bool JumpButton();
     protected abstract bool ActionButtonDown();
     protected abstract Vector3 BlockThrowDirection();
-    protected abstract Camera CameraFollowingMe();
+    protected abstract PlayerCamera CameraFollowingMe();
+    protected abstract PlayerCamera OtherPlayerCamera();
 
     // Update is called once per frame
     void Update()
@@ -78,7 +79,7 @@ public abstract class PlayerControls2 : Actor
                 ThrowBlock block = hit.collider.GetComponent<ThrowBlock>();
                 if (block)
                 {
-                    block.Throw(BlockThrowDirection(), CameraFollowingMe());
+                    block.Throw(BlockThrowDirection(), CameraFollowingMe(), OtherPlayerCamera());
                     break;
                 }
             }
