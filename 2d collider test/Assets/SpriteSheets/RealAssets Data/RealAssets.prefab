@@ -234,8 +234,8 @@ MonoBehaviour:
     colliderSmoothSphereCollisions: 0
   - name: grassTile6
     boundsData:
-    - {x: -.59375, y: .53125, z: 0}
-    - {x: 1.1875, y: 1.0625, z: 0}
+    - {x: -.59375, y: .5625, z: 0}
+    - {x: 1.1875, y: 1.125, z: 0}
     untrimmedBoundsData:
     - {x: -.59375, y: .5625, z: 0}
     - {x: 1.1875, y: 1.125, z: 0}
@@ -243,15 +243,15 @@ MonoBehaviour:
     positions:
     - {x: -1.1875, y: 0, z: 0}
     - {x: 0, y: 0, z: 0}
-    - {x: -1.1875, y: 1.0625, z: 0}
-    - {x: 0, y: 1.0625, z: 0}
+    - {x: -1.1875, y: 1.125, z: 0}
+    - {x: 0, y: 1.125, z: 0}
     normals: []
     tangents: []
     uvs:
-    - {x: .750003934, y: .462892592}
-    - {x: .824214816, y: .462892592}
-    - {x: .750003934, y: .496091783}
-    - {x: .824214816, y: .496091783}
+    - {x: .750003934, y: .394533217}
+    - {x: .824214816, y: .394533217}
+    - {x: .750003934, y: .429685533}
+    - {x: .824214816, y: .429685533}
     indices: 000000000300000001000000020000000300000000000000
     material: {fileID: 2100000, guid: 407a59009d0112142b975810d8ed6885, type: 2}
     materialId: 0
@@ -287,10 +287,10 @@ MonoBehaviour:
     normals: []
     tangents: []
     uvs:
-    - {x: .671878934, y: .476564467}
-    - {x: .746089816, y: .476564467}
-    - {x: .671878934, y: .509763658}
-    - {x: .746089816, y: .509763658}
+    - {x: .750003934, y: .462892592}
+    - {x: .824214816, y: .462892592}
+    - {x: .750003934, y: .496091783}
+    - {x: .824214816, y: .496091783}
     indices: 000000000300000001000000020000000300000000000000
     material: {fileID: 2100000, guid: 407a59009d0112142b975810d8ed6885, type: 2}
     materialId: 0
@@ -312,8 +312,8 @@ MonoBehaviour:
     colliderSmoothSphereCollisions: 0
   - name: grassTile2
     boundsData:
-    - {x: -.59375, y: .5625, z: 0}
-    - {x: 1.1875, y: 1.125, z: 0}
+    - {x: -.59375, y: .53125, z: 0}
+    - {x: 1.1875, y: 1.0625, z: 0}
     untrimmedBoundsData:
     - {x: -.59375, y: .5625, z: 0}
     - {x: 1.1875, y: 1.125, z: 0}
@@ -321,15 +321,15 @@ MonoBehaviour:
     positions:
     - {x: -1.1875, y: 0, z: 0}
     - {x: 0, y: 0, z: 0}
-    - {x: -1.1875, y: 1.125, z: 0}
-    - {x: 0, y: 1.125, z: 0}
+    - {x: -1.1875, y: 1.0625, z: 0}
+    - {x: 0, y: 1.0625, z: 0}
     normals: []
     tangents: []
     uvs:
-    - {x: .750003934, y: .394533217}
-    - {x: .824214816, y: .394533217}
-    - {x: .750003934, y: .429685533}
-    - {x: .824214816, y: .429685533}
+    - {x: .671878934, y: .476564467}
+    - {x: .746089816, y: .476564467}
+    - {x: .671878934, y: .509763658}
+    - {x: .746089816, y: .509763658}
     indices: 000000000300000001000000020000000300000000000000
     material: {fileID: 2100000, guid: 407a59009d0112142b975810d8ed6885, type: 2}
     materialId: 0
@@ -466,8 +466,8 @@ MonoBehaviour:
     colliderSmoothSphereCollisions: 0
   - name: grassTile4
     boundsData:
-    - {x: -.59375, y: .53125, z: 0}
-    - {x: 1.1875, y: 1.0625, z: 0}
+    - {x: -.59375, y: .5625, z: 0}
+    - {x: 1.1875, y: 1.125, z: 0}
     untrimmedBoundsData:
     - {x: -.59375, y: .5625, z: 0}
     - {x: 1.1875, y: 1.125, z: 0}
@@ -475,15 +475,15 @@ MonoBehaviour:
     positions:
     - {x: -1.1875, y: 0, z: 0}
     - {x: 0, y: 0, z: 0}
-    - {x: -1.1875, y: 1.0625, z: 0}
-    - {x: 0, y: 1.0625, z: 0}
+    - {x: -1.1875, y: 1.125, z: 0}
+    - {x: 0, y: 1.125, z: 0}
     normals: []
     tangents: []
     uvs:
-    - {x: .902347684, y: .451173842}
-    - {x: .976558566, y: .451173842}
-    - {x: .902347684, y: .484373033}
-    - {x: .976558566, y: .484373033}
+    - {x: .671878934, y: .408205092}
+    - {x: .746089816, y: .408205092}
+    - {x: .671878934, y: .443357408}
+    - {x: .746089816, y: .443357408}
     indices: 000000000300000001000000020000000300000000000000
     material: {fileID: 2100000, guid: 407a59009d0112142b975810d8ed6885, type: 2}
     materialId: 0
@@ -620,8 +620,8 @@ MonoBehaviour:
     colliderSmoothSphereCollisions: 0
   - name: grassTile3
     boundsData:
-    - {x: -.59375, y: .5625, z: 0}
-    - {x: 1.1875, y: 1.125, z: 0}
+    - {x: -.59375, y: .53125, z: 0}
+    - {x: 1.1875, y: 1.0625, z: 0}
     untrimmedBoundsData:
     - {x: -.59375, y: .5625, z: 0}
     - {x: 1.1875, y: 1.125, z: 0}
@@ -629,15 +629,15 @@ MonoBehaviour:
     positions:
     - {x: -1.1875, y: 0, z: 0}
     - {x: 0, y: 0, z: 0}
-    - {x: -1.1875, y: 1.125, z: 0}
-    - {x: 0, y: 1.125, z: 0}
+    - {x: -1.1875, y: 1.0625, z: 0}
+    - {x: 0, y: 1.0625, z: 0}
     normals: []
     tangents: []
     uvs:
-    - {x: .671878934, y: .408205092}
-    - {x: .746089816, y: .408205092}
-    - {x: .671878934, y: .443357408}
-    - {x: .746089816, y: .443357408}
+    - {x: .902347684, y: .451173842}
+    - {x: .976558566, y: .451173842}
+    - {x: .902347684, y: .484373033}
+    - {x: .976558566, y: .484373033}
     indices: 000000000300000001000000020000000300000000000000
     material: {fileID: 2100000, guid: 407a59009d0112142b975810d8ed6885, type: 2}
     materialId: 0
@@ -3648,17 +3648,17 @@ MonoBehaviour:
     colliderSmoothSphereCollisions: 0
   - name: axe_idle3
     boundsData:
-    - {x: .03125, y: -.09375, z: 0}
+    - {x: .03125, y: .40625, z: 0}
     - {x: .9375, y: .8125, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .5, z: 0}
     - {x: 1, y: 1, z: 0}
     texelSize: {x: .0625, y: .0625}
     positions:
-    - {x: -.4375, y: -.5, z: 0}
-    - {x: .5, y: -.5, z: 0}
-    - {x: -.4375, y: .3125, z: 0}
-    - {x: .5, y: .3125, z: 0}
+    - {x: -.4375, y: 0, z: 0}
+    - {x: .5, y: 0, z: 0}
+    - {x: -.4375, y: .8125, z: 0}
+    - {x: .5, y: .8125, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -3677,25 +3677,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 1
     complexGeometry: 0
-    colliderType: 0
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: 0, y: .5, z: 0}
+    - {x: .5, y: .5, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: axe_idle4
     boundsData:
-    - {x: .03125, y: -.09375, z: 0}
+    - {x: .03125, y: .40625, z: 0}
     - {x: .9375, y: .8125, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .5, z: 0}
     - {x: 1, y: 1, z: 0}
     texelSize: {x: .0625, y: .0625}
     positions:
-    - {x: -.4375, y: -.5, z: 0}
-    - {x: .5, y: -.5, z: 0}
-    - {x: -.4375, y: .3125, z: 0}
-    - {x: .5, y: .3125, z: 0}
+    - {x: -.4375, y: 0, z: 0}
+    - {x: .5, y: 0, z: 0}
+    - {x: -.4375, y: .8125, z: 0}
+    - {x: .5, y: .8125, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -3714,8 +3716,10 @@ MonoBehaviour:
     regionH: 0
     flipped: 1
     complexGeometry: 0
-    colliderType: 0
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: 0, y: .5, z: 0}
+    - {x: .5, y: .5, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
@@ -3788,25 +3792,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 1
     complexGeometry: 0
-    colliderType: 0
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: 0, y: 0, z: 0}
+    - {x: .5, y: .5, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: axe_idle5
     boundsData:
-    - {x: .03125, y: -.09375, z: 0}
+    - {x: .03125, y: .40625, z: 0}
     - {x: .9375, y: .8125, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .5, z: 0}
     - {x: 1, y: 1, z: 0}
     texelSize: {x: .0625, y: .0625}
     positions:
-    - {x: -.4375, y: -.5, z: 0}
-    - {x: .5, y: -.5, z: 0}
-    - {x: -.4375, y: .3125, z: 0}
-    - {x: .5, y: .3125, z: 0}
+    - {x: -.4375, y: 0, z: 0}
+    - {x: .5, y: 0, z: 0}
+    - {x: -.4375, y: .8125, z: 0}
+    - {x: .5, y: .8125, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -3825,25 +3831,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 1
     complexGeometry: 0
-    colliderType: 0
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: 0, y: .5, z: 0}
+    - {x: .5, y: .5, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: axe_idle6
     boundsData:
-    - {x: .03125, y: -.09375, z: 0}
+    - {x: .03125, y: .40625, z: 0}
     - {x: .9375, y: .8125, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .5, z: 0}
     - {x: 1, y: 1, z: 0}
     texelSize: {x: .0625, y: .0625}
     positions:
-    - {x: -.4375, y: -.5, z: 0}
-    - {x: .5, y: -.5, z: 0}
-    - {x: -.4375, y: .3125, z: 0}
-    - {x: .5, y: .3125, z: 0}
+    - {x: -.4375, y: 0, z: 0}
+    - {x: .5, y: 0, z: 0}
+    - {x: -.4375, y: .8125, z: 0}
+    - {x: .5, y: .8125, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -3862,8 +3870,10 @@ MonoBehaviour:
     regionH: 0
     flipped: 1
     complexGeometry: 0
-    colliderType: 0
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: 0, y: .5, z: 0}
+    - {x: .5, y: .5, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
@@ -3907,17 +3917,17 @@ MonoBehaviour:
     colliderSmoothSphereCollisions: 0
   - name: axe_idle10
     boundsData:
-    - {x: .03125, y: -.09375, z: 0}
+    - {x: .03125, y: .40625, z: 0}
     - {x: .9375, y: .8125, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .5, z: 0}
     - {x: 1, y: 1, z: 0}
     texelSize: {x: .0625, y: .0625}
     positions:
-    - {x: -.4375, y: -.5, z: 0}
-    - {x: .5, y: -.5, z: 0}
-    - {x: -.4375, y: .3125, z: 0}
-    - {x: .5, y: .3125, z: 0}
+    - {x: -.4375, y: 0, z: 0}
+    - {x: .5, y: 0, z: 0}
+    - {x: -.4375, y: .8125, z: 0}
+    - {x: .5, y: .8125, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -3936,25 +3946,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 1
     complexGeometry: 0
-    colliderType: 0
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: 0, y: .5, z: 0}
+    - {x: .5, y: .5, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: axe_idle8
     boundsData:
-    - {x: .03125, y: -.09375, z: 0}
+    - {x: .03125, y: .40625, z: 0}
     - {x: .9375, y: .8125, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .5, z: 0}
     - {x: 1, y: 1, z: 0}
     texelSize: {x: .0625, y: .0625}
     positions:
-    - {x: -.4375, y: -.5, z: 0}
-    - {x: .5, y: -.5, z: 0}
-    - {x: -.4375, y: .3125, z: 0}
-    - {x: .5, y: .3125, z: 0}
+    - {x: -.4375, y: 0, z: 0}
+    - {x: .5, y: 0, z: 0}
+    - {x: -.4375, y: .8125, z: 0}
+    - {x: .5, y: .8125, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -3973,25 +3985,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 1
     complexGeometry: 0
-    colliderType: 0
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: 0, y: .5, z: 0}
+    - {x: .5, y: .5, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: axe_idle7
     boundsData:
-    - {x: .03125, y: -.09375, z: 0}
+    - {x: .03125, y: .40625, z: 0}
     - {x: .9375, y: .8125, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .5, z: 0}
     - {x: 1, y: 1, z: 0}
     texelSize: {x: .0625, y: .0625}
     positions:
-    - {x: -.4375, y: -.5, z: 0}
-    - {x: .5, y: -.5, z: 0}
-    - {x: -.4375, y: .3125, z: 0}
-    - {x: .5, y: .3125, z: 0}
+    - {x: -.4375, y: 0, z: 0}
+    - {x: .5, y: 0, z: 0}
+    - {x: -.4375, y: .8125, z: 0}
+    - {x: .5, y: .8125, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -4010,25 +4024,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 1
     complexGeometry: 0
-    colliderType: 0
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: 0, y: .5, z: 0}
+    - {x: .5, y: .5, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: axe_idle1
     boundsData:
-    - {x: .03125, y: -.09375, z: 0}
+    - {x: .03125, y: .40625, z: 0}
     - {x: .9375, y: .8125, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .5, z: 0}
     - {x: 1, y: 1, z: 0}
     texelSize: {x: .0625, y: .0625}
     positions:
-    - {x: -.4375, y: -.5, z: 0}
-    - {x: .5, y: -.5, z: 0}
-    - {x: -.4375, y: .3125, z: 0}
-    - {x: .5, y: .3125, z: 0}
+    - {x: -.4375, y: 0, z: 0}
+    - {x: .5, y: 0, z: 0}
+    - {x: -.4375, y: .8125, z: 0}
+    - {x: .5, y: .8125, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -4047,25 +4063,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 1
     complexGeometry: 0
-    colliderType: 0
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: 0, y: .5, z: 0}
+    - {x: .5, y: .5, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: axe_idle9
     boundsData:
-    - {x: .03125, y: -.09375, z: 0}
+    - {x: .03125, y: .40625, z: 0}
     - {x: .9375, y: .8125, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .5, z: 0}
     - {x: 1, y: 1, z: 0}
     texelSize: {x: .0625, y: .0625}
     positions:
-    - {x: -.4375, y: -.5, z: 0}
-    - {x: .5, y: -.5, z: 0}
-    - {x: -.4375, y: .3125, z: 0}
-    - {x: .5, y: .3125, z: 0}
+    - {x: -.4375, y: 0, z: 0}
+    - {x: .5, y: 0, z: 0}
+    - {x: -.4375, y: .8125, z: 0}
+    - {x: .5, y: .8125, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -4084,8 +4102,10 @@ MonoBehaviour:
     regionH: 0
     flipped: 1
     complexGeometry: 0
-    colliderType: 0
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: 0, y: .5, z: 0}
+    - {x: .5, y: .5, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
@@ -4530,7 +4550,7 @@ MonoBehaviour:
   loadable: 0
   invOrthoSize: .111111112
   halfTargetHeight: 144
-  buildKey: 1681823497
+  buildKey: 1734857720
   dataGuid: 06c9c51c7d312e84eb48d3e992356757
   managedSpriteCollection: 0
   hasPlatformData: 0
