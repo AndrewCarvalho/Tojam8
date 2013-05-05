@@ -104,7 +104,7 @@ public class Actor : MonoBehaviour {
     {
         BoxCollider box = GetComponent<BoxCollider>();
         Vector3 origin = transform.position;
-        origin.y -= box.size.y / 4.0f;
+        origin.y += box.size.y / 4.0f;
         return Physics.RaycastAll(origin, direction, distance, mask);
     }
 
@@ -141,7 +141,6 @@ public class Actor : MonoBehaviour {
             }
             else
             {
-                int shit = 123;
                 switch (this.jumpState)
                 {
                     case JUMP_STATE.JUMPING_START:
@@ -164,17 +163,32 @@ public class Actor : MonoBehaviour {
         }
     }
 
+    protected Collider collidedWithSomething()
+    {
+        Object[] colliders = FindObjectsOfType(typeof(Collider));
+        foreach (Object colliderObject in colliders)
+        {
+            Collider current = colliderObject as Collider;
+            if (current != this.collider && this.collider.bounds.Intersects(current.bounds))
+            {
+                return current;
+            }
+        }
+        return null;
+    }
+
     public void knockToNearestTile(float verticalDirection)
     {
         Vector3 position = transform.position;
-        position.x = Mathf.Round(position.x);
+        position.x = Mathf.Round(verticalDirection < 0 ? position.x -1.0f : position.x + 1.0f);
         transform.position = position;
+
+        if (collidedWithSomething())
+            knockToNearestTile(verticalDirection);
     }
 
     protected void PlayAnimation(string name)
     {
-
-        Debug.Log("actionAnimationName " + name);
         tk2dAnimatedSprite sprite = GetComponent<tk2dAnimatedSprite>();
         if(!sprite.IsPlaying(name))
             sprite.Play(name);
