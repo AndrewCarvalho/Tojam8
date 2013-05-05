@@ -25,7 +25,7 @@ public class PlayerCamera : MonoBehaviour
         {
             float moveAmount = this.direction.x * xDiff - this.direction.x * this.cameraMoveThreshold;
             this.transform.Translate(new Vector3(moveAmount, 0, 0));
-            this.BroadcastMessage("OnCameraTranslate", moveAmount);
+            this.BroadcastMessage("OnCameraTranslate", moveAmount, SendMessageOptions.DontRequireReceiver);
         }
 	}
 

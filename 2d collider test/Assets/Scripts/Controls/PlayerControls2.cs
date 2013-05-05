@@ -25,6 +25,12 @@ public abstract class PlayerControls2 : Actor
     protected abstract PlayerCamera CameraFollowingMe();
     protected abstract PlayerCamera OtherPlayerCamera();
 
+    public void knockBackByBlock()
+    {
+        Debug.Log("knockBackByBlock");
+        base.knockToNearestTile(-facingDirection);
+    }
+
     // Update is called once per frame
     void Update()
     {

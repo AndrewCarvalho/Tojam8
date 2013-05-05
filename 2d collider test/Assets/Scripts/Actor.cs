@@ -92,6 +92,22 @@ public class Actor : MonoBehaviour {
         }
     }
 
+    public void knockToNearestTile(float verticalDirection)
+    {
+        Vector3 position = transform.position;
+        float remainder = position.x % 2;
+        if (verticalDirection > 0.0f)
+        {
+            position.x -= remainder;
+        }
+        else
+        {
+            position.x += remainder;
+        }
+        Debug.Log("remainder " + remainder);
+        transform.position = position;
+    }
+
     protected void FixedUpdate()
     {
         // DEBUG STUFF
