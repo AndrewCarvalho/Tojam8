@@ -1937,9 +1937,9 @@ MonoBehaviour:
     scale: {x: 1, y: 1, z: 1}
     texture: {fileID: 2800000, guid: 01c102e5e63797b448a9a8b851fa5680, type: 3}
     materialId: 0
-    anchor: 4
+    anchor: 7
     anchorX: 16
-    anchorY: 17
+    anchorY: 34
     overrideMesh: {fileID: 0}
     doubleSidedSprite: 0
     customSpriteGeometry: 0
@@ -1975,9 +1975,9 @@ MonoBehaviour:
     scale: {x: 1, y: 1, z: 1}
     texture: {fileID: 2800000, guid: 0300113423c844b4b81226a61f5d30ef, type: 3}
     materialId: 0
-    anchor: 4
+    anchor: 7
     anchorX: 16
-    anchorY: 17
+    anchorY: 34
     overrideMesh: {fileID: 0}
     doubleSidedSprite: 0
     customSpriteGeometry: 0
@@ -2013,9 +2013,9 @@ MonoBehaviour:
     scale: {x: 1, y: 1, z: 1}
     texture: {fileID: 2800000, guid: 0a1cfccfda602564d8efc4f06b2065a9, type: 3}
     materialId: 0
-    anchor: 4
+    anchor: 7
     anchorX: 16
-    anchorY: 17
+    anchorY: 34
     overrideMesh: {fileID: 0}
     doubleSidedSprite: 0
     customSpriteGeometry: 0
@@ -2051,9 +2051,9 @@ MonoBehaviour:
     scale: {x: 1, y: 1, z: 1}
     texture: {fileID: 2800000, guid: 1613e64f55cdd0649a8f792171241d23, type: 3}
     materialId: 0
-    anchor: 4
+    anchor: 7
     anchorX: 16
-    anchorY: 17
+    anchorY: 34
     overrideMesh: {fileID: 0}
     doubleSidedSprite: 0
     customSpriteGeometry: 0
@@ -2089,9 +2089,9 @@ MonoBehaviour:
     scale: {x: 1, y: 1, z: 1}
     texture: {fileID: 2800000, guid: 23cd1cdd763316849ba76054e5093298, type: 3}
     materialId: 0
-    anchor: 4
+    anchor: 7
     anchorX: 16
-    anchorY: 17
+    anchorY: 34
     overrideMesh: {fileID: 0}
     doubleSidedSprite: 0
     customSpriteGeometry: 0
@@ -2127,9 +2127,9 @@ MonoBehaviour:
     scale: {x: 1, y: 1, z: 1}
     texture: {fileID: 2800000, guid: 2c07361c2975ba043bc8aafbc0c311ce, type: 3}
     materialId: 0
-    anchor: 4
+    anchor: 7
     anchorX: 16
-    anchorY: 17
+    anchorY: 34
     overrideMesh: {fileID: 0}
     doubleSidedSprite: 0
     customSpriteGeometry: 0
@@ -2165,9 +2165,9 @@ MonoBehaviour:
     scale: {x: 1, y: 1, z: 1}
     texture: {fileID: 2800000, guid: 2d5b92b341e615d4aa51cd4f2008d9cf, type: 3}
     materialId: 0
-    anchor: 4
+    anchor: 7
     anchorX: 16
-    anchorY: 17
+    anchorY: 34
     overrideMesh: {fileID: 0}
     doubleSidedSprite: 0
     customSpriteGeometry: 0
@@ -2203,9 +2203,9 @@ MonoBehaviour:
     scale: {x: 1, y: 1, z: 1}
     texture: {fileID: 2800000, guid: 2e2a6326dfd25014c860d04e39cce329, type: 3}
     materialId: 0
-    anchor: 4
+    anchor: 7
     anchorX: 16
-    anchorY: 17
+    anchorY: 34
     overrideMesh: {fileID: 0}
     doubleSidedSprite: 0
     customSpriteGeometry: 0
@@ -2241,9 +2241,9 @@ MonoBehaviour:
     scale: {x: 1, y: 1, z: 1}
     texture: {fileID: 2800000, guid: 34bbcd6f2fce690458688d6fdf2d4350, type: 3}
     materialId: 0
-    anchor: 4
+    anchor: 7
     anchorX: 16
-    anchorY: 17
+    anchorY: 34
     overrideMesh: {fileID: 0}
     doubleSidedSprite: 0
     customSpriteGeometry: 0
@@ -2279,9 +2279,9 @@ MonoBehaviour:
     scale: {x: 1, y: 1, z: 1}
     texture: {fileID: 2800000, guid: 40f5dafcaaa0de249ad813b903faa235, type: 3}
     materialId: 0
-    anchor: 4
+    anchor: 7
     anchorX: 16
-    anchorY: 17
+    anchorY: 34
     overrideMesh: {fileID: 0}
     doubleSidedSprite: 0
     customSpriteGeometry: 0
@@ -2317,9 +2317,9 @@ MonoBehaviour:
     scale: {x: 1, y: 1, z: 1}
     texture: {fileID: 2800000, guid: 4251ba698381adf4eab5365916a64f05, type: 3}
     materialId: 0
-    anchor: 4
+    anchor: 7
     anchorX: 16
-    anchorY: 17
+    anchorY: 34
     overrideMesh: {fileID: 0}
     doubleSidedSprite: 0
     customSpriteGeometry: 0
@@ -2355,9 +2355,9 @@ MonoBehaviour:
     scale: {x: 1, y: 1, z: 1}
     texture: {fileID: 2800000, guid: 4faee122d56d5fd488800b7d97935015, type: 3}
     materialId: 0
-    anchor: 4
+    anchor: 7
     anchorX: 16
-    anchorY: 17
+    anchorY: 34
     overrideMesh: {fileID: 0}
     doubleSidedSprite: 0
     customSpriteGeometry: 0
@@ -2393,9 +2393,9 @@ MonoBehaviour:
     scale: {x: 1, y: 1, z: 1}
     texture: {fileID: 2800000, guid: 517c5b7146ecd1548ab7d406e6cfe0d1, type: 3}
     materialId: 0
-    anchor: 4
+    anchor: 7
     anchorX: 16
-    anchorY: 17
+    anchorY: 34
     overrideMesh: {fileID: 0}
     doubleSidedSprite: 0
     customSpriteGeometry: 0
@@ -2431,9 +2431,9 @@ MonoBehaviour:
     scale: {x: 1, y: 1, z: 1}
     texture: {fileID: 2800000, guid: 51a6aba09dd59d1429455ed1803358c4, type: 3}
     materialId: 0
-    anchor: 4
+    anchor: 7
     anchorX: 16
-    anchorY: 17
+    anchorY: 34
     overrideMesh: {fileID: 0}
     doubleSidedSprite: 0
     customSpriteGeometry: 0
@@ -2469,9 +2469,9 @@ MonoBehaviour:
     scale: {x: 1, y: 1, z: 1}
     texture: {fileID: 2800000, guid: 5999de2c79f26f74fa39fb9e0b3baad9, type: 3}
     materialId: 0
-    anchor: 4
+    anchor: 7
     anchorX: 16
-    anchorY: 17
+    anchorY: 34
     overrideMesh: {fileID: 0}
     doubleSidedSprite: 0
     customSpriteGeometry: 0
@@ -2507,9 +2507,9 @@ MonoBehaviour:
     scale: {x: 1, y: 1, z: 1}
     texture: {fileID: 2800000, guid: 65b803e4a382bce459bab968da7df340, type: 3}
     materialId: 0
-    anchor: 4
+    anchor: 7
     anchorX: 16
-    anchorY: 17
+    anchorY: 34
     overrideMesh: {fileID: 0}
     doubleSidedSprite: 0
     customSpriteGeometry: 0
@@ -2545,9 +2545,9 @@ MonoBehaviour:
     scale: {x: 1, y: 1, z: 1}
     texture: {fileID: 2800000, guid: 794851d02647c484e8061760e8cecce6, type: 3}
     materialId: 0
-    anchor: 4
+    anchor: 7
     anchorX: 16
-    anchorY: 17
+    anchorY: 34
     overrideMesh: {fileID: 0}
     doubleSidedSprite: 0
     customSpriteGeometry: 0
@@ -2583,9 +2583,9 @@ MonoBehaviour:
     scale: {x: 1, y: 1, z: 1}
     texture: {fileID: 2800000, guid: 808e3ac406d0ace44b179bd3af9d66bb, type: 3}
     materialId: 0
-    anchor: 4
+    anchor: 7
     anchorX: 16
-    anchorY: 17
+    anchorY: 34
     overrideMesh: {fileID: 0}
     doubleSidedSprite: 0
     customSpriteGeometry: 0
@@ -2621,9 +2621,9 @@ MonoBehaviour:
     scale: {x: 1, y: 1, z: 1}
     texture: {fileID: 2800000, guid: 98162811165f6d341a79f518cb79914e, type: 3}
     materialId: 0
-    anchor: 4
+    anchor: 7
     anchorX: 16
-    anchorY: 17
+    anchorY: 34
     overrideMesh: {fileID: 0}
     doubleSidedSprite: 0
     customSpriteGeometry: 0
@@ -2659,9 +2659,9 @@ MonoBehaviour:
     scale: {x: 1, y: 1, z: 1}
     texture: {fileID: 2800000, guid: 984da3105ff3a364bb19a0eb14b14269, type: 3}
     materialId: 0
-    anchor: 4
+    anchor: 7
     anchorX: 16
-    anchorY: 17
+    anchorY: 34
     overrideMesh: {fileID: 0}
     doubleSidedSprite: 0
     customSpriteGeometry: 0
@@ -2697,9 +2697,9 @@ MonoBehaviour:
     scale: {x: 1, y: 1, z: 1}
     texture: {fileID: 2800000, guid: 9d485847c4786a24d860830fa62cd06d, type: 3}
     materialId: 0
-    anchor: 4
+    anchor: 7
     anchorX: 16
-    anchorY: 17
+    anchorY: 34
     overrideMesh: {fileID: 0}
     doubleSidedSprite: 0
     customSpriteGeometry: 0
@@ -2735,9 +2735,9 @@ MonoBehaviour:
     scale: {x: 1, y: 1, z: 1}
     texture: {fileID: 2800000, guid: 9f025d054f4122145b897f0beb1f4b7e, type: 3}
     materialId: 0
-    anchor: 4
+    anchor: 7
     anchorX: 16
-    anchorY: 17
+    anchorY: 34
     overrideMesh: {fileID: 0}
     doubleSidedSprite: 0
     customSpriteGeometry: 0
@@ -2773,9 +2773,9 @@ MonoBehaviour:
     scale: {x: 1, y: 1, z: 1}
     texture: {fileID: 2800000, guid: aab3e6902cabf9f4fba3d981fb194ce0, type: 3}
     materialId: 0
-    anchor: 4
+    anchor: 7
     anchorX: 16
-    anchorY: 17
+    anchorY: 34
     overrideMesh: {fileID: 0}
     doubleSidedSprite: 0
     customSpriteGeometry: 0
@@ -2811,9 +2811,9 @@ MonoBehaviour:
     scale: {x: 1, y: 1, z: 1}
     texture: {fileID: 2800000, guid: c09238230f9016f4c91152cd3dc7390b, type: 3}
     materialId: 0
-    anchor: 4
+    anchor: 7
     anchorX: 16
-    anchorY: 17
+    anchorY: 34
     overrideMesh: {fileID: 0}
     doubleSidedSprite: 0
     customSpriteGeometry: 0
@@ -2849,9 +2849,9 @@ MonoBehaviour:
     scale: {x: 1, y: 1, z: 1}
     texture: {fileID: 2800000, guid: c17f0be1a1b5ae5469f29f3fd780c1c5, type: 3}
     materialId: 0
-    anchor: 4
+    anchor: 7
     anchorX: 16
-    anchorY: 17
+    anchorY: 34
     overrideMesh: {fileID: 0}
     doubleSidedSprite: 0
     customSpriteGeometry: 0
@@ -2887,9 +2887,9 @@ MonoBehaviour:
     scale: {x: 1, y: 1, z: 1}
     texture: {fileID: 2800000, guid: c8e7b249702c90f478ed4f6040c3a5e2, type: 3}
     materialId: 0
-    anchor: 4
+    anchor: 7
     anchorX: 16
-    anchorY: 17
+    anchorY: 34
     overrideMesh: {fileID: 0}
     doubleSidedSprite: 0
     customSpriteGeometry: 0
@@ -2925,9 +2925,9 @@ MonoBehaviour:
     scale: {x: 1, y: 1, z: 1}
     texture: {fileID: 2800000, guid: d5b79d4e83884604faf9248613f0d51b, type: 3}
     materialId: 0
-    anchor: 4
+    anchor: 7
     anchorX: 16
-    anchorY: 17
+    anchorY: 34
     overrideMesh: {fileID: 0}
     doubleSidedSprite: 0
     customSpriteGeometry: 0
@@ -2963,9 +2963,9 @@ MonoBehaviour:
     scale: {x: 1, y: 1, z: 1}
     texture: {fileID: 2800000, guid: d7e34f386155bcc4194a4f9841f8e9a2, type: 3}
     materialId: 0
-    anchor: 4
+    anchor: 7
     anchorX: 16
-    anchorY: 17
+    anchorY: 34
     overrideMesh: {fileID: 0}
     doubleSidedSprite: 0
     customSpriteGeometry: 0
@@ -3001,9 +3001,9 @@ MonoBehaviour:
     scale: {x: 1, y: 1, z: 1}
     texture: {fileID: 2800000, guid: d841eb512b69f3746a03fe19419562f7, type: 3}
     materialId: 0
-    anchor: 4
+    anchor: 7
     anchorX: 16
-    anchorY: 17
+    anchorY: 34
     overrideMesh: {fileID: 0}
     doubleSidedSprite: 0
     customSpriteGeometry: 0
@@ -3039,9 +3039,9 @@ MonoBehaviour:
     scale: {x: 1, y: 1, z: 1}
     texture: {fileID: 2800000, guid: ead62025f63a6ab4c9b129668b247ac8, type: 3}
     materialId: 0
-    anchor: 4
+    anchor: 7
     anchorX: 16
-    anchorY: 17
+    anchorY: 34
     overrideMesh: {fileID: 0}
     doubleSidedSprite: 0
     customSpriteGeometry: 0
@@ -3077,9 +3077,9 @@ MonoBehaviour:
     scale: {x: 1, y: 1, z: 1}
     texture: {fileID: 2800000, guid: f1cadadef001825409e5ec6c424a9533, type: 3}
     materialId: 0
-    anchor: 4
+    anchor: 7
     anchorX: 16
-    anchorY: 17
+    anchorY: 34
     overrideMesh: {fileID: 0}
     doubleSidedSprite: 0
     customSpriteGeometry: 0
@@ -3115,9 +3115,9 @@ MonoBehaviour:
     scale: {x: 1, y: 1, z: 1}
     texture: {fileID: 2800000, guid: f85c3e9456fdadc4f86ad0f0d4379090, type: 3}
     materialId: 0
-    anchor: 4
+    anchor: 7
     anchorX: 16
-    anchorY: 17
+    anchorY: 34
     overrideMesh: {fileID: 0}
     doubleSidedSprite: 0
     customSpriteGeometry: 0
