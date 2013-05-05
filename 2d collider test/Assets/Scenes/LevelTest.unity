@@ -13121,6 +13121,10 @@ MonoBehaviour:
   action2AnimationName: 
   crouchIdleAnimationName: 
   crouchMoveAnimationName: 
+  jumpAnimationName: 
+  jumpUpFrameNum: 0
+  jumpTopFrameNum: 0
+  jumpDownFrameNum: 0
   walkSpeed: 0
   maxRunSpeed: 0
   timeToMaxWalkSpeed: 0
@@ -15696,6 +15700,10 @@ MonoBehaviour:
   action2AnimationName: 
   crouchIdleAnimationName: 
   crouchMoveAnimationName: 
+  jumpAnimationName: 
+  jumpUpFrameNum: 0
+  jumpTopFrameNum: 0
+  jumpDownFrameNum: 0
   walkSpeed: 0
   maxRunSpeed: 0
   timeToMaxWalkSpeed: 0
@@ -16582,6 +16590,10 @@ MonoBehaviour:
   action2AnimationName: 
   crouchIdleAnimationName: 
   crouchMoveAnimationName: 
+  jumpAnimationName: 
+  jumpUpFrameNum: 0
+  jumpTopFrameNum: 0
+  jumpDownFrameNum: 0
   walkSpeed: 0
   maxRunSpeed: 0
   timeToMaxWalkSpeed: 0
@@ -18710,6 +18722,10 @@ MonoBehaviour:
   action2AnimationName: 
   crouchIdleAnimationName: 
   crouchMoveAnimationName: 
+  jumpAnimationName: 
+  jumpUpFrameNum: 0
+  jumpTopFrameNum: 0
+  jumpDownFrameNum: 0
   walkSpeed: 5
   maxRunSpeed: 10
   timeToMaxWalkSpeed: 0
@@ -19429,6 +19445,10 @@ MonoBehaviour:
   action2AnimationName: 
   crouchIdleAnimationName: 
   crouchMoveAnimationName: 
+  jumpAnimationName: 
+  jumpUpFrameNum: 0
+  jumpTopFrameNum: 0
+  jumpDownFrameNum: 0
   walkSpeed: 0
   maxRunSpeed: 0
   timeToMaxWalkSpeed: 0
@@ -29579,12 +29599,16 @@ MonoBehaviour:
   termFallVelHeight: 5
   maxJumpTime: .5
   terminalFallVel: -25
-  runAnimationName: 
-  idleAnimationName: 
-  actionAnimationName: 
-  action2AnimationName: 
-  crouchIdleAnimationName: 
-  crouchMoveAnimationName: 
+  runAnimationName: Run
+  idleAnimationName: Idle
+  actionAnimationName: Attack
+  action2AnimationName: Grab
+  crouchIdleAnimationName: Crouch
+  crouchMoveAnimationName: Crouch
+  jumpAnimationName: Run
+  jumpUpFrameNum: 0
+  jumpTopFrameNum: 1
+  jumpDownFrameNum: 2
   walkSpeed: 5
   maxRunSpeed: 10
   timeToMaxWalkSpeed: 0
@@ -32687,6 +32711,10 @@ MonoBehaviour:
   action2AnimationName: 
   crouchIdleAnimationName: 
   crouchMoveAnimationName: 
+  jumpAnimationName: 
+  jumpUpFrameNum: 0
+  jumpTopFrameNum: 0
+  jumpDownFrameNum: 0
   walkSpeed: 0
   maxRunSpeed: 0
   timeToMaxWalkSpeed: 0
@@ -38433,6 +38461,10 @@ MonoBehaviour:
   action2AnimationName: 
   crouchIdleAnimationName: 
   crouchMoveAnimationName: 
+  jumpAnimationName: 
+  jumpUpFrameNum: 0
+  jumpTopFrameNum: 0
+  jumpDownFrameNum: 0
   walkSpeed: 0
   maxRunSpeed: 0
   timeToMaxWalkSpeed: 0
