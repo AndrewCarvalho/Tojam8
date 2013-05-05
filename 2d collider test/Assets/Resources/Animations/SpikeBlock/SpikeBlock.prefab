@@ -37,7 +37,94 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ecaffc43a5d2b1d47858e3fb687e7271, type: 3}
   m_Name: 
-  clips: []
+  clips:
+  - name: Idle
+    frames:
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 108
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 109
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 111
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 106
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 112
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 113
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 107
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 110
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 114
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 115
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    fps: 14
+    loopStart: 0
+    wrapMode: 0
+  - name: Thrown
+    frames:
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 108
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    fps: 30
+    loopStart: 0
+    wrapMode: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

@@ -172,16 +172,16 @@ MonoBehaviour:
     - axe_idle1
     - axe_idle9
     - axe_spin2
-    - spikes6
-    - spikes10
-    - spikes2 1
-    - spikes5
-    - spikes1 1
-    - spikes9
-    - spikes7
-    - spikes8
-    - spikes4
-    - spikes3 1
+    - spikeBlock4
+    - spikeBlock7
+    - spikeBlock1
+    - spikeBlock2
+    - spikeBlock8
+    - spikeBlock3
+    - spikeBlock5
+    - spikeBlock6
+    - spikeBlock9
+    - spikeBlock10
     spriteTextureGUIDs:
     - 05196ce9878c1484892b05adc63692e5
     - 149f455fc814fef4a9de4deb11555d5a
@@ -289,16 +289,16 @@ MonoBehaviour:
     - d69ea68311db6a748b42503c4b0f8ebd
     - eb7bb3085a854cc4087ee1cabea01aed
     - ee6ebb5734a9308439f06fd3065932b2
-    - 0f0b390e1d20d344b88802794863e731
-    - 197aaeca5c9079e43906a396e528ffdf
-    - 3bd15bbd5461b734fb067cff4d9dc530
-    - 3cbc805006adf0347a5182839931825d
-    - 5b7e47c27ba6524488dd68e38ff0ecec
-    - 867af7a62cdd00b4eb3e99dfefcb110f
-    - 8aafbf22d4eca0b40b745fdc0544965b
-    - 8c53534af83bf3943a4096d9bb072d82
-    - b0a25e18394282e46a819323b3dd605a
-    - f58c9f63f3893124ab66d15568a94f4c
+    - 1a5246386b4b3e94b8b0ed708237ee33
+    - 2da07de2880119846bf6869a0c568a5e
+    - 4562dfa19c3b46841af9dac2c98570b4
+    - 672138c10f290c3449b7793408cde6e0
+    - 7ea36872fbe2e394ab86fe35eaa07316
+    - 9a70f31d910ded94da24099eab337f03
+    - be65ba09f3cff1c448ad786d8672fae2
+    - c805ea0a1e3382c4cac084d46fc7f18b
+    - dce6c99315161b043bc89d86d63547de
+    - ed7a47da4ca851149bd661dc910eb63e
     spriteTextureTimeStamps:
     - 1367682715.06051
     - 1367682715.06851
@@ -406,16 +406,16 @@ MonoBehaviour:
     - 1367765774
     - 1367765844
     - 1367765912
-    - 1367760316
-    - 1367760344
-    - 1367760284
-    - 1367760306
-    - 1367760278
-    - 1367760338
-    - 1367760322
-    - 1367760332
-    - 1367760300
-    - 1367760290
+    - 1367767654
+    - 1367767674
+    - 1367767632
+    - 1367767640
+    - 1367767680
+    - 1367767648
+    - 1367767660
+    - 1367767668
+    - 1367767686
+    - 1367767692
     managedSpriteCollection: 0
     loadable: 0
     assetName: 
