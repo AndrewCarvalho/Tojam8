@@ -150,7 +150,7 @@ public abstract class PlayerControls2 : Actor
                     ThrowBlock block = hit.collider.GetComponent<ThrowBlock>();
                     if (block)
                     {
-                        block.Throw(BlockThrowDirection(), CameraFollowingMe(), OtherPlayerCamera());
+                        block.Throw(BlockThrowDirection(), CameraFollowingMe(), OtherPlayerCamera(), 0.2f);
                         hitBlock = true;
                         break;
                     }
