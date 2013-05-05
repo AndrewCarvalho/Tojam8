@@ -48,20 +48,7 @@ public class ThrowBlock : Actor {
                 {
                     //Debug.Log("cameraSpacePosition.x " + cameraSpacePosition.x);
                     Vector3 position = destinationCamera.ScreenToWorldPoint(new Vector3(cameraSpacePosition.x, goingUp ? pixelHeight : pixelHeight, 0.0f));
-
-                    // snap to closest tile
-                    float divider = 4.0f;
-                    float remainder = position.x % divider;
-                    if (remainder >= (divider / 2))
-                    {
-                        Debug.Log("left " + remainder);
-                        position.x -= (remainder);
-                    }
-                    else
-                    {
-                        Debug.Log("right " + remainder);
-                        position.x += remainder;
-                    }
+                    position.x = Mathf.Round(position.x);
 
                     position.z = 0.0f;
 
