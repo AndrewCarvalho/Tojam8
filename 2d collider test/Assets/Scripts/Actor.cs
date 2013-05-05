@@ -40,6 +40,8 @@ public class Actor : MonoBehaviour {
     protected int jumpTopFrameNum;
     [SerializeField]
     protected int jumpDownFrameNum;
+    [SerializeField]
+    protected int topJumpVelocity;
 
     private float jumpTime;
     private bool breakJump = false;
@@ -139,16 +141,21 @@ public class Actor : MonoBehaviour {
             }
             else
             {
-                
+                int shit = 123;
                 switch (this.jumpState)
                 {
                     case JUMP_STATE.JUMPING_START:
                     case JUMP_STATE.JUMPING_UP:
-                        SetAnimationFrame(jumpAnimationName, jumpUpFrameNum);
+                        if (Mathf.Abs(this.lastVel) < this.topJumpVelocity)
+                        {
+                            SetAnimationFrame(jumpAnimationName, jumpTopFrameNum);
+                        }
+                        else
+                        {
+                            SetAnimationFrame(jumpAnimationName, jumpUpFrameNum);
+                        }
                         break;
                     case JUMP_STATE.FALLING_DOWN_ACCEL:
-                        SetAnimationFrame(jumpAnimationName, jumpTopFrameNum);
-                        break;
                     case JUMP_STATE.FALLING_DOWN_TERMINAL:
                         SetAnimationFrame(jumpAnimationName, jumpDownFrameNum);
                         break;
@@ -169,13 +176,18 @@ public class Actor : MonoBehaviour {
         tk2dAnimatedSprite sprite = GetComponent<tk2dAnimatedSprite>();
         if(!sprite.IsPlaying(name))
             sprite.Play(name);
+        if (sprite.Paused)
+            sprite.Paused = false;
     }
 
     protected void SetAnimationFrame(string animationName, int frameNumber)
     {
         tk2dAnimatedSprite sprite = GetComponent<tk2dAnimatedSprite>();
-        if (!sprite.IsPlaying(name))
-            sprite.Play(name);
+        sprite.Pause();
+        if (!sprite.IsPlaying(animationName))
+        {
+            sprite.Play(animationName);
+        }
         sprite.SetFrame(frameNumber);
     }
 
@@ -201,11 +213,6 @@ public class Actor : MonoBehaviour {
         // DEBUG STUFF
         string objectName = this.name;
         //Debug.Log();
-
-        if (objectName == "Player1")
-        {
-            int shit = 123;
-        }
 
         if (jumpState == JUMP_STATE.DISABLED)
             return;
