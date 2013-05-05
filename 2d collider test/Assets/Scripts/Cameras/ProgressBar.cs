@@ -133,6 +133,6 @@ public class ProgressBar : MonoBehaviour
 
     public float GetPrincessPercent()
     {
-        return Mathf.Max(0f, Mathf.Min(Screen.width * -(this.playerTwo.transform.position.x - this.princessStartX) / this.levelWidth, 100f));
+        return Mathf.Max(0f, Mathf.Min(Mathf.Abs(this.playerTwo.transform.position.x - this.princessStartX) / this.levelWidth, 100f));
     }
 }
