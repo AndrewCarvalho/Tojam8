@@ -4129,17 +4129,17 @@ MonoBehaviour:
     colliderSmoothSphereCollisions: 0
   - name: spikeBlock4
     boundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .5, z: 0}
     - {x: 1, y: 1, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .5, z: 0}
     - {x: 1, y: 1, z: 0}
     texelSize: {x: .0625, y: .0625}
     positions:
-    - {x: -.5, y: -.5, z: 0}
-    - {x: .5, y: -.5, z: 0}
-    - {x: -.5, y: .5, z: 0}
-    - {x: .5, y: .5, z: 0}
+    - {x: -.5, y: 0, z: 0}
+    - {x: .5, y: 0, z: 0}
+    - {x: -.5, y: 1, z: 0}
+    - {x: .5, y: 1, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -4158,25 +4158,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
-    colliderType: 0
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: 0, y: .5, z: 0}
+    - {x: .5, y: .5, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: spikeBlock7
     boundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .5, z: 0}
     - {x: 1, y: 1, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .5, z: 0}
     - {x: 1, y: 1, z: 0}
     texelSize: {x: .0625, y: .0625}
     positions:
-    - {x: -.5, y: -.5, z: 0}
-    - {x: .5, y: -.5, z: 0}
-    - {x: -.5, y: .5, z: 0}
-    - {x: .5, y: .5, z: 0}
+    - {x: -.5, y: 0, z: 0}
+    - {x: .5, y: 0, z: 0}
+    - {x: -.5, y: 1, z: 0}
+    - {x: .5, y: 1, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -4195,25 +4197,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
-    colliderType: 0
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: 0, y: .5, z: 0}
+    - {x: .5, y: .5, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: spikeBlock1
     boundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .5, z: 0}
     - {x: 1, y: 1, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .5, z: 0}
     - {x: 1, y: 1, z: 0}
     texelSize: {x: .0625, y: .0625}
     positions:
-    - {x: -.5, y: -.5, z: 0}
-    - {x: .5, y: -.5, z: 0}
-    - {x: -.5, y: .5, z: 0}
-    - {x: .5, y: .5, z: 0}
+    - {x: -.5, y: 0, z: 0}
+    - {x: .5, y: 0, z: 0}
+    - {x: -.5, y: 1, z: 0}
+    - {x: .5, y: 1, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -4232,25 +4236,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
-    colliderType: 0
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: 0, y: .5, z: 0}
+    - {x: .5, y: .5, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: spikeBlock2
     boundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .5, z: 0}
     - {x: 1, y: 1, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .5, z: 0}
     - {x: 1, y: 1, z: 0}
     texelSize: {x: .0625, y: .0625}
     positions:
-    - {x: -.5, y: -.5, z: 0}
-    - {x: .5, y: -.5, z: 0}
-    - {x: -.5, y: .5, z: 0}
-    - {x: .5, y: .5, z: 0}
+    - {x: -.5, y: 0, z: 0}
+    - {x: .5, y: 0, z: 0}
+    - {x: -.5, y: 1, z: 0}
+    - {x: .5, y: 1, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -4269,25 +4275,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
-    colliderType: 0
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: 0, y: .5, z: 0}
+    - {x: .5, y: .5, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: spikeBlock8
     boundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .5, z: 0}
     - {x: 1, y: 1, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .5, z: 0}
     - {x: 1, y: 1, z: 0}
     texelSize: {x: .0625, y: .0625}
     positions:
-    - {x: -.5, y: -.5, z: 0}
-    - {x: .5, y: -.5, z: 0}
-    - {x: -.5, y: .5, z: 0}
-    - {x: .5, y: .5, z: 0}
+    - {x: -.5, y: 0, z: 0}
+    - {x: .5, y: 0, z: 0}
+    - {x: -.5, y: 1, z: 0}
+    - {x: .5, y: 1, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -4306,25 +4314,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
-    colliderType: 0
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: 0, y: .5, z: 0}
+    - {x: .5, y: .5, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: spikeBlock3
     boundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .5, z: 0}
     - {x: 1, y: 1, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .5, z: 0}
     - {x: 1, y: 1, z: 0}
     texelSize: {x: .0625, y: .0625}
     positions:
-    - {x: -.5, y: -.5, z: 0}
-    - {x: .5, y: -.5, z: 0}
-    - {x: -.5, y: .5, z: 0}
-    - {x: .5, y: .5, z: 0}
+    - {x: -.5, y: 0, z: 0}
+    - {x: .5, y: 0, z: 0}
+    - {x: -.5, y: 1, z: 0}
+    - {x: .5, y: 1, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -4343,25 +4353,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
-    colliderType: 0
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: 0, y: .5, z: 0}
+    - {x: .5, y: .5, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: spikeBlock5
     boundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .5, z: 0}
     - {x: 1, y: 1, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .5, z: 0}
     - {x: 1, y: 1, z: 0}
     texelSize: {x: .0625, y: .0625}
     positions:
-    - {x: -.5, y: -.5, z: 0}
-    - {x: .5, y: -.5, z: 0}
-    - {x: -.5, y: .5, z: 0}
-    - {x: .5, y: .5, z: 0}
+    - {x: -.5, y: 0, z: 0}
+    - {x: .5, y: 0, z: 0}
+    - {x: -.5, y: 1, z: 0}
+    - {x: .5, y: 1, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -4380,25 +4392,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
-    colliderType: 0
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: 0, y: .5, z: 0}
+    - {x: .5, y: .5, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: spikeBlock6
     boundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .5, z: 0}
     - {x: 1, y: 1, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .5, z: 0}
     - {x: 1, y: 1, z: 0}
     texelSize: {x: .0625, y: .0625}
     positions:
-    - {x: -.5, y: -.5, z: 0}
-    - {x: .5, y: -.5, z: 0}
-    - {x: -.5, y: .5, z: 0}
-    - {x: .5, y: .5, z: 0}
+    - {x: -.5, y: 0, z: 0}
+    - {x: .5, y: 0, z: 0}
+    - {x: -.5, y: 1, z: 0}
+    - {x: .5, y: 1, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -4417,25 +4431,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
-    colliderType: 0
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: 0, y: .5, z: 0}
+    - {x: .5, y: .5, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: spikeBlock9
     boundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .5, z: 0}
     - {x: 1, y: 1, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .5, z: 0}
     - {x: 1, y: 1, z: 0}
     texelSize: {x: .0625, y: .0625}
     positions:
-    - {x: -.5, y: -.5, z: 0}
-    - {x: .5, y: -.5, z: 0}
-    - {x: -.5, y: .5, z: 0}
-    - {x: .5, y: .5, z: 0}
+    - {x: -.5, y: 0, z: 0}
+    - {x: .5, y: 0, z: 0}
+    - {x: -.5, y: 1, z: 0}
+    - {x: .5, y: 1, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -4454,25 +4470,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
-    colliderType: 0
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: 0, y: .5, z: 0}
+    - {x: .5, y: .5, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: spikeBlock10
     boundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .5, z: 0}
     - {x: 1, y: 1, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .5, z: 0}
     - {x: 1, y: 1, z: 0}
     texelSize: {x: .0625, y: .0625}
     positions:
-    - {x: -.5, y: -.5, z: 0}
-    - {x: .5, y: -.5, z: 0}
-    - {x: -.5, y: .5, z: 0}
-    - {x: .5, y: .5, z: 0}
+    - {x: -.5, y: 0, z: 0}
+    - {x: .5, y: 0, z: 0}
+    - {x: -.5, y: 1, z: 0}
+    - {x: .5, y: 1, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -4491,8 +4509,10 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
-    colliderType: 0
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: 0, y: .5, z: 0}
+    - {x: .5, y: .5, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
@@ -4510,7 +4530,7 @@ MonoBehaviour:
   loadable: 0
   invOrthoSize: .111111112
   halfTargetHeight: 144
-  buildKey: 1574447891
+  buildKey: 1681823497
   dataGuid: 06c9c51c7d312e84eb48d3e992356757
   managedSpriteCollection: 0
   hasPlatformData: 0
