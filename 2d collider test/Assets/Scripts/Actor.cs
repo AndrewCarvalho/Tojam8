@@ -308,6 +308,8 @@ public class Actor : MonoBehaviour {
         Vector3 movementVector = new Vector3(deltaSide, deltaUp, 0);
         Vector3 movementVectorNormalized = movementVector.normalized;
         float movementVectorMagnitude = movementVector.magnitude;
+
+        Object[] colliders = FindObjectsOfType(typeof(Collider));
         if (this.body.SweepTest(movementVectorNormalized, out rayHit, movementVectorMagnitude))
         {
             onHitCollider(rayHit.collider);
@@ -330,7 +332,6 @@ public class Actor : MonoBehaviour {
                 else
                     onHitRight(rayHit.collider);
 
-                Object[] colliders = FindObjectsOfType(typeof(Collider));
                 foreach (Object colliderObject in colliders)
                 {
                     Collider collider = colliderObject as Collider;
@@ -346,7 +347,6 @@ public class Actor : MonoBehaviour {
                 this.transform.Translate(new Vector3(deltaSide, 0, 0));
 
                 // yes no maybe?
-                /*Object[] colliders = FindObjectsOfType(typeof(Collider));
                 foreach (Object colliderObject in colliders)
                 {
                     Collider collider = colliderObject as Collider;
@@ -355,7 +355,7 @@ public class Actor : MonoBehaviour {
                         //this.transform.Translate(new Vector3(-remainingVector.x, 0, 0));
                         this.transform.Translate(new Vector3(-deltaSide, 0, 0));
                     }
-                }*/
+                }
             }
 
             //if (this.body.SweepTest(new Vector3(0, remainingVector.y > 0 ? 1.0f : -1.0f, 0), out rayHit, Mathf.Abs(remainingVector.y)))
@@ -374,7 +374,6 @@ public class Actor : MonoBehaviour {
                 }
 
                 // yes no maybe?
-                /*Object[] colliders = FindObjectsOfType(typeof(Collider));
                 foreach (Object colliderObject in colliders)
                 {
                     Collider collider = colliderObject as Collider;
@@ -384,7 +383,7 @@ public class Actor : MonoBehaviour {
                         this.transform.Translate(new Vector3(0, -partialMoveYDist, 0));
                         this.cumulativeCurrentJumpHeight -= partialMoveYDist;
                     }
-                }*/
+                }
             }
             else
             {
@@ -394,7 +393,6 @@ public class Actor : MonoBehaviour {
                 this.cumulativeCurrentJumpHeight += deltaUp;
 
                 // yes no maybe?
-                /*Object[] colliders = FindObjectsOfType(typeof(Collider));
                 foreach (Object colliderObject in colliders)
                 {
                     Collider collider = colliderObject as Collider;
@@ -403,7 +401,7 @@ public class Actor : MonoBehaviour {
                         this.transform.Translate(new Vector3(0, -remainingVector.y, 0));
                         this.cumulativeCurrentJumpHeight -= remainingVector.y;
                     }
-                }*/
+                }
             }
         }
         else

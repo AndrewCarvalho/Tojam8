@@ -6348,8 +6348,8 @@ GameObject:
   - 23: {fileID: 193959018}
   - 114: {fileID: 193959016}
   - 54: {fileID: 193959015}
-  - 65: {fileID: 193959014}
   - 114: {fileID: 193959017}
+  - 65: {fileID: 193959014}
   m_Layer: 0
   m_Name: CannonBall
   m_TagString: Untagged
@@ -6360,9 +6360,8 @@ GameObject:
 --- !u!65 &193959014
 BoxCollider:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6500000, guid: ca0b602e5a33821468acdc55d5ec6859,
-    type: 2}
-  m_PrefabInternal: {fileID: 214987785}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 193959013}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -7268,7 +7267,12 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 407a59009d0112142b975810d8ed6885, type: 2}
-    m_RemovedComponents: []
+    - target: {fileID: 6500000, guid: ca0b602e5a33821468acdc55d5ec6859, type: 2}
+      propertyPath: m_Center.x
+      value: -.5
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6500000, guid: ca0b602e5a33821468acdc55d5ec6859, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: ca0b602e5a33821468acdc55d5ec6859, type: 2}
   m_RootGameObject: {fileID: 193959013}
   m_IsPrefabParent: 0
@@ -30593,7 +30597,7 @@ MonoBehaviour:
   idleAnimationName: Idle
   actionAnimationName: Throw
   action2AnimationName: Dodge
-  crouchIdleAnimationName: CrouchIdle
+  crouchIdleAnimationName: Crouch Idle
   crouchMoveAnimationName: Crouch
   jumpAnimationName: Jump
   jumpUpFrameNum: 0
@@ -47546,7 +47550,7 @@ MonoBehaviour:
   idleAnimationName: Idle
   actionAnimationName: Attack
   action2AnimationName: Grab
-  crouchIdleAnimationName: Crouch
+  crouchIdleAnimationName: Crouch Idle
   crouchMoveAnimationName: Crouch
   jumpAnimationName: Jump
   jumpUpFrameNum: 0
