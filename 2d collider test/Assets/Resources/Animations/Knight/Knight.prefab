@@ -42,27 +42,6 @@ MonoBehaviour:
     frames:
     - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
         type: 2}
-      spriteId: 34
-      triggerEvent: 0
-      eventInfo: 
-      eventInt: 0
-      eventFloat: 0
-    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
-        type: 2}
-      spriteId: 42
-      triggerEvent: 0
-      eventInfo: 
-      eventInt: 0
-      eventFloat: 0
-    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
-        type: 2}
-      spriteId: 24
-      triggerEvent: 0
-      eventInfo: 
-      eventInt: 0
-      eventFloat: 0
-    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
-        type: 2}
       spriteId: 25
       triggerEvent: 0
       eventInfo: 
@@ -96,7 +75,7 @@ MonoBehaviour:
       eventInfo: 
       eventInt: 0
       eventFloat: 0
-    fps: 14
+    fps: 8
     loopStart: 0
     wrapMode: 0
   - name: Attack
