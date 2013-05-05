@@ -73,6 +73,11 @@ public class Actor : MonoBehaviour {
     // Use this for initialization
     protected void Awake()
     {
+        transform.position = transform.position + new Vector3(0.0f, 0.01f, 0.0f);
+
+        if (terminalFallVel == 0.0f)
+            jumpState = JUMP_STATE.ON_GROUND;
+
         this.body = GetComponent<Rigidbody>();
         hasAnimations = runAnimationName.Length > 0 &&
             idleAnimationName.Length > 0 &&
@@ -108,7 +113,7 @@ public class Actor : MonoBehaviour {
         return Physics.RaycastAll(origin, direction, distance, mask);
     }
 
-    protected void Run(float right, bool crouched = false)
+    protected void Run(float right, bool crouched = false, bool switchAnimations = true)
     {
         if (right == 0.0f)
         {
@@ -122,7 +127,7 @@ public class Actor : MonoBehaviour {
         {
             this.runState = RUN_STATE_TEMP.RIGHT;
         }
-        if (hasAnimations)
+        if (hasAnimations && switchAnimations)
         {
             if (this.jumpState == JUMP_STATE.ON_GROUND)
             {

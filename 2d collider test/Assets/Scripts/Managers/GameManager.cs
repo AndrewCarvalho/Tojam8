@@ -115,6 +115,11 @@ public class GameManager : MonoBehaviour
            
     }
 
+    public bool isSingleScreen()
+    {
+        return state == GAME_STATE.SINGLESCREEN;
+    }
+
     public void notifyPlayerWin(PlayerControls2 winner)
     {
         Debug.Log("Player " + winner.GetComponent<PlayerOneControls>() != null ? " 1 " : " 2 " + "wins!");

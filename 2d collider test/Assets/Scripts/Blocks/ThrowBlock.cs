@@ -35,12 +35,12 @@ public class ThrowBlock : Actor {
     {
         base.FixedUpdate();
 
-        if (floatDirection != null && destinationCamera != null)
+        if (floatDirection != null)
         {
             Vector3 moveDelta = new Vector3(floatDirection.Value.x * Time.deltaTime, floatDirection.Value.y * Time.deltaTime, floatDirection.Value.z * Time.deltaTime);
 
             transform.Translate(moveDelta.x, moveDelta.y, moveDelta.z);
-            if (originCamera != null)
+            if (originCamera != null && destinationCamera != null)
             {
                 // move up or down until we're not longer in view of the origin camera
                 Plane[] plane = GeometryUtility.CalculateFrustumPlanes(destinationCamera);
@@ -183,8 +183,12 @@ public class ThrowBlock : Actor {
 
         DisableActor();
         floatDirection = direction * blockThrowSpeed;
-        originCamera = camera.camera;
-        destinationCamera = otherCamera.camera;
+
+        if(camera != null)
+            originCamera = camera.camera;
+
+        if(otherCamera != null)
+            destinationCamera = otherCamera.camera;
         collider.isTrigger = true;
         passedThroughSomething = false;
     }

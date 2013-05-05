@@ -6,16 +6,25 @@ public abstract class PlayerControls2 : Actor
     [SerializeField]
     float actionableDistance = 5.0f;
 
+    [SerializeField]
+    bool actionIsGrab = false;
+
+    GameManager gameManager;
+
     protected float facingDirection = 1.0f;
     protected float hurtCountdown = 0.0f;
 
+    public bool dodging = false;
+
     float doingActionCountDown = 0.0f;
+    string actionName;
 
     // Use this for initialization
     new protected void Awake()
     {
         base.Awake();
         this.body = GetComponent<Rigidbody>();
+        gameManager = FindObjectOfType(typeof(GameManager)) as GameManager;
     }
 
     protected abstract float LeftPressed();
@@ -65,10 +74,16 @@ public abstract class PlayerControls2 : Actor
         }
         hurtCountdown -= Time.deltaTime;
 
-        if (doingActionCountDown > 0 || hurtCountdown > 0)
+        if (doingActionCountDown > 0)
+            Debug.Log("doingActionCountDown = " + doingActionCountDown);
+
+        if ((doingActionCountDown > 0 && dodging == false) || hurtCountdown > 0)
         {
-            Debug.Log("Doing action");
             return; // in the middle of an animation. Do nothing
+        }
+        else if (dodging && doingActionCountDown < 0)
+        {
+            dodging = false;
         }
 
         if (this.jumpState == JUMP_STATE.ON_GROUND)
@@ -99,13 +114,13 @@ public abstract class PlayerControls2 : Actor
                 facingDirection = -1.0f;
                 FlipAnimationX();
             }
-            Run(facingDirection, DownPressed());
+            Run(facingDirection, DownPressed(), !dodging);
         }
         if (right)
         {
             if (this.runState == RUN_STATE_TEMP.LEFT)
             {
-                base.Run(0.0f);
+                base.Run(0.0f, DownPressed(), !dodging);
             }
             else
             {
@@ -115,30 +130,64 @@ public abstract class PlayerControls2 : Actor
                     FlipAnimationX();
                 }
 
-                Run(facingDirection, DownPressed());
+                Run(facingDirection, DownPressed(), !dodging);
             }
         }
         if (!left && !right)
         {
-            Run(0.0f, DownPressed());
+            Run(0.0f, DownPressed(), !dodging);
         }
 
         if (ActionButtonDown())
         {
-            RaycastHit[] hits = castForward(new Vector3(facingDirection, 0.0f, 0.0f), actionableDistance);
-            foreach (RaycastHit hit in hits)
+            string animationName = actionAnimationName;
+            bool hitBlock = false;
+
             {
-                ThrowBlock block = hit.collider.GetComponent<ThrowBlock>();
-                if (block)
+                RaycastHit[] hits = castForward(new Vector3(facingDirection, 0.0f, 0.0f), actionableDistance);
+                foreach (RaycastHit hit in hits)
                 {
-                    block.Throw(BlockThrowDirection(), CameraFollowingMe(), OtherPlayerCamera());
-                    break;
+                    ThrowBlock block = hit.collider.GetComponent<ThrowBlock>();
+                    if (block)
+                    {
+                        block.Throw(BlockThrowDirection(), CameraFollowingMe(), OtherPlayerCamera());
+                        hitBlock = true;
+                        break;
+                    }
                 }
             }
 
-            Run(0.0f);
-            doingActionCountDown = getAnimationDuration(actionAnimationName) - 0.1f;
-            PlayAnimation(actionAnimationName);
+            if (hitBlock)
+            {
+                Run(0.0f, DownPressed(), !dodging);
+                animationName = actionAnimationName;
+            }
+            else if (gameManager.isSingleScreen())
+            {
+                if (action2AnimationName == "Dodge")
+                {
+                    dodging = true;
+                }
+                else
+                {
+                    RaycastHit[] hits = castForward(new Vector3(facingDirection, 0.0f, 0.0f), actionableDistance);
+                    foreach (RaycastHit hit in hits)
+                    {
+                        PlayerControls2 otherPlayer = hit.collider.GetComponent<PlayerControls2>();
+                        if (otherPlayer && otherPlayer.dodging == false)
+                        {
+                            gameManager.notifyPlayerWin(this);
+                            break;
+                        }
+                    }
+
+                    Run(0.0f);
+                }
+                animationName = action2AnimationName;
+            }
+
+            doingActionCountDown = getAnimationDuration(animationName) - 0.1f;
+            PlayAnimation(animationName);
         }
     }
 }
