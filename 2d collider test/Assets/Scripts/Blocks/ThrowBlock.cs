@@ -6,6 +6,7 @@ public class ThrowBlock : Actor {
     protected Vector3? floatDirection = null;
     Camera originCamera = null;
     Camera destinationCamera = null;
+    bool passedThroughSomething = false;
 
     enum TransitionState { NOT_TRANSITIONING, TRANSITIONING_FROM_BOTTOM, TRANSITIONING_FROM_TOP, LOOKING_FOR_FREE_SPACE_GOING_UP, LOOKING_FOR_FREE_SPACE_GOING_DOWN };
     TransitionState transitionState = TransitionState.NOT_TRANSITIONING;
@@ -82,8 +83,13 @@ public class ThrowBlock : Actor {
                             if (!collidedWithSomething())
                             {
                                 floatDirection = null;
-                                jumpState = JUMP_STATE.ON_GROUND;
+                                collider.isTrigger = false;
+
+                                if(passedThroughSomething) // keep it suspected in air if it didn't pass through a floor
+                                    jumpState = JUMP_STATE.ON_GROUND;
                             }
+                            else
+                                passedThroughSomething = true;
                         }
                         break;
 
@@ -94,7 +100,10 @@ public class ThrowBlock : Actor {
                             if (collidedWithSomething())
                             {
                                 transform.Translate(-moveDelta.x, -moveDelta.y, -moveDelta.z);
+
                                 floatDirection = null;
+                                collider.isTrigger = false;
+                                passedThroughSomething = true;
                                 jumpState = JUMP_STATE.ON_GROUND;
                             }
                         }
@@ -139,5 +148,7 @@ public class ThrowBlock : Actor {
         floatDirection = direction * 5.0f;
         originCamera = camera.camera;
         destinationCamera = otherCamera.camera;
+        collider.isTrigger = true;
+        passedThroughSomething = false;
     }
 }
