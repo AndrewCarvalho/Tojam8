@@ -239,7 +239,8 @@ public class Actor : MonoBehaviour {
                 foreach (Object colliderObject in colliders)
                 {
                     Collider collider = colliderObject as Collider;
-                    if (collider != this.collider && !collider.isTrigger && this.collider.bounds.Intersects(collider.bounds))
+                    Actor actor = collider.gameObject.GetComponent<Actor>();
+                    if (collider != this.collider && !collider.isTrigger && this.collider.bounds.Intersects(collider.bounds) && (actor == null || actor.jumpState != JUMP_STATE.DISABLED))
                     {
                         this.transform.Translate(new Vector3(0, -partialMoveYDist, 0));
                         this.cumulativeCurrentJumpHeight -= partialMoveYDist;
