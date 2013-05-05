@@ -15,18 +15,23 @@ public class ThrowBlock : Actor {
     TransitionState transitionState = TransitionState.NOT_TRANSITIONING;
 
 	// Use this for initialization
-	void Start () 
+	protected void Start () 
     {
 	
 	}
 	
 	// Update is called once per frame
-	void Update () 
+    protected void Update() 
     {
         
 	}
 
-    new void FixedUpdate()
+    protected virtual void onHitGround()
+    {
+
+    }
+
+    protected new void FixedUpdate()
     {
         base.FixedUpdate();
 
@@ -49,7 +54,6 @@ public class ThrowBlock : Actor {
                     //Debug.Log("cameraSpacePosition.x " + cameraSpacePosition.x);
                     Vector3 position = destinationCamera.ScreenToWorldPoint(new Vector3(cameraSpacePosition.x, goingUp ? pixelHeight : pixelHeight, 0.0f));
                     position.x = Mathf.Round(position.x);
-
                     position.z = 0.0f;
 
                     if (goingUp) transitionState = TransitionState.TRANSITIONING_FROM_BOTTOM;
@@ -92,7 +96,7 @@ public class ThrowBlock : Actor {
                                 {
                                     PlayerControls2 hitPlayer = collidedWith.GetComponent<PlayerControls2>();
                                     if (hitPlayer != null)
-                                        hitPlayer.knockBackByBlock();
+                                        hitPlayer.knockBackByBlock(true);
                                 }
 
                                 floatDirection = null;
@@ -100,6 +104,8 @@ public class ThrowBlock : Actor {
 
                                 if(passedThroughSomething) // keep it suspected in air if it didn't pass through a floor
                                     jumpState = JUMP_STATE.ON_GROUND;
+
+                                onHitGround();
                             }
                             else
                                 passedThroughSomething = true;
@@ -110,22 +116,38 @@ public class ThrowBlock : Actor {
                         {
                             transform.Translate(moveDelta.x, moveDelta.y, moveDelta.z);
 
-                            /*RaycastHit[] hits = body.SweepTestAll(new Vector3(1.0f, 0.0f, 0.0f));
-                            Debug.DrawRay(transform.position, moveDelta * 50, Color.black, 0, false);
-                            RaycastHit? lowest = null;
-                            foreach (RaycastHit hit in hits)
+                            /*int count = 0;
+                            Ray ray = new Ray(new Vector3(transform.position.x, 0.0f, 0.0f), new Vector3(0.0f, -1.0f, 0.0f));
+                            RaycastHit lastHit = new RaycastHit();
+                            while(count++ < 50)
                             {
-                                Gizmos.DrawSphere(hit.point, 1);
-                                if (lowest == null || hit.point.y < lowest.Value.point.y)
-                                    lowest = hit;
+                                RaycastHit hit;
+                                bool didHit = collider.Raycast(ray, out hit, Mathf.Infinity);
+                                Debug.DrawLine(ray.origin, ray.origin + ray.direction, Color.blue, 10);
+                                if (didHit && lastHit.collider != null && hit.collider == lastHit.collider)
+                                {
+                                    break;
+                                }
+
+                                lastHit = hit;
+
+                                ray.origin = new Vector3(ray.origin.x, ray.origin.y + 1.0f);
                             }
 
-                            if(lowest != null)
-                                Debug.Log("lowest " + lowest.Value.collider.gameObject.name);*/
+                            if (count >= 50.0f)
+                                Debug.Log("failed " + count);
 
-                            //if (lowest != null && lowest.Value.collider.bounds.Intersects(collider.bounds))
+                            Collider collidedWith = collidedWithSomething();
 
-                            if (collidedWithSomething() != null)
+                            if(collider.gameObject != null)
+                                Debug.Log("collidedWith", collider.gameObject);
+
+                            if(lastHit.collider.gameObject != null)
+                                Debug.Log("lastHit ", lastHit.collider.gameObject);
+
+                            if (collidedWith == lastHit.collider)*/
+
+                            if(collidedWithSomething() != null)
                             {
                                 transform.Translate(-moveDelta.x, -moveDelta.y, -moveDelta.z);
 
@@ -133,6 +155,7 @@ public class ThrowBlock : Actor {
                                 collider.isTrigger = false;
                                 passedThroughSomething = true;
                                 jumpState = JUMP_STATE.ON_GROUND;
+                                onHitGround();
                             }
                         }
                         break;
@@ -151,20 +174,6 @@ public class ThrowBlock : Actor {
             screenPoint.x > cameraPosition.x + halfPixelWidth ||
             screenPoint.y > (cameraPosition.y - halfPixelHeight) ||
             screenPoint.y < (cameraPosition.y + halfPixelHeight);
-    }
-
-    Collider collidedWithSomething()
-    {
-        Object[] colliders = FindObjectsOfType(typeof(Collider));
-        foreach (Object colliderObject in colliders)
-        {
-            Collider current = colliderObject as Collider;
-            if (current != this.collider && this.collider.bounds.Intersects(current.bounds))
-            {
-                return current;
-            }
-        }
-        return null;
     }
 
     public void Throw(Vector3 direction, PlayerCamera camera, PlayerCamera otherCamera)
