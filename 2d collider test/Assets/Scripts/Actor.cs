@@ -32,6 +32,16 @@ public class Actor : MonoBehaviour {
     protected string crouchIdleAnimationName;
     [SerializeField]
     protected string crouchMoveAnimationName;
+    [SerializeField]
+    protected string jumpAnimationName;
+    [SerializeField]
+    protected int jumpUpFrameNum;
+    [SerializeField]
+    protected int jumpTopFrameNum;
+    [SerializeField]
+    protected int jumpDownFrameNum;
+    [SerializeField]
+    protected int topJumpVelocity;
 
     private float jumpTime;
     private bool breakJump = false;
@@ -64,12 +74,13 @@ public class Actor : MonoBehaviour {
     protected void Awake()
     {
         this.body = GetComponent<Rigidbody>();
-        hasAnimations = runAnimationName.Length > 0 && 
-            idleAnimationName.Length > 0 && 
-            actionAnimationName.Length > 0 && 
-            action2AnimationName.Length > 0 && 
-            crouchIdleAnimationName.Length > 0 && 
-            crouchMoveAnimationName.Length > 0;
+        hasAnimations = runAnimationName.Length > 0 &&
+            idleAnimationName.Length > 0 &&
+            actionAnimationName.Length > 0 &&
+            action2AnimationName.Length > 0 &&
+            crouchIdleAnimationName.Length > 0 &&
+            crouchMoveAnimationName.Length > 0 &&
+            jumpAnimationName.Length > 0;
     }
 
     protected void JumpStart()
@@ -114,16 +125,41 @@ public class Actor : MonoBehaviour {
 
         if (hasAnimations)
         {
-            switch (runState)
+            if (this.jumpState == JUMP_STATE.ON_GROUND)
             {
-                case RUN_STATE_TEMP.STATIONARY:
-                    PlayAnimation(crouched ? crouchIdleAnimationName : idleAnimationName);
-                    break;
+                switch (runState)
+                {
+                    case RUN_STATE_TEMP.STATIONARY:
+                        PlayAnimation(crouched ? crouchIdleAnimationName : idleAnimationName);
+                        break;
 
-                case RUN_STATE_TEMP.LEFT:
-                case RUN_STATE_TEMP.RIGHT:
-                    PlayAnimation(crouched ? crouchMoveAnimationName : runAnimationName);
-                    break;
+                    case RUN_STATE_TEMP.LEFT:
+                    case RUN_STATE_TEMP.RIGHT:
+                        PlayAnimation(crouched ? crouchMoveAnimationName : runAnimationName);
+                        break;
+                }
+            }
+            else
+            {
+                int shit = 123;
+                switch (this.jumpState)
+                {
+                    case JUMP_STATE.JUMPING_START:
+                    case JUMP_STATE.JUMPING_UP:
+                        if (Mathf.Abs(this.lastVel) < this.topJumpVelocity)
+                        {
+                            SetAnimationFrame(jumpAnimationName, jumpTopFrameNum);
+                        }
+                        else
+                        {
+                            SetAnimationFrame(jumpAnimationName, jumpUpFrameNum);
+                        }
+                        break;
+                    case JUMP_STATE.FALLING_DOWN_ACCEL:
+                    case JUMP_STATE.FALLING_DOWN_TERMINAL:
+                        SetAnimationFrame(jumpAnimationName, jumpDownFrameNum);
+                        break;
+                }
             }
         }
     }
@@ -142,6 +178,19 @@ public class Actor : MonoBehaviour {
         tk2dAnimatedSprite sprite = GetComponent<tk2dAnimatedSprite>();
         if(!sprite.IsPlaying(name))
             sprite.Play(name);
+        if (sprite.Paused)
+            sprite.Paused = false;
+    }
+
+    protected void SetAnimationFrame(string animationName, int frameNumber)
+    {
+        tk2dAnimatedSprite sprite = GetComponent<tk2dAnimatedSprite>();
+        sprite.Pause();
+        if (!sprite.IsPlaying(animationName))
+        {
+            sprite.Play(animationName);
+        }
+        sprite.SetFrame(frameNumber);
     }
 
     protected void FlipAnimationX()
@@ -166,11 +215,6 @@ public class Actor : MonoBehaviour {
         // DEBUG STUFF
         string objectName = this.name;
         //Debug.Log();
-
-        if (objectName == "Player1")
-        {
-            int shit = 123;
-        }
 
         if (jumpState == JUMP_STATE.DISABLED)
             return;
