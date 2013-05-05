@@ -105,6 +105,7 @@ public class ThrowBlock : Actor {
                                 if(passedThroughSomething) // keep it suspected in air if it didn't pass through a floor
                                     jumpState = JUMP_STATE.ON_GROUND;
 
+                                Debug.Log("onHitGround();");
                                 onHitGround();
                             }
                             else
@@ -155,6 +156,8 @@ public class ThrowBlock : Actor {
                                 collider.isTrigger = false;
                                 passedThroughSomething = true;
                                 jumpState = JUMP_STATE.ON_GROUND;
+
+                                Debug.Log("onHitGround();");
                                 onHitGround();
                             }
                         }

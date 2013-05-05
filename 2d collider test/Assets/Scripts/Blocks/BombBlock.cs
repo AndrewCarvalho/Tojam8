@@ -53,6 +53,7 @@ public class BombBlock : ThrowBlock {
 
     protected override void onHitGround()
     {
+        Debug.Log("onHitGround");
         if (!ignited)
         {
             PlayAnimation("Ignite");
