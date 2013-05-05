@@ -334,21 +334,21 @@ MonoBehaviour:
     frames:
     - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
         type: 2}
-      spriteId: 34
+      spriteId: 118
       triggerEvent: 0
       eventInfo: 
       eventInt: 0
       eventFloat: 0
     - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
         type: 2}
-      spriteId: 42
+      spriteId: 117
       triggerEvent: 0
       eventInfo: 
       eventInt: 0
       eventFloat: 0
     - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
         type: 2}
-      spriteId: 24
+      spriteId: 116
       triggerEvent: 0
       eventInfo: 
       eventInt: 0

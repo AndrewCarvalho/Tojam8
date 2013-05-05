@@ -60,7 +60,7 @@ MonoBehaviour:
   atlasWidth: 256
   atlasHeight: 512
   forceSquareAtlas: 0
-  atlasWastage: 50.7972717
+  atlasWastage: 49.1157532
   allowMultipleAtlases: 0
   textureParams:
   - name: rockTile2
@@ -3482,7 +3482,7 @@ MonoBehaviour:
     regionH: 0
     regionId: 0
     colliderType: 3
-    boxColliderMin: {x: 0, y: 0}
+    boxColliderMin: {x: 0, y: 2}
     boxColliderMax: {x: 16, y: 16}
     polyColliderIslands: []
     polyColliderCap: 0
@@ -3519,9 +3519,9 @@ MonoBehaviour:
     regionW: 0
     regionH: 0
     regionId: 0
-    colliderType: 0
-    boxColliderMin: {x: 0, y: 0}
-    boxColliderMax: {x: 0, y: 0}
+    colliderType: 3
+    boxColliderMin: {x: 0, y: 2}
+    boxColliderMax: {x: 16, y: 16}
     polyColliderIslands: []
     polyColliderCap: 0
     colliderConvex: 0
@@ -3558,7 +3558,7 @@ MonoBehaviour:
     regionH: 0
     regionId: 0
     colliderType: 3
-    boxColliderMin: {x: 0, y: 0}
+    boxColliderMin: {x: 0, y: 2}
     boxColliderMax: {x: 16, y: 16}
     polyColliderIslands: []
     polyColliderCap: 0
@@ -4473,6 +4473,126 @@ MonoBehaviour:
     boxColliderMin: {x: 0, y: 0}
     boxColliderMax: {x: 16, y: 16}
     polyColliderIslands: []
+    polyColliderCap: 0
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    colliderColor: 0
+  - name: knight_jump3
+    disableTrimming: 0
+    additive: 0
+    scale: {x: 1, y: 1, z: 1}
+    texture: {fileID: 2800000, guid: bc4d44991e2db724891abc6bf31a2c5a, type: 3}
+    materialId: 0
+    anchor: 7
+    anchorX: 24
+    anchorY: 39
+    overrideMesh: {fileID: 0}
+    doubleSidedSprite: 0
+    customSpriteGeometry: 0
+    geometryIslands: []
+    dice: 0
+    diceUnitX: 64
+    diceUnitY: 0
+    pad: 0
+    extraPadding: 0
+    source: 0
+    fromSpriteSheet: 0
+    hasSpriteSheetId: 0
+    spriteSheetId: 0
+    spriteSheetX: 0
+    spriteSheetY: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    regionId: 0
+    colliderType: 3
+    boxColliderMin: {x: 21, y: 9}
+    boxColliderMax: {x: 32, y: 39}
+    polyColliderIslands: []
+    polyColliderCap: 0
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    colliderColor: 0
+  - name: knight_jump2
+    disableTrimming: 0
+    additive: 0
+    scale: {x: 1, y: 1, z: 1}
+    texture: {fileID: 2800000, guid: cc1e40c7cd37bca4eb06d93da2d16d76, type: 3}
+    materialId: 0
+    anchor: 7
+    anchorX: 24
+    anchorY: 39
+    overrideMesh: {fileID: 0}
+    doubleSidedSprite: 0
+    customSpriteGeometry: 0
+    geometryIslands: []
+    dice: 0
+    diceUnitX: 64
+    diceUnitY: 0
+    pad: 0
+    extraPadding: 0
+    source: 0
+    fromSpriteSheet: 0
+    hasSpriteSheetId: 0
+    spriteSheetId: 0
+    spriteSheetX: 0
+    spriteSheetY: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    regionId: 0
+    colliderType: 3
+    boxColliderMin: {x: 21, y: 9}
+    boxColliderMax: {x: 32, y: 39}
+    polyColliderIslands: []
+    polyColliderCap: 0
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    colliderColor: 0
+  - name: knight_jump1
+    disableTrimming: 0
+    additive: 0
+    scale: {x: 1, y: 1, z: 1}
+    texture: {fileID: 2800000, guid: 6ec8d9c1e1b52ef45b8eb229dbf5e34f, type: 3}
+    materialId: 0
+    anchor: 7
+    anchorX: 24
+    anchorY: 39
+    overrideMesh: {fileID: 0}
+    doubleSidedSprite: 0
+    customSpriteGeometry: 0
+    geometryIslands: []
+    dice: 0
+    diceUnitX: 64
+    diceUnitY: 0
+    pad: 0
+    extraPadding: 0
+    source: 0
+    fromSpriteSheet: 0
+    hasSpriteSheetId: 0
+    spriteSheetId: 0
+    spriteSheetX: 0
+    spriteSheetY: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    regionId: 0
+    colliderType: 3
+    boxColliderMin: {x: 21, y: 9}
+    boxColliderMax: {x: 32, y: 39}
+    polyColliderIslands:
+    - connected: 1
+      points:
+      - {x: 0, y: 0}
+      - {x: 0, y: 39}
+      - {x: 49, y: 39}
+      - {x: 49, y: 0}
     polyColliderCap: 0
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0

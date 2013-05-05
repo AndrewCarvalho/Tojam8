@@ -182,6 +182,9 @@ MonoBehaviour:
     - spikeBlock6
     - spikeBlock9
     - spikeBlock10
+    - knight_jump3
+    - knight_jump2
+    - knight_jump1
     spriteTextureGUIDs:
     - 05196ce9878c1484892b05adc63692e5
     - 149f455fc814fef4a9de4deb11555d5a
@@ -299,6 +302,9 @@ MonoBehaviour:
     - c805ea0a1e3382c4cac084d46fc7f18b
     - dce6c99315161b043bc89d86d63547de
     - ed7a47da4ca851149bd661dc910eb63e
+    - bc4d44991e2db724891abc6bf31a2c5a
+    - cc1e40c7cd37bca4eb06d93da2d16d76
+    - 6ec8d9c1e1b52ef45b8eb229dbf5e34f
     spriteTextureTimeStamps:
     - 1367769997.56278
     - 1367682715.06851
@@ -416,6 +422,9 @@ MonoBehaviour:
     - 1367767668
     - 1367767686
     - 1367767692
+    - 1367772874.31333
+    - 1367772814.4329
+    - 1367757588
     managedSpriteCollection: 0
     loadable: 0
     assetName: 
