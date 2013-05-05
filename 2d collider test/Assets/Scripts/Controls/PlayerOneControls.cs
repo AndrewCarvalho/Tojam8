@@ -19,27 +19,27 @@ public class PlayerOneControls : PlayerControls2
 
     protected override bool DownPressed()
     {
-        return Input.GetKey(KeyCode.S);
+        return Input.GetKey(KeyCode.S) || Input.GetAxis("Vertical2") > 0;
     }
 
     protected override bool JumpButtonDown()
     {
-        return Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Joystick3Button0);
+        return Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Joystick2Button0);
     }
 
     protected override bool JumpButtonUp()
     {
-        return Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.Joystick3Button0);
+        return Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.Joystick2Button0);
     }
 
     protected override bool JumpButton()
     {
-        return Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.Joystick3Button0);
+        return Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.Joystick2Button0);
     }
 
     protected override bool ActionButtonDown()
     {
-        return Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Joystick3Button1);
+        return Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Joystick2Button1);
     }
 
     protected override Vector3 BlockThrowDirection()

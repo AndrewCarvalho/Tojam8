@@ -19,7 +19,7 @@ public class PlayerTwoControls : PlayerControls2
 
     protected override bool DownPressed()
     {
-        return Input.GetKey(KeyCode.DownArrow);
+        return Input.GetKey(KeyCode.DownArrow) || Input.GetAxis("Vertical1") > 0;
     }
 
     protected override bool JumpButtonDown()
