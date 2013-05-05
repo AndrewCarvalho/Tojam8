@@ -123,7 +123,7 @@ public class ProgressBar : MonoBehaviour
 
     public void ChangeToSingleScreenPosition()
     {
-        this.verticalOffset = (float)Screen.height / 4.0f;
+        this.verticalOffset = /* 16 * Utils.VIC2PIX + */ (float)Screen.height / 4.0f;
     }
 
     public void ChangeToSplitScreenPosition()

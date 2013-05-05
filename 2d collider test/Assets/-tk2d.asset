@@ -211,16 +211,19 @@ MonoBehaviour:
     - bg_layer3
     - bg_layer4
     - bg_layer2
+    - bg_cameraTransitionCard
     spriteTextureGUIDs:
     - 5228732d7ef524344a1787452d2fec9a
     - 9294b5fd0e00fa3438968fffaabcdad4
     - dd74d279406777d4b87492f3d3001234
     - e2373d1994ea3704b807bf32cea7d6a1
+    - 85e0c0240c3080545bcf4f7c02190dbf
     spriteTextureTimeStamps:
-    - 1367702558.24954
-    - 1367702558.27155
-    - 1367702558.27355
-    - 1367702558.26955
+    - 1367681184
+    - 1367681208
+    - 1367681228
+    - 1367681198
+    - 1367704871.20876
     managedSpriteCollection: 0
     loadable: 0
     assetName: 

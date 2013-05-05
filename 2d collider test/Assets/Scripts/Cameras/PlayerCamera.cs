@@ -14,7 +14,7 @@ public class PlayerCamera : MonoBehaviour
         this.camera = this.GetComponent<Camera>();
         this.OnAwake(); // sets the other members
 
-        this.transform.position = new Vector3(this.player.transform.position.x, this.transform.position.y, this.transform.position.z);
+        //this.transform.position = new Vector3(this.player.transform.position.x, this.transform.position.y, this.transform.position.z);
 	}
 	
 	void Update () 
