@@ -310,19 +310,47 @@ MonoBehaviour:
     frames:
     - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
         type: 2}
-      spriteId: 73
+      spriteId: 130
       triggerEvent: 0
       eventInfo: 
       eventInt: 0
       eventFloat: 0
     - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
         type: 2}
-      spriteId: 65
+      spriteId: 128
       triggerEvent: 0
       eventInfo: 
       eventInt: 0
       eventFloat: 0
-    fps: 3.5
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 125
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 127
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 129
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11400000, guid: 06c9c51c7d312e84eb48d3e992356757,
+        type: 2}
+      spriteId: 126
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    fps: 8
     loopStart: 0
     wrapMode: 0
   - name: 

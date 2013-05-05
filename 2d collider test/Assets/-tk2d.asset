@@ -185,6 +185,18 @@ MonoBehaviour:
     - knight_jump3
     - knight_jump2
     - knight_jump1
+    - knight_hurt4
+    - knight_hurt1
+    - knight_hurt6
+    - knight_hurt2
+    - knight_hurt3
+    - knight_hurt5
+    - princess_hurt3
+    - princess_hurt6
+    - princess_hurt4
+    - princess_hurt2
+    - princess_hurt5
+    - princess_hurt1
     spriteTextureGUIDs:
     - 05196ce9878c1484892b05adc63692e5
     - 149f455fc814fef4a9de4deb11555d5a
@@ -305,6 +317,18 @@ MonoBehaviour:
     - bc4d44991e2db724891abc6bf31a2c5a
     - cc1e40c7cd37bca4eb06d93da2d16d76
     - 6ec8d9c1e1b52ef45b8eb229dbf5e34f
+    - 0e26a25eb076df34ca22c414e2487644
+    - 8000b417ac1c88c4a9d7745fd174cd97
+    - a3dbfdd9be1b9004b99a39da5831eb3c
+    - e1b9a0764dca7fe44a00d3ad5936e42d
+    - edd801044f4f98446bad5052d7a3b229
+    - f2750cdbd553c1241906640965b2a575
+    - 25ceb0a0748414248bffc3c842b42344
+    - 3b1432920de2b9e438972930a4dcadbc
+    - b96085195e2d0814da187a23657ecf7d
+    - c5c04d8177e13c542a10b6de4724b545
+    - e331c41ce6151f746aac4a2424161691
+    - ea9e1f9a692093d45a9a23770c7c06b3
     spriteTextureTimeStamps:
     - 1367769997.56278
     - 1367682715.06851
@@ -422,9 +446,21 @@ MonoBehaviour:
     - 1367767668
     - 1367767686
     - 1367767692
-    - 1367772874.31333
-    - 1367772814.4329
+    - 1367757614
+    - 1367757596
     - 1367757588
+    - 1367773048
+    - 1367773014
+    - 1367773066
+    - 1367773026
+    - 1367773038
+    - 1367773058
+    - 1367773232
+    - 1367773260
+    - 1367773242
+    - 1367773220
+    - 1367773250
+    - 1367773212
     managedSpriteCollection: 0
     loadable: 0
     assetName: 
