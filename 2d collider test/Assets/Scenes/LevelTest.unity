@@ -122,7 +122,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 14
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 551b5c38e73e2334dadf5bf3cf0819b8, type: 2}
+  boxCollider: {fileID: 18020514}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -223,7 +223,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 12
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 2b049ef00cc083d40a379fa7d5c70d8e, type: 2}
+  boxCollider: {fileID: 21272874}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -369,7 +369,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 6
   pixelPerfect: 0
-  boxCollider: {fileID: 0}
+  boxCollider: {fileID: 25387967}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -648,7 +648,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 3
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 9dc6d5e58458b0443b9439852b20b197, type: 2}
+  boxCollider: {fileID: 40583677}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -749,7 +749,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 10
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: da43ca9049b67e647893234170b51f1c, type: 2}
+  boxCollider: {fileID: 50304837}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -850,7 +850,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 375ce4651dc1d744d9ab855ab5984c73, type: 2}
+  boxCollider: {fileID: 50819521}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -1315,7 +1315,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 14
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 551b5c38e73e2334dadf5bf3cf0819b8, type: 2}
+  boxCollider: {fileID: 86583105}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -1477,7 +1477,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 6
   pixelPerfect: 0
-  boxCollider: {fileID: 0}
+  boxCollider: {fileID: 91186624}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -1578,7 +1578,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 15
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 290c7688bf9a9dd4bbd08ea536de8191, type: 2}
+  boxCollider: {fileID: 98486202}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -1736,7 +1736,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 7
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: edb551bbe31f1ca4faf4b42101c7f72a, type: 2}
+  boxCollider: {fileID: 103237928}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -1837,7 +1837,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 10
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: da43ca9049b67e647893234170b51f1c, type: 2}
+  boxCollider: {fileID: 106876865}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -1999,7 +1999,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 11
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: bf7d2bf893c307846bbf54fb2d195cdb, type: 2}
+  boxCollider: {fileID: 121554737}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -2100,7 +2100,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 14
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 551b5c38e73e2334dadf5bf3cf0819b8, type: 2}
+  boxCollider: {fileID: 123103602}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -2266,7 +2266,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 16
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: dd67b766567b18749a746b1ef361ff65, type: 2}
+  boxCollider: {fileID: 129445743}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -2329,7 +2329,7 @@ GameObject:
   - 4: {fileID: 132965272}
   - 65: {fileID: 132965273}
   m_Layer: 0
-  m_Name: KnightLoseTrigger
+  m_Name: PlayerOneLoseTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2356,7 +2356,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 9, z: 1}
+  m_Size: {x: 1, y: 12, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &142512766
 GameObject:
@@ -2758,7 +2758,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 12
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 2b049ef00cc083d40a379fa7d5c70d8e, type: 2}
+  boxCollider: {fileID: 163565040}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -2977,7 +2977,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 11
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: bf7d2bf893c307846bbf54fb2d195cdb, type: 2}
+  boxCollider: {fileID: 165374788}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -3078,7 +3078,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 11
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: bf7d2bf893c307846bbf54fb2d195cdb, type: 2}
+  boxCollider: {fileID: 167182955}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -3608,7 +3608,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 4
   pixelPerfect: 0
-  boxCollider: {fileID: 0}
+  boxCollider: {fileID: 189297127}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -3827,7 +3827,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 15
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 290c7688bf9a9dd4bbd08ea536de8191, type: 2}
+  boxCollider: {fileID: 201728493}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -3928,7 +3928,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 6
   pixelPerfect: 0
-  boxCollider: {fileID: 0}
+  boxCollider: {fileID: 203676563}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -4291,7 +4291,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 12
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 2b049ef00cc083d40a379fa7d5c70d8e, type: 2}
+  boxCollider: {fileID: 233458277}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -4492,7 +4492,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 0
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 8ca952cc9ad1d07449abf66c8c0d0f0d, type: 2}
+  boxCollider: {fileID: 245888163}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -4593,7 +4593,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 4
   pixelPerfect: 0
-  boxCollider: {fileID: 0}
+  boxCollider: {fileID: 250393105}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -4999,7 +4999,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 14
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 551b5c38e73e2334dadf5bf3cf0819b8, type: 2}
+  boxCollider: {fileID: 295871575}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -5100,7 +5100,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 15
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 290c7688bf9a9dd4bbd08ea536de8191, type: 2}
+  boxCollider: {fileID: 300913983}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -5288,7 +5288,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 10
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: da43ca9049b67e647893234170b51f1c, type: 2}
+  boxCollider: {fileID: 310586060}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -5424,7 +5424,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 375ce4651dc1d744d9ab855ab5984c73, type: 2}
+  boxCollider: {fileID: 328626957}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -5651,7 +5651,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 375ce4651dc1d744d9ab855ab5984c73, type: 2}
+  boxCollider: {fileID: 339604111}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -5752,7 +5752,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 375ce4651dc1d744d9ab855ab5984c73, type: 2}
+  boxCollider: {fileID: 345376662}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -6080,7 +6080,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 3
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 9dc6d5e58458b0443b9439852b20b197, type: 2}
+  boxCollider: {fileID: 362320410}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -6264,7 +6264,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 10
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: da43ca9049b67e647893234170b51f1c, type: 2}
+  boxCollider: {fileID: 372085610}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -6490,7 +6490,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 7
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: edb551bbe31f1ca4faf4b42101c7f72a, type: 2}
+  boxCollider: {fileID: 384085823}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -6876,7 +6876,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 10
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: da43ca9049b67e647893234170b51f1c, type: 2}
+  boxCollider: {fileID: 391890517}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -7092,7 +7092,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 375ce4651dc1d744d9ab855ab5984c73, type: 2}
+  boxCollider: {fileID: 398504967}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -7254,7 +7254,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 7
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: edb551bbe31f1ca4faf4b42101c7f72a, type: 2}
+  boxCollider: {fileID: 407105754}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -7420,7 +7420,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 6
   pixelPerfect: 0
-  boxCollider: {fileID: 0}
+  boxCollider: {fileID: 413072042}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -7639,7 +7639,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 15
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 290c7688bf9a9dd4bbd08ea536de8191, type: 2}
+  boxCollider: {fileID: 422650505}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -7805,7 +7805,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 15
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 290c7688bf9a9dd4bbd08ea536de8191, type: 2}
+  boxCollider: {fileID: 429305601}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -8424,7 +8424,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 15
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 290c7688bf9a9dd4bbd08ea536de8191, type: 2}
+  boxCollider: {fileID: 461310335}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -8722,7 +8722,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 12
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 2b049ef00cc083d40a379fa7d5c70d8e, type: 2}
+  boxCollider: {fileID: 470119189}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -8848,7 +8848,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 11
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: bf7d2bf893c307846bbf54fb2d195cdb, type: 2}
+  boxCollider: {fileID: 473208115}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -8993,7 +8993,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 7
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: edb551bbe31f1ca4faf4b42101c7f72a, type: 2}
+  boxCollider: {fileID: 479856492}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -9140,7 +9140,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 15
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 290c7688bf9a9dd4bbd08ea536de8191, type: 2}
+  boxCollider: {fileID: 484689624}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -9430,7 +9430,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 12
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 2b049ef00cc083d40a379fa7d5c70d8e, type: 2}
+  boxCollider: {fileID: 495563935}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -9566,7 +9566,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 12
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 2b049ef00cc083d40a379fa7d5c70d8e, type: 2}
+  boxCollider: {fileID: 510788246}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -9724,7 +9724,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 4
   pixelPerfect: 0
-  boxCollider: {fileID: 0}
+  boxCollider: {fileID: 514356220}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -9825,7 +9825,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 6
   pixelPerfect: 0
-  boxCollider: {fileID: 0}
+  boxCollider: {fileID: 516081618}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -9926,7 +9926,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 14
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 551b5c38e73e2334dadf5bf3cf0819b8, type: 2}
+  boxCollider: {fileID: 516986825}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -10225,7 +10225,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 3
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 9dc6d5e58458b0443b9439852b20b197, type: 2}
+  boxCollider: {fileID: 525758741}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -10509,7 +10509,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 16
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: dd67b766567b18749a746b1ef361ff65, type: 2}
+  boxCollider: {fileID: 553700890}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -10671,7 +10671,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 7
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: edb551bbe31f1ca4faf4b42101c7f72a, type: 2}
+  boxCollider: {fileID: 565379341}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -10772,7 +10772,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 11
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: bf7d2bf893c307846bbf54fb2d195cdb, type: 2}
+  boxCollider: {fileID: 571060510}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -10934,7 +10934,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 11
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: bf7d2bf893c307846bbf54fb2d195cdb, type: 2}
+  boxCollider: {fileID: 582702068}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -11035,7 +11035,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 0
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 8ca952cc9ad1d07449abf66c8c0d0f0d, type: 2}
+  boxCollider: {fileID: 584305225}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -11355,7 +11355,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 7
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: edb551bbe31f1ca4faf4b42101c7f72a, type: 2}
+  boxCollider: {fileID: 609732543}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -11680,7 +11680,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 16
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: dd67b766567b18749a746b1ef361ff65, type: 2}
+  boxCollider: {fileID: 632637300}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -11853,7 +11853,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 375ce4651dc1d744d9ab855ab5984c73, type: 2}
+  boxCollider: {fileID: 644901708}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -12011,7 +12011,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 16
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: dd67b766567b18749a746b1ef361ff65, type: 2}
+  boxCollider: {fileID: 653392027}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -12112,7 +12112,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 15
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 290c7688bf9a9dd4bbd08ea536de8191, type: 2}
+  boxCollider: {fileID: 659312131}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -12213,7 +12213,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 11
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: bf7d2bf893c307846bbf54fb2d195cdb, type: 2}
+  boxCollider: {fileID: 663805662}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -12455,7 +12455,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 15
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 290c7688bf9a9dd4bbd08ea536de8191, type: 2}
+  boxCollider: {fileID: 684261548}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -12556,7 +12556,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 14
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 551b5c38e73e2334dadf5bf3cf0819b8, type: 2}
+  boxCollider: {fileID: 685129072}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -12755,7 +12755,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 12
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 2b049ef00cc083d40a379fa7d5c70d8e, type: 2}
+  boxCollider: {fileID: 706161643}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -12970,7 +12970,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 0
   pixelPerfect: 0
-  boxCollider: {fileID: 0}
+  boxCollider: {fileID: 735359853}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -13213,7 +13213,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 375ce4651dc1d744d9ab855ab5984c73, type: 2}
+  boxCollider: {fileID: 738300902}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -13314,7 +13314,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 16
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: dd67b766567b18749a746b1ef361ff65, type: 2}
+  boxCollider: {fileID: 746005464}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -13415,7 +13415,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 3
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 9dc6d5e58458b0443b9439852b20b197, type: 2}
+  boxCollider: {fileID: 748326512}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -13516,7 +13516,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 16
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: dd67b766567b18749a746b1ef361ff65, type: 2}
+  boxCollider: {fileID: 754705068}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -13894,7 +13894,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 14
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 551b5c38e73e2334dadf5bf3cf0819b8, type: 2}
+  boxCollider: {fileID: 764089077}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -13995,7 +13995,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 10
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: da43ca9049b67e647893234170b51f1c, type: 2}
+  boxCollider: {fileID: 774193661}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -14074,7 +14074,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 3
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 9dc6d5e58458b0443b9439852b20b197, type: 2}
+  boxCollider: {fileID: 774324991}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -14175,7 +14175,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 3
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 9dc6d5e58458b0443b9439852b20b197, type: 2}
+  boxCollider: {fileID: 791991962}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -14500,7 +14500,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 11
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: bf7d2bf893c307846bbf54fb2d195cdb, type: 2}
+  boxCollider: {fileID: 818524967}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -14845,7 +14845,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 10
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: da43ca9049b67e647893234170b51f1c, type: 2}
+  boxCollider: {fileID: 820144200}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -14946,7 +14946,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 11
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: bf7d2bf893c307846bbf54fb2d195cdb, type: 2}
+  boxCollider: {fileID: 823934436}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -15047,7 +15047,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 16
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: dd67b766567b18749a746b1ef361ff65, type: 2}
+  boxCollider: {fileID: 827438667}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -15170,7 +15170,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 10
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: da43ca9049b67e647893234170b51f1c, type: 2}
+  boxCollider: {fileID: 828142397}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -15249,7 +15249,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 15
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 290c7688bf9a9dd4bbd08ea536de8191, type: 2}
+  boxCollider: {fileID: 832250151}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -15606,7 +15606,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 375ce4651dc1d744d9ab855ab5984c73, type: 2}
+  boxCollider: {fileID: 851239607}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -15707,7 +15707,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 16
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: dd67b766567b18749a746b1ef361ff65, type: 2}
+  boxCollider: {fileID: 852678553}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -15808,7 +15808,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 6
   pixelPerfect: 0
-  boxCollider: {fileID: 0}
+  boxCollider: {fileID: 858263589}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -15909,7 +15909,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 3
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 9dc6d5e58458b0443b9439852b20b197, type: 2}
+  boxCollider: {fileID: 859737218}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -16010,7 +16010,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 4
   pixelPerfect: 0
-  boxCollider: {fileID: 0}
+  boxCollider: {fileID: 866761091}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -16111,7 +16111,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 15
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 290c7688bf9a9dd4bbd08ea536de8191, type: 2}
+  boxCollider: {fileID: 868293041}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -16212,7 +16212,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 12
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 2b049ef00cc083d40a379fa7d5c70d8e, type: 2}
+  boxCollider: {fileID: 871022165}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -16313,7 +16313,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 4
   pixelPerfect: 0
-  boxCollider: {fileID: 0}
+  boxCollider: {fileID: 874117132}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -16501,7 +16501,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 14
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 551b5c38e73e2334dadf5bf3cf0819b8, type: 2}
+  boxCollider: {fileID: 874663050}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -16580,7 +16580,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 4
   pixelPerfect: 0
-  boxCollider: {fileID: 0}
+  boxCollider: {fileID: 878707470}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -16757,7 +16757,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 14
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 551b5c38e73e2334dadf5bf3cf0819b8, type: 2}
+  boxCollider: {fileID: 884568036}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -16919,7 +16919,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 14
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 551b5c38e73e2334dadf5bf3cf0819b8, type: 2}
+  boxCollider: {fileID: 901438841}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -17020,7 +17020,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 10
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: da43ca9049b67e647893234170b51f1c, type: 2}
+  boxCollider: {fileID: 903373727}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -17121,7 +17121,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 6
   pixelPerfect: 0
-  boxCollider: {fileID: 0}
+  boxCollider: {fileID: 905655535}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -17222,7 +17222,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 4
   pixelPerfect: 0
-  boxCollider: {fileID: 0}
+  boxCollider: {fileID: 919695376}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -17384,7 +17384,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 6
   pixelPerfect: 0
-  boxCollider: {fileID: 0}
+  boxCollider: {fileID: 937291074}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -17568,7 +17568,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 10
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: da43ca9049b67e647893234170b51f1c, type: 2}
+  boxCollider: {fileID: 955273043}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -17772,7 +17772,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 16
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: dd67b766567b18749a746b1ef361ff65, type: 2}
+  boxCollider: {fileID: 967074655}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -17873,7 +17873,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 3
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 9dc6d5e58458b0443b9439852b20b197, type: 2}
+  boxCollider: {fileID: 970035135}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -17974,7 +17974,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 10
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: da43ca9049b67e647893234170b51f1c, type: 2}
+  boxCollider: {fileID: 973739363}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -18685,7 +18685,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 4
   pixelPerfect: 0
-  boxCollider: {fileID: 0}
+  boxCollider: {fileID: 989377323}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -18843,7 +18843,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 12
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 2b049ef00cc083d40a379fa7d5c70d8e, type: 2}
+  boxCollider: {fileID: 997776480}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -19045,7 +19045,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 12
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 2b049ef00cc083d40a379fa7d5c70d8e, type: 2}
+  boxCollider: {fileID: 1001437467}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -19207,7 +19207,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 12
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 2b049ef00cc083d40a379fa7d5c70d8e, type: 2}
+  boxCollider: {fileID: 1007829676}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -19695,7 +19695,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 11
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: bf7d2bf893c307846bbf54fb2d195cdb, type: 2}
+  boxCollider: {fileID: 1031493666}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -20105,7 +20105,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 10
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: da43ca9049b67e647893234170b51f1c, type: 2}
+  boxCollider: {fileID: 1040082377}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -20184,7 +20184,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 4
   pixelPerfect: 0
-  boxCollider: {fileID: 0}
+  boxCollider: {fileID: 1044018296}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -20307,7 +20307,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 10
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: da43ca9049b67e647893234170b51f1c, type: 2}
+  boxCollider: {fileID: 1053012602}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -20653,7 +20653,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 0
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 8ca952cc9ad1d07449abf66c8c0d0f0d, type: 2}
+  boxCollider: {fileID: 1085092104}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -20963,7 +20963,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 7
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: edb551bbe31f1ca4faf4b42101c7f72a, type: 2}
+  boxCollider: {fileID: 1100930006}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -21064,7 +21064,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 375ce4651dc1d744d9ab855ab5984c73, type: 2}
+  boxCollider: {fileID: 1101782614}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -21290,7 +21290,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 10
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: da43ca9049b67e647893234170b51f1c, type: 2}
+  boxCollider: {fileID: 1110255057}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -21391,7 +21391,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 7
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: edb551bbe31f1ca4faf4b42101c7f72a, type: 2}
+  boxCollider: {fileID: 1114815469}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -21888,7 +21888,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 4
   pixelPerfect: 0
-  boxCollider: {fileID: 0}
+  boxCollider: {fileID: 1152188831}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -21989,7 +21989,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 4
   pixelPerfect: 0
-  boxCollider: {fileID: 0}
+  boxCollider: {fileID: 1156076183}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -22151,7 +22151,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 14
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 551b5c38e73e2334dadf5bf3cf0819b8, type: 2}
+  boxCollider: {fileID: 1160747574}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -22252,7 +22252,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 11
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: bf7d2bf893c307846bbf54fb2d195cdb, type: 2}
+  boxCollider: {fileID: 1168754977}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -22406,7 +22406,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 15
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 290c7688bf9a9dd4bbd08ea536de8191, type: 2}
+  boxCollider: {fileID: 1172453098}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -22507,7 +22507,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 0
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 8ca952cc9ad1d07449abf66c8c0d0f0d, type: 2}
+  boxCollider: {fileID: 1172563132}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -22608,7 +22608,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 7
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: edb551bbe31f1ca4faf4b42101c7f72a, type: 2}
+  boxCollider: {fileID: 1173024446}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -22766,7 +22766,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 375ce4651dc1d744d9ab855ab5984c73, type: 2}
+  boxCollider: {fileID: 1180674345}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -23050,7 +23050,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 3
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 9dc6d5e58458b0443b9439852b20b197, type: 2}
+  boxCollider: {fileID: 1198172068}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -23151,7 +23151,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 16
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: dd67b766567b18749a746b1ef361ff65, type: 2}
+  boxCollider: {fileID: 1208897823}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -23313,7 +23313,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 375ce4651dc1d744d9ab855ab5984c73, type: 2}
+  boxCollider: {fileID: 1217608623}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -23536,7 +23536,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 16
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: dd67b766567b18749a746b1ef361ff65, type: 2}
+  boxCollider: {fileID: 1235166209}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -23637,7 +23637,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 0
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 8ca952cc9ad1d07449abf66c8c0d0f0d, type: 2}
+  boxCollider: {fileID: 1241479576}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -23860,7 +23860,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 4
   pixelPerfect: 0
-  boxCollider: {fileID: 0}
+  boxCollider: {fileID: 1252077481}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -23961,7 +23961,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 0
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 8ca952cc9ad1d07449abf66c8c0d0f0d, type: 2}
+  boxCollider: {fileID: 1252212091}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -24062,7 +24062,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 16
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: dd67b766567b18749a746b1ef361ff65, type: 2}
+  boxCollider: {fileID: 1254080206}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -24140,228 +24140,228 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 347872258}
-  - {fileID: 18020518}
-  - {fileID: 1479740915}
-  - {fileID: 86583109}
-  - {fileID: 764089075}
-  - {fileID: 123103606}
-  - {fileID: 1838667309}
+  - {fileID: 295871579}
   - {fileID: 901438845}
+  - {fileID: 1645775550}
+  - {fileID: 1160747578}
+  - {fileID: 347872258}
+  - {fileID: 123103606}
+  - {fileID: 516986829}
+  - {fileID: 2051617761}
+  - {fileID: 1536797511}
+  - {fileID: 86583109}
+  - {fileID: 884568040}
+  - {fileID: 2138451269}
+  - {fileID: 1479740915}
+  - {fileID: 2018120837}
+  - {fileID: 764089075}
   - {fileID: 585259652}
   - {fileID: 685129076}
-  - {fileID: 516986829}
-  - {fileID: 1645775550}
-  - {fileID: 884568040}
-  - {fileID: 1536797511}
+  - {fileID: 18020518}
   - {fileID: 999682050}
   - {fileID: 874663048}
-  - {fileID: 2138451269}
-  - {fileID: 1160747578}
-  - {fileID: 2051617761}
-  - {fileID: 295871579}
-  - {fileID: 2018120837}
-  - {fileID: 163565044}
-  - {fileID: 2075746677}
-  - {fileID: 1001437471}
-  - {fileID: 1828064568}
-  - {fileID: 1552247000}
+  - {fileID: 1838667309}
   - {fileID: 1007829680}
-  - {fileID: 21272878}
-  - {fileID: 706161641}
-  - {fileID: 871022169}
-  - {fileID: 1462793549}
-  - {fileID: 1341518015}
-  - {fileID: 1711105277}
-  - {fileID: 451432687}
-  - {fileID: 1363408106}
-  - {fileID: 233458275}
-  - {fileID: 2128096759}
-  - {fileID: 495563933}
-  - {fileID: 1920163321}
-  - {fileID: 1768750819}
+  - {fileID: 1001437471}
   - {fileID: 997776484}
-  - {fileID: 1714759385}
-  - {fileID: 184354737}
-  - {fileID: 1521080897}
-  - {fileID: 510788250}
+  - {fileID: 163565044}
+  - {fileID: 706161641}
   - {fileID: 470119187}
-  - {fileID: 106876869}
-  - {fileID: 1652167292}
-  - {fileID: 391890515}
-  - {fileID: 372085608}
-  - {fileID: 50304841}
-  - {fileID: 820144204}
-  - {fileID: 2012659935}
-  - {fileID: 1580025136}
-  - {fileID: 1110255061}
-  - {fileID: 828142395}
-  - {fileID: 774193659}
-  - {fileID: 955273041}
-  - {fileID: 973739367}
-  - {fileID: 1040082375}
+  - {fileID: 184354737}
+  - {fileID: 1711105277}
+  - {fileID: 1714759385}
+  - {fileID: 1828064568}
+  - {fileID: 1768750819}
+  - {fileID: 1363408106}
+  - {fileID: 871022169}
+  - {fileID: 510788250}
+  - {fileID: 2128096759}
+  - {fileID: 1341518015}
+  - {fileID: 2075746677}
+  - {fileID: 233458275}
+  - {fileID: 1920163321}
+  - {fileID: 21272878}
+  - {fileID: 1462793549}
+  - {fileID: 1521080897}
+  - {fileID: 1552247000}
+  - {fileID: 451432687}
+  - {fileID: 495563933}
   - {fileID: 1053012600}
-  - {fileID: 1988525393}
-  - {fileID: 1342022976}
-  - {fileID: 447776915}
-  - {fileID: 903373731}
+  - {fileID: 1652167292}
+  - {fileID: 955273041}
   - {fileID: 310586058}
-  - {fileID: 1386827659}
   - {fileID: 2041633753}
-  - {fileID: 748326516}
+  - {fileID: 1988525393}
+  - {fileID: 1580025136}
+  - {fileID: 1040082375}
+  - {fileID: 1342022976}
+  - {fileID: 106876869}
+  - {fileID: 50304841}
+  - {fileID: 903373731}
+  - {fileID: 774193659}
+  - {fileID: 973739367}
+  - {fileID: 820144204}
+  - {fileID: 447776915}
+  - {fileID: 2012659935}
+  - {fileID: 828142395}
+  - {fileID: 1386827659}
+  - {fileID: 372085608}
+  - {fileID: 391890515}
+  - {fileID: 1110255061}
   - {fileID: 791991966}
-  - {fileID: 1718701916}
-  - {fileID: 859737222}
-  - {fileID: 1578072039}
-  - {fileID: 1198172072}
   - {fileID: 362320414}
-  - {fileID: 970035139}
+  - {fileID: 1198172072}
+  - {fileID: 748326516}
   - {fileID: 1397636359}
-  - {fileID: 1894169485}
-  - {fileID: 40583681}
-  - {fileID: 774324995}
   - {fileID: 2147358078}
-  - {fileID: 1829878566}
-  - {fileID: 1811533860}
   - {fileID: 1544859604}
+  - {fileID: 859737222}
+  - {fileID: 774324995}
+  - {fileID: 40583681}
+  - {fileID: 1578072039}
+  - {fileID: 1894169485}
+  - {fileID: 1811533860}
+  - {fileID: 970035139}
   - {fileID: 525758745}
-  - {fileID: 1429632041}
-  - {fileID: 103237932}
-  - {fileID: 479856496}
-  - {fileID: 609732547}
-  - {fileID: 2080448021}
-  - {fileID: 1114815473}
+  - {fileID: 1718701916}
+  - {fileID: 1829878566}
+  - {fileID: 1757031685}
   - {fileID: 1630776981}
+  - {fileID: 384085827}
+  - {fileID: 2080448021}
   - {fileID: 565379345}
   - {fileID: 1624672920}
-  - {fileID: 384085827}
+  - {fileID: 103237932}
   - {fileID: 1173024450}
-  - {fileID: 407105758}
-  - {fileID: 1686836328}
-  - {fileID: 1757031685}
+  - {fileID: 479856496}
+  - {fileID: 1114815473}
   - {fileID: 1100930010}
-  - {fileID: 1701189556}
-  - {fileID: 1301173297}
-  - {fileID: 659312135}
-  - {fileID: 98486206}
-  - {fileID: 1873854183}
-  - {fileID: 684261552}
-  - {fileID: 300913987}
-  - {fileID: 1172453102}
-  - {fileID: 1814747680}
-  - {fileID: 484689628}
+  - {fileID: 1686836328}
+  - {fileID: 609732547}
+  - {fileID: 1429632041}
+  - {fileID: 407105758}
   - {fileID: 201728497}
+  - {fileID: 1814747680}
   - {fileID: 1371680810}
-  - {fileID: 868293045}
-  - {fileID: 422650509}
-  - {fileID: 461310339}
-  - {fileID: 1285689391}
-  - {fileID: 832250155}
+  - {fileID: 300913987}
   - {fileID: 1901257570}
+  - {fileID: 684261552}
+  - {fileID: 1873854183}
+  - {fileID: 1301173297}
+  - {fileID: 1285689391}
+  - {fileID: 659312135}
+  - {fileID: 422650509}
+  - {fileID: 1172453102}
+  - {fileID: 98486206}
+  - {fileID: 1701189556}
+  - {fileID: 868293045}
   - {fileID: 429305605}
+  - {fileID: 461310339}
+  - {fileID: 484689628}
+  - {fileID: 832250155}
   - {fileID: 1365174114}
-  - {fileID: 818524971}
-  - {fileID: 1898708081}
-  - {fileID: 571060514}
-  - {fileID: 1748491223}
-  - {fileID: 1362142011}
-  - {fileID: 167182959}
-  - {fileID: 1941050697}
-  - {fileID: 1992388596}
-  - {fileID: 2001642209}
-  - {fileID: 121554741}
-  - {fileID: 1031493670}
   - {fileID: 1168754981}
-  - {fileID: 663805666}
-  - {fileID: 165374792}
-  - {fileID: 473208119}
-  - {fileID: 582702072}
-  - {fileID: 1517284691}
+  - {fileID: 1362142011}
   - {fileID: 1441605100}
+  - {fileID: 121554741}
+  - {fileID: 818524971}
+  - {fileID: 582702072}
+  - {fileID: 165374792}
   - {fileID: 823934440}
+  - {fileID: 1748491223}
+  - {fileID: 2001642209}
+  - {fileID: 1941050697}
+  - {fileID: 1031493670}
   - {fileID: 1704788060}
-  - {fileID: 738300906}
-  - {fileID: 851239611}
-  - {fileID: 1462399061}
-  - {fileID: 1180674349}
-  - {fileID: 1101782618}
+  - {fileID: 1898708081}
+  - {fileID: 1992388596}
+  - {fileID: 571060514}
+  - {fileID: 473208119}
+  - {fileID: 663805666}
+  - {fileID: 1517284691}
+  - {fileID: 167182959}
+  - {fileID: 50819525}
+  - {fileID: 328626961}
   - {fileID: 1217608627}
   - {fileID: 1916295817}
-  - {fileID: 1631117784}
-  - {fileID: 50819525}
-  - {fileID: 644901712}
-  - {fileID: 328626961}
-  - {fileID: 398504971}
-  - {fileID: 1371286891}
-  - {fileID: 1488473589}
-  - {fileID: 1967044784}
-  - {fileID: 339604115}
   - {fileID: 345376666}
-  - {fileID: 1254080210}
-  - {fileID: 1235166213}
-  - {fileID: 553700894}
-  - {fileID: 1983409561}
-  - {fileID: 852678557}
-  - {fileID: 967074659}
-  - {fileID: 653392031}
-  - {fileID: 1208897827}
-  - {fileID: 827438671}
-  - {fileID: 746005468}
+  - {fileID: 398504971}
+  - {fileID: 339604115}
+  - {fileID: 1631117784}
+  - {fileID: 1462399061}
+  - {fileID: 1371286891}
+  - {fileID: 1101782618}
+  - {fileID: 1488473589}
+  - {fileID: 1180674349}
+  - {fileID: 851239611}
+  - {fileID: 1967044784}
+  - {fileID: 738300906}
+  - {fileID: 644901712}
   - {fileID: 632637304}
+  - {fileID: 1983409561}
+  - {fileID: 653392031}
+  - {fileID: 553700894}
   - {fileID: 129445747}
+  - {fileID: 1254080210}
+  - {fileID: 1208897827}
+  - {fileID: 852678557}
+  - {fileID: 1235166213}
   - {fileID: 1911034348}
+  - {fileID: 746005468}
+  - {fileID: 827438671}
   - {fileID: 754705072}
-  - {fileID: 1363533940}
-  - {fileID: 1156076187}
-  - {fileID: 866761095}
-  - {fileID: 250393109}
-  - {fileID: 189297131}
-  - {fileID: 1597652689}
-  - {fileID: 1266583373}
-  - {fileID: 989377327}
+  - {fileID: 967074659}
   - {fileID: 1044018300}
-  - {fileID: 1484199873}
+  - {fileID: 989377327}
   - {fileID: 819634846}
-  - {fileID: 874117136}
+  - {fileID: 1363533940}
   - {fileID: 1477409369}
-  - {fileID: 1152188835}
-  - {fileID: 1968096535}
-  - {fileID: 514356224}
-  - {fileID: 1991633931}
-  - {fileID: 1453518052}
   - {fileID: 878707474}
+  - {fileID: 866761095}
+  - {fileID: 1453518052}
+  - {fileID: 189297131}
+  - {fileID: 250393109}
+  - {fileID: 514356224}
+  - {fileID: 1968096535}
+  - {fileID: 1597652689}
+  - {fileID: 1252077485}
+  - {fileID: 1266583373}
+  - {fileID: 1152188835}
   - {fileID: 1766124281}
   - {fileID: 919695380}
-  - {fileID: 1252077485}
-  - {fileID: 1618995365}
-  - {fileID: 1451618007}
+  - {fileID: 874117136}
+  - {fileID: 1484199873}
+  - {fileID: 1991633931}
+  - {fileID: 1156076187}
   - {fileID: 245888167}
-  - {fileID: 1085092108}
-  - {fileID: 1491639020}
-  - {fileID: 1654124001}
-  - {fileID: 735359857}
-  - {fileID: 1172563136}
   - {fileID: 1303627198}
+  - {fileID: 1654124001}
+  - {fileID: 584305229}
   - {fileID: 1907605088}
   - {fileID: 1252212095}
-  - {fileID: 584305229}
+  - {fileID: 1618995365}
+  - {fileID: 1172563136}
+  - {fileID: 1451618007}
+  - {fileID: 1085092108}
   - {fileID: 1289333402}
+  - {fileID: 1491639020}
   - {fileID: 1241479580}
-  - {fileID: 1558319680}
-  - {fileID: 1454378115}
-  - {fileID: 91186628}
+  - {fileID: 735359857}
+  - {fileID: 905655539}
+  - {fileID: 413072046}
   - {fileID: 1363359422}
   - {fileID: 203676567}
-  - {fileID: 937291078}
-  - {fileID: 858263593}
-  - {fileID: 25387971}
-  - {fileID: 1695149997}
-  - {fileID: 2134881152}
-  - {fileID: 413072046}
-  - {fileID: 516081622}
-  - {fileID: 1857976781}
-  - {fileID: 905655539}
+  - {fileID: 1558319680}
   - {fileID: 1661419246}
+  - {fileID: 25387971}
+  - {fileID: 516081622}
+  - {fileID: 1695149997}
+  - {fileID: 1857976781}
+  - {fileID: 91186628}
+  - {fileID: 937291078}
+  - {fileID: 1454378115}
+  - {fileID: 858263593}
+  - {fileID: 2134881152}
   m_Father: {fileID: 0}
 --- !u!1 &1266583368
 GameObject:
@@ -24411,7 +24411,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 4
   pixelPerfect: 0
-  boxCollider: {fileID: 0}
+  boxCollider: {fileID: 1266583369}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -24928,7 +24928,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 15
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 290c7688bf9a9dd4bbd08ea536de8191, type: 2}
+  boxCollider: {fileID: 1285689387}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -25029,7 +25029,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 0
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 8ca952cc9ad1d07449abf66c8c0d0f0d, type: 2}
+  boxCollider: {fileID: 1289333398}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -25130,7 +25130,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 15
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 290c7688bf9a9dd4bbd08ea536de8191, type: 2}
+  boxCollider: {fileID: 1301173293}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -25231,7 +25231,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 0
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 8ca952cc9ad1d07449abf66c8c0d0f0d, type: 2}
+  boxCollider: {fileID: 1303627194}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -25596,7 +25596,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 12
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 2b049ef00cc083d40a379fa7d5c70d8e, type: 2}
+  boxCollider: {fileID: 1341518011}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -26032,7 +26032,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 11
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: bf7d2bf893c307846bbf54fb2d195cdb, type: 2}
+  boxCollider: {fileID: 1362142007}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -26194,7 +26194,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 6
   pixelPerfect: 0
-  boxCollider: {fileID: 0}
+  boxCollider: {fileID: 1363359418}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -26317,7 +26317,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 12
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 2b049ef00cc083d40a379fa7d5c70d8e, type: 2}
+  boxCollider: {fileID: 1363408108}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -26396,7 +26396,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 4
   pixelPerfect: 0
-  boxCollider: {fileID: 0}
+  boxCollider: {fileID: 1363533936}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -26554,7 +26554,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 11
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: bf7d2bf893c307846bbf54fb2d195cdb, type: 2}
+  boxCollider: {fileID: 1365174110}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -26777,7 +26777,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 375ce4651dc1d744d9ab855ab5984c73, type: 2}
+  boxCollider: {fileID: 1371286887}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -26878,7 +26878,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 15
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 290c7688bf9a9dd4bbd08ea536de8191, type: 2}
+  boxCollider: {fileID: 1371680806}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -27300,7 +27300,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 3
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 9dc6d5e58458b0443b9439852b20b197, type: 2}
+  boxCollider: {fileID: 1397636355}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -27401,7 +27401,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 7
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: edb551bbe31f1ca4faf4b42101c7f72a, type: 2}
+  boxCollider: {fileID: 1429632037}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -27664,7 +27664,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 11
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: bf7d2bf893c307846bbf54fb2d195cdb, type: 2}
+  boxCollider: {fileID: 1441605096}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -27887,7 +27887,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 0
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 8ca952cc9ad1d07449abf66c8c0d0f0d, type: 2}
+  boxCollider: {fileID: 1451618003}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -28061,7 +28061,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 4
   pixelPerfect: 0
-  boxCollider: {fileID: 0}
+  boxCollider: {fileID: 1453518048}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -28263,7 +28263,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 375ce4651dc1d744d9ab855ab5984c73, type: 2}
+  boxCollider: {fileID: 1462399057}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -28716,7 +28716,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 4
   pixelPerfect: 0
-  boxCollider: {fileID: 0}
+  boxCollider: {fileID: 1477409365}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -28961,7 +28961,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 14
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 551b5c38e73e2334dadf5bf3cf0819b8, type: 2}
+  boxCollider: {fileID: 1479740917}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -29101,7 +29101,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 4
   pixelPerfect: 0
-  boxCollider: {fileID: 0}
+  boxCollider: {fileID: 1484199869}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -29202,7 +29202,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 375ce4651dc1d744d9ab855ab5984c73, type: 2}
+  boxCollider: {fileID: 1488473585}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -29303,7 +29303,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 0
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 8ca952cc9ad1d07449abf66c8c0d0f0d, type: 2}
+  boxCollider: {fileID: 1491639016}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -29583,7 +29583,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 11
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: bf7d2bf893c307846bbf54fb2d195cdb, type: 2}
+  boxCollider: {fileID: 1517284687}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -29684,7 +29684,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 12
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 2b049ef00cc083d40a379fa7d5c70d8e, type: 2}
+  boxCollider: {fileID: 1521080893}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -30090,7 +30090,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 14
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 551b5c38e73e2334dadf5bf3cf0819b8, type: 2}
+  boxCollider: {fileID: 1536797507}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -30309,7 +30309,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 3
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 9dc6d5e58458b0443b9439852b20b197, type: 2}
+  boxCollider: {fileID: 1544859600}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -30489,7 +30489,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 12
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 2b049ef00cc083d40a379fa7d5c70d8e, type: 2}
+  boxCollider: {fileID: 1552247002}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -30625,7 +30625,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 6
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 2feb8c3c797430c40be2cf0a838b4a42, type: 2}
+  boxCollider: {fileID: 1558319676}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -30832,7 +30832,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 3
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 9dc6d5e58458b0443b9439852b20b197, type: 2}
+  boxCollider: {fileID: 1578072035}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -30933,7 +30933,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 10
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: da43ca9049b67e647893234170b51f1c, type: 2}
+  boxCollider: {fileID: 1580025132}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -31338,7 +31338,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 4
   pixelPerfect: 0
-  boxCollider: {fileID: 0}
+  boxCollider: {fileID: 1597652685}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -31764,7 +31764,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 0
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 8ca952cc9ad1d07449abf66c8c0d0f0d, type: 2}
+  boxCollider: {fileID: 1618995361}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -31922,7 +31922,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 7
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: edb551bbe31f1ca4faf4b42101c7f72a, type: 2}
+  boxCollider: {fileID: 1624672916}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -32174,7 +32174,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 7
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: edb551bbe31f1ca4faf4b42101c7f72a, type: 2}
+  boxCollider: {fileID: 1630776977}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -32275,7 +32275,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 375ce4651dc1d744d9ab855ab5984c73, type: 2}
+  boxCollider: {fileID: 1631117780}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -32474,7 +32474,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 14
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 551b5c38e73e2334dadf5bf3cf0819b8, type: 2}
+  boxCollider: {fileID: 1645775552}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -32553,7 +32553,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 10
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: da43ca9049b67e647893234170b51f1c, type: 2}
+  boxCollider: {fileID: 1652167288}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -32654,7 +32654,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 0
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 8ca952cc9ad1d07449abf66c8c0d0f0d, type: 2}
+  boxCollider: {fileID: 1654123997}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -32755,7 +32755,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 6
   pixelPerfect: 0
-  boxCollider: {fileID: 0}
+  boxCollider: {fileID: 1661419242}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -33259,7 +33259,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 7
   pixelPerfect: 0
-  boxCollider: {fileID: 0}
+  boxCollider: {fileID: 1686836324}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -33405,7 +33405,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 6
   pixelPerfect: 0
-  boxCollider: {fileID: 0}
+  boxCollider: {fileID: 1695149993}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -33506,7 +33506,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 15
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 290c7688bf9a9dd4bbd08ea536de8191, type: 2}
+  boxCollider: {fileID: 1701189552}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -33607,7 +33607,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 11
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: bf7d2bf893c307846bbf54fb2d195cdb, type: 2}
+  boxCollider: {fileID: 1704788056}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -33953,7 +33953,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 12
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 2b049ef00cc083d40a379fa7d5c70d8e, type: 2}
+  boxCollider: {fileID: 1714759387}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -34032,7 +34032,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 3
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 9dc6d5e58458b0443b9439852b20b197, type: 2}
+  boxCollider: {fileID: 1718701912}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -34434,7 +34434,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 11
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: bf7d2bf893c307846bbf54fb2d195cdb, type: 2}
+  boxCollider: {fileID: 1748491219}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -34596,7 +34596,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 7
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: edb551bbe31f1ca4faf4b42101c7f72a, type: 2}
+  boxCollider: {fileID: 1757031681}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -34815,7 +34815,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 4
   pixelPerfect: 0
-  boxCollider: {fileID: 0}
+  boxCollider: {fileID: 1766124277}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -34938,7 +34938,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 12
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 2b049ef00cc083d40a379fa7d5c70d8e, type: 2}
+  boxCollider: {fileID: 1768750821}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -35017,7 +35017,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 3
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 9dc6d5e58458b0443b9439852b20b197, type: 2}
+  boxCollider: {fileID: 1811533856}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -35194,7 +35194,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 15
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 290c7688bf9a9dd4bbd08ea536de8191, type: 2}
+  boxCollider: {fileID: 1814747676}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -35608,7 +35608,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 12
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 2b049ef00cc083d40a379fa7d5c70d8e, type: 2}
+  boxCollider: {fileID: 1828064564}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -35709,7 +35709,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 3
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 9dc6d5e58458b0443b9439852b20b197, type: 2}
+  boxCollider: {fileID: 1829878562}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -35893,7 +35893,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 14
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 551b5c38e73e2334dadf5bf3cf0819b8, type: 2}
+  boxCollider: {fileID: 1838667311}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -36033,7 +36033,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 6
   pixelPerfect: 0
-  boxCollider: {fileID: 0}
+  boxCollider: {fileID: 1857976777}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -36174,7 +36174,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 15
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 290c7688bf9a9dd4bbd08ea536de8191, type: 2}
+  boxCollider: {fileID: 1873854179}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -36454,7 +36454,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 3
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 9dc6d5e58458b0443b9439852b20b197, type: 2}
+  boxCollider: {fileID: 1894169481}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -36616,7 +36616,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 11
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: bf7d2bf893c307846bbf54fb2d195cdb, type: 2}
+  boxCollider: {fileID: 1898708077}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -36717,7 +36717,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 15
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 290c7688bf9a9dd4bbd08ea536de8191, type: 2}
+  boxCollider: {fileID: 1901257566}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -36818,7 +36818,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 0
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 8ca952cc9ad1d07449abf66c8c0d0f0d, type: 2}
+  boxCollider: {fileID: 1907605084}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -36919,7 +36919,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 16
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: dd67b766567b18749a746b1ef361ff65, type: 2}
+  boxCollider: {fileID: 1911034344}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -37020,7 +37020,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 375ce4651dc1d744d9ab855ab5984c73, type: 2}
+  boxCollider: {fileID: 1916295813}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -37121,7 +37121,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 12
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 2b049ef00cc083d40a379fa7d5c70d8e, type: 2}
+  boxCollider: {fileID: 1920163317}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -37222,7 +37222,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 11
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: bf7d2bf893c307846bbf54fb2d195cdb, type: 2}
+  boxCollider: {fileID: 1941050693}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -37717,7 +37717,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 5
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 375ce4651dc1d744d9ab855ab5984c73, type: 2}
+  boxCollider: {fileID: 1967044780}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -37818,7 +37818,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 4
   pixelPerfect: 0
-  boxCollider: {fileID: 0}
+  boxCollider: {fileID: 1968096531}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -37976,7 +37976,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 16
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: dd67b766567b18749a746b1ef361ff65, type: 2}
+  boxCollider: {fileID: 1983409557}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -38077,7 +38077,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 10
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: da43ca9049b67e647893234170b51f1c, type: 2}
+  boxCollider: {fileID: 1988525389}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -38178,7 +38178,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 4
   pixelPerfect: 0
-  boxCollider: {fileID: 0}
+  boxCollider: {fileID: 1991633927}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -38279,7 +38279,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 11
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: bf7d2bf893c307846bbf54fb2d195cdb, type: 2}
+  boxCollider: {fileID: 1992388592}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -38502,7 +38502,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 11
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: bf7d2bf893c307846bbf54fb2d195cdb, type: 2}
+  boxCollider: {fileID: 2001642205}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -38778,7 +38778,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 10
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: da43ca9049b67e647893234170b51f1c, type: 2}
+  boxCollider: {fileID: 2012659931}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -39149,7 +39149,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 10
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: da43ca9049b67e647893234170b51f1c, type: 2}
+  boxCollider: {fileID: 2041633749}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -39239,7 +39239,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 14
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 551b5c38e73e2334dadf5bf3cf0819b8, type: 2}
+  boxCollider: {fileID: 2051617757}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -39405,7 +39405,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 12
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 2b049ef00cc083d40a379fa7d5c70d8e, type: 2}
+  boxCollider: {fileID: 2075746673}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -39506,7 +39506,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 7
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: edb551bbe31f1ca4faf4b42101c7f72a, type: 2}
+  boxCollider: {fileID: 2080448017}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -39856,7 +39856,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 12
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 2b049ef00cc083d40a379fa7d5c70d8e, type: 2}
+  boxCollider: {fileID: 2128096761}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -39935,7 +39935,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 6
   pixelPerfect: 0
-  boxCollider: {fileID: 0}
+  boxCollider: {fileID: 2134881148}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -40058,7 +40058,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 14
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 551b5c38e73e2334dadf5bf3cf0819b8, type: 2}
+  boxCollider: {fileID: 2138451271}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
@@ -40137,7 +40137,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 3
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000, guid: 9dc6d5e58458b0443b9439852b20b197, type: 2}
+  boxCollider: {fileID: 2147358074}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
