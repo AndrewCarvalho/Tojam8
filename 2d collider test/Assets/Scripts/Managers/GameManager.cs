@@ -126,8 +126,7 @@ public class GameManager : MonoBehaviour
         GameManager.princessScore = GameObject.Find("Cameras").GetComponent<ProgressBar>().GetPrincessPercent();
         GameManager.didPrincessWin = true;
 
-        // pause the game
-        Time.timeScale = 0;
+        GameManager.SetGameState(GAME_STATE.FREEZEFRAME);
 
         // play the audio?
         //AudioSource.PlayClipAtPoint(new AudioClip(), transform.position);
@@ -172,10 +171,11 @@ public class GameManager : MonoBehaviour
                 this.songTime = this.allHopeLost.clip.length;
                 this.StopAllAudio();
                 this.allHopeLost.Play();
+                Time.timeScale = 0;
                 break;
             case GAME_STATE.WINSCREEN:
                 this.StopAllAudio();
-                
+                Application.LoadLevel("WinScene");
                 break;
         }
     }
