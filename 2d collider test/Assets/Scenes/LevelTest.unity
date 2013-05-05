@@ -2319,45 +2319,6 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2241f6c642a78de48b42a45ae0852f52, type: 3}
   m_Name: 
---- !u!1 &132965271
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 132965272}
-  - 65: {fileID: 132965273}
-  m_Layer: 0
-  m_Name: PlayerOneLoseTrigger
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &132965272
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 132965271}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 18.5, y: -4.5, z: 10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 638251965}
---- !u!65 &132965273
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 132965271}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 12, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &142512766
 GameObject:
   m_ObjectHideFlags: 0
@@ -3154,7 +3115,7 @@ Transform:
   m_PrefabInternal: {fileID: 716416157}
   m_GameObject: {fileID: 167220291}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 43.0594749, y: 3.16924357, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1348916324}
@@ -11803,7 +11764,6 @@ Transform:
   m_Children:
   - {fileID: 1100281716}
   - {fileID: 1035263225}
-  - {fileID: 132965272}
   m_Father: {fileID: 1104825300}
 --- !u!1 &644901707
 GameObject:
@@ -12820,6 +12780,14 @@ Prefab:
     - target: {fileID: 400002, guid: 0df093eac597cd04da8e83a9f25a1086, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0df093eac597cd04da8e83a9f25a1086, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0df093eac597cd04da8e83a9f25a1086, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0df093eac597cd04da8e83a9f25a1086, type: 2}
@@ -14245,7 +14213,7 @@ GameObject:
   - 198: {fileID: 794115140}
   - 199: {fileID: 794115139}
   m_Layer: 0
-  m_Name: Particle System
+  m_Name: Leaves
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14458,7 +14426,7 @@ ParticleSystem:
         rgba: 4289845095
       minMaxState: 0
     startSize:
-      scalar: 1
+      scalar: .300000012
       maxCurve:
         serializedVersion: 2
         m_Curve:

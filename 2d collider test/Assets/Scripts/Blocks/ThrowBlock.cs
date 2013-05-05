@@ -30,7 +30,7 @@ public class ThrowBlock : Actor {
     {
         base.FixedUpdate();
 
-        if (floatDirection != null)
+        if (floatDirection != null && destinationCamera != null)
         {
             Vector3 moveDelta = new Vector3(floatDirection.Value.x * Time.deltaTime, floatDirection.Value.y * Time.deltaTime, floatDirection.Value.z * Time.deltaTime);
 
