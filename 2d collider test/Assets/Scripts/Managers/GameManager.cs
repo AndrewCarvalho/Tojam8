@@ -3,7 +3,7 @@ using System.Collections;
 
 public class GameManager : MonoBehaviour 
 {
-    public enum GAME_STATE { SPLITSCREEN, TRANSITIONING, SINGLESCREEN, FREEZEFRAME, WINSCREEN };
+    public enum GAME_STATE { SPLITSCREEN, TRANSITIONING, SINGLESCREEN, KNIGHTWIN, FREEZEFRAME, WINSCREEN };
 
     private GAME_STATE state;
     private float timeStamp;
@@ -94,6 +94,12 @@ public class GameManager : MonoBehaviour
                 break;
             case GAME_STATE.SINGLESCREEN:
                 break;
+            case GAME_STATE.KNIGHTWIN:
+                if (Time.realtimeSinceStartup - this.timeStamp > this.songTime)
+                {
+                    GameManager.SetGameState(GAME_STATE.FREEZEFRAME);
+                }
+                break;
             case GAME_STATE.FREEZEFRAME:
                 if (Time.realtimeSinceStartup - this.timeStamp > this.songTime)
                 {
@@ -139,7 +145,10 @@ public class GameManager : MonoBehaviour
 
     public static void KnightWinGame()
     {
+        GameManager.princessScore = GameObject.Find("Cameras").GetComponent<ProgressBar>().GetPrincessPercent();
+        GameManager.didPrincessWin = false;
 
+        GameManager.SetGameState(GAME_STATE.KNIGHTWIN);
     }
 
     public static void SetGameState(GAME_STATE state)
@@ -170,6 +179,11 @@ public class GameManager : MonoBehaviour
                 GameObject.Find("Cameras").GetComponent<CameraController>().ExitTransitionState();
                 this.StopAllAudio();
                 this.fantasyFrenzy.Play();
+                break;
+            case GAME_STATE.KNIGHTWIN:
+                GameManager.Instance.timeStamp = Time.realtimeSinceStartup;
+                //.34f
+                GameManager.Instance.songTime = 0.19f; 
                 break;
             case GAME_STATE.FREEZEFRAME:
                 this.timeStamp = Time.realtimeSinceStartup;
