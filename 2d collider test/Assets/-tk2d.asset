@@ -203,3 +203,25 @@ MonoBehaviour:
     loadable: 0
     assetName: 
     version: 3
+  - name: BackgroundsSheet
+    spriteCollectionGUID: a372b2ef329dcbb4cb3a2be7261250ce
+    spriteCollectionDataGUID: 64d810f0bc3aaa74e8d98f3f1f3b1ca7
+    spriteNames:
+    - bg_layer1
+    - bg_layer3
+    - bg_layer4
+    - bg_layer2
+    spriteTextureGUIDs:
+    - 5228732d7ef524344a1787452d2fec9a
+    - 9294b5fd0e00fa3438968fffaabcdad4
+    - dd74d279406777d4b87492f3d3001234
+    - e2373d1994ea3704b807bf32cea7d6a1
+    spriteTextureTimeStamps:
+    - 1367681184
+    - 1367681208
+    - 1367681228
+    - 1367681198
+    managedSpriteCollection: 0
+    loadable: 0
+    assetName: 
+    version: 3

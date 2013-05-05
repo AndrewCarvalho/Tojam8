@@ -23,7 +23,9 @@ public class PlayerCamera : MonoBehaviour
         float xDiff = Vector2.Dot(diffVector, this.direction);
         if (xDiff > 0 && Mathf.Abs(diffVector.x) > this.cameraMoveThreshold)
         {
-            this.transform.Translate(new Vector3(this.direction.x * xDiff - this.direction.x * this.cameraMoveThreshold, 0, 0));
+            float moveAmount = this.direction.x * xDiff - this.direction.x * this.cameraMoveThreshold;
+            this.transform.Translate(new Vector3(moveAmount, 0, 0));
+            this.BroadcastMessage("OnCameraTranslate", moveAmount);
         }
 	}
 
