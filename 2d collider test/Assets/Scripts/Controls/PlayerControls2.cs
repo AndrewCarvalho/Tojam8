@@ -8,6 +8,8 @@ public abstract class PlayerControls2 : Actor
 
     protected float facingDirection = 1.0f;
 
+    float doingActionCountDown = 0.0f;
+
     // Use this for initialization
     new protected void Awake()
     {
@@ -17,6 +19,7 @@ public abstract class PlayerControls2 : Actor
 
     protected abstract float LeftPressed();
     protected abstract float RightPressed();
+    protected abstract bool DownPressed();
     protected abstract bool JumpButtonDown();
     protected abstract bool JumpButtonUp();
     protected abstract bool JumpButton();
@@ -25,9 +28,20 @@ public abstract class PlayerControls2 : Actor
     protected abstract PlayerCamera CameraFollowingMe();
     protected abstract PlayerCamera OtherPlayerCamera();
 
+    public void knockBackByBlock()
+    {
+        base.knockToNearestTile(-facingDirection);
+    }
+
     // Update is called once per frame
     void Update()
     {
+        doingActionCountDown -= Time.deltaTime;
+        if (doingActionCountDown > 0)
+        {
+            return; // in the middle of an animation. Do nothing
+        }
+
         if (this.jumpState == JUMP_STATE.ON_GROUND)
         {
             if (JumpButtonDown())
@@ -43,7 +57,7 @@ public abstract class PlayerControls2 : Actor
 
         if (JumpButton() && this.jumpState == JUMP_STATE.ON_GROUND)
         {
-           base.JumpStart();
+            base.JumpStart();
         }
 
         bool left = (LeftPressed() != 0.0f);
@@ -51,8 +65,12 @@ public abstract class PlayerControls2 : Actor
 
         if (left)
         {
-            facingDirection = -1.0f;
-            Run(facingDirection);
+            if (facingDirection != -1.0f)
+            {
+                facingDirection = -1.0f;
+                FlipAnimationX();
+            }
+            Run(facingDirection, DownPressed());
         }
         if (right)
         {
@@ -62,19 +80,24 @@ public abstract class PlayerControls2 : Actor
             }
             else
             {
-                facingDirection = 1.0f;
-                base.Run(facingDirection);
+                if (facingDirection != 1.0f)
+                {
+                    facingDirection = 1.0f;
+                    FlipAnimationX();
+                }
+
+                Run(facingDirection, DownPressed());
             }
         }
         if (!left && !right)
         {
-            base.Run(0.0f);
+            Run(0.0f, DownPressed());
         }
 
         if (ActionButtonDown())
         {
             RaycastHit[] hits = castForward(new Vector3(facingDirection, 0.0f, 0.0f), actionableDistance);
-            foreach(RaycastHit hit in hits)
+            foreach (RaycastHit hit in hits)
             {
                 ThrowBlock block = hit.collider.GetComponent<ThrowBlock>();
                 if (block)
@@ -83,6 +106,10 @@ public abstract class PlayerControls2 : Actor
                     break;
                 }
             }
+
+            Run(0.0f);
+            doingActionCountDown = getAnimationDuration(actionAnimationName) - 0.1f;
+            PlayAnimation(actionAnimationName);
         }
     }
 }

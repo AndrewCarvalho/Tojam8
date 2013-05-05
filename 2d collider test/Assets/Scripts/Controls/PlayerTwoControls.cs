@@ -17,6 +17,11 @@ public class PlayerTwoControls : PlayerControls2
         return Input.GetKey(KeyCode.RightArrow) || Input.GetAxis("Horizontal1") > 0 ? 1.0f : 0.0f;
     }
 
+    protected override bool DownPressed()
+    {
+        return Input.GetKey(KeyCode.DownArrow);
+    }
+
     protected override bool JumpButtonDown()
     {
         return Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Joystick1Button0);

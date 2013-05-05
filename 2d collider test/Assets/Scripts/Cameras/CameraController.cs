@@ -90,6 +90,9 @@ public class CameraController : MonoBehaviour
                     Time.timeScale = 1;
 
                     this.state = CAMERACONTROL_STATE.SINGLESCREEN;
+                    GameManager manager = FindObjectOfType(typeof(GameManager)) as GameManager;
+                    if(manager)
+                        manager.notifySingleScreen();
                 }
                 break;
             case CAMERACONTROL_STATE.SINGLESCREEN:
