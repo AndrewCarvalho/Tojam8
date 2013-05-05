@@ -98,6 +98,11 @@ public class Actor : MonoBehaviour {
         string objectName = this.name;
         //Debug.Log();
 
+        if (objectName == "Player1")
+        {
+            int shit = 123;
+        }
+
         if (jumpState == JUMP_STATE.DISABLED)
             return;
 
