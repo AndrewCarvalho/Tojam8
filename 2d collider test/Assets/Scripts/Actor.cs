@@ -137,6 +137,8 @@ public class Actor : MonoBehaviour {
 
     protected void PlayAnimation(string name)
     {
+
+        Debug.Log("actionAnimationName " + name);
         tk2dAnimatedSprite sprite = GetComponent<tk2dAnimatedSprite>();
         if(!sprite.IsPlaying(name))
             sprite.Play(name);
