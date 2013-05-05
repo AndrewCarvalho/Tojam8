@@ -160,6 +160,9 @@ public abstract class PlayerControls2 : Actor
                     if (block)
                     {
                         block.Throw(BlockThrowDirection(), CameraFollowingMe(), OtherPlayerCamera(), 0.2f);
+                        if (block.GetComponent<CannonBallBlock>())
+                            block.GetComponent<CannonBallBlock>().ignorePlayer = this;
+
                         hitBlock = true;
                         break;
                     }
