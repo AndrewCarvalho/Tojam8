@@ -13,7 +13,7 @@ public class TitlescreenManager : MonoBehaviour {
     {
         if (Input.GetKey(KeyCode.Joystick1Button0) || Input.GetKey(KeyCode.Joystick2Button0) || Input.GetKey(KeyCode.A))
         {
-            Application.LoadLevel("FINALLEVEL");
+            Application.LoadLevel("LevelTest");
         }
 	}
 }

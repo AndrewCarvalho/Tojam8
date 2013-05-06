@@ -182,7 +182,7 @@ public abstract class PlayerControls2 : Actor
                 }
                 else
                 {
-                    RaycastHit[] hits = castForward(new Vector3(facingDirection, 0.0f, 0.0f), actionableDistance);
+                    RaycastHit[] hits = castForward(new Vector3(facingDirection, 0.0f, 0.0f), actionableDistance / 3f);
                     foreach (RaycastHit hit in hits)
                     {
                         PlayerControls2 otherPlayer = hit.collider.GetComponent<PlayerControls2>();
