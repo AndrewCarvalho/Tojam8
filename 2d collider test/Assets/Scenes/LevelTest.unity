@@ -984,6 +984,7 @@ MonoBehaviour:
   jumpState: 3
   blockThrowSpeed: 20
   throwAnimation: Thrown
+  damageMultiplier: 1
   transitionState: 0
 --- !u!65 &36211377
 BoxCollider:
@@ -2817,6 +2818,7 @@ MonoBehaviour:
   jumpState: 3
   blockThrowSpeed: 15
   throwAnimation: 
+  damageMultiplier: 1
   transitionState: 0
 --- !u!114 &101736844
 MonoBehaviour:
@@ -3074,6 +3076,7 @@ MonoBehaviour:
   jumpState: 3
   blockThrowSpeed: 15
   throwAnimation: 
+  damageMultiplier: 1
   transitionState: 0
 --- !u!114 &107042184
 MonoBehaviour:
@@ -3230,6 +3233,7 @@ MonoBehaviour:
   jumpState: 3
   blockThrowSpeed: 15
   throwAnimation: 
+  damageMultiplier: 1
   transitionState: 0
 --- !u!114 &109083061
 MonoBehaviour:
@@ -3483,6 +3487,7 @@ MonoBehaviour:
   jumpState: 3
   blockThrowSpeed: 20
   throwAnimation: Thrown
+  damageMultiplier: 1
   transitionState: 0
   ignorePlayer: {fileID: 0}
 --- !u!23 &124625007
@@ -4833,6 +4838,7 @@ MonoBehaviour:
   jumpState: 3
   blockThrowSpeed: 15
   throwAnimation: 
+  damageMultiplier: 1
   transitionState: 0
 --- !u!114 &173129790
 MonoBehaviour:
@@ -5269,6 +5275,7 @@ MonoBehaviour:
   jumpState: 3
   blockThrowSpeed: 20
   throwAnimation: Thrown
+  damageMultiplier: 1
   transitionState: 0
   ignorePlayer: {fileID: 0}
 --- !u!114 &193959017
@@ -5839,6 +5846,7 @@ MonoBehaviour:
   jumpState: 3
   blockThrowSpeed: 20
   throwAnimation: 
+  damageMultiplier: 1
   transitionState: 0
 --- !u!65 &208178204
 BoxCollider:
@@ -6975,6 +6983,7 @@ MonoBehaviour:
   jumpState: 3
   blockThrowSpeed: 20
   throwAnimation: Thrown
+  damageMultiplier: 1
   transitionState: 0
 --- !u!65 &290778678
 BoxCollider:
@@ -7634,6 +7643,7 @@ MonoBehaviour:
   jumpState: 3
   blockThrowSpeed: 20
   throwAnimation: Thrown
+  damageMultiplier: 1
   transitionState: 0
   ignorePlayer: {fileID: 0}
 --- !u!23 &321532211
@@ -7914,6 +7924,7 @@ MonoBehaviour:
   jumpState: 3
   blockThrowSpeed: 15
   throwAnimation: 
+  damageMultiplier: 1
   transitionState: 0
 --- !u!114 &329167915
 MonoBehaviour:
@@ -8518,7 +8529,7 @@ Transform:
   m_PrefabInternal: {fileID: 1058936482}
   m_GameObject: {fileID: 357413288}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.5, y: 1.11738777, z: 0}
+  m_LocalPosition: {x: 6.17801142, y: 1.11738777, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1002585441}
@@ -9304,6 +9315,7 @@ MonoBehaviour:
   jumpState: 3
   blockThrowSpeed: 15
   throwAnimation: 
+  damageMultiplier: 1
   transitionState: 0
 --- !u!114 &370522114
 MonoBehaviour:
@@ -11581,6 +11593,7 @@ MonoBehaviour:
   jumpState: 3
   blockThrowSpeed: 15
   throwAnimation: 
+  damageMultiplier: 1
   transitionState: 0
 --- !u!114 &470921125
 MonoBehaviour:
@@ -12921,6 +12934,7 @@ MonoBehaviour:
   jumpState: 3
   blockThrowSpeed: 15
   throwAnimation: 
+  damageMultiplier: 1
   transitionState: 0
 --- !u!114 &536596611
 MonoBehaviour:
@@ -16743,6 +16757,7 @@ MonoBehaviour:
   jumpState: 3
   blockThrowSpeed: 15
   throwAnimation: 
+  damageMultiplier: 1
   transitionState: 0
 --- !u!114 &688577097
 MonoBehaviour:
@@ -17404,6 +17419,7 @@ MonoBehaviour:
   jumpState: 3
   blockThrowSpeed: 20
   throwAnimation: Thrown
+  damageMultiplier: 1
   transitionState: 0
   ignorePlayer: {fileID: 0}
 --- !u!23 &713102724
@@ -17667,6 +17683,7 @@ MonoBehaviour:
   jumpState: 3
   blockThrowSpeed: 15
   throwAnimation: 
+  damageMultiplier: 1
   transitionState: 0
 --- !u!114 &722718084
 MonoBehaviour:
@@ -18168,6 +18185,7 @@ MonoBehaviour:
   jumpState: 3
   blockThrowSpeed: 20
   throwAnimation: Thrown
+  damageMultiplier: 1
   transitionState: 0
 --- !u!23 &736906811
 Renderer:
@@ -18351,6 +18369,7 @@ MonoBehaviour:
   jumpState: 3
   blockThrowSpeed: 15
   throwAnimation: 
+  damageMultiplier: 1
   transitionState: 0
 --- !u!114 &737269068
 MonoBehaviour:
@@ -19102,6 +19121,7 @@ MonoBehaviour:
   jumpState: 3
   blockThrowSpeed: 20
   throwAnimation: Thrown
+  damageMultiplier: 1
   transitionState: 0
 --- !u!23 &767112965
 Renderer:
@@ -20281,6 +20301,7 @@ MonoBehaviour:
   jumpState: 3
   blockThrowSpeed: 15
   throwAnimation: 
+  damageMultiplier: 1
   transitionState: 0
 --- !u!114 &819087491
 MonoBehaviour:
@@ -20870,6 +20891,7 @@ MonoBehaviour:
   jumpState: 3
   blockThrowSpeed: 20
   throwAnimation: 
+  damageMultiplier: 1
   transitionState: 0
 --- !u!23 &828014124
 Renderer:
@@ -20983,6 +21005,7 @@ MonoBehaviour:
   jumpState: 3
   blockThrowSpeed: 15
   throwAnimation: 
+  damageMultiplier: 1
   transitionState: 0
 --- !u!114 &831944075
 MonoBehaviour:
@@ -21626,6 +21649,7 @@ MonoBehaviour:
   jumpState: 3
   blockThrowSpeed: 15
   throwAnimation: 
+  damageMultiplier: 1
   transitionState: 0
 --- !u!114 &844184977
 MonoBehaviour:
@@ -21712,6 +21736,7 @@ MonoBehaviour:
   jumpState: 3
   blockThrowSpeed: 15
   throwAnimation: 
+  damageMultiplier: 1
   transitionState: 0
 --- !u!114 &849808070
 MonoBehaviour:
@@ -25125,6 +25150,7 @@ MonoBehaviour:
   jumpState: 3
   blockThrowSpeed: 15
   throwAnimation: 
+  damageMultiplier: 1
   transitionState: 0
 --- !u!114 &979371486
 MonoBehaviour:
@@ -25434,6 +25460,7 @@ MonoBehaviour:
   jumpState: 3
   blockThrowSpeed: 20
   throwAnimation: Thrown
+  damageMultiplier: 1
   transitionState: 0
   ignorePlayer: {fileID: 0}
 --- !u!23 &982616702
@@ -25936,7 +25963,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 53970ae33c51d0a46b6962401627325a, type: 3}
   m_Name: 
-  cameraMoveThreshold: -1
+  cameraMoveThreshold: 1
 --- !u!20 &1008819456
 Camera:
   m_ObjectHideFlags: 0
@@ -25973,7 +26000,7 @@ Transform:
   m_PrefabInternal: {fileID: 1238415987}
   m_GameObject: {fileID: 1008819452}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3, y: -3, z: -10}
+  m_LocalPosition: {x: -1.16380215, y: -3, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1706862069}
@@ -27090,7 +27117,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 1b2173474c15ff745a922dec644f6fc0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 2.5
+      value: 6.17801142
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1b2173474c15ff745a922dec644f6fc0, type: 2}
       propertyPath: m_LocalPosition.y
@@ -30780,6 +30807,7 @@ MonoBehaviour:
   jumpState: 3
   blockThrowSpeed: 15
   throwAnimation: 
+  damageMultiplier: 1
   transitionState: 0
 --- !u!114 &1205858865
 MonoBehaviour:
@@ -31542,11 +31570,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: 1bd188af8f6c6d44ea0dc5a25f223a75, type: 2}
       propertyPath: cameraMoveThreshold
-      value: -1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 1bd188af8f6c6d44ea0dc5a25f223a75, type: 2}
       propertyPath: cameraMoveThreshold
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 1bd188af8f6c6d44ea0dc5a25f223a75, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -1.16380215
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1bd188af8f6c6d44ea0dc5a25f223a75, type: 2}
@@ -34675,6 +34707,7 @@ MonoBehaviour:
   jumpState: 3
   blockThrowSpeed: 20
   throwAnimation: Thrown
+  damageMultiplier: 1
   transitionState: 0
 --- !u!23 &1366623888
 Renderer:
@@ -35278,6 +35311,7 @@ MonoBehaviour:
   jumpState: 3
   blockThrowSpeed: 15
   throwAnimation: 
+  damageMultiplier: 1
   transitionState: 0
 --- !u!114 &1386086430
 MonoBehaviour:
@@ -35580,6 +35614,7 @@ MonoBehaviour:
   jumpState: 3
   blockThrowSpeed: 15
   throwAnimation: 
+  damageMultiplier: 1
   transitionState: 0
 --- !u!114 &1409364568
 MonoBehaviour:
@@ -38281,7 +38316,7 @@ Transform:
   m_PrefabInternal: {fileID: 1671791357}
   m_GameObject: {fileID: 1513126806}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 103.281929, y: 1.07012808, z: .100000001}
+  m_LocalPosition: {x: 196.589355, y: 1.07012808, z: .100000001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1002585441}
@@ -38763,6 +38798,7 @@ MonoBehaviour:
   jumpState: 3
   blockThrowSpeed: 15
   throwAnimation: 
+  damageMultiplier: 1
   transitionState: 0
 --- !u!114 &1537575237
 MonoBehaviour:
@@ -39121,6 +39157,7 @@ MonoBehaviour:
   jumpState: 3
   blockThrowSpeed: 15
   throwAnimation: 
+  damageMultiplier: 1
   transitionState: 0
 --- !u!114 &1548241455
 MonoBehaviour:
@@ -39277,6 +39314,7 @@ MonoBehaviour:
   jumpState: 3
   blockThrowSpeed: 15
   throwAnimation: 
+  damageMultiplier: 1
   transitionState: 0
 --- !u!114 &1552658638
 MonoBehaviour:
@@ -40597,6 +40635,7 @@ MonoBehaviour:
   jumpState: 3
   blockThrowSpeed: 20
   throwAnimation: Thrown
+  damageMultiplier: 1
   transitionState: 0
   ignorePlayer: {fileID: 0}
 --- !u!23 &1592811092
@@ -40873,6 +40912,7 @@ MonoBehaviour:
   jumpState: 3
   blockThrowSpeed: 15
   throwAnimation: 
+  damageMultiplier: 1
   transitionState: 0
 --- !u!114 &1598148578
 MonoBehaviour:
@@ -41456,6 +41496,7 @@ MonoBehaviour:
   jumpState: 3
   blockThrowSpeed: 15
   throwAnimation: 
+  damageMultiplier: 1
   transitionState: 0
 --- !u!114 &1617358122
 MonoBehaviour:
@@ -41809,6 +41850,7 @@ MonoBehaviour:
   jumpState: 3
   blockThrowSpeed: 15
   throwAnimation: 
+  damageMultiplier: 1
   transitionState: 0
 --- !u!114 &1622438119
 MonoBehaviour:
@@ -43110,7 +43152,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 4130cdd4a677c5641aab0db79dd380a1, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 103.281929
+      value: 196.589355
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4130cdd4a677c5641aab0db79dd380a1, type: 2}
       propertyPath: m_LocalPosition.y
@@ -44775,6 +44817,7 @@ MonoBehaviour:
   jumpState: 3
   blockThrowSpeed: 20
   throwAnimation: Thrown
+  damageMultiplier: 1
   transitionState: 0
 --- !u!23 &1718550935
 Renderer:
@@ -46042,6 +46085,7 @@ MonoBehaviour:
   jumpState: 3
   blockThrowSpeed: 15
   throwAnimation: 
+  damageMultiplier: 1
   transitionState: 0
 --- !u!114 &1773490901
 MonoBehaviour:
@@ -47241,6 +47285,7 @@ MonoBehaviour:
   jumpState: 3
   blockThrowSpeed: 15
   throwAnimation: 
+  damageMultiplier: 1
   transitionState: 0
 --- !u!114 &1821704148
 MonoBehaviour:
@@ -48711,6 +48756,7 @@ MonoBehaviour:
   jumpState: 3
   blockThrowSpeed: 20
   throwAnimation: 
+  damageMultiplier: 1
   transitionState: 0
 --- !u!23 &1885409508
 Renderer:
@@ -49455,6 +49501,7 @@ MonoBehaviour:
   jumpState: 3
   blockThrowSpeed: 15
   throwAnimation: 
+  damageMultiplier: 1
   transitionState: 0
 --- !u!114 &1916440947
 MonoBehaviour:
@@ -50150,6 +50197,7 @@ MonoBehaviour:
   jumpState: 3
   blockThrowSpeed: 15
   throwAnimation: 
+  damageMultiplier: 1
   transitionState: 0
 --- !u!114 &1950335866
 MonoBehaviour:
@@ -51629,6 +51677,7 @@ MonoBehaviour:
   jumpState: 3
   blockThrowSpeed: 15
   throwAnimation: 
+  damageMultiplier: 1
   transitionState: 0
 --- !u!114 &2008186661
 MonoBehaviour:
@@ -51869,6 +51918,7 @@ MonoBehaviour:
   jumpState: 3
   blockThrowSpeed: 20
   throwAnimation: Thrown
+  damageMultiplier: 1
   transitionState: 0
   ignorePlayer: {fileID: 0}
 --- !u!23 &2010061285
@@ -53028,6 +53078,7 @@ MonoBehaviour:
   jumpState: 3
   blockThrowSpeed: 20
   throwAnimation: Thrown
+  damageMultiplier: 1
   transitionState: 0
 --- !u!65 &2098988372
 BoxCollider:
@@ -53336,6 +53387,7 @@ MonoBehaviour:
   jumpState: 3
   blockThrowSpeed: 15
   throwAnimation: 
+  damageMultiplier: 1
   transitionState: 0
 --- !u!114 &2108826202
 MonoBehaviour:
@@ -53657,6 +53709,7 @@ MonoBehaviour:
   jumpState: 3
   blockThrowSpeed: 20
   throwAnimation: Thrown
+  damageMultiplier: 1
   transitionState: 0
 --- !u!65 &2126433431
 BoxCollider:
