@@ -5,7 +5,7 @@ public class GameManager : MonoBehaviour
 {
     public enum GAME_STATE { SPLITSCREEN, TRANSITIONING, SINGLESCREEN, KNIGHTWIN, FREEZEFRAME, WINSCREEN };
 
-    private GAME_STATE state;
+    private static GAME_STATE state;
     private float timeStamp;
     private float songTime;
 
@@ -82,7 +82,7 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        switch (this.state)
+        switch (GameManager.state)
         {
             case GAME_STATE.SPLITSCREEN:
                 break;
@@ -121,9 +121,9 @@ public class GameManager : MonoBehaviour
            
     }
 
-    public bool isSingleScreen()
+    public static bool isSingleScreen()
     {
-        return state == GAME_STATE.SINGLESCREEN;
+        return GameManager.state == GAME_STATE.SINGLESCREEN;
     }
 
     public void notifyPlayerWin(PlayerControls2 winner)
@@ -153,9 +153,9 @@ public class GameManager : MonoBehaviour
 
     public static void SetGameState(GAME_STATE state)
     {
-        if (GameManager.Instance.state != state)
+        if (GameManager.state != state)
         {
-            GameManager.Instance.state = state;
+            GameManager.state = state;
             GameManager.Instance.OnStateChange(state);
         }
     }

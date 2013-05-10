@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class Actor : MonoBehaviour {
 
@@ -68,9 +69,14 @@ public class Actor : MonoBehaviour {
     // jumping should use a table.  There are two jump heights.
 
     protected Rigidbody body;
+	
+	[SerializeField]
     protected JUMP_STATE jumpState = JUMP_STATE.FALLING_DOWN_ACCEL;
+	
+	protected List<Collider> actors = new List<Collider>();
+	protected List<Collider> tiles = new List<Collider>();
 
-    protected virtual bool isDodging()
+    protected virtual bool canDodge(GameObject dodgee)
     {
         return false;
     }
@@ -82,6 +88,15 @@ public class Actor : MonoBehaviour {
 
         if (terminalFallVel == 0.0f)
             jumpState = JUMP_STATE.ON_GROUND;
+		
+		Collider[] colliders = FindObjectsOfType(typeof(Collider)) as Collider[];
+		foreach(Collider collider in colliders)
+		{
+			if(collider.gameObject != null && collider.gameObject.GetComponent<Actor>())
+				this.actors.Add(collider);
+			else
+				this.tiles.Add(collider);
+		}
 
         this.body = GetComponent<Rigidbody>();
         hasAnimations = runAnimationName.Length > 0 &&
@@ -178,17 +193,15 @@ public class Actor : MonoBehaviour {
         foreach (Object colliderObject in colliders)
         {
             Collider current = colliderObject as Collider;
-            if (current != this.collider && (playersOnly == false || current.collider.GetComponent<PlayerControls2>() != null) && this.collider.bounds.Intersects(current.bounds))
+			Bounds bounds = current.bounds;
+			bounds.size = new Vector2(bounds.size.x * 0.99f, bounds.size.y);
+			
+            if (current != this.collider && (playersOnly == false || current.collider.GetComponent<PlayerControls2>() != null) && this.collider.bounds.Intersects(bounds))
             {
                 return current;
             }
         }
         return null;
-    }
-
-    protected bool isDodging(Collider collider)
-    {
-        return collider.gameObject != null && collider.gameObject.GetComponent<PlayerControls2>() != null && collider.gameObject.GetComponent<PlayerControls2>().dodging == true;
     }
 
     public void knockToNearestTile(float verticalDirection)
@@ -318,9 +331,7 @@ public class Actor : MonoBehaviour {
         Vector3 movementVector = new Vector3(deltaSide, deltaUp, 0);
         Vector3 movementVectorNormalized = movementVector.normalized;
         float movementVectorMagnitude = movementVector.magnitude;
-
-        Object[] colliders = FindObjectsOfType(typeof(Collider));
-        if (this.body.SweepTest(movementVectorNormalized, out rayHit, movementVectorMagnitude) && !isDodging())
+        if (this.body.SweepTest(movementVectorNormalized, out rayHit, movementVectorMagnitude))
         {
             onHitCollider(rayHit.collider);
 
@@ -331,7 +342,7 @@ public class Actor : MonoBehaviour {
             // need to sweep the remainder of vertcal and horizonal movement
             Vector3 remainingVector = movementVectorNormalized * (movementVectorMagnitude - rayHit.distance);
             //if (this.body.SweepTest(new Vector3(remainingVector.x > 0 ? 1.0f : -1.0f, 0, 0), out rayHit, Mathf.Abs(remainingVector.x)))
-            if (this.body.SweepTest(new Vector3(1, 0, 0), out rayHit, deltaSide) && !isDodging())
+            if (this.body.SweepTest(new Vector3(1, 0, 0), out rayHit, deltaSide) && !canDodge(rayHit.collider.gameObject))
             {
                 //this.transform.Translate(new Vector3(rayHit.distance - Utils.MOVE_PADDING * deltaSide > 0 ? 1 : -1, 0, 0));
                 float partialMoveXDist = rayHit.distance - Utils.MOVE_PADDING * Mathf.Sign(rayHit.distance);
@@ -342,13 +353,10 @@ public class Actor : MonoBehaviour {
                 else
                     onHitRight(rayHit.collider);
 
-                foreach (Object colliderObject in colliders)
-                {
-                    Collider collider = colliderObject as Collider;
-                    if (collider != this.collider && !collider.isTrigger && this.collider.bounds.Intersects(collider.bounds))
-                    {
-                        this.transform.Translate(new Vector3(-partialMoveXDist, 0, 0));
-                    }
+                Collider collidedActor = collidesWith (actors);
+                if((collidedActor != null && !canDodge(collidedActor.gameObject)) || collidesWith(tiles))
+				{
+		             this.transform.Translate(new Vector3(-partialMoveXDist, 0, 0));
                 }
             }
             else
@@ -356,20 +364,15 @@ public class Actor : MonoBehaviour {
                 //this.transform.Translate(new Vector3(remainingVector.x, 0, 0));
                 this.transform.Translate(new Vector3(deltaSide, 0, 0));
 
-                // yes no maybe?
-                foreach (Object colliderObject in colliders)
+                Collider collidedActor = collidesWith (actors);
+                if((collidedActor != null && !canDodge(collidedActor.gameObject)) || collidesWith(tiles))
                 {
-                    Collider collider = colliderObject as Collider;
-                    if (collider != this.collider && !collider.isTrigger && this.collider.bounds.Intersects(collider.bounds))
-                    {
-                        //this.transform.Translate(new Vector3(-remainingVector.x, 0, 0));
-                        this.transform.Translate(new Vector3(-deltaSide, 0, 0));
-                    }
-                }
+					this.transform.Translate(new Vector3(-deltaSide, 0, 0));
+				}
             }
 
             //if (this.body.SweepTest(new Vector3(0, remainingVector.y > 0 ? 1.0f : -1.0f, 0), out rayHit, Mathf.Abs(remainingVector.y)))
-            if (this.body.SweepTest(new Vector3(0, 1, 0), out rayHit, deltaUp) && !isDodging())
+            if (this.body.SweepTest(new Vector3(0, 1, 0), out rayHit, deltaUp) && !canDodge(rayHit.collider.gameObject))
             {
                 float partialMoveYDist = rayHit.distance - Utils.MOVE_PADDING * Mathf.Sign(rayHit.distance);
                 this.transform.Translate(new Vector3(0, partialMoveYDist, 0));
@@ -382,17 +385,12 @@ public class Actor : MonoBehaviour {
                 {
                     this.jumpState = JUMP_STATE.ON_GROUND;
                 }
-
-                // yes no maybe?
-                foreach (Object colliderObject in colliders)
+				
+				Collider collidedActor = collidesWith (actors);
+                if((collidedActor != null && !canDodge(collidedActor.gameObject)) || collidesWith(tiles))
                 {
-                    Collider collider = colliderObject as Collider;
-                    Actor actor = collider.gameObject.GetComponent<Actor>();
-                    if (collider != this.collider && !collider.isTrigger && this.collider.bounds.Intersects(collider.bounds) && (actor == null || actor.jumpState != JUMP_STATE.DISABLED))
-                    {
-                        this.transform.Translate(new Vector3(0, -partialMoveYDist, 0));
-                        this.cumulativeCurrentJumpHeight -= partialMoveYDist;
-                    }
+                    this.transform.Translate(new Vector3(0, -partialMoveYDist, 0));
+                    this.cumulativeCurrentJumpHeight -= partialMoveYDist;
                 }
             }
             else
@@ -401,16 +399,12 @@ public class Actor : MonoBehaviour {
                 this.transform.Translate(new Vector3(0, deltaUp, 0));
                 //this.cumulativeCurrentJumpHeight += remainingVector.y;
                 this.cumulativeCurrentJumpHeight += deltaUp;
-
-                // yes no maybe?
-                foreach (Object colliderObject in colliders)
+				
+				Collider collidedActor = collidesWith (actors);
+				if((collidedActor != null && !canDodge(collidedActor.gameObject)) || collidesWith(tiles))
                 {
-                    Collider collider = colliderObject as Collider;
-                    if (collider != this.collider && !collider.isTrigger && this.collider.bounds.Intersects(collider.bounds))
-                    {
-                        this.transform.Translate(new Vector3(0, -remainingVector.y, 0));
-                        this.cumulativeCurrentJumpHeight -= remainingVector.y;
-                    }
+                    this.transform.Translate(new Vector3(0, -remainingVector.y, 0));
+                    this.cumulativeCurrentJumpHeight -= remainingVector.y;
                 }
             }
         }
@@ -422,19 +416,23 @@ public class Actor : MonoBehaviour {
                 this.lastVel = 0f;
             }
             this.transform.Translate(movementVector);
-
-            // yes no maybe?
-            /*Object[] colliders = FindObjectsOfType(typeof(Collider));
-            foreach (Object colliderObject in colliders)
-            {
-                Collider collider = colliderObject as Collider;
-                if (collider != this.collider && !collider.isTrigger && this.collider.bounds.Intersects(collider.bounds))
-                {
-                    this.transform.Translate(-movementVector);
-                }
-            }*/
         }
     }
+	
+	public Collider collidesWith(List<Collider> colliders)
+	{
+		foreach (Collider collider in colliders)
+		{
+		    if (collider != null &&
+				collider != this.collider &&
+				!collider.isTrigger && this.collider.bounds.Intersects(collider.bounds))
+		    {
+		        return collider;
+		    }
+		}
+		
+		return null;
+	}
 
     public virtual void onWalkedOffEdge(string side)
     {

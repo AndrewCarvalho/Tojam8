@@ -981,8 +981,10 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  jumpState: 3
   blockThrowSpeed: 20
   throwAnimation: Thrown
+  transitionState: 0
 --- !u!65 &36211377
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2565,7 +2567,12 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
   m_RootGameObject: {fileID: 1548241452}
   m_IsPrefabParent: 0
@@ -2747,10 +2754,10 @@ GameObject:
   - 33: {fileID: 101736848}
   - 23: {fileID: 101736847}
   - 114: {fileID: 101736846}
-  - 65: {fileID: 101736845}
   - 114: {fileID: 101736844}
   - 114: {fileID: 101736843}
   - 54: {fileID: 101736842}
+  - 65: {fileID: 101736845}
   m_Layer: 0
   m_Name: BlockThrow
   m_TagString: Untagged
@@ -2807,8 +2814,10 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  jumpState: 3
   blockThrowSpeed: 15
   throwAnimation: 
+  transitionState: 0
 --- !u!114 &101736844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2823,9 +2832,8 @@ MonoBehaviour:
 --- !u!65 &101736845
 BoxCollider:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372,
-    type: 2}
-  m_PrefabInternal: {fileID: 780845490}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 101736841}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -2996,17 +3004,17 @@ MonoBehaviour:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
-  m_PrefabInternal: {fileID: 2147455959}
+  m_PrefabInternal: {fileID: 615130383}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 107042189}
   - 33: {fileID: 107042188}
   - 23: {fileID: 107042187}
   - 114: {fileID: 107042186}
-  - 65: {fileID: 107042185}
   - 114: {fileID: 107042184}
   - 114: {fileID: 107042183}
   - 54: {fileID: 107042182}
+  - 65: {fileID: 107042185}
   m_Layer: 0
   m_Name: BlockThrow
   m_TagString: Untagged
@@ -3019,7 +3027,7 @@ Rigidbody:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 5400000, guid: e795f02f20f15c949a3572e3a62fb372,
     type: 2}
-  m_PrefabInternal: {fileID: 2147455959}
+  m_PrefabInternal: {fileID: 615130383}
   m_GameObject: {fileID: 107042181}
   serializedVersion: 2
   m_Mass: 1
@@ -3035,7 +3043,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400004, guid: e795f02f20f15c949a3572e3a62fb372,
     type: 2}
-  m_PrefabInternal: {fileID: 2147455959}
+  m_PrefabInternal: {fileID: 615130383}
   m_GameObject: {fileID: 107042181}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -3063,14 +3071,16 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  jumpState: 3
   blockThrowSpeed: 15
   throwAnimation: 
+  transitionState: 0
 --- !u!114 &107042184
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400002, guid: e795f02f20f15c949a3572e3a62fb372,
     type: 2}
-  m_PrefabInternal: {fileID: 2147455959}
+  m_PrefabInternal: {fileID: 615130383}
   m_GameObject: {fileID: 107042181}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -3079,9 +3089,8 @@ MonoBehaviour:
 --- !u!65 &107042185
 BoxCollider:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372,
-    type: 2}
-  m_PrefabInternal: {fileID: 2147455959}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 107042181}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -3094,7 +3103,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400000, guid: e795f02f20f15c949a3572e3a62fb372,
     type: 2}
-  m_PrefabInternal: {fileID: 2147455959}
+  m_PrefabInternal: {fileID: 615130383}
   m_GameObject: {fileID: 107042181}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -3114,7 +3123,7 @@ Renderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 2300000, guid: e795f02f20f15c949a3572e3a62fb372,
     type: 2}
-  m_PrefabInternal: {fileID: 2147455959}
+  m_PrefabInternal: {fileID: 615130383}
   m_GameObject: {fileID: 107042181}
   m_Enabled: 1
   m_CastShadows: 1
@@ -3133,14 +3142,14 @@ MeshFilter:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 3300000, guid: e795f02f20f15c949a3572e3a62fb372,
     type: 2}
-  m_PrefabInternal: {fileID: 2147455959}
+  m_PrefabInternal: {fileID: 615130383}
   m_GameObject: {fileID: 107042181}
   m_Mesh: {fileID: 0}
 --- !u!4 &107042189
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
-  m_PrefabInternal: {fileID: 2147455959}
+  m_PrefabInternal: {fileID: 615130383}
   m_GameObject: {fileID: 107042181}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 35.5, y: 1.5, z: 0}
@@ -3218,8 +3227,10 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  jumpState: 3
   blockThrowSpeed: 15
   throwAnimation: 
+  transitionState: 0
 --- !u!114 &109083061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3469,8 +3480,10 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  jumpState: 3
   blockThrowSpeed: 20
   throwAnimation: Thrown
+  transitionState: 0
   ignorePlayer: {fileID: 0}
 --- !u!23 &124625007
 Renderer:
@@ -4757,10 +4770,10 @@ GameObject:
   - 33: {fileID: 173129794}
   - 23: {fileID: 173129793}
   - 114: {fileID: 173129792}
-  - 65: {fileID: 173129791}
   - 114: {fileID: 173129790}
   - 114: {fileID: 173129789}
   - 54: {fileID: 173129788}
+  - 65: {fileID: 173129791}
   m_Layer: 0
   m_Name: BlockThrow
   m_TagString: Untagged
@@ -4817,8 +4830,10 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  jumpState: 3
   blockThrowSpeed: 15
   throwAnimation: 
+  transitionState: 0
 --- !u!114 &173129790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4833,9 +4848,8 @@ MonoBehaviour:
 --- !u!65 &173129791
 BoxCollider:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372,
-    type: 2}
-  m_PrefabInternal: {fileID: 761827043}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 173129787}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -5252,8 +5266,10 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  jumpState: 3
   blockThrowSpeed: 20
   throwAnimation: Thrown
+  transitionState: 0
   ignorePlayer: {fileID: 0}
 --- !u!114 &193959017
 MonoBehaviour:
@@ -5820,8 +5836,10 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  jumpState: 3
   blockThrowSpeed: 20
   throwAnimation: 
+  transitionState: 0
 --- !u!65 &208178204
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6508,50 +6526,6 @@ Prefab:
   m_RootGameObject: {fileID: 1958371843}
   m_IsPrefabParent: 0
   m_IsExploded: 1
---- !u!1001 &237834374
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 400000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 36.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3300000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
-  m_RootGameObject: {fileID: 370522111}
-  m_IsPrefabParent: 0
-  m_IsExploded: 1
 --- !u!1001 &243201003
 Prefab:
   m_ObjectHideFlags: 0
@@ -6998,8 +6972,10 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  jumpState: 3
   blockThrowSpeed: 20
   throwAnimation: Thrown
+  transitionState: 0
 --- !u!65 &290778678
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7655,8 +7631,10 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  jumpState: 3
   blockThrowSpeed: 20
   throwAnimation: Thrown
+  transitionState: 0
   ignorePlayer: {fileID: 0}
 --- !u!23 &321532211
 Renderer:
@@ -7873,10 +7851,10 @@ GameObject:
   - 33: {fileID: 329167919}
   - 23: {fileID: 329167918}
   - 114: {fileID: 329167917}
-  - 65: {fileID: 329167916}
   - 114: {fileID: 329167915}
   - 114: {fileID: 329167914}
   - 54: {fileID: 329167913}
+  - 65: {fileID: 329167916}
   m_Layer: 0
   m_Name: BlockThrow
   m_TagString: Untagged
@@ -7933,8 +7911,10 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  jumpState: 3
   blockThrowSpeed: 15
   throwAnimation: 
+  transitionState: 0
 --- !u!114 &329167915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7949,9 +7929,8 @@ MonoBehaviour:
 --- !u!65 &329167916
 BoxCollider:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372,
-    type: 2}
-  m_PrefabInternal: {fileID: 702692137}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 329167912}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -8629,6 +8608,7 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  jumpState: 3
   actionableDistance: 2
   actionIsGrab: 0
   dodging: 0
@@ -9254,17 +9234,17 @@ Renderer:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
-  m_PrefabInternal: {fileID: 237834374}
+  m_PrefabInternal: {fileID: 913332630}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 370522119}
   - 33: {fileID: 370522118}
   - 23: {fileID: 370522117}
   - 114: {fileID: 370522116}
-  - 65: {fileID: 370522115}
   - 114: {fileID: 370522114}
   - 114: {fileID: 370522113}
   - 54: {fileID: 370522112}
+  - 65: {fileID: 370522115}
   m_Layer: 0
   m_Name: BlockThrow
   m_TagString: Untagged
@@ -9277,7 +9257,7 @@ Rigidbody:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 5400000, guid: e795f02f20f15c949a3572e3a62fb372,
     type: 2}
-  m_PrefabInternal: {fileID: 237834374}
+  m_PrefabInternal: {fileID: 913332630}
   m_GameObject: {fileID: 370522111}
   serializedVersion: 2
   m_Mass: 1
@@ -9293,7 +9273,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400004, guid: e795f02f20f15c949a3572e3a62fb372,
     type: 2}
-  m_PrefabInternal: {fileID: 237834374}
+  m_PrefabInternal: {fileID: 913332630}
   m_GameObject: {fileID: 370522111}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -9321,14 +9301,16 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  jumpState: 3
   blockThrowSpeed: 15
   throwAnimation: 
+  transitionState: 0
 --- !u!114 &370522114
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400002, guid: e795f02f20f15c949a3572e3a62fb372,
     type: 2}
-  m_PrefabInternal: {fileID: 237834374}
+  m_PrefabInternal: {fileID: 913332630}
   m_GameObject: {fileID: 370522111}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -9337,9 +9319,8 @@ MonoBehaviour:
 --- !u!65 &370522115
 BoxCollider:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372,
-    type: 2}
-  m_PrefabInternal: {fileID: 237834374}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 370522111}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -9352,7 +9333,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400000, guid: e795f02f20f15c949a3572e3a62fb372,
     type: 2}
-  m_PrefabInternal: {fileID: 237834374}
+  m_PrefabInternal: {fileID: 913332630}
   m_GameObject: {fileID: 370522111}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -9372,7 +9353,7 @@ Renderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 2300000, guid: e795f02f20f15c949a3572e3a62fb372,
     type: 2}
-  m_PrefabInternal: {fileID: 237834374}
+  m_PrefabInternal: {fileID: 913332630}
   m_GameObject: {fileID: 370522111}
   m_Enabled: 1
   m_CastShadows: 1
@@ -9391,14 +9372,14 @@ MeshFilter:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 3300000, guid: e795f02f20f15c949a3572e3a62fb372,
     type: 2}
-  m_PrefabInternal: {fileID: 237834374}
+  m_PrefabInternal: {fileID: 913332630}
   m_GameObject: {fileID: 370522111}
   m_Mesh: {fileID: 0}
 --- !u!4 &370522119
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
-  m_PrefabInternal: {fileID: 237834374}
+  m_PrefabInternal: {fileID: 913332630}
   m_GameObject: {fileID: 370522111}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 36.5, y: 1.5, z: 0}
@@ -11200,7 +11181,12 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
   m_RootGameObject: {fileID: 1821704145}
   m_IsPrefabParent: 0
@@ -11244,7 +11230,12 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
   m_RootGameObject: {fileID: 2008186658}
   m_IsPrefabParent: 0
@@ -11527,10 +11518,10 @@ GameObject:
   - 33: {fileID: 470921129}
   - 23: {fileID: 470921128}
   - 114: {fileID: 470921127}
-  - 65: {fileID: 470921126}
   - 114: {fileID: 470921125}
   - 114: {fileID: 470921124}
   - 54: {fileID: 470921123}
+  - 65: {fileID: 470921126}
   m_Layer: 0
   m_Name: BlockThrow
   m_TagString: Untagged
@@ -11587,8 +11578,10 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  jumpState: 3
   blockThrowSpeed: 15
   throwAnimation: 
+  transitionState: 0
 --- !u!114 &470921125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11603,9 +11596,8 @@ MonoBehaviour:
 --- !u!65 &470921126
 BoxCollider:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372,
-    type: 2}
-  m_PrefabInternal: {fileID: 1680206433}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 470921122}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -12866,10 +12858,10 @@ GameObject:
   - 33: {fileID: 536596615}
   - 23: {fileID: 536596614}
   - 114: {fileID: 536596613}
-  - 65: {fileID: 536596612}
   - 114: {fileID: 536596611}
   - 114: {fileID: 536596610}
   - 54: {fileID: 536596609}
+  - 65: {fileID: 536596612}
   m_Layer: 0
   m_Name: BlockThrow
   m_TagString: Untagged
@@ -12926,8 +12918,10 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  jumpState: 3
   blockThrowSpeed: 15
   throwAnimation: 
+  transitionState: 0
 --- !u!114 &536596611
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12942,9 +12936,8 @@ MonoBehaviour:
 --- !u!65 &536596612
 BoxCollider:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372,
-    type: 2}
-  m_PrefabInternal: {fileID: 644190291}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 536596608}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -15018,6 +15011,55 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2241f6c642a78de48b42a45ae0852f52, type: 3}
   m_Name: 
+--- !u!1001 &615130383
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 35.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3300000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
+  m_ParentPrefab: {fileID: 100100000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
+  m_RootGameObject: {fileID: 107042181}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1001 &618272963
 Prefab:
   m_ObjectHideFlags: 0
@@ -15057,7 +15099,12 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
   m_RootGameObject: {fileID: 1537575234}
   m_IsPrefabParent: 0
@@ -15146,7 +15193,12 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
   m_RootGameObject: {fileID: 688577094}
   m_IsPrefabParent: 0
@@ -15583,7 +15635,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 50023a1fc7641fb44851e571d71be6c7, type: 3}
   m_Name: 
-  cameraMoveThreshold: 3
+  cameraMoveThreshold: 1
 --- !u!20 &638251964
 Camera:
   m_ObjectHideFlags: 0
@@ -15791,7 +15843,12 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
   m_RootGameObject: {fileID: 536596608}
   m_IsPrefabParent: 0
@@ -16623,10 +16680,10 @@ GameObject:
   - 33: {fileID: 688577101}
   - 23: {fileID: 688577100}
   - 114: {fileID: 688577099}
-  - 65: {fileID: 688577098}
   - 114: {fileID: 688577097}
   - 114: {fileID: 688577096}
   - 54: {fileID: 688577095}
+  - 65: {fileID: 688577098}
   m_Layer: 0
   m_Name: BlockThrow
   m_TagString: Untagged
@@ -16683,8 +16740,10 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  jumpState: 3
   blockThrowSpeed: 15
   throwAnimation: 
+  transitionState: 0
 --- !u!114 &688577097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16699,9 +16758,8 @@ MonoBehaviour:
 --- !u!65 &688577098
 BoxCollider:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372,
-    type: 2}
-  m_PrefabInternal: {fileID: 629004309}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 688577094}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -16806,7 +16864,12 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
   m_RootGameObject: {fileID: 1773490898}
   m_IsPrefabParent: 0
@@ -17156,7 +17219,12 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
   m_RootGameObject: {fileID: 329167912}
   m_IsPrefabParent: 0
@@ -17333,8 +17401,10 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  jumpState: 3
   blockThrowSpeed: 20
   throwAnimation: Thrown
+  transitionState: 0
   ignorePlayer: {fileID: 0}
 --- !u!23 &713102724
 Renderer:
@@ -17534,10 +17604,10 @@ GameObject:
   - 33: {fileID: 722718088}
   - 23: {fileID: 722718087}
   - 114: {fileID: 722718086}
-  - 65: {fileID: 722718085}
   - 114: {fileID: 722718084}
   - 114: {fileID: 722718083}
   - 54: {fileID: 722718082}
+  - 65: {fileID: 722718085}
   m_Layer: 0
   m_Name: BlockThrow
   m_TagString: Untagged
@@ -17594,8 +17664,10 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  jumpState: 3
   blockThrowSpeed: 15
   throwAnimation: 
+  transitionState: 0
 --- !u!114 &722718084
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17610,9 +17682,8 @@ MonoBehaviour:
 --- !u!65 &722718085
 BoxCollider:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372,
-    type: 2}
-  m_PrefabInternal: {fileID: 1010789440}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 722718081}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -18094,8 +18165,10 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  jumpState: 3
   blockThrowSpeed: 20
   throwAnimation: Thrown
+  transitionState: 0
 --- !u!23 &736906811
 Renderer:
   m_ObjectHideFlags: 0
@@ -18275,8 +18348,10 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  jumpState: 3
   blockThrowSpeed: 15
   throwAnimation: 
+  transitionState: 0
 --- !u!114 &737269068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18832,7 +18907,12 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
   m_RootGameObject: {fileID: 173129787}
   m_IsPrefabParent: 0
@@ -19019,8 +19099,10 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  jumpState: 3
   blockThrowSpeed: 20
   throwAnimation: Thrown
+  transitionState: 0
 --- !u!23 &767112965
 Renderer:
   m_ObjectHideFlags: 0
@@ -19244,7 +19326,12 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
   m_RootGameObject: {fileID: 101736841}
   m_IsPrefabParent: 0
@@ -19490,7 +19577,12 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
   m_RootGameObject: {fileID: 2108826199}
   m_IsPrefabParent: 0
@@ -20186,8 +20278,10 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  jumpState: 3
   blockThrowSpeed: 15
   throwAnimation: 
+  transitionState: 0
 --- !u!114 &819087491
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20773,8 +20867,10 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  jumpState: 3
   blockThrowSpeed: 20
   throwAnimation: 
+  transitionState: 0
 --- !u!23 &828014124
 Renderer:
   m_ObjectHideFlags: 0
@@ -20824,10 +20920,10 @@ GameObject:
   - 33: {fileID: 831944079}
   - 23: {fileID: 831944078}
   - 114: {fileID: 831944077}
-  - 65: {fileID: 831944076}
   - 114: {fileID: 831944075}
   - 114: {fileID: 831944074}
   - 54: {fileID: 831944073}
+  - 65: {fileID: 831944076}
   m_Layer: 0
   m_Name: BlockThrow
   m_TagString: Untagged
@@ -20884,8 +20980,10 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  jumpState: 3
   blockThrowSpeed: 15
   throwAnimation: 
+  transitionState: 0
 --- !u!114 &831944075
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20900,9 +20998,8 @@ MonoBehaviour:
 --- !u!65 &831944076
 BoxCollider:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372,
-    type: 2}
-  m_PrefabInternal: {fileID: 1823077032}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 831944072}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -21526,8 +21623,10 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  jumpState: 3
   blockThrowSpeed: 15
   throwAnimation: 
+  transitionState: 0
 --- !u!114 &844184977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21550,10 +21649,10 @@ GameObject:
   - 33: {fileID: 849808074}
   - 23: {fileID: 849808073}
   - 114: {fileID: 849808072}
-  - 65: {fileID: 849808071}
   - 114: {fileID: 849808070}
   - 114: {fileID: 849808069}
   - 54: {fileID: 849808068}
+  - 65: {fileID: 849808071}
   m_Layer: 0
   m_Name: BlockThrow
   m_TagString: Untagged
@@ -21610,8 +21709,10 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  jumpState: 3
   blockThrowSpeed: 15
   throwAnimation: 
+  transitionState: 0
 --- !u!114 &849808070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21626,9 +21727,8 @@ MonoBehaviour:
 --- !u!65 &849808071
 BoxCollider:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372,
-    type: 2}
-  m_PrefabInternal: {fileID: 1259148974}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 849808067}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -23515,6 +23615,55 @@ Renderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
+--- !u!1001 &913332630
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 36.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3300000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
+  m_ParentPrefab: {fileID: 100100000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
+  m_RootGameObject: {fileID: 370522111}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1001 &919551057
 Prefab:
   m_ObjectHideFlags: 0
@@ -24599,7 +24748,12 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
   m_RootGameObject: {fileID: 1598148575}
   m_IsPrefabParent: 0
@@ -24968,8 +25122,10 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  jumpState: 3
   blockThrowSpeed: 15
   throwAnimation: 
+  transitionState: 0
 --- !u!114 &979371486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25275,8 +25431,10 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  jumpState: 3
   blockThrowSpeed: 20
   throwAnimation: Thrown
+  transitionState: 0
   ignorePlayer: {fileID: 0}
 --- !u!23 &982616702
 Renderer:
@@ -25679,7 +25837,12 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
   m_RootGameObject: {fileID: 1409364565}
   m_IsPrefabParent: 0
@@ -25773,7 +25936,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 53970ae33c51d0a46b6962401627325a, type: 3}
   m_Name: 
-  cameraMoveThreshold: 3
+  cameraMoveThreshold: -1
 --- !u!20 &1008819456
 Camera:
   m_ObjectHideFlags: 0
@@ -25916,7 +26079,12 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
   m_RootGameObject: {fileID: 722718081}
   m_IsPrefabParent: 0
@@ -28360,7 +28528,12 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
   m_RootGameObject: {fileID: 1622438116}
   m_IsPrefabParent: 0
@@ -30544,10 +30717,10 @@ GameObject:
   - 33: {fileID: 1205858869}
   - 23: {fileID: 1205858868}
   - 114: {fileID: 1205858867}
-  - 65: {fileID: 1205858866}
   - 114: {fileID: 1205858865}
   - 114: {fileID: 1205858864}
   - 54: {fileID: 1205858863}
+  - 65: {fileID: 1205858866}
   m_Layer: 0
   m_Name: BlockThrow
   m_TagString: Untagged
@@ -30604,8 +30777,10 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  jumpState: 3
   blockThrowSpeed: 15
   throwAnimation: 
+  transitionState: 0
 --- !u!114 &1205858865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30620,9 +30795,8 @@ MonoBehaviour:
 --- !u!65 &1205858866
 BoxCollider:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372,
-    type: 2}
-  m_PrefabInternal: {fileID: 1964143150}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1205858862}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -31055,7 +31229,12 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
   m_RootGameObject: {fileID: 1552658635}
   m_IsPrefabParent: 0
@@ -31360,6 +31539,14 @@ Prefab:
     - target: {fileID: 3300030, guid: 1bd188af8f6c6d44ea0dc5a25f223a75, type: 2}
       propertyPath: m_Mesh
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 1bd188af8f6c6d44ea0dc5a25f223a75, type: 2}
+      propertyPath: cameraMoveThreshold
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 1bd188af8f6c6d44ea0dc5a25f223a75, type: 2}
+      propertyPath: cameraMoveThreshold
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1bd188af8f6c6d44ea0dc5a25f223a75, type: 2}
@@ -31773,7 +31960,12 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
   m_RootGameObject: {fileID: 849808067}
   m_IsPrefabParent: 0
@@ -34480,8 +34672,10 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  jumpState: 3
   blockThrowSpeed: 20
   throwAnimation: Thrown
+  transitionState: 0
 --- !u!23 &1366623888
 Renderer:
   m_ObjectHideFlags: 0
@@ -35021,10 +35215,10 @@ GameObject:
   - 33: {fileID: 1386086434}
   - 23: {fileID: 1386086433}
   - 114: {fileID: 1386086432}
-  - 65: {fileID: 1386086431}
   - 114: {fileID: 1386086430}
   - 114: {fileID: 1386086429}
   - 54: {fileID: 1386086428}
+  - 65: {fileID: 1386086431}
   m_Layer: 0
   m_Name: BlockThrow
   m_TagString: Untagged
@@ -35081,8 +35275,10 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  jumpState: 3
   blockThrowSpeed: 15
   throwAnimation: 
+  transitionState: 0
 --- !u!114 &1386086430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35097,9 +35293,8 @@ MonoBehaviour:
 --- !u!65 &1386086431
 BoxCollider:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372,
-    type: 2}
-  m_PrefabInternal: {fileID: 2034298790}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1386086427}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -35322,10 +35517,10 @@ GameObject:
   - 33: {fileID: 1409364572}
   - 23: {fileID: 1409364571}
   - 114: {fileID: 1409364570}
-  - 65: {fileID: 1409364569}
   - 114: {fileID: 1409364568}
   - 114: {fileID: 1409364567}
   - 54: {fileID: 1409364566}
+  - 65: {fileID: 1409364569}
   m_Layer: 0
   m_Name: BlockThrow
   m_TagString: Untagged
@@ -35382,8 +35577,10 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  jumpState: 3
   blockThrowSpeed: 15
   throwAnimation: 
+  transitionState: 0
 --- !u!114 &1409364568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35398,9 +35595,8 @@ MonoBehaviour:
 --- !u!65 &1409364569
 BoxCollider:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372,
-    type: 2}
-  m_PrefabInternal: {fileID: 1002790633}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1409364565}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -38085,16 +38281,15 @@ Transform:
   m_PrefabInternal: {fileID: 1671791357}
   m_GameObject: {fileID: 1513126806}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 196.343353, y: 1.07012808, z: .100000001}
+  m_LocalPosition: {x: 103.281929, y: 1.07012808, z: .100000001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1002585441}
 --- !u!65 &1513126808
 BoxCollider:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6500000, guid: 4130cdd4a677c5641aab0db79dd380a1,
-    type: 2}
-  m_PrefabInternal: {fileID: 1671791357}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1513126806}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -38202,6 +38397,7 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  jumpState: 3
   actionableDistance: 2
   actionIsGrab: 0
   dodging: 0
@@ -38504,10 +38700,10 @@ GameObject:
   - 33: {fileID: 1537575241}
   - 23: {fileID: 1537575240}
   - 114: {fileID: 1537575239}
-  - 65: {fileID: 1537575238}
   - 114: {fileID: 1537575237}
   - 114: {fileID: 1537575236}
   - 54: {fileID: 1537575235}
+  - 65: {fileID: 1537575238}
   m_Layer: 0
   m_Name: BlockThrow
   m_TagString: Untagged
@@ -38564,8 +38760,10 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  jumpState: 3
   blockThrowSpeed: 15
   throwAnimation: 
+  transitionState: 0
 --- !u!114 &1537575237
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38580,9 +38778,8 @@ MonoBehaviour:
 --- !u!65 &1537575238
 BoxCollider:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372,
-    type: 2}
-  m_PrefabInternal: {fileID: 618272963}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1537575234}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -38861,10 +39058,10 @@ GameObject:
   - 33: {fileID: 1548241459}
   - 23: {fileID: 1548241458}
   - 114: {fileID: 1548241457}
-  - 65: {fileID: 1548241456}
   - 114: {fileID: 1548241455}
   - 114: {fileID: 1548241454}
   - 54: {fileID: 1548241453}
+  - 65: {fileID: 1548241456}
   m_Layer: 0
   m_Name: BlockThrow
   m_TagString: Untagged
@@ -38921,8 +39118,10 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  jumpState: 3
   blockThrowSpeed: 15
   throwAnimation: 
+  transitionState: 0
 --- !u!114 &1548241455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38937,9 +39136,8 @@ MonoBehaviour:
 --- !u!65 &1548241456
 BoxCollider:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372,
-    type: 2}
-  m_PrefabInternal: {fileID: 92725458}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1548241452}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -39016,10 +39214,10 @@ GameObject:
   - 33: {fileID: 1552658642}
   - 23: {fileID: 1552658641}
   - 114: {fileID: 1552658640}
-  - 65: {fileID: 1552658639}
   - 114: {fileID: 1552658638}
   - 114: {fileID: 1552658637}
   - 54: {fileID: 1552658636}
+  - 65: {fileID: 1552658639}
   m_Layer: 0
   m_Name: BlockThrow
   m_TagString: Untagged
@@ -39076,8 +39274,10 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  jumpState: 3
   blockThrowSpeed: 15
   throwAnimation: 
+  transitionState: 0
 --- !u!114 &1552658638
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39092,9 +39292,8 @@ MonoBehaviour:
 --- !u!65 &1552658639
 BoxCollider:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372,
-    type: 2}
-  m_PrefabInternal: {fileID: 1222080921}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1552658635}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -40395,8 +40594,10 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  jumpState: 3
   blockThrowSpeed: 20
   throwAnimation: Thrown
+  transitionState: 0
   ignorePlayer: {fileID: 0}
 --- !u!23 &1592811092
 Renderer:
@@ -40609,10 +40810,10 @@ GameObject:
   - 33: {fileID: 1598148582}
   - 23: {fileID: 1598148581}
   - 114: {fileID: 1598148580}
-  - 65: {fileID: 1598148579}
   - 114: {fileID: 1598148578}
   - 114: {fileID: 1598148577}
   - 54: {fileID: 1598148576}
+  - 65: {fileID: 1598148579}
   m_Layer: 0
   m_Name: BlockThrow
   m_TagString: Untagged
@@ -40669,8 +40870,10 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  jumpState: 3
   blockThrowSpeed: 15
   throwAnimation: 
+  transitionState: 0
 --- !u!114 &1598148578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40685,9 +40888,8 @@ MonoBehaviour:
 --- !u!65 &1598148579
 BoxCollider:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372,
-    type: 2}
-  m_PrefabInternal: {fileID: 972690513}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1598148575}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -41251,8 +41453,10 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  jumpState: 3
   blockThrowSpeed: 15
   throwAnimation: 
+  transitionState: 0
 --- !u!114 &1617358122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41542,10 +41746,10 @@ GameObject:
   - 33: {fileID: 1622438123}
   - 23: {fileID: 1622438122}
   - 114: {fileID: 1622438121}
-  - 65: {fileID: 1622438120}
   - 114: {fileID: 1622438119}
   - 114: {fileID: 1622438118}
   - 54: {fileID: 1622438117}
+  - 65: {fileID: 1622438120}
   m_Layer: 0
   m_Name: BlockThrow
   m_TagString: Untagged
@@ -41602,8 +41806,10 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  jumpState: 3
   blockThrowSpeed: 15
   throwAnimation: 
+  transitionState: 0
 --- !u!114 &1622438119
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41618,9 +41824,8 @@ MonoBehaviour:
 --- !u!65 &1622438120
 BoxCollider:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372,
-    type: 2}
-  m_PrefabInternal: {fileID: 1117096247}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1622438116}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -42905,7 +43110,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 4130cdd4a677c5641aab0db79dd380a1, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 196.343353
+      value: 103.281929
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4130cdd4a677c5641aab0db79dd380a1, type: 2}
       propertyPath: m_LocalPosition.y
@@ -42935,7 +43140,8 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6500000, guid: 4130cdd4a677c5641aab0db79dd380a1, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 4130cdd4a677c5641aab0db79dd380a1, type: 2}
   m_RootGameObject: {fileID: 1513126806}
   m_IsPrefabParent: 0
@@ -43044,7 +43250,12 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
   m_RootGameObject: {fileID: 470921122}
   m_IsPrefabParent: 0
@@ -44561,8 +44772,10 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  jumpState: 3
   blockThrowSpeed: 20
   throwAnimation: Thrown
+  transitionState: 0
 --- !u!23 &1718550935
 Renderer:
   m_ObjectHideFlags: 0
@@ -45766,10 +45979,10 @@ GameObject:
   - 33: {fileID: 1773490905}
   - 23: {fileID: 1773490904}
   - 114: {fileID: 1773490903}
-  - 65: {fileID: 1773490902}
   - 114: {fileID: 1773490901}
   - 114: {fileID: 1773490900}
   - 54: {fileID: 1773490899}
+  - 65: {fileID: 1773490902}
   m_Layer: 0
   m_Name: BlockThrow
   m_TagString: Untagged
@@ -45826,8 +46039,10 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  jumpState: 3
   blockThrowSpeed: 15
   throwAnimation: 
+  transitionState: 0
 --- !u!114 &1773490901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45842,9 +46057,8 @@ MonoBehaviour:
 --- !u!65 &1773490902
 BoxCollider:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372,
-    type: 2}
-  m_PrefabInternal: {fileID: 690928948}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1773490898}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -46964,10 +47178,10 @@ GameObject:
   - 33: {fileID: 1821704152}
   - 23: {fileID: 1821704151}
   - 114: {fileID: 1821704150}
-  - 65: {fileID: 1821704149}
   - 114: {fileID: 1821704148}
   - 114: {fileID: 1821704147}
   - 54: {fileID: 1821704146}
+  - 65: {fileID: 1821704149}
   m_Layer: 0
   m_Name: BlockThrow
   m_TagString: Untagged
@@ -47024,8 +47238,10 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  jumpState: 3
   blockThrowSpeed: 15
   throwAnimation: 
+  transitionState: 0
 --- !u!114 &1821704148
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47040,9 +47256,8 @@ MonoBehaviour:
 --- !u!65 &1821704149
 BoxCollider:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372,
-    type: 2}
-  m_PrefabInternal: {fileID: 454575445}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1821704145}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -47147,7 +47362,12 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
   m_RootGameObject: {fileID: 831944072}
   m_IsPrefabParent: 0
@@ -48488,8 +48708,10 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  jumpState: 3
   blockThrowSpeed: 20
   throwAnimation: 
+  transitionState: 0
 --- !u!23 &1885409508
 Renderer:
   m_ObjectHideFlags: 0
@@ -49170,10 +49392,10 @@ GameObject:
   - 33: {fileID: 1916440951}
   - 23: {fileID: 1916440950}
   - 114: {fileID: 1916440949}
-  - 65: {fileID: 1916440948}
   - 114: {fileID: 1916440947}
   - 114: {fileID: 1916440946}
   - 54: {fileID: 1916440945}
+  - 65: {fileID: 1916440948}
   m_Layer: 0
   m_Name: BlockThrow
   m_TagString: Untagged
@@ -49230,8 +49452,10 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  jumpState: 3
   blockThrowSpeed: 15
   throwAnimation: 
+  transitionState: 0
 --- !u!114 &1916440947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49246,9 +49470,8 @@ MonoBehaviour:
 --- !u!65 &1916440948
 BoxCollider:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372,
-    type: 2}
-  m_PrefabInternal: {fileID: 2009042000}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1916440944}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -49924,8 +50147,10 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  jumpState: 3
   blockThrowSpeed: 15
   throwAnimation: 
+  transitionState: 0
 --- !u!114 &1950335866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50272,7 +50497,12 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
   m_RootGameObject: {fileID: 1205858862}
   m_IsPrefabParent: 0
@@ -51336,10 +51566,10 @@ GameObject:
   - 33: {fileID: 2008186665}
   - 23: {fileID: 2008186664}
   - 114: {fileID: 2008186663}
-  - 65: {fileID: 2008186662}
   - 114: {fileID: 2008186661}
   - 114: {fileID: 2008186660}
   - 54: {fileID: 2008186659}
+  - 65: {fileID: 2008186662}
   m_Layer: 0
   m_Name: BlockThrow
   m_TagString: Untagged
@@ -51396,8 +51626,10 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  jumpState: 3
   blockThrowSpeed: 15
   throwAnimation: 
+  transitionState: 0
 --- !u!114 &2008186661
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51412,9 +51644,8 @@ MonoBehaviour:
 --- !u!65 &2008186662
 BoxCollider:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372,
-    type: 2}
-  m_PrefabInternal: {fileID: 454840053}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2008186658}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -51519,7 +51750,12 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
   m_RootGameObject: {fileID: 1916440944}
   m_IsPrefabParent: 0
@@ -51630,8 +51866,10 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  jumpState: 3
   blockThrowSpeed: 20
   throwAnimation: Thrown
+  transitionState: 0
   ignorePlayer: {fileID: 0}
 --- !u!23 &2010061285
 Renderer:
@@ -52026,7 +52264,12 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
   m_RootGameObject: {fileID: 1386086427}
   m_IsPrefabParent: 0
@@ -52782,8 +53025,10 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  jumpState: 3
   blockThrowSpeed: 20
   throwAnimation: Thrown
+  transitionState: 0
 --- !u!65 &2098988372
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -53028,10 +53273,10 @@ GameObject:
   - 33: {fileID: 2108826206}
   - 23: {fileID: 2108826205}
   - 114: {fileID: 2108826204}
-  - 65: {fileID: 2108826203}
   - 114: {fileID: 2108826202}
   - 114: {fileID: 2108826201}
   - 54: {fileID: 2108826200}
+  - 65: {fileID: 2108826203}
   m_Layer: 0
   m_Name: BlockThrow
   m_TagString: Untagged
@@ -53088,8 +53333,10 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  jumpState: 3
   blockThrowSpeed: 15
   throwAnimation: 
+  transitionState: 0
 --- !u!114 &2108826202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53104,9 +53351,8 @@ MonoBehaviour:
 --- !u!65 &2108826203
 BoxCollider:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6500000, guid: e795f02f20f15c949a3572e3a62fb372,
-    type: 2}
-  m_PrefabInternal: {fileID: 797756676}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2108826199}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -53408,8 +53654,10 @@ MonoBehaviour:
   timeToMaxRunSpeed: 0
   timeToDecelerateToWalk: 0
   timeToDecelerateToStop: 0
+  jumpState: 3
   blockThrowSpeed: 20
   throwAnimation: Thrown
+  transitionState: 0
 --- !u!65 &2126433431
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -53796,47 +54044,3 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2241f6c642a78de48b42a45ae0852f52, type: 3}
   m_Name: 
---- !u!1001 &2147455959
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 400000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 35.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3300000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: e795f02f20f15c949a3572e3a62fb372, type: 2}
-  m_RootGameObject: {fileID: 107042181}
-  m_IsPrefabParent: 0
-  m_IsExploded: 1

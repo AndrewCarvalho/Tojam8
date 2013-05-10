@@ -10,6 +10,7 @@ public class BombBlock : ThrowBlock {
     float igniteDuration = 2.25f;
 
     float explosionRadius = 3;
+	float explosionDamageModifier = 6;
 
 	// Use this for initialization
 	new void Start () {
@@ -38,11 +39,12 @@ public class BombBlock : ThrowBlock {
             {
                 Vector3 diff = player.transform.position - transform.position;
                 if (diff.magnitude < igniteDuration)
-                    player.Hurt();
+                    player.Hurt(explosionDamageModifier);
             }
 
             explodeCountdown = getAnimationDuration("Explode") - 0.1f;
             exploded = true;
+			DisableActor();
         }
         else if (exploded && explodeCountdown < 0.0f)
         {
