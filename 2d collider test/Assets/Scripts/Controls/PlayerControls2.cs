@@ -39,33 +39,35 @@ public abstract class PlayerControls2 : Actor
     protected abstract PlayerCamera CameraFollowingMe();
     protected abstract PlayerCamera OtherPlayerCamera();
 
-    protected override bool isDodging()
+    protected override bool canDodge(GameObject dodgee)
     {
-        return dodging;
+        return dodging && dodgee.GetComponent<PlayerControls2>();
     }
 
-    public void knockBackByBlock(bool hurt)
+    public void knockBackByBlock(bool hurt, float hurtMultiplier)
     {
         base.knockToNearestTile(-facingDirection);
 
         if (hurt)
         {
-            Hurt();
+            Hurt(hurtMultiplier);
         }
     }
 
-    public void Hurt()
+    public void Hurt(float multiplier)
     {
+		Debug.Log ("multiplier " + multiplier);
         Run(0.0f);
         PlayAnimation("Hit");
-        hurtCountdown = getAnimationDuration("Hit");
+        hurtCountdown = getAnimationDuration("Hit") * multiplier;
     }
 
     override public void onHitCollider(Collider collider)
     {
-        if (collider.GetComponent<SpikeBlock>())
+		SpikeBlock spikes = collider.GetComponent<SpikeBlock>();
+        if (spikes)
         {
-            knockBackByBlock(true);
+            knockBackByBlock(true, spikes.damageMultiplier);
         }
     }
 
@@ -147,25 +149,20 @@ public abstract class PlayerControls2 : Actor
             Run(0.0f, DownPressed(), !dodging);
         }
 
-        if (Application.loadedLevelName != "WinScene" && ActionButtonDown())
+        if (Application.loadedLevelName != "WinScene" && ActionButtonDown() && dodging == false)
         {
             string animationName = actionAnimationName;
             bool hitBlock = false;
 
             {
-                RaycastHit[] hits = castForward(new Vector3(facingDirection, 0.0f, 0.0f), actionableDistance);
-                foreach (RaycastHit hit in hits)
+                ThrowBlock block = closestThrowBlock();
+                if (block)
                 {
-                    ThrowBlock block = hit.collider.GetComponent<ThrowBlock>();
-                    if (block)
-                    {
-                        block.Throw(BlockThrowDirection(), CameraFollowingMe(), OtherPlayerCamera(), 0.2f);
-                        if (block.GetComponent<CannonBallBlock>())
-                            block.GetComponent<CannonBallBlock>().ignorePlayer = this;
+                    block.Throw(BlockThrowDirection(), CameraFollowingMe(), OtherPlayerCamera(), 0.2f);
+                    if (block.GetComponent<CannonBallBlock>())
+                        block.GetComponent<CannonBallBlock>().ignorePlayer = this;
 
-                        hitBlock = true;
-                        break;
-                    }
+                    hitBlock = true;
                 }
             }
 
@@ -174,7 +171,7 @@ public abstract class PlayerControls2 : Actor
                 animationName = actionAnimationName;
                 Run(0.0f, DownPressed(), !dodging);
             }
-            else if (gameManager.isSingleScreen())
+            else if (GameManager.isSingleScreen())
             {
                 if (action2AnimationName == "Dodge")
                 {
@@ -207,4 +204,26 @@ public abstract class PlayerControls2 : Actor
             PlayAnimation(animationName);
         }
     }
+	
+	ThrowBlock closestThrowBlock()
+	{
+		float closestDistance = Mathf.Infinity;
+		ThrowBlock closest = null;
+		RaycastHit[] hits = castForward(new Vector3(facingDirection, 0.0f, 0.0f), actionableDistance);
+        foreach (RaycastHit hit in hits)
+        {
+            ThrowBlock block = hit.collider.GetComponent<ThrowBlock>();
+            if (block)
+            {
+				float distance = (transform.position - block.transform.position).magnitude;
+				if(distance < closestDistance)
+				{
+					closestDistance = distance;
+					closest = block;
+				}
+            }
+        }
+		
+		return closest;
+	}
 }

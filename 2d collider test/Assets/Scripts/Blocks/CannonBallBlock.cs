@@ -10,6 +10,7 @@ public class CannonBallBlock : ThrowBlock
     {
         base.Start();
         shouldStopInFirstEmptySpace = false;
+		damageMultiplier = 4.0f;
 	}
 	
 	// Update is called once per frame
@@ -28,7 +29,7 @@ public class CannonBallBlock : ThrowBlock
             PlayerControls2 player = collidedWith.GetComponent<PlayerControls2>();
             if (player && ignorePlayer != player)
             {
-                player.knockBackByBlock(true);
+                player.knockBackByBlock(true, damageMultiplier);
             }
         }
     }

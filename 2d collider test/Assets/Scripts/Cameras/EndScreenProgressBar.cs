@@ -55,7 +55,8 @@ public class EndScreenProgressBar : MonoBehaviour
         // new stuff!!!
         this.princessPercentage = GameManager.PrincessScore;
         //this.princessPercentage = .5f;
-        this.didPrincessWin = GameManager.DidPrincessWin;
+        //this.didPrincessWin = GameManager.DidPrincessWin;
+		this.didPrincessWin = GameManager.PrincessScore > 0.5f;
 
         this.lastPrincessDistance = 0;
         this.lastKnightDistance = 0;
