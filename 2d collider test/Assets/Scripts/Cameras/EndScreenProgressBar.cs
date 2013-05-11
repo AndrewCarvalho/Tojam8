@@ -85,7 +85,7 @@ public class EndScreenProgressBar : MonoBehaviour
         {
             this.showingText = true;
             this.finalSong.Play();
-            if (this.didPrincessWin)
+            if (this.princessPercentage >= 0.5f)
             {
                 this.finalText.text = "Damsel Wins!";
             }
@@ -93,12 +93,12 @@ public class EndScreenProgressBar : MonoBehaviour
             {
                 this.finalText.text = "Knight Wins";
             }
-            this.aToContinue.text = "Press A To Play Again";
+            this.aToContinue.text = "Press Y To Play Again";
         }
 
         if (this.doneLinearInterpolation)
         {
-            if (Input.GetKey(KeyCode.Joystick1Button0) || Input.GetKey(KeyCode.Joystick2Button0) || Input.GetKey(KeyCode.A))
+            if (Input.GetKey(KeyCode.Joystick1Button3) || Input.GetKey(KeyCode.Joystick2Button3) || Input.GetKey(KeyCode.Y))
             {
                 Application.LoadLevel("Titlescreen");
             }
