@@ -5,7 +5,7 @@ public class BlockLayering : MonoBehaviour
 {
 	void Awake () 
 	{
-        this.transform.Translate(0, 0, (this.transform.position.x + this.transform.position.y) * Utils.ZINC);
+        this.transform.Translate(0, 0, this.transform.position.z + (this.transform.position.x + this.transform.position.y) * Utils.ZINC);
 	}
 
     new void Update()
@@ -19,7 +19,7 @@ public class BlockLayering : MonoBehaviour
         Debug.DrawRay(left, new Vector3(0, 10.0f, 0));
         Debug.DrawRay(right, new Vector3(0, 10.0f, 0));*/
 		
-		Vector3 pos = transform.position;
-		this.transform.position = new Vector3(pos.x, pos.y, (pos.x + pos.y) * Utils.ZINC);
+        //Vector3 pos = transform.position;
+        //this.transform.position = new Vector3(pos.x, pos.y, (pos.x + pos.y) * Utils.ZINC);
     }
 }
