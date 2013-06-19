@@ -423,8 +423,13 @@ public class Actor : MonoBehaviour {
 	{
 		foreach (Collider collider in colliders)
 		{
+            // if the colliders diagonals... assuming they're boxes... add up to less than their distance, skip it
+            //if (Vector2.Distance(collider.transform.position, this.collider.transform.position) > 3f)
+            //    continue;
+
 		    if (collider != null &&
 				collider != this.collider &&
+                Vector2.Distance(collider.transform.position, this.collider.transform.position) <= 3f &&
 				!collider.isTrigger && this.collider.bounds.Intersects(collider.bounds))
 		    {
 		        return collider;
